@@ -1,0 +1,34 @@
+name: CIS v4 TV Distribution Patch
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch-tv-distribution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Patch TradingView distribution logic
+        run: python scripts/cis_v4/cis_tv_distribution_patch.py
+
+      - name: Commit and push patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/cis_v4/cis_core.py scripts/cis_v4/cis_master_update.py scripts/cis_v4/cis_tv_monthly_refresh.py scripts/cis_v4/cis_daily_us.py scripts/cis_v4/cis_weekly_performance.py scripts/cis_v4/cis_buy_alert.py
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Add TradingView analyst distribution support"
+            git push
+          fi
