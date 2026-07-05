@@ -18,7 +18,7 @@ def main() -> int:
                 "symbol": item.symbol,
                 "market": item.market,
                 "name": item.name,
-                "description": item.description or item.notes,
+                "description": item.name if item.market == "JP" else (item.description or item.notes),
                 "latest_price": p.latest_price,
                 "daily_change": p.daily_change,
                 "daily_pct": p.daily_pct,

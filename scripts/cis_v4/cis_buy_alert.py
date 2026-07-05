@@ -80,6 +80,28 @@ def tv_status_label(status: Optional[str]) -> str:
     }.get(status, str(status))
 
 
+def fmt_rule_updated_at(value: Any) -> str:
+    """Compact buy-zone rule timestamp for mobile display."""
+    if value is None:
+        return "未設定"
+    text = str(value).strip()
+    if not text:
+        return "未設定"
+    try:
+        dt = datetime.fromisoformat(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=JST)
+        dt = dt.astimezone(JST)
+        # Keep minutes, drop seconds/microseconds/timezone noise.
+        return dt.strftime("%Y/%m/%d %H:%M JST")
+    except Exception:
+        # Safe fallback for date-like strings. Do not destroy unknown manual notes.
+        if "T" in text:
+            return text.split("T", 1)[0].replace("-", "/")
+        if len(text) >= 10 and text[4:5] == "-" and text[7:8] == "-":
+            return text[:10].replace("-", "/")
+        return text
+
 def validate_rule(rule: Optional[Dict[str, Any]]) -> List[str]:
     if not rule:
         return ["買い場基準未設定"]
@@ -149,7 +171,7 @@ def main() -> int:
                     "symbol": item.symbol,
                     "market": item.market,
                     "name": item.name,
-                    "description": item.description or item.notes,
+                    "description": item.name if item.market == "JP" else (item.description or item.notes),
                     "rule_errors": rule_errors,
                     "missing_buyzone": True,
                     **tv_info,
@@ -167,7 +189,7 @@ def main() -> int:
                 "symbol": item.symbol,
                 "market": item.market,
                 "name": item.name,
-                "description": item.description or item.notes,
+                "description": item.name if item.market == "JP" else (item.description or item.notes),
                 "latest_price": p.latest_price,
                 "daily_change": p.daily_change,
                 "daily_pct": p.daily_pct,
@@ -300,7 +322,7 @@ def main() -> int:
                 f"- 本命買い価格までの下落余地：{fmt_pct(r.get('gap_above_main_pct'))}",
                 f"- 判定：**{r.get('judgement')}**",
                 f"- 価格日付：{r.get('latest_date') or '未取得'}",
-                f"- 基準更新日：{r.get('rule_updated_at') or '未設定'}",
+                f"- 基準更新日：{fmt_rule_updated_at(r.get('rule_updated_at'))}",
                 f"- 基準理由：{r.get('rule_reason') or '未記載'}",
             ]
             if market == "US":

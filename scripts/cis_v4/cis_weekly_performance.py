@@ -78,7 +78,7 @@ def build_rows() -> List[Dict[str, Any]]:
             "symbol": item.symbol,
             "market": item.market,
             "name": item.name,
-            "description": item.description or item.notes,
+            "description": item.name if item.market == "JP" else (item.description or item.notes),
             "latest_price": p.latest_price,
             "weekly_base_price": p.weekly_base_price,
             "weekly_change": p.weekly_change,
