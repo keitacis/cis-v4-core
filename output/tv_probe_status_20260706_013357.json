@@ -1,0 +1,59 @@
+{
+  "status": "ok",
+  "generated_at_jst": "2026-07-06T01:33:57.283689+09:00",
+  "symbols_tested": [
+    "AVAV",
+    "PYPL",
+    "META",
+    "EWY",
+    "AEM",
+    "NOW",
+    "QCOM",
+    "ZETA"
+  ],
+  "best_tv_symbols": [
+    "NASDAQ:AVAV",
+    "NASDAQ:PYPL",
+    "NASDAQ:META",
+    "AMEX:EWY",
+    "NYSE:AEM",
+    "NYSE:NOW",
+    "NASDAQ:QCOM",
+    "NYSE:ZETA"
+  ],
+  "baseline_success_symbols": 8,
+  "candidate_fields_tested": 19,
+  "valid_candidate_fields_union": [
+    "analyst_rating",
+    "analyst_rating_count",
+    "analyst_rating_strong_buy",
+    "analyst_rating_buy",
+    "analyst_rating_hold",
+    "analyst_rating_neutral",
+    "analyst_rating_sell",
+    "analyst_rating_strong_sell",
+    "number_of_analysts",
+    "target_price_average",
+    "target_price_high",
+    "target_price_low",
+    "target_price_median",
+    "price_target_mean",
+    "price_target_average",
+    "price_target_high",
+    "price_target_low",
+    "recommendation_mark",
+    "recommendation_mean"
+  ],
+  "non_null_fields_union": [
+    "name",
+    "description",
+    "close",
+    "currency",
+    "price_target_average",
+    "price_target_high",
+    "price_target_low",
+    "recommendation_mark"
+  ],
+  "forecast_rows": 20,
+  "note": "Diagnostic only. tv_snapshot.json is not modified."
+}
