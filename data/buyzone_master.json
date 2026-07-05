@@ -1,3 +1,139 @@
 {
-  "items": []
+  "items": [
+    {
+      "symbol": "AAOI",
+      "market": "US",
+      "watch_price": 90.71,
+      "main_buy_price": 72.57,
+      "strong_buy_price": 54.43,
+      "updated_at": "2026-07-05T22:13:43.185618+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格120.95から、optical_communicationのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "APH",
+      "market": "US",
+      "watch_price": 134.96,
+      "main_buy_price": 118.5,
+      "strong_buy_price": 98.75,
+      "updated_at": "2026-07-05T22:13:43.185638+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格164.59から、connector_sensorのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "ASPI",
+      "market": "US",
+      "watch_price": 3.94,
+      "main_buy_price": 2.81,
+      "strong_buy_price": 1.97,
+      "updated_at": "2026-07-05T22:13:43.185648+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格5.63から、nuclear_isotopeのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "AUR",
+      "market": "US",
+      "watch_price": 4.97,
+      "main_buy_price": 3.98,
+      "strong_buy_price": 2.98,
+      "updated_at": "2026-07-05T22:13:43.185500+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格6.63から、autonomous_drivingのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "AVAV",
+      "market": "US",
+      "watch_price": 156.53,
+      "main_buy_price": 137.44,
+      "strong_buy_price": 114.53,
+      "updated_at": "2026-07-05T22:13:43.185441+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格190.89から、defense_droneのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "AXON",
+      "market": "US",
+      "watch_price": 477.63,
+      "main_buy_price": 405.99,
+      "strong_buy_price": 328.37,
+      "updated_at": "2026-07-05T22:13:43.185481+09:00",
+      "reason": "初期基準補正: 2026-07-05時点の直近価格597.04から、事業品質は高いが高バリュエーションのため20/32/45%下で厳しめ設定"
+    },
+    {
+      "symbol": "FICO",
+      "market": "US",
+      "watch_price": 1042.08,
+      "main_buy_price": 915.0,
+      "strong_buy_price": 762.5,
+      "updated_at": "2026-07-05T22:13:43.185609+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1270.83から、financial_dataのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "NOW",
+      "market": "US",
+      "watch_price": 87.18,
+      "main_buy_price": 74.42,
+      "strong_buy_price": 61.67,
+      "updated_at": "2026-07-05T22:13:43.185526+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格106.32から、cloud_saasのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "OUST",
+      "market": "US",
+      "watch_price": 37.38,
+      "main_buy_price": 29.9,
+      "strong_buy_price": 22.43,
+      "updated_at": "2026-07-05T22:13:43.185628+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格49.84から、lidarのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "PYPL",
+      "market": "US",
+      "watch_price": 40.01,
+      "main_buy_price": 35.47,
+      "strong_buy_price": 30.92,
+      "updated_at": "2026-07-05T22:13:43.185587+09:00",
+      "reason": "初期基準補正: 2026-07-05時点の直近価格45.47から、低PERでも成長鈍化・競争環境の構造リスクを考慮して12/22/32%下で設定"
+    },
+    {
+      "symbol": "RDW",
+      "market": "US",
+      "watch_price": 8.48,
+      "main_buy_price": 6.79,
+      "strong_buy_price": 5.09,
+      "updated_at": "2026-07-05T22:13:43.185538+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格11.31から、spaceのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "TEM",
+      "market": "US",
+      "watch_price": 45.2,
+      "main_buy_price": 36.16,
+      "strong_buy_price": 27.12,
+      "updated_at": "2026-07-05T22:13:43.185598+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格60.27から、ai_healthcareのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "TMDX",
+      "market": "US",
+      "watch_price": 56.47,
+      "main_buy_price": 48.2,
+      "strong_buy_price": 39.94,
+      "updated_at": "2026-07-05T22:13:43.185514+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格68.86から、medical_deviceのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "TRMB",
+      "market": "US",
+      "watch_price": 46.68,
+      "main_buy_price": 41.37,
+      "strong_buy_price": 36.07,
+      "updated_at": "2026-07-05T22:13:43.185551+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格53.04から、industrial_techのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "VEEV",
+      "market": "US",
+      "watch_price": 169.61,
+      "main_buy_price": 150.34,
+      "strong_buy_price": 131.06,
+      "updated_at": "2026-07-05T22:13:43.185574+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格192.74から、healthcare_saasのボラ/質を考慮して段階設定"
+    }
+  ]
 }

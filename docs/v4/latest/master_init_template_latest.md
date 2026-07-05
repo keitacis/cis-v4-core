@@ -1,6 +1,6 @@
 # CIS 初期マスター投入テンプレート
 
-生成日時：2026/07/05 22:06 JST
+生成日時：2026/07/05 22:13 JST
 
 ## 目的
 
@@ -11,7 +11,7 @@
 
 - active銘柄：73
 - 米国株active銘柄：48
-- 買い場基準未設定：73
+- 買い場基準未設定：58
 - 買い場基準不正：0
 - 旧buy-zone CSVから変換候補あり：0
 - TradingView未設定/要区分入力：48
@@ -28,7 +28,6 @@
 - 改行 part 02: [開く](master_init_buyzone_blank_part_02.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_02.txt)
 - 改行 part 03: [開く](master_init_buyzone_blank_part_03.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_03.txt)
 - 改行 part 04: [開く](master_init_buyzone_blank_part_04.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_04.txt)
-- 改行 part 05: [開く](master_init_buyzone_blank_part_05.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_05.txt)
 
 ### TradingView 分割
 
@@ -52,21 +51,6 @@ PCや長文貼り付けに慣れている場合はこちらを使えます。iPh
 価格を空欄のまま使ってはいけません。打診・本命・強く買いたい価格を入れてから使います。
 
 ```text
-BUYZONE US AVAV|打診|本命|強く買いたい|根拠
-BUYZONE US AXON|打診|本命|強く買いたい|根拠
-BUYZONE US AUR|打診|本命|強く買いたい|根拠
-BUYZONE US TMDX|打診|本命|強く買いたい|根拠
-BUYZONE US NOW|打診|本命|強く買いたい|根拠
-BUYZONE US RDW|打診|本命|強く買いたい|根拠
-BUYZONE US TRMB|打診|本命|強く買いたい|根拠
-BUYZONE US VEEV|打診|本命|強く買いたい|根拠
-BUYZONE US PYPL|打診|本命|強く買いたい|根拠
-BUYZONE US TEM|打診|本命|強く買いたい|根拠
-BUYZONE US FICO|打診|本命|強く買いたい|根拠
-BUYZONE US AAOI|打診|本命|強く買いたい|根拠
-BUYZONE US OUST|打診|本命|強く買いたい|根拠
-BUYZONE US APH|打診|本命|強く買いたい|根拠
-BUYZONE US ASPI|打診|本命|強く買いたい|根拠
 BUYZONE US NBIS|打診|本命|強く買いたい|根拠
 BUYZONE US EWY|打診|本命|強く買いたい|根拠
 BUYZONE US ISRG|打診|本命|強く買いたい|根拠
