@@ -1,13 +1,13 @@
 # CIS ホーム
 
-最終更新：2026/07/05 22:13 JST
+最終更新：2026/07/05 22:15 JST
 
 ## 要確認
 
 - 買い場アラート: error
 - 米国株騰落: TV更新後、米国株騰落未再生成
 - 週間騰落: TV更新後、週間騰落未再生成
-- 初期マスター投入テンプレート: BUYZONE未設定58件 / TV未設定48件
+- 初期マスター投入テンプレート: BUYZONE未設定43件 / TV未設定48件
 - TradingView月次自動確認: TV取得失敗48件
 - TradingView月次候補反映: RuntimeError: 候補コマンドファイルが存在しないか空です: /home/runner/work/cis-v4-core/cis-v4-core/docs/v4/latest/tv_monthly_refresh_apply_commands.txt
 - 月次メンテナンス: partial
@@ -62,7 +62,7 @@
 
 ### ⚠️ 一部注意 初期マスター投入テンプレート
 
-- 更新：2026/07/05 22:13 JST
+- 更新：2026/07/05 22:15 JST
 - [開く](master_init_template_latest.html)
 
 ### ⚠️ 一部注意 TradingView月次自動確認
@@ -77,10 +77,10 @@
 
 ### ✅ 更新済み TV・買い場基準更新
 
-- 更新：2026/07/05 22:13 JST
+- 更新：2026/07/05 22:15 JST
 - [開く](master_update_latest.html)
 
 ### ⚠️ 一部注意 月次メンテナンス
 
-- 更新：2026/07/05 22:13 JST
+- 更新：2026/07/05 22:15 JST
 - [開く](monthly_maintenance_latest.html)

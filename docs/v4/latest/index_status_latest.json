@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-05T22:13:43.464554+09:00",
+  "generated_at_jst": "2026-07-05T22:15:08.223802+09:00",
   "items": {
     "buy_alert": {
       "status": "error",
@@ -764,10 +764,10 @@
     },
     "master_init_template": {
       "status": "partial",
-      "generated_at_jst": "2026-07-05T22:13:43.319044+09:00",
+      "generated_at_jst": "2026-07-05T22:15:08.072764+09:00",
       "active_count": 73,
       "active_us_count": 48,
-      "buyzone_missing_count": 58,
+      "buyzone_missing_count": 43,
       "buyzone_invalid_count": 0,
       "buyzone_legacy_ready_count": 0,
       "tv_missing_count": 48,
@@ -793,13 +793,13 @@
     },
     "master_update": {
       "status": "ok",
-      "generated_at_jst": "2026-07-05T22:13:43.245726+09:00",
+      "generated_at_jst": "2026-07-05T22:15:07.996413+09:00",
       "changed_count": 15,
       "error_count": 0
     },
     "monthly_maintenance": {
       "status": "partial",
-      "generated_at_jst": "2026-07-05T22:13:43.395140+09:00",
+      "generated_at_jst": "2026-07-05T22:15:08.152913+09:00",
       "watchlist_count": 73,
       "us_count": 48,
       "tv_count": 0,
@@ -809,12 +809,12 @@
       "tv_missing_count": 48,
       "tv_stale_or_unknown_count": 0,
       "tv_extra_count": 0,
-      "buyzone_count": 15,
-      "buyzone_missing_count": 58,
+      "buyzone_count": 30,
+      "buyzone_missing_count": 43,
       "buyzone_extra_count": 0,
       "warnings": [
         "TradingView未設定：48銘柄",
-        "買い場基準未設定：58銘柄"
+        "買い場基準未設定：43銘柄"
       ]
     }
   }

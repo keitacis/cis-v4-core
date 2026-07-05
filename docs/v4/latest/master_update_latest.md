@@ -1,140 +1,140 @@
 # CIS マスター更新
 
-生成日時：2026/07/05 22:13 JST
+生成日時：2026/07/05 22:15 JST
 
 ## 反映内容
 
-### BUYZONE US AVAV
+### BUYZONE US NBIS
 
-- 入力：BUYZONE US AVAV|156.53|137.44|114.53|初期基準: 2026-07-05時点の直近価格190.89から、defense_droneのボラ/質を考慮して段階設定
+- 入力：BUYZONE US NBIS|161.72|129.37|97.03|初期基準: 2026-07-05時点の直近価格215.62から、ai_cloudのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 156.53
-  - main_buy_price: 未設定 → 137.44
-  - strong_buy_price: 未設定 → 114.53
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格190.89から、defense_droneのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 161.72
+  - main_buy_price: 未設定 → 129.37
+  - strong_buy_price: 未設定 → 97.03
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格215.62から、ai_cloudのボラ/質を考慮して段階設定
 
-### BUYZONE US AXON
+### BUYZONE US EWY
 
-- 入力：BUYZONE US AXON|477.63|405.99|328.37|初期基準補正: 2026-07-05時点の直近価格597.04から、事業品質は高いが高バリュエーションのため20/32/45%下で厳しめ設定
+- 入力：BUYZONE US EWY|162.13|147.71|135.11|初期基準補正: 2026-07-05時点の直近価格180.14から、韓国ETFはETFでも半導体・為替・地政学リスクが乗るため10/18/25%下で設定
 - 変更点：
-  - watch_price: 未設定 → 477.63
-  - main_buy_price: 未設定 → 405.99
-  - strong_buy_price: 未設定 → 328.37
-  - reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格597.04から、事業品質は高いが高バリュエーションのため20/32/45%下で厳しめ設定
+  - watch_price: 未設定 → 162.13
+  - main_buy_price: 未設定 → 147.71
+  - strong_buy_price: 未設定 → 135.11
+  - reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格180.14から、韓国ETFはETFでも半導体・為替・地政学リスクが乗るため10/18/25%下で設定
 
-### BUYZONE US AUR
+### BUYZONE US ISRG
 
-- 入力：BUYZONE US AUR|4.97|3.98|2.98|初期基準: 2026-07-05時点の直近価格6.63から、autonomous_drivingのボラ/質を考慮して段階設定
+- 入力：BUYZONE US ISRG|374.89|332.29|289.69|初期基準: 2026-07-05時点の直近価格426.01から、medical_roboticsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 4.97
-  - main_buy_price: 未設定 → 3.98
-  - strong_buy_price: 未設定 → 2.98
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格6.63から、autonomous_drivingのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 374.89
+  - main_buy_price: 未設定 → 332.29
+  - strong_buy_price: 未設定 → 289.69
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格426.01から、medical_roboticsのボラ/質を考慮して段階設定
 
-### BUYZONE US TMDX
+### BUYZONE US SPGI
 
-- 入力：BUYZONE US TMDX|56.47|48.2|39.94|初期基準: 2026-07-05時点の直近価格68.86から、medical_deviceのボラ/質を考慮して段階設定
+- 入力：BUYZONE US SPGI|387.1|343.11|299.13|初期基準: 2026-07-05時点の直近価格439.89から、financial_dataのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 56.47
-  - main_buy_price: 未設定 → 48.2
-  - strong_buy_price: 未設定 → 39.94
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格68.86から、medical_deviceのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 387.1
+  - main_buy_price: 未設定 → 343.11
+  - strong_buy_price: 未設定 → 299.13
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格439.89から、financial_dataのボラ/質を考慮して段階設定
 
-### BUYZONE US NOW
+### BUYZONE US MELI
 
-- 入力：BUYZONE US NOW|87.18|74.42|61.67|初期基準: 2026-07-05時点の直近価格106.32から、cloud_saasのボラ/質を考慮して段階設定
+- 入力：BUYZONE US MELI|1445.96|1269.62|1058.02|初期基準: 2026-07-05時点の直近価格1763.36から、ecommerce_fintechのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 87.18
-  - main_buy_price: 未設定 → 74.42
-  - strong_buy_price: 未設定 → 61.67
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格106.32から、cloud_saasのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 1445.96
+  - main_buy_price: 未設定 → 1269.62
+  - strong_buy_price: 未設定 → 1058.02
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1763.36から、ecommerce_fintechのボラ/質を考慮して段階設定
 
-### BUYZONE US RDW
+### BUYZONE US TMO
 
-- 入力：BUYZONE US RDW|8.48|6.79|5.09|初期基準: 2026-07-05時点の直近価格11.31から、spaceのボラ/質を考慮して段階設定
+- 入力：BUYZONE US TMO|471.1|429.22|382.11|初期基準: 2026-07-05時点の直近価格523.44から、life_scienceのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 8.48
-  - main_buy_price: 未設定 → 6.79
-  - strong_buy_price: 未設定 → 5.09
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格11.31から、spaceのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 471.1
+  - main_buy_price: 未設定 → 429.22
+  - strong_buy_price: 未設定 → 382.11
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格523.44から、life_scienceのボラ/質を考慮して段階設定
 
-### BUYZONE US TRMB
+### BUYZONE US META
 
-- 入力：BUYZONE US TRMB|46.68|41.37|36.07|初期基準: 2026-07-05時点の直近価格53.04から、industrial_techのボラ/質を考慮して段階設定
+- 入力：BUYZONE US META|524.61|477.98|425.52|初期基準: 2026-07-05時点の直近価格582.9から、ai_ad_platformのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 46.68
-  - main_buy_price: 未設定 → 41.37
-  - strong_buy_price: 未設定 → 36.07
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格53.04から、industrial_techのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 524.61
+  - main_buy_price: 未設定 → 477.98
+  - strong_buy_price: 未設定 → 425.52
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格582.9から、ai_ad_platformのボラ/質を考慮して段階設定
 
-### BUYZONE US VEEV
+### BUYZONE US IONQ
 
-- 入力：BUYZONE US VEEV|169.61|150.34|131.06|初期基準: 2026-07-05時点の直近価格192.74から、healthcare_saasのボラ/質を考慮して段階設定
+- 入力：BUYZONE US IONQ|34.38|24.56|17.19|初期基準: 2026-07-05時点の直近価格49.12から、quantumのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 169.61
-  - main_buy_price: 未設定 → 150.34
-  - strong_buy_price: 未設定 → 131.06
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格192.74から、healthcare_saasのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 34.38
+  - main_buy_price: 未設定 → 24.56
+  - strong_buy_price: 未設定 → 17.19
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格49.12から、quantumのボラ/質を考慮して段階設定
 
-### BUYZONE US PYPL
+### BUYZONE US RGTI
 
-- 入力：BUYZONE US PYPL|40.01|35.47|30.92|初期基準補正: 2026-07-05時点の直近価格45.47から、低PERでも成長鈍化・競争環境の構造リスクを考慮して12/22/32%下で設定
+- 入力：BUYZONE US RGTI|12.56|8.97|6.28|初期基準: 2026-07-05時点の直近価格17.94から、quantumのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 40.01
-  - main_buy_price: 未設定 → 35.47
-  - strong_buy_price: 未設定 → 30.92
-  - reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格45.47から、低PERでも成長鈍化・競争環境の構造リスクを考慮して12/22/32%下で設定
+  - watch_price: 未設定 → 12.56
+  - main_buy_price: 未設定 → 8.97
+  - strong_buy_price: 未設定 → 6.28
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格17.94から、quantumのボラ/質を考慮して段階設定
 
-### BUYZONE US TEM
+### BUYZONE US SDGR
 
-- 入力：BUYZONE US TEM|45.2|36.16|27.12|初期基準: 2026-07-05時点の直近価格60.27から、ai_healthcareのボラ/質を考慮して段階設定
+- 入力：BUYZONE US SDGR|12.66|10.13|7.6|初期基準: 2026-07-05時点の直近価格16.88から、ai_drug_discoveryのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 45.2
-  - main_buy_price: 未設定 → 36.16
-  - strong_buy_price: 未設定 → 27.12
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格60.27から、ai_healthcareのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 12.66
+  - main_buy_price: 未設定 → 10.13
+  - strong_buy_price: 未設定 → 7.6
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格16.88から、ai_drug_discoveryのボラ/質を考慮して段階設定
 
-### BUYZONE US FICO
+### BUYZONE US RXRX
 
-- 入力：BUYZONE US FICO|1042.08|915.0|762.5|初期基準: 2026-07-05時点の直近価格1270.83から、financial_dataのボラ/質を考慮して段階設定
+- 入力：BUYZONE US RXRX|2.85|2.28|1.71|初期基準: 2026-07-05時点の直近価格3.8から、ai_drug_discoveryのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1042.08
-  - main_buy_price: 未設定 → 915.0
-  - strong_buy_price: 未設定 → 762.5
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1270.83から、financial_dataのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 2.85
+  - main_buy_price: 未設定 → 2.28
+  - strong_buy_price: 未設定 → 1.71
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3.8から、ai_drug_discoveryのボラ/質を考慮して段階設定
 
-### BUYZONE US AAOI
+### BUYZONE US QCOM
 
-- 入力：BUYZONE US AAOI|90.71|72.57|54.43|初期基準: 2026-07-05時点の直近価格120.95から、optical_communicationのボラ/質を考慮して段階設定
+- 入力：BUYZONE US QCOM|144.53|123.37|102.23|初期基準: 2026-07-05時点の直近価格176.25から、semiconductorのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 90.71
-  - main_buy_price: 未設定 → 72.57
-  - strong_buy_price: 未設定 → 54.43
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格120.95から、optical_communicationのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 144.53
+  - main_buy_price: 未設定 → 123.37
+  - strong_buy_price: 未設定 → 102.23
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格176.25から、semiconductorのボラ/質を考慮して段階設定
 
-### BUYZONE US OUST
+### BUYZONE US HSAI
 
-- 入力：BUYZONE US OUST|37.38|29.9|22.43|初期基準: 2026-07-05時点の直近価格49.84から、lidarのボラ/質を考慮して段階設定
+- 入力：BUYZONE US HSAI|12.89|10.31|7.74|初期基準: 2026-07-05時点の直近価格17.19から、lidarのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 37.38
-  - main_buy_price: 未設定 → 29.9
-  - strong_buy_price: 未設定 → 22.43
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格49.84から、lidarのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 12.89
+  - main_buy_price: 未設定 → 10.31
+  - strong_buy_price: 未設定 → 7.74
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格17.19から、lidarのボラ/質を考慮して段階設定
 
-### BUYZONE US APH
+### BUYZONE US PL
 
-- 入力：BUYZONE US APH|134.96|118.5|98.75|初期基準: 2026-07-05時点の直近価格164.59から、connector_sensorのボラ/質を考慮して段階設定
+- 入力：BUYZONE US PL|23.54|18.83|14.12|初期基準: 2026-07-05時点の直近価格31.38から、satellite_dataのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 134.96
-  - main_buy_price: 未設定 → 118.5
-  - strong_buy_price: 未設定 → 98.75
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格164.59から、connector_sensorのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 23.54
+  - main_buy_price: 未設定 → 18.83
+  - strong_buy_price: 未設定 → 14.12
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格31.38から、satellite_dataのボラ/質を考慮して段階設定
 
-### BUYZONE US ASPI
+### BUYZONE US V
 
-- 入力：BUYZONE US ASPI|3.94|2.81|1.97|初期基準: 2026-07-05時点の直近価格5.63から、nuclear_isotopeのボラ/質を考慮して段階設定
+- 入力：BUYZONE US V|325.92|296.95|264.35|初期基準: 2026-07-05時点の直近価格362.13から、payment_networkのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 3.94
-  - main_buy_price: 未設定 → 2.81
-  - strong_buy_price: 未設定 → 1.97
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格5.63から、nuclear_isotopeのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 325.92
+  - main_buy_price: 未設定 → 296.95
+  - strong_buy_price: 未設定 → 264.35
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格362.13から、payment_networkのボラ/質を考慮して段階設定

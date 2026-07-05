@@ -1,9 +1,9 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-07-05T22:13:43.319044+09:00",
+  "generated_at_jst": "2026-07-05T22:15:08.072764+09:00",
   "active_count": 73,
   "active_us_count": 48,
-  "buyzone_missing_count": 58,
+  "buyzone_missing_count": 43,
   "buyzone_invalid_count": 0,
   "buyzone_legacy_ready_count": 0,
   "tv_missing_count": 48,
