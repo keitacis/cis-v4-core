@@ -1,6 +1,6 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-07-05T22:15:08.152913+09:00",
+  "generated_at_jst": "2026-07-05T22:15:50.212290+09:00",
   "watchlist_count": 73,
   "us_count": 48,
   "tv_count": 0,
@@ -10,11 +10,11 @@
   "tv_missing_count": 48,
   "tv_stale_or_unknown_count": 0,
   "tv_extra_count": 0,
-  "buyzone_count": 30,
-  "buyzone_missing_count": 43,
+  "buyzone_count": 45,
+  "buyzone_missing_count": 28,
   "buyzone_extra_count": 0,
   "warnings": [
     "TradingView未設定：48銘柄",
-    "買い場基準未設定：43銘柄"
+    "買い場基準未設定：28銘柄"
   ]
 }

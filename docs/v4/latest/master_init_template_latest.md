@@ -11,7 +11,7 @@
 
 - active銘柄：73
 - 米国株active銘柄：48
-- 買い場基準未設定：43
+- 買い場基準未設定：28
 - 買い場基準不正：0
 - 旧buy-zone CSVから変換候補あり：0
 - TradingView未設定/要区分入力：48
@@ -26,7 +26,6 @@
 
 - 改行 part 01: [開く](master_init_buyzone_blank_part_01.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_01.txt)
 - 改行 part 02: [開く](master_init_buyzone_blank_part_02.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_02.txt)
-- 改行 part 03: [開く](master_init_buyzone_blank_part_03.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_03.txt)
 
 ### TradingView 分割
 
@@ -50,21 +49,6 @@ PCや長文貼り付けに慣れている場合はこちらを使えます。iPh
 価格を空欄のまま使ってはいけません。打診・本命・強く買いたい価格を入れてから使います。
 
 ```text
-BUYZONE US VRTX|打診|本命|強く買いたい|根拠
-BUYZONE US DIS|打診|本命|強く買いたい|根拠
-BUYZONE US KVYO|打診|本命|強く買いたい|根拠
-BUYZONE US DKNG|打診|本命|強く買いたい|根拠
-BUYZONE US CRSP|打診|本命|強く買いたい|根拠
-BUYZONE US BEAM|打診|本命|強く買いたい|根拠
-BUYZONE US ETN|打診|本命|強く買いたい|根拠
-BUYZONE US MSTR|打診|本命|強く買いたい|根拠
-BUYZONE US POET|打診|本命|強く買いたい|根拠
-BUYZONE US KITT|打診|本命|強く買いたい|根拠
-BUYZONE US AXTI|打診|本命|強く買いたい|根拠
-BUYZONE US COHR|打診|本命|強く買いたい|根拠
-BUYZONE US ANET|打診|本命|強く買いたい|根拠
-BUYZONE US DDOG|打診|本命|強く買いたい|根拠
-BUYZONE US SNOW|打診|本命|強く買いたい|根拠
 BUYZONE US OPTX|打診|本命|強く買いたい|根拠
 BUYZONE US AEM|打診|本命|強く買いたい|根拠
 BUYZONE US ZETA|打診|本命|強く買いたい|根拠

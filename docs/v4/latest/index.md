@@ -7,7 +7,7 @@
 - 買い場アラート: error
 - 米国株騰落: TV更新後、米国株騰落未再生成
 - 週間騰落: TV更新後、週間騰落未再生成
-- 初期マスター投入テンプレート: BUYZONE未設定43件 / TV未設定48件
+- 初期マスター投入テンプレート: BUYZONE未設定28件 / TV未設定48件
 - TradingView月次自動確認: TV取得失敗48件
 - TradingView月次候補反映: RuntimeError: 候補コマンドファイルが存在しないか空です: /home/runner/work/cis-v4-core/cis-v4-core/docs/v4/latest/tv_monthly_refresh_apply_commands.txt
 - 月次メンテナンス: partial
