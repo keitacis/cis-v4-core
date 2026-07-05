@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 """Patch CIS v4 TradingView logic for analyst distribution.
 
-v2 fix: the first version matched a compact one-line snippet too strictly and
-failed before making any code changes. This version patches normal Python source
-with whitespace-tolerant regexes.
+v5 fix: v4 still had one escaped-quote f-string insertion in Buy Alert display and one fragile indentation insertion in the monthly unchanged report. This version removes escaped quotes from inserted f-string expressions, captures indentation for report insertion, and keeps the compile gate.
 
 This patch intentionally uses TradingView data only. It does not add Yahoo,
 MarketWatch, TipRanks, MarketBeat, or any other substitute data provider.
@@ -172,21 +170,30 @@ def patch_tv_monthly_refresh() -> None:
     if '"strong_sell_count", getattr(old, "strong_sell_count", None)' not in text:
         text = sub_once(text, r'def\s+diff_fields\(old:\s*Optional\[TVSnapshot\],\s*new:\s*FetchedTV\)\s*->\s*List\[str\]:.*?(?=def\s+split_lines)', diff_fields_block, "diff_fields distribution checks")
 
-    if "分布：{new.get('strong_buy_count'" not in text:
+    if "dist_values = [" not in text:
         text = sub_once(
             text,
             r'(\s*lines\.append\(f"- 新：\{new\.get\(\'coverage_status\'\)\} / \{new\.get\(\'rating\'\)\} / \{new\.get\(\'analyst_count\'\)\}人 / \{new\.get\(\'avg_target_price\'\)\}"\)\s*\n)',
-            r'\1'
-            r'            lines.append(f"- 分布：{new.get(\'strong_buy_count\') if new.get(\'strong_buy_count\') is not None else \'未取得\'} / {new.get(\'buy_count\') if new.get(\'buy_count\') is not None else \'未取得\'} / {new.get(\'hold_count\') if new.get(\'hold_count\') is not None else \'未取得\'} / {new.get(\'sell_count\') if new.get(\'sell_count\') is not None else \'未取得\'} / {new.get(\'strong_sell_count\') if new.get(\'strong_sell_count\') is not None else \'未取得\'}")\n',
+            r"""
+\1            dist_values = [
+                new.get("strong_buy_count") if new.get("strong_buy_count") is not None else "未取得",
+                new.get("buy_count") if new.get("buy_count") is not None else "未取得",
+                new.get("hold_count") if new.get("hold_count") is not None else "未取得",
+                new.get("sell_count") if new.get("sell_count") is not None else "未取得",
+                new.get("strong_sell_count") if new.get("strong_sell_count") is not None else "未取得",
+            ]
+            lines.append("- 分布：" + " / ".join(str(v) for v in dist_values))
+""",
             "candidate report distribution display",
         )
 
     if "分布:" not in text.split("## 値は同じ・確認済み", 1)[-1]:
         text = sub_once(
             text,
-            r'lines\.append\(f"- \{c\[\'key\'\]\}：\{new\.get\(\'rating\'\)\} / \{new\.get\(\'analyst_count\'\)\}人 / \{new\.get\(\'avg_target_price\'\)\}"\)',
-            'lines.append(f"- {c[\'key\']}：{new.get(\'rating\')} / {new.get(\'analyst_count\')}人 / {new.get(\'avg_target_price\')} / 分布:{new.get(\'strong_buy_count\') if new.get(\'strong_buy_count\') is not None else \'未取得\'}/{new.get(\'buy_count\') if new.get(\'buy_count\') is not None else \'未取得\'}/{new.get(\'hold_count\') if new.get(\'hold_count\') is not None else \'未取得\'}/{new.get(\'sell_count\') if new.get(\'sell_count\') is not None else \'未取得\'}/{new.get(\'strong_sell_count\') if new.get(\'strong_sell_count\') is not None else \'未取得\'}")',
+            '(?m)^(?P<indent>\\s*)lines\\.append\\(f"- \\{c\\[\\\'key\\\'\\]\\}：\\{new\\.get\\(\\\'rating\\\'\\)\\} / \\{new\\.get\\(\\\'analyst_count\\\'\\)\\}人 / \\{new\\.get\\(\\\'avg_target_price\\\'\\)\\}"\\)\\s*$',
+            '\\g<indent>dist_values = [\n\\g<indent>    new.get("strong_buy_count") if new.get("strong_buy_count") is not None else "未取得",\n\\g<indent>    new.get("buy_count") if new.get("buy_count") is not None else "未取得",\n\\g<indent>    new.get("hold_count") if new.get("hold_count") is not None else "未取得",\n\\g<indent>    new.get("sell_count") if new.get("sell_count") is not None else "未取得",\n\\g<indent>    new.get("strong_sell_count") if new.get("strong_sell_count") is not None else "未取得",\n\\g<indent>]\n\\g<indent>lines.append("- {}：{} / {}人 / {} / 分布:{}".format(\n\\g<indent>    c["key"],\n\\g<indent>    new.get("rating"),\n\\g<indent>    new.get("analyst_count"),\n\\g<indent>    new.get("avg_target_price"),\n\\g<indent>    "/".join(str(v) for v in dist_values),\n\\g<indent>))',
             "unchanged report distribution display",
+            flags=re.M,
         )
 
     write(path, text)
@@ -208,7 +215,7 @@ def patch_us_report(path: Path) -> None:
         text = sub_once(
             text,
             r'(?m)^(?P<indent>\s*)f"- アナリスト人数：\{ac\}人"\s*if\s*ac\s*is\s*not\s*None\s*else\s*f"- アナリスト人数：\{na\}",\s*$',
-            r'\g<indent>f"- アナリスト人数：{ac}人" if ac is not None else f"- アナリスト人数：{na}",\n\g<indent>f"- アナリスト分布：{r.get(\'tv_distribution\') if cov == \'covered\' else na}",',
+            r'\g<indent>f"- アナリスト人数：{ac}人" if ac is not None else f"- アナリスト人数：{na}",\n\g<indent>"- アナリスト分布：" + str(r.get("tv_distribution") if cov == "covered" else na),',
             f"{path.name} display distribution",
             flags=re.M,
         )
@@ -232,7 +239,7 @@ def patch_buy_alert() -> None:
         text = sub_once(
             text,
             r'(?m)^(?P<indent>\s*)f"- TVアナリスト人数：\{r\.get\(\'tv_analyst_count\'\) if r\.get\(\'tv_analyst_count\'\) is not None else \'なし\'\}",\s*$',
-            r'\g<indent>f"- TVアナリスト人数：{r.get(\'tv_analyst_count\') if r.get(\'tv_analyst_count\') is not None else \'なし\'}",\n\g<indent>f"- TVアナリスト分布：{r.get(\'tv_distribution\') if r.get(\'tv_distribution\') else \'未取得\'}",',
+            r'\g<indent>"- TVアナリスト人数：" + str(r.get("tv_analyst_count") if r.get("tv_analyst_count") is not None else "なし"),\n\g<indent>"- TVアナリスト分布：" + str(r.get("tv_distribution") if r.get("tv_distribution") else "未取得"),',
             "buy_alert display distribution",
             flags=re.M,
         )
@@ -246,7 +253,7 @@ def main() -> int:
     patch_us_report(SCRIPTS / "cis_daily_us.py")
     patch_us_report(SCRIPTS / "cis_weekly_performance.py")
     patch_buy_alert()
-    print("TV distribution patch v2 applied. TradingView-only logic; no substitute data providers added.")
+    print("TV distribution patch v5 applied. TradingView-only logic; no substitute data providers added.")
     return 0
 
 
