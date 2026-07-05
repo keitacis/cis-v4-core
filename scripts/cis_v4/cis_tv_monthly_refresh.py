@@ -58,12 +58,12 @@ EXCHANGE_CANDIDATES = ["NASDAQ", "NYSE", "AMEX", "NYSEARCA", "BATS", "OTC"]
 # so try conservative alternatives. Unknown columns should only fail this
 # refresh report; they must never damage the saved snapshot.
 SCANNER_COLUMN_SETS = [
-    ["name", "description", "exchange", "analyst_rating", "number_of_analysts", "target_price_average"],
-    ["name", "description", "exchange", "Analyst Rating", "number_of_analysts", "target_price_average"],
-    ["name", "description", "exchange", "recommendation_mark", "number_of_analysts", "target_price_average"],
-    ["name", "description", "exchange", "analysts_count", "target_price_average", "analyst_rating"],
+    ["name", "description", "exchange", "analyst_rating", "target_price_average", "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold", "analyst_rating_sell", "analyst_rating_strong_sell"],
+    ["name", "description", "exchange", "analyst_rating", "number_of_analysts", "target_price_average", "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold", "analyst_rating_sell", "analyst_rating_strong_sell"],
+    ["name", "description", "exchange", "Analyst Rating", "number_of_analysts", "target_price_average", "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold", "analyst_rating_sell", "analyst_rating_strong_sell"],
+    ["name", "description", "exchange", "recommendation_mark", "number_of_analysts", "target_price_average", "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold", "analyst_rating_sell", "analyst_rating_strong_sell"],
+    ["name", "description", "exchange", "analyst_rating", "analysts_count", "target_price_average", "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold", "analyst_rating_sell", "analyst_rating_strong_sell"],
 ]
-
 CANDIDATE_MANIFEST_FILENAME = "tv_monthly_refresh_candidate_manifest.json"
 CANDIDATE_FILE_PATTERNS = [
     "tv_monthly_refresh_apply_commands*.txt",
@@ -100,13 +100,38 @@ class FetchedTV:
     source: str
     exchange: Optional[str] = None
     raw: Optional[Dict[str, Any]] = None
+    strong_buy_count: Optional[int] = None
+    buy_count: Optional[int] = None
+    hold_count: Optional[int] = None
+    sell_count: Optional[int] = None
+    strong_sell_count: Optional[int] = None
+
+    def distribution_values(self) -> List[Optional[int]]:
+        return [self.strong_buy_count, self.buy_count, self.hold_count, self.sell_count, self.strong_sell_count]
+
+    def distribution_total(self) -> Optional[int]:
+        vals = self.distribution_values()
+        if all(v is None for v in vals):
+            return None
+        return sum(int(v or 0) for v in vals)
+
+    def distribution_label(self) -> str:
+        total = self.distribution_total()
+        if total is None:
+            return "未取得"
+        return f"強買{self.strong_buy_count or 0} / 買{self.buy_count or 0} / 中立{self.hold_count or 0} / 売{self.sell_count or 0} / 強売{self.strong_sell_count or 0}"
 
     def to_command(self) -> str:
         reason = f"TradingView monthly auto-check {now_jst().strftime('%Y/%m')}"
         if self.coverage_status == "covered":
+            total = self.distribution_total()
+            if total and self.analyst_count == total:
+                return (
+                    f"TV US {self.symbol}|{self.rating}|{self.analyst_count}|{self.avg_target_price:.2f}|"
+                    f"{self.strong_buy_count or 0}|{self.buy_count or 0}|{self.hold_count or 0}|{self.sell_count or 0}|{self.strong_sell_count or 0}|{reason}"
+                )
             return f"TV US {self.symbol}|{self.rating}|{self.analyst_count}|{self.avg_target_price:.2f}|{reason}"
         return f"TV US {self.symbol}|{self.coverage_status}|{reason}"
-
 
 def normalize_rating(value: Any) -> Optional[str]:
     if value is None:
@@ -140,6 +165,32 @@ def normalize_rating(value: Any) -> Optional[str]:
         return None
 
 
+def _first_int(values: Dict[str, Any], keys: Iterable[str]) -> Optional[int]:
+    for k in keys:
+        n = safe_int(values.get(k))
+        if n is not None:
+            return n
+    return None
+
+
+def distribution_from_values(values: Dict[str, Any]) -> Dict[str, Optional[int]]:
+    return {
+        "strong_buy_count": _first_int(values, ["analyst_rating_strong_buy", "strong_buy", "strongBuy", "recommendation_strong_buy", "analyst_strong_buy"]),
+        "buy_count": _first_int(values, ["analyst_rating_buy", "buy", "recommendation_buy", "analyst_buy"]),
+        "hold_count": _first_int(values, ["analyst_rating_hold", "analyst_rating_neutral", "hold", "neutral", "recommendation_hold", "analyst_hold"]),
+        "sell_count": _first_int(values, ["analyst_rating_sell", "sell", "recommendation_sell", "analyst_sell"]),
+        "strong_sell_count": _first_int(values, ["analyst_rating_strong_sell", "strong_sell", "strongSell", "recommendation_strong_sell", "analyst_strong_sell"]),
+    }
+
+
+def distribution_total(dist: Dict[str, Optional[int]]) -> Optional[int]:
+    vals = list(dist.values())
+    if all(v is None for v in vals):
+        return None
+    total = sum(int(v or 0) for v in vals)
+    return total if total > 0 else None
+
+
 def candidate_from_values(symbol: str, values: Dict[str, Any], source: str, exchange: Optional[str] = None) -> Optional[FetchedTV]:
     rating_keys = ["analyst_rating", "Analyst Rating", "recommendation_mark", "rating", "recommendation"]
     count_keys = ["number_of_analysts", "analysts_count", "analyst_count", "analyst_count_current"]
@@ -149,20 +200,33 @@ def candidate_from_values(symbol: str, values: Dict[str, Any], source: str, exch
         rating = normalize_rating(values.get(k))
         if rating:
             break
-    analyst_count = None
-    for k in count_keys:
-        analyst_count = safe_int(values.get(k))
-        if analyst_count is not None:
-            break
+    dist = distribution_from_values(values)
+    dist_total = distribution_total(dist)
+    analyst_count = dist_total
+    if analyst_count is None:
+        for k in count_keys:
+            analyst_count = safe_int(values.get(k))
+            if analyst_count is not None:
+                break
     avg_target = None
     for k in target_keys:
         avg_target = safe_float(values.get(k))
         if avg_target is not None:
             break
     if rating and analyst_count and analyst_count > 0 and avg_target and avg_target > 0:
-        return FetchedTV(symbol=symbol, market="US", coverage_status="covered", rating=rating, analyst_count=analyst_count, avg_target_price=avg_target, source=source, exchange=exchange, raw=values)
+        return FetchedTV(
+            symbol=symbol,
+            market="US",
+            coverage_status="covered",
+            rating=rating,
+            analyst_count=analyst_count,
+            avg_target_price=avg_target,
+            source=source,
+            exchange=exchange,
+            raw=values,
+            **dist,
+        )
     return None
-
 
 def load_fixture() -> Dict[str, FetchedTV]:
     path = os.getenv("CIS_TV_REFRESH_FIXTURE") or os.getenv("CIS_TV_REFRESH_TEST_FIXTURE")
@@ -184,11 +248,17 @@ def load_fixture() -> Dict[str, FetchedTV]:
             avg_target = safe_float(row.get("avg_target_price"))
             if not rating or not analyst_count or not avg_target:
                 raise ValueError(f"fixture covered行が不正です: US:{symbol}")
-            out[f"US:{symbol}"] = FetchedTV(symbol, "US", "covered", rating, analyst_count, avg_target, "fixture", row.get("exchange"), row)
+            out[f"US:{symbol}"] = FetchedTV(
+                symbol, "US", "covered", rating, analyst_count, avg_target, "fixture", row.get("exchange"), row,
+                strong_buy_count=safe_int(row.get("strong_buy_count")),
+                buy_count=safe_int(row.get("buy_count")),
+                hold_count=safe_int(row.get("hold_count")),
+                sell_count=safe_int(row.get("sell_count")),
+                strong_sell_count=safe_int(row.get("strong_sell_count")),
+            )
         else:
             out[f"US:{symbol}"] = FetchedTV(symbol, "US", cov, None, None, None, "fixture", row.get("exchange"), row)
     return out
-
 
 def _regex_json_value(text: str, keys: Iterable[str]) -> Any:
     for key in keys:
@@ -220,6 +290,11 @@ def fetch_from_tradingview_forecast_page(symbol: str) -> Tuple[Optional[FetchedT
                 "analyst_rating": _regex_json_value(text, ["analyst_rating", "Analyst Rating", "recommendation", "recommendation_mark"]),
                 "number_of_analysts": _regex_json_value(text, ["number_of_analysts", "analysts_count", "analyst_count"]),
                 "target_price_average": _regex_json_value(text, ["target_price_average", "price_target_average", "average_target_price", "avg_target_price"]),
+                "analyst_rating_strong_buy": _regex_json_value(text, ["analyst_rating_strong_buy", "strong_buy", "strongBuy"]),
+                "analyst_rating_buy": _regex_json_value(text, ["analyst_rating_buy", "buy"]),
+                "analyst_rating_hold": _regex_json_value(text, ["analyst_rating_hold", "analyst_rating_neutral", "hold", "neutral"]),
+                "analyst_rating_sell": _regex_json_value(text, ["analyst_rating_sell", "sell"]),
+                "analyst_rating_strong_sell": _regex_json_value(text, ["analyst_rating_strong_sell", "strong_sell", "strongSell"]),
             }
             cand = candidate_from_values(symbol, values, source="TradingView forecast page", exchange=ex)
             if cand:
@@ -230,7 +305,6 @@ def fetch_from_tradingview_forecast_page(symbol: str) -> Tuple[Optional[FetchedT
         except Exception as e:
             errors.append(f"{ex}: {type(e).__name__}: {e}")
     return None, " / ".join(errors[-3:]) if errors else "forecast page取得不可"
-
 
 def scanner_request(tickers: List[str], columns: List[str]) -> Dict[str, Any]:
     payload = {
@@ -294,11 +368,15 @@ def tv_snapshot_to_dict(s: TVSnapshot) -> Dict[str, Any]:
         "rating": s.rating,
         "analyst_count": s.analyst_count,
         "avg_target_price": s.avg_target_price,
+        "strong_buy_count": getattr(s, "strong_buy_count", None),
+        "buy_count": getattr(s, "buy_count", None),
+        "hold_count": getattr(s, "hold_count", None),
+        "sell_count": getattr(s, "sell_count", None),
+        "strong_sell_count": getattr(s, "strong_sell_count", None),
         "updated_at": s.updated_at,
         "source": s.source,
         "reason": s.reason,
     }
-
 
 def diff_fields(old: Optional[TVSnapshot], new: FetchedTV) -> List[str]:
     if old is None:
@@ -309,6 +387,11 @@ def diff_fields(old: Optional[TVSnapshot], new: FetchedTV) -> List[str]:
         ("rating", old.rating, new.rating),
         ("analyst_count", old.analyst_count, new.analyst_count),
         ("avg_target_price", old.avg_target_price, new.avg_target_price),
+        ("strong_buy_count", getattr(old, "strong_buy_count", None), new.strong_buy_count),
+        ("buy_count", getattr(old, "buy_count", None), new.buy_count),
+        ("hold_count", getattr(old, "hold_count", None), new.hold_count),
+        ("sell_count", getattr(old, "sell_count", None), new.sell_count),
+        ("strong_sell_count", getattr(old, "strong_sell_count", None), new.strong_sell_count),
     ]
     for label, a, b in checks:
         if a != b:
@@ -320,7 +403,6 @@ def diff_fields(old: Optional[TVSnapshot], new: FetchedTV) -> List[str]:
                 bb = b if b not in [None, ""] else "未設定"
             out.append(f"{label}: {aa} → {bb}")
     return out
-
 
 def split_lines(lines: List[str], size: int = 15) -> List[List[str]]:
     return [lines[i:i + size] for i in range(0, len(lines), size)]

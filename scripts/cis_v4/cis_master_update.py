@@ -204,34 +204,68 @@ def make_tv_update(cmd: Dict[str, Any]) -> Dict[str, Any]:
         raise ValueError(f"TV更新はUSのみ対応です: {cmd['raw']}")
     parts = cmd["parts"]
     if len(parts) < 2:
-        raise ValueError(f"TV更新は TV US SYMBOL｜rating｜analyst_count｜avg_target_price｜reason または TV US SYMBOL｜no_coverage/not_applicable｜reason 形式です: {cmd['raw']}")
+        raise ValueError(
+            f"TV更新は TV US SYMBOL｜rating｜analyst_count｜avg_target_price｜reason、"
+            f"または TV US SYMBOL｜rating｜analyst_count｜avg_target_price｜strong_buy｜buy｜hold｜sell｜strong_sell｜reason 形式です: {cmd['raw']}"
+        )
+
+    def nonnegative_int(value: Any, label: str) -> int:
+        n = safe_int(value)
+        if n is None or n < 0:
+            raise ValueError(f"{label} は0以上の整数が必要です: {value}")
+        return int(n)
+
+    def parse_distribution(start: int, analyst_count: int) -> Tuple[Dict[str, int], int]:
+        dist = {
+            "strong_buy_count": nonnegative_int(parts[start], "Strong Buy人数"),
+            "buy_count": nonnegative_int(parts[start + 1], "Buy人数"),
+            "hold_count": nonnegative_int(parts[start + 2], "Hold/Neutral人数"),
+            "sell_count": nonnegative_int(parts[start + 3], "Sell人数"),
+            "strong_sell_count": nonnegative_int(parts[start + 4], "Strong Sell人数"),
+        }
+        total = sum(dist.values())
+        if total <= 0:
+            raise ValueError(f"アナリスト分布の合計が0です: {cmd['raw']}")
+        if analyst_count != total:
+            raise ValueError(
+                f"アナリスト人数と分布合計が一致しません: analyst_count={analyst_count} distribution_total={total} / {cmd['raw']}"
+            )
+        return dist, total
 
     first = parts[1]
     explicit_status = is_coverage_token(first)
     coverage_status = parse_coverage_status(first) if explicit_status else "covered"
-
     if coverage_status == "covered":
+        distribution: Dict[str, int] = {}
         if explicit_status:
-            if len(parts) not in {5, 6}:
+            if len(parts) not in {5, 6, 10, 11}:
                 raise ValueError(
-                    f"covered更新は TV US SYMBOL｜covered｜rating｜analyst_count｜avg_target_price｜reason 形式です。"
-                    f"余計な列または不足列があります: {cmd['raw']}"
+                    f"covered更新は TV US SYMBOL｜covered｜rating｜analyst_count｜avg_target_price｜reason、"
+                    f"または分布付き形式です。余計な列または不足列があります: {cmd['raw']}"
                 )
             rating = parse_rating(parts[2])
             analyst_count = require_positive_int(parts[3], "アナリスト人数")
             avg_target_price = require_positive_number(parts[4], "平均目標株価")
-            reason = parts[5] if len(parts) == 6 else "月次更新"
+            if len(parts) in {10, 11}:
+                distribution, _total = parse_distribution(5, analyst_count)
+                reason = parts[10] if len(parts) == 11 else "月次更新"
+            else:
+                reason = parts[5] if len(parts) == 6 else "月次更新"
         else:
-            if len(parts) not in {4, 5}:
+            if len(parts) not in {4, 5, 9, 10}:
                 raise ValueError(
-                    f"TV更新は TV US SYMBOL｜rating｜analyst_count｜avg_target_price｜reason 形式です。"
-                    f"余計な列または不足列があります: {cmd['raw']}"
+                    f"TV更新は TV US SYMBOL｜rating｜analyst_count｜avg_target_price｜reason、"
+                    f"または分布付き形式です。余計な列または不足列があります: {cmd['raw']}"
                 )
             rating = parse_rating(parts[1])
             analyst_count = require_positive_int(parts[2], "アナリスト人数")
             avg_target_price = require_positive_number(parts[3], "平均目標株価")
-            reason = parts[4] if len(parts) == 5 else "月次更新"
-        return {
+            if len(parts) in {9, 10}:
+                distribution, _total = parse_distribution(4, analyst_count)
+                reason = parts[9] if len(parts) == 10 else "月次更新"
+            else:
+                reason = parts[4] if len(parts) == 5 else "月次更新"
+        out = {
             "symbol": cmd["symbol"],
             "market": "US",
             "coverage_status": "covered",
@@ -242,11 +276,14 @@ def make_tv_update(cmd: Dict[str, Any]) -> Dict[str, Any]:
             "source": "TradingView",
             "reason": reason,
         }
+        if distribution:
+            out.update(distribution)
+        return out
 
     if len(parts) not in {2, 3}:
         raise ValueError(
             f"{coverage_status}更新は TV US SYMBOL｜{coverage_status}｜reason 形式です。"
-            f"rating/人数/目標株価など余計な列は入れないでください: {cmd['raw']}"
+            f"rating/人数/目標株価/分布など余計な列は入れないでください: {cmd['raw']}"
         )
     reason = parts[2] if len(parts) == 3 else ("TradingViewにアナリスト予想なし" if coverage_status == "no_coverage" else "TradingView対象外")
     return {
@@ -454,7 +491,7 @@ def main() -> int:
                     raise ValueError(f"BUYZONE更新対象がactiveな監視リストにありません: {k} / 先にWatchlist Updateで追加してください。")
                 if cmd["kind"] == "TV":
                     new = make_tv_update(cmd)
-                    fields = ["coverage_status", "rating", "analyst_count", "avg_target_price", "source", "reason"]
+                    fields = ["coverage_status", "rating", "analyst_count", "avg_target_price", "strong_buy_count", "buy_count", "hold_count", "sell_count", "strong_sell_count", "source", "reason"]
                 else:
                     new = make_buyzone_update(cmd)
                     fields = ["watch_price", "main_buy_price", "strong_buy_price", "reason"]

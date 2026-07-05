@@ -18,6 +18,7 @@ from cis_core import (
     fetch_price,
     timestamp_jst,
     tv_upside,
+    tv_distribution_label,
     write_error_report,
     write_report,
 )
@@ -95,6 +96,7 @@ def main() -> int:
                 "tv_reason": tv.reason if tv else "",
                 "tv_rating": tv.rating if tv else None,
                 "tv_analyst_count": tv.analyst_count if tv else None,
+                "tv_distribution": tv_distribution_label(tv) if tv else "未取得",
                 "tv_avg_target_price": tv.avg_target_price if tv else None,
                 "tv_upside_pct": tv_upside(p.latest_price, tv),
                 "tv_updated_at": updated_at,
@@ -166,6 +168,7 @@ def main() -> int:
                 f"- TradingView区分：{tv_status_label(cov)}",
                 f"- TradingViewレーティング：{r.get('tv_rating') or na}",
                 f"- アナリスト人数：{ac}人" if ac is not None else f"- アナリスト人数：{na}",
+                "- アナリスト分布：" + str(r.get("tv_distribution") if cov == "covered" else na),
                 f"- 平均目標株価：{fmt_price(r.get('tv_avg_target_price'), 'US') if cov == 'covered' else na}",
                 f"- 現在価格→平均目標株価乖離率：{fmt_pct(r.get('tv_upside_pct')) if cov == 'covered' else na}",
                 f"- TV更新：{r.get('tv_freshness')}",

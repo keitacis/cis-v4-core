@@ -20,6 +20,7 @@ from cis_core import (
     safe_float,
     timestamp_jst,
     tv_upside,
+    tv_distribution_label,
     write_error_report,
     write_report,
 )
@@ -155,6 +156,7 @@ def main() -> int:
                 "tv_status_label": "日本株は対象外" if item.market != "US" else tv_status_label(tv.coverage_status if tv else None),
                 "tv_rating": tv.rating if tv else None,
                 "tv_analyst_count": tv.analyst_count if tv else None,
+                "tv_distribution": tv_distribution_label(tv) if tv else "未取得",
                 "tv_avg_target_price": tv.avg_target_price if tv else None,
                 "tv_updated_at": tv.updated_at if tv else None,
                 "tv_age_days": round(tv_age, 1) if tv_age is not None else None,
@@ -329,7 +331,8 @@ def main() -> int:
                 lines += [
                     f"- TradingView：{r.get('tv_status_label')}",
                     f"- TVレーティング：{r.get('tv_rating') or 'なし'}",
-                    f"- TVアナリスト人数：{r.get('tv_analyst_count') if r.get('tv_analyst_count') is not None else 'なし'}",
+                    "- TVアナリスト人数：" + str(r.get("tv_analyst_count") if r.get("tv_analyst_count") is not None else "なし"),
+                    "- TVアナリスト分布：" + str(r.get("tv_distribution") if r.get("tv_distribution") else "未取得"),
                     f"- TV平均目標株価：{fmt_price(r.get('tv_avg_target_price'), market)}",
                     f"- 現在値→TV平均目標株価：{fmt_pct(r.get('tv_upside_pct'))}",
                     f"- TV更新：{r.get('tv_updated_at') or '未設定'}" + (f"（{r.get('tv_age_days')}日前）" if r.get('tv_age_days') is not None else ""),
