@@ -1,0 +1,74 @@
+﻿symbol,market,name,description,theme
+AVAV,US,AeroVironment,軍用ドローン・無人機,defense_drone
+AXON,US,Axon Enterprise,警察向けテーザー・ボディカメラ,public_safety
+AUR,US,Aurora Innovation,自動運転トラック技術,autonomous_driving
+TMDX,US,TransMedics Group,臓器移植保存・輸送システム,medical_device
+NOW,US,ServiceNow,業務クラウド・ITワークフロー,cloud_saas
+RDW,US,Redwire,宇宙インフラ・衛星部品,space
+TRMB,US,Trimble,測位・建設農業テック,industrial_tech
+VEEV,US,Veeva Systems,製薬業界向けクラウドSaaS,healthcare_saas
+PYPL,US,PayPal,オンライン決済,fintech
+TEM,US,Tempus AI,AI医療・精密医療,ai_healthcare
+FICO,US,Fair Isaac,信用スコア・金融リスク分析,financial_data
+AAOI,US,Applied Optoelectronics,光通信部品,optical_communication
+OUST,US,Ouster,LiDARセンサー,lidar
+APH,US,Amphenol,電子コネクタ・センサー,connector_sensor
+ASPI,US,ASP Isotopes,核燃料・同位体濃縮,nuclear_isotope
+NBIS,US,Nebius Group,AIクラウド・GPUインフラ,ai_cloud
+EWY,US,iShares MSCI South Korea ETF,韓国株ETF,etf_korea
+ISRG,US,Intuitive Surgical,手術支援ロボット,medical_robotics
+SPGI,US,S&P Global,金融データ・格付け,financial_data
+MELI,US,MercadoLibre,南米EC・決済,ecommerce_fintech
+TMO,US,Thermo Fisher Scientific,分析機器・ライフサイエンス,life_science
+META,US,Meta Platforms,SNS・広告・AI,ai_ad_platform
+IONQ,US,IonQ,量子コンピューター,quantum
+RGTI,US,Rigetti Computing,量子コンピューター,quantum
+SDGR,US,Schrodinger,AI創薬ソフト,ai_drug_discovery
+RXRX,US,Recursion Pharmaceuticals,AI創薬,ai_drug_discovery
+QCOM,US,Qualcomm,半導体・通信チップ,semiconductor
+HSAI,US,Hesai Group,LiDAR,lidar
+PL,US,Planet Labs,衛星画像,satellite_data
+V,US,Visa,カード決済ネットワーク,payment_network
+VRTX,US,Vertex Pharmaceuticals,バイオ医薬,biotech
+DIS,US,Walt Disney,メディア・テーマパーク,media_themepark
+KVYO,US,Klaviyo,ECマーケティングSaaS,saas_marketing
+DKNG,US,DraftKings,スポーツベッティング,sports_entertainment
+CRSP,US,CRISPR Therapeutics,遺伝子編集,gene_editing
+BEAM,US,Beam Therapeutics,遺伝子編集,gene_editing
+ETN,US,Eaton,電力機器・データセンター,electrical_equipment
+MSTR,US,MicroStrategy,ビットコイン保有企業,bitcoin_proxy
+POET,US,POET Technologies,光半導体・フォトニクス,photonics
+KITT,US,Nauticus Robotics,海洋ロボティクス,robotics
+AXTI,US,AXT,化合物半導体基板,compound_semiconductor
+COHR,US,Coherent,光通信・レーザー部品,optical_laser
+ANET,US,Arista Networks,データセンターネットワーク,datacenter_network
+DDOG,US,Datadog,クラウド監視SaaS,cloud_monitoring
+SNOW,US,Snowflake,データクラウド,data_cloud
+OPTX,US,Syntec Optics,精密光学・フォトニクス,precision_optics
+AEM,US,Agnico Eagle Mines,金鉱株,gold_miner
+ZETA,US,Zeta Global,マーケティングAI,marketing_ai
+7974,JP,任天堂,ゲーム,game
+6383,JP,ダイフク,物流自動化,logistics_automation
+5401,JP,日本製鉄,鉄鋼,steel
+4901,JP,富士フイルム,医療素材,medical_materials
+3407,JP,旭化成,総合化学,chemical
+3402,JP,東レ,繊維素材,material
+3405,JP,クラレ,化学素材,chemical_material
+2871,JP,ニチレイ,冷凍食品,frozen_food
+8601,JP,大和証券グループ本社,証券,securities
+8410,JP,セブン銀行,銀行ATM,bank_atm
+6902,JP,デンソー,車載部品,auto_parts
+6758,JP,ソニーグループ,エンタメ半導体,entertainment_semiconductor
+5020,JP,ENEOSホールディングス,石油エネルギー,energy
+4063,JP,信越化学工業,半導体材料,semiconductor_materials
+4042,JP,東ソー,化学,chemical
+1911,JP,住友林業,住宅木材,housing_wood
+1928,JP,積水ハウス,住宅,housing
+6326,JP,クボタ,農機,agricultural_machinery
+7267,JP,ホンダ,自動車,automobile
+6501,JP,日立製作所,総合電機,industrial_electronics
+9861,JP,吉野家ホールディングス,外食,restaurant
+7821,JP,前田工繊,土木資材,civil_engineering_materials
+1377,JP,サカタのタネ,種苗,seeds
+6287,JP,サトーホールディングス,自動認識,auto_id
+4368,JP,扶桑化学工業,電子材料,electronic_materials

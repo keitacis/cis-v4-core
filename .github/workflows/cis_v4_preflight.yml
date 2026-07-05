@@ -1,0 +1,48 @@
+name: CIS v4 Preflight
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run CIS v4 preflight
+        id: preflight
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_v4_preflight.py
+      - name: Rebuild CIS v4 home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit preflight outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Run CIS v4 preflight"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if preflight failed
+        if: steps.preflight.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: exit 1

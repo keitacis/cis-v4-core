@@ -1,0 +1,59 @@
+name: CIS v4 Buy Alert
+
+on:
+  workflow_dispatch:
+  schedule:
+    # JST 月〜金08:00。買い場アラートを自動更新する。
+    - cron: '0 23 * * 0-4'
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  buy-alert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yfinance pandas
+      - name: Run buy alert
+        id: run_report
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_buy_alert.py
+      - name: Rebuild CIS home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CIS buy alert"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if buy alert failed
+        if: steps.run_report.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: exit 1

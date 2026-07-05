@@ -1,0 +1,102 @@
+name: CIS v4 Apply TV Monthly Candidate
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "apply_all_success = 取得成功分を全反映して更新日も刷新 / changed_only = 値が変わった候補だけ反映"
+        required: true
+        default: "apply_all_success"
+        type: choice
+        options:
+          - apply_all_success
+          - changed_only
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  apply-tv-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yfinance pandas
+      - name: Validate and apply TV candidate
+        id: apply_candidate
+        continue-on-error: true
+        env:
+          APPLY_TV_MODE: ${{ inputs.mode }}
+          CIS_TV_CANDIDATE_MAX_AGE_DAYS: "45"
+        run: python scripts/cis_v4/cis_apply_tv_monthly_candidate.py
+      - name: Rebuild master init template
+        id: rebuild_master_init
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_master_init_template.py
+      - name: Run monthly maintenance
+        id: run_monthly
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_monthly_maintenance.py
+      - name: Rebuild buy alert
+        id: rebuild_buy_alert
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_buy_alert.py
+      - name: Optional rebuild daily US after TV refresh
+        id: rebuild_daily_us
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_daily_us.py
+      - name: Optional rebuild weekly performance after TV refresh
+        id: rebuild_weekly
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_weekly_performance.py
+      - name: Rebuild CIS home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit outputs and data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in data/tv_snapshot.json data/master_update_history.json output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Apply CIS TV monthly candidate"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if required steps failed
+        if: steps.apply_candidate.outcome == 'failure' || steps.rebuild_master_init.outcome == 'failure' || steps.run_monthly.outcome == 'failure' || steps.rebuild_buy_alert.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: |
+          echo "apply_candidate=${{ steps.apply_candidate.outcome }}"
+          echo "master_init_template=${{ steps.rebuild_master_init.outcome }}"
+          echo "monthly_maintenance=${{ steps.run_monthly.outcome }}"
+          echo "buy_alert=${{ steps.rebuild_buy_alert.outcome }}"
+          echo "daily_us_optional=${{ steps.rebuild_daily_us.outcome }}"
+          echo "weekly_optional=${{ steps.rebuild_weekly.outcome }}"
+          echo "cis_home=${{ steps.rebuild_home.outcome }}"
+          exit 1

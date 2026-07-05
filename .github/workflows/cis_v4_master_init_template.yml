@@ -1,0 +1,53 @@
+name: CIS v4 Master Init Template
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  master-init-template:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate master initialization template
+        id: run_template
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_master_init_template.py
+      - name: Rebuild CIS home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit template report
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Generate CIS master init template"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if template generation failed
+        if: steps.run_template.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: exit 1

@@ -1,0 +1,75 @@
+name: CIS v4 Master Update
+
+on:
+  workflow_dispatch:
+    inputs:
+      commands:
+        description: 'TV/BUYZONE commands. Example: TV US AVAV｜Strong Buy｜14｜250.00｜monthly update ; TV US EWY｜not_applicable｜ETF ; TV US KITT｜no_coverage｜no analyst coverage ; BUYZONE US AVAV｜120｜100｜85｜reason'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  master-update:
+    runs-on: ubuntu-latest
+    env:
+      COMMANDS: ${{ inputs.commands }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run master update
+        id: run_update
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_master_update.py
+      - name: Rebuild master init template
+        id: rebuild_master_init
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_master_init_template.py
+      - name: Rebuild monthly maintenance
+        id: rebuild_monthly
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_monthly_maintenance.py
+      - name: Rebuild CIS home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit master and report
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in data/tv_snapshot.json data/buyzone_master.json data/master_update_history.json output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CIS masters"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if any rebuild step failed
+        if: steps.run_update.outcome == 'failure' || steps.rebuild_master_init.outcome == 'failure' || steps.rebuild_monthly.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: |
+          echo "master_update=${{ steps.run_update.outcome }}"
+          echo "master_init_template=${{ steps.rebuild_master_init.outcome }}"
+          echo "monthly_maintenance=${{ steps.rebuild_monthly.outcome }}"
+          echo "cis_home=${{ steps.rebuild_home.outcome }}"
+          exit 1

@@ -1,0 +1,71 @@
+name: CIS v4 TV Monthly Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # JST 毎月1日09:20。TradingView候補を自動取得し、差分候補と反映用コマンドを生成する。
+    - cron: '20 0 1 * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tv-monthly-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run TV monthly refresh candidate generator
+        id: refresh
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_tv_monthly_refresh.py
+      - name: Rebuild master init template
+        id: rebuild_master_init
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_master_init_template.py
+      - name: Run monthly maintenance
+        id: run_monthly
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_monthly_maintenance.py
+      - name: Rebuild CIS home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CIS TV monthly refresh"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if required steps failed
+        if: steps.refresh.outcome == 'failure' || steps.rebuild_master_init.outcome == 'failure' || steps.run_monthly.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: |
+          echo "refresh=${{ steps.refresh.outcome }}"
+          echo "master_init_template=${{ steps.rebuild_master_init.outcome }}"
+          echo "monthly_maintenance=${{ steps.run_monthly.outcome }}"
+          echo "cis_home=${{ steps.rebuild_home.outcome }}"
+          exit 1

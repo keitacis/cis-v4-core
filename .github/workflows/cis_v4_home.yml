@@ -1,0 +1,52 @@
+name: CIS v4 Home
+
+on:
+  workflow_dispatch:
+  schedule:
+    # JST 毎日06:00。Homeの状態表示を自動更新する。
+    - cron: '0 21 * * *'
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  cis-home:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build CIS home
+        id: home
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CIS home"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if CIS home failed
+        if: steps.home.outcome != 'success'
+        run: |
+          echo "CIS Home failed after writing error outputs."
+          exit 1

@@ -1,0 +1,67 @@
+name: CIS v4 Apply Seed
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "missing_only または overwrite_after_backup"
+        required: true
+        default: "missing_only"
+      confirm:
+        description: "上書き時のみ APPLY_CIS_V4_SEED_OVERWRITE_AFTER_BACKUP と入力"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  apply-seed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - name: Apply seed safely
+        id: apply_seed
+        continue-on-error: true
+        env:
+          CIS_V4_SEED_MODE: ${{ github.event.inputs.mode }}
+          CIS_V4_SEED_CONFIRM: ${{ github.event.inputs.confirm }}
+        run: python scripts/cis_v4/cis_v4_apply_seed.py
+      - name: Rebuild watchlist template
+        id: rebuild_watchlist_template
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_watchlist_template.py
+      - name: Rebuild CIS v4 home
+        id: rebuild_home
+        if: always()
+        continue-on-error: true
+        run: python scripts/cis_v4/cis_home.py
+      - name: Commit seed outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4 data/watchlist_master.csv data/company_master.csv data/buyzone_master.json data/tv_snapshot.json data/cis_settings.json data/watchlist_history.json data/master_update_history.json data/backups; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Apply CIS v4 seed"
+            git pull --rebase --autostash
+            git push
+          fi
+      - name: Fail if apply seed failed
+        if: steps.apply_seed.outcome == 'failure' || steps.rebuild_watchlist_template.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
+        run: exit 1
