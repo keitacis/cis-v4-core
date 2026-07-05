@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "partial",
-    "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+    "generated_at_jst": "2026-07-06T00:55:45.101856+09:00",
     "us_watchlist_count": 48,
     "fetched_count": 0,
     "candidate_change_count": 0,
@@ -15,7 +15,7 @@
   "manifest": {
     "version": 1,
     "status": "partial",
-    "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+    "generated_at_jst": "2026-07-06T00:55:45.101856+09:00",
     "apply_command_count": 0,
     "changed_command_count": 0,
     "summary": {
@@ -113,42 +113,42 @@
     {
       "key": "US:AAOI",
       "symbol": "AAOI",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:OUST",
       "symbol": "OUST",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:APH",
       "symbol": "APH",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:ASPI",
       "symbol": "ASPI",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:NBIS",
       "symbol": "NBIS",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:EWY",
       "symbol": "EWY",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: HTTPError 404 / OTC: HTTPError 404"
     },
     {
       "key": "US:ISRG",
       "symbol": "ISRG",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:SPGI",
       "symbol": "SPGI",
-      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
     },
     {
       "key": "US:MELI",

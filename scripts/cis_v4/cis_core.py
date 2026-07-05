@@ -464,6 +464,11 @@ class TVSnapshot:
     rating: Optional[str] = None
     analyst_count: Optional[int] = None
     avg_target_price: Optional[float] = None
+    strong_buy_count: Optional[int] = None
+    buy_count: Optional[int] = None
+    hold_count: Optional[int] = None
+    sell_count: Optional[int] = None
+    strong_sell_count: Optional[int] = None
     updated_at: Optional[str] = None
     source: str = "TradingView"
     reason: str = ""
@@ -610,6 +615,11 @@ def load_tv_snapshot() -> Dict[str, TVSnapshot]:
             rating=rating,
             analyst_count=analyst_count,
             avg_target_price=avg_target_price,
+            strong_buy_count=safe_int(row.get("strong_buy_count")),
+            buy_count=safe_int(row.get("buy_count")),
+            hold_count=safe_int(row.get("hold_count")),
+            sell_count=safe_int(row.get("sell_count")),
+            strong_sell_count=safe_int(row.get("strong_sell_count")),
             updated_at=str(row.get("updated_at") or "").strip() or None,
             source=str(row.get("source") or "TradingView"),
             reason=str(row.get("reason") or "").strip(),
@@ -801,6 +811,50 @@ def tv_upside(latest_price: Optional[float], tv: Optional[TVSnapshot]) -> Option
     return (tv.avg_target_price - latest_price) / latest_price * 100.0
 
 
+
+
+def tv_distribution_dict(tv: Optional[TVSnapshot]) -> Dict[str, int]:
+    """Return stored TradingView analyst distribution counts.
+
+    Keys are normalized CIS field names. Missing legacy rows return {} so older
+    snapshots remain valid until the next monthly refresh populates distribution.
+    """
+    if not tv or tv.coverage_status != "covered":
+        return {}
+    pairs = [
+        ("strong_buy_count", getattr(tv, "strong_buy_count", None)),
+        ("buy_count", getattr(tv, "buy_count", None)),
+        ("hold_count", getattr(tv, "hold_count", None)),
+        ("sell_count", getattr(tv, "sell_count", None)),
+        ("strong_sell_count", getattr(tv, "strong_sell_count", None)),
+    ]
+    if all(v is None for _k, v in pairs):
+        return {}
+    out: Dict[str, int] = {}
+    for k, v in pairs:
+        n = safe_int(v)
+        out[k] = int(n) if n is not None and n >= 0 else 0
+    return out
+
+
+def tv_distribution_total(tv: Optional[TVSnapshot]) -> Optional[int]:
+    counts = tv_distribution_dict(tv)
+    if not counts:
+        return None
+    return sum(counts.values())
+
+
+def tv_distribution_label(tv: Optional[TVSnapshot]) -> str:
+    counts = tv_distribution_dict(tv)
+    if not counts:
+        return "未取得"
+    return (
+        f"強買{counts.get('strong_buy_count', 0)} / "
+        f"買{counts.get('buy_count', 0)} / "
+        f"中立{counts.get('hold_count', 0)} / "
+        f"売{counts.get('sell_count', 0)} / "
+        f"強売{counts.get('strong_sell_count', 0)}"
+    )
 def report_paths(stem: str) -> Dict[str, Path]:
     return {
         "output_md": OUTPUT_DIR / f"{stem}_latest.md",
