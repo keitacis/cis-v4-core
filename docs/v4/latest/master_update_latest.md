@@ -1,140 +1,122 @@
 # CIS マスター更新
 
-生成日時：2026/07/05 22:16 JST
+生成日時：2026/07/05 22:17 JST
 
 ## 反映内容
 
-### BUYZONE US OPTX
+### BUYZONE JP 5020
 
-- 入力：BUYZONE US OPTX|7.61|5.44|3.81|初期基準: 2026-07-05時点の直近価格10.875から、precision_opticsのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 5020|1074|977|855|初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 7.61
-  - main_buy_price: 未設定 → 5.44
-  - strong_buy_price: 未設定 → 3.81
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格10.875から、precision_opticsのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 1074.0
+  - main_buy_price: 未設定 → 977.0
+  - strong_buy_price: 未設定 → 855.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定
 
-### BUYZONE US AEM
+### BUYZONE JP 4063
 
-- 入力：BUYZONE US AEM|138.47|126.17|115.40|初期基準補正: 2026-07-05時点の直近価格153.86から、金鉱大型でも金価格・採掘コスト連動の株価ボラを考慮して10/18/25%下で設定
+- 入力：BUYZONE JP 4063|5705|4870|4035|初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 138.47
-  - main_buy_price: 未設定 → 126.17
-  - strong_buy_price: 未設定 → 115.4
-  - reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格153.86から、金鉱大型でも金価格・採掘コスト連動の株価ボラを考慮して10/18/25%下で設定
+  - watch_price: 未設定 → 5705.0
+  - main_buy_price: 未設定 → 4870.0
+  - strong_buy_price: 未設定 → 4035.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定
 
-### BUYZONE US ZETA
+### BUYZONE JP 4042
 
-- 入力：BUYZONE US ZETA|15.52|12.42|9.31|初期基準: 2026-07-05時点の直近価格20.7から、marketing_aiのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 4042|2485|2260|1979|初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 15.52
-  - main_buy_price: 未設定 → 12.42
-  - strong_buy_price: 未設定 → 9.31
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格20.7から、marketing_aiのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 2485.0
+  - main_buy_price: 未設定 → 2260.0
+  - strong_buy_price: 未設定 → 1979.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定
 
-### BUYZONE JP 7974
+### BUYZONE JP 1911
 
-- 入力：BUYZONE JP 7974|6420|5850|5205|初期基準: 2026-07-05時点の直近価格7132から、gameのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 1911|1198|1089|953|初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 6420.0
-  - main_buy_price: 未設定 → 5850.0
-  - strong_buy_price: 未設定 → 5205.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格7132から、gameのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 1198.0
+  - main_buy_price: 未設定 → 1089.0
+  - strong_buy_price: 未設定 → 953.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定
 
-### BUYZONE JP 6383
+### BUYZONE JP 1928
 
-- 入力：BUYZONE JP 6383|5995|5120|4240|初期基準: 2026-07-05時点の直近価格7313から、logistics_automationのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 1928|3100|2825|2515|初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 5995.0
-  - main_buy_price: 未設定 → 5120.0
-  - strong_buy_price: 未設定 → 4240.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格7313から、logistics_automationのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 3100.0
+  - main_buy_price: 未設定 → 2825.0
+  - strong_buy_price: 未設定 → 2515.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定
 
-### BUYZONE JP 5401
+### BUYZONE JP 6326
 
-- 入力：BUYZONE JP 5401|482.4|438.6|383.7|初期基準: 2026-07-05時点の直近価格548.2から、steelのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 6326|2415|2195|1922|初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 482.4
-  - main_buy_price: 未設定 → 438.6
-  - strong_buy_price: 未設定 → 383.7
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格548.2から、steelのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 2415.0
+  - main_buy_price: 未設定 → 2195.0
+  - strong_buy_price: 未設定 → 1922.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定
 
-### BUYZONE JP 4901
+### BUYZONE JP 7267
 
-- 入力：BUYZONE JP 4901|3260|2970|2645|初期基準: 2026-07-05時点の直近価格3621から、medical_materialsのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 7267|1364|1240|1085|初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 3260.0
-  - main_buy_price: 未設定 → 2970.0
-  - strong_buy_price: 未設定 → 2645.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3621から、medical_materialsのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 1364.0
+  - main_buy_price: 未設定 → 1240.0
+  - strong_buy_price: 未設定 → 1085.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定
 
-### BUYZONE JP 3407
+### BUYZONE JP 6501
 
-- 入力：BUYZONE JP 3407|1516|1294|1072|初期基準: 2026-07-05時点の直近価格1849から、chemicalのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 6501|3785|3230|2675|初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1516.0
-  - main_buy_price: 未設定 → 1294.0
-  - strong_buy_price: 未設定 → 1072.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1849から、chemicalのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 3785.0
+  - main_buy_price: 未設定 → 3230.0
+  - strong_buy_price: 未設定 → 2675.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定
 
-### BUYZONE JP 3402
+### BUYZONE JP 9861
 
-- 入力：BUYZONE JP 3402|1033|939|821|初期基準: 2026-07-05時点の直近価格1173.5から、materialのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 9861|2715|2475|2200|初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1033.0
-  - main_buy_price: 未設定 → 939.0
-  - strong_buy_price: 未設定 → 821.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1173.5から、materialのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 2715.0
+  - main_buy_price: 未設定 → 2475.0
+  - strong_buy_price: 未設定 → 2200.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定
 
-### BUYZONE JP 3405
+### BUYZONE JP 7821
 
-- 入力：BUYZONE JP 3405|1520|1382|1209|初期基準: 2026-07-05時点の直近価格1727から、chemical_materialのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 7821|1624|1476|1292|初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1520.0
-  - main_buy_price: 未設定 → 1382.0
-  - strong_buy_price: 未設定 → 1209.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1727から、chemical_materialのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 1624.0
+  - main_buy_price: 未設定 → 1476.0
+  - strong_buy_price: 未設定 → 1292.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定
 
-### BUYZONE JP 2871
+### BUYZONE JP 1377
 
-- 入力：BUYZONE JP 2871|1948|1774|1580|初期基準: 2026-07-05時点の直近価格2164から、frozen_foodのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 1377|3750|3415|3040|初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1948.0
-  - main_buy_price: 未設定 → 1774.0
-  - strong_buy_price: 未設定 → 1580.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2164から、frozen_foodのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 3750.0
+  - main_buy_price: 未設定 → 3415.0
+  - strong_buy_price: 未設定 → 3040.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定
 
-### BUYZONE JP 8601
+### BUYZONE JP 6287
 
-- 入力：BUYZONE JP 8601|1482|1347|1179|初期基準: 2026-07-05時点の直近価格1684から、securitiesのボラ/質を考慮して段階設定
+- 入力：BUYZONE JP 6287|2100|1913|1703|初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 1482.0
-  - main_buy_price: 未設定 → 1347.0
-  - strong_buy_price: 未設定 → 1179.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1684から、securitiesのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 2100.0
+  - main_buy_price: 未設定 → 1913.0
+  - strong_buy_price: 未設定 → 1703.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定
 
-### BUYZONE JP 8410
+### BUYZONE JP 4368
 
-- 入力：BUYZONE JP 8410|265.6|245.4|225.2|初期基準補正: 2026-07-05時点の直近価格288.7から、低ボラ寄りでもATM/決済再評価待ちの構造リスクを考慮して8/15/22%下で設定
+- 入力：BUYZONE JP 4368|3550|3030|2510|初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定
 - 変更点：
-  - watch_price: 未設定 → 265.6
-  - main_buy_price: 未設定 → 245.4
-  - strong_buy_price: 未設定 → 225.2
-  - reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格288.7から、低ボラ寄りでもATM/決済再評価待ちの構造リスクを考慮して8/15/22%下で設定
-
-### BUYZONE JP 6902
-
-- 入力：BUYZONE JP 6902|1721|1565|1369|初期基準: 2026-07-05時点の直近価格1956から、auto_partsのボラ/質を考慮して段階設定
-- 変更点：
-  - watch_price: 未設定 → 1721.0
-  - main_buy_price: 未設定 → 1565.0
-  - strong_buy_price: 未設定 → 1369.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1956から、auto_partsのボラ/質を考慮して段階設定
-
-### BUYZONE JP 6758
-
-- 入力：BUYZONE JP 6758|3040|2770|2465|初期基準: 2026-07-05時点の直近価格3380から、entertainment_semiconductorのボラ/質を考慮して段階設定
-- 変更点：
-  - watch_price: 未設定 → 3040.0
-  - main_buy_price: 未設定 → 2770.0
-  - strong_buy_price: 未設定 → 2465.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3380から、entertainment_semiconductorのボラ/質を考慮して段階設定
+  - watch_price: 未設定 → 3550.0
+  - main_buy_price: 未設定 → 3030.0
+  - strong_buy_price: 未設定 → 2510.0
+  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定

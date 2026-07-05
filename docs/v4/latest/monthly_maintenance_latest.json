@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "partial",
-    "generated_at_jst": "2026-07-05T22:16:43.961138+09:00",
+    "generated_at_jst": "2026-07-05T22:17:32.557693+09:00",
     "watchlist_count": 73,
     "us_count": 48,
     "tv_count": 0,
@@ -11,15 +11,183 @@
     "tv_missing_count": 48,
     "tv_stale_or_unknown_count": 0,
     "tv_extra_count": 0,
-    "buyzone_count": 60,
-    "buyzone_missing_count": 13,
+    "buyzone_count": 73,
+    "buyzone_missing_count": 0,
     "buyzone_extra_count": 0,
     "warnings": [
-      "TradingView未設定：48銘柄",
-      "買い場基準未設定：13銘柄"
+      "TradingView未設定：48銘柄"
     ]
   },
   "history": [
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "4368",
+      "raw": "BUYZONE JP 4368|3550|3030|2510|初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 3550.0",
+        "main_buy_price: 未設定 → 3030.0",
+        "strong_buy_price: 未設定 → 2510.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405509+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "6287",
+      "raw": "BUYZONE JP 6287|2100|1913|1703|初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 2100.0",
+        "main_buy_price: 未設定 → 1913.0",
+        "strong_buy_price: 未設定 → 1703.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405504+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "1377",
+      "raw": "BUYZONE JP 1377|3750|3415|3040|初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 3750.0",
+        "main_buy_price: 未設定 → 3415.0",
+        "strong_buy_price: 未設定 → 3040.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405500+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "7821",
+      "raw": "BUYZONE JP 7821|1624|1476|1292|初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 1624.0",
+        "main_buy_price: 未設定 → 1476.0",
+        "strong_buy_price: 未設定 → 1292.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405495+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "9861",
+      "raw": "BUYZONE JP 9861|2715|2475|2200|初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 2715.0",
+        "main_buy_price: 未設定 → 2475.0",
+        "strong_buy_price: 未設定 → 2200.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405491+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "6501",
+      "raw": "BUYZONE JP 6501|3785|3230|2675|初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 3785.0",
+        "main_buy_price: 未設定 → 3230.0",
+        "strong_buy_price: 未設定 → 2675.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405487+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "7267",
+      "raw": "BUYZONE JP 7267|1364|1240|1085|初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 1364.0",
+        "main_buy_price: 未設定 → 1240.0",
+        "strong_buy_price: 未設定 → 1085.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405483+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "6326",
+      "raw": "BUYZONE JP 6326|2415|2195|1922|初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 2415.0",
+        "main_buy_price: 未設定 → 2195.0",
+        "strong_buy_price: 未設定 → 1922.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405477+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "1928",
+      "raw": "BUYZONE JP 1928|3100|2825|2515|初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 3100.0",
+        "main_buy_price: 未設定 → 2825.0",
+        "strong_buy_price: 未設定 → 2515.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405473+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "1911",
+      "raw": "BUYZONE JP 1911|1198|1089|953|初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 1198.0",
+        "main_buy_price: 未設定 → 1089.0",
+        "strong_buy_price: 未設定 → 953.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405467+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "4042",
+      "raw": "BUYZONE JP 4042|2485|2260|1979|初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 2485.0",
+        "main_buy_price: 未設定 → 2260.0",
+        "strong_buy_price: 未設定 → 1979.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405463+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "4063",
+      "raw": "BUYZONE JP 4063|5705|4870|4035|初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 5705.0",
+        "main_buy_price: 未設定 → 4870.0",
+        "strong_buy_price: 未設定 → 4035.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405458+09:00"
+    },
+    {
+      "kind": "BUYZONE",
+      "market": "JP",
+      "symbol": "5020",
+      "raw": "BUYZONE JP 5020|1074|977|855|初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定",
+      "diffs": [
+        "watch_price: 未設定 → 1074.0",
+        "main_buy_price: 未設定 → 977.0",
+        "strong_buy_price: 未設定 → 855.0",
+        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定"
+      ],
+      "updated_at": "2026-07-05T22:17:32.405446+09:00"
+    },
     {
       "kind": "BUYZONE",
       "market": "JP",
@@ -110,175 +278,6 @@
         "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1173.5から、materialのボラ/質を考慮して段階設定"
       ],
       "updated_at": "2026-07-05T22:16:43.801002+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "JP",
-      "symbol": "3407",
-      "raw": "BUYZONE JP 3407|1516|1294|1072|初期基準: 2026-07-05時点の直近価格1849から、chemicalのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 1516.0",
-        "main_buy_price: 未設定 → 1294.0",
-        "strong_buy_price: 未設定 → 1072.0",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1849から、chemicalのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800999+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "JP",
-      "symbol": "4901",
-      "raw": "BUYZONE JP 4901|3260|2970|2645|初期基準: 2026-07-05時点の直近価格3621から、medical_materialsのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 3260.0",
-        "main_buy_price: 未設定 → 2970.0",
-        "strong_buy_price: 未設定 → 2645.0",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3621から、medical_materialsのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800995+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "JP",
-      "symbol": "5401",
-      "raw": "BUYZONE JP 5401|482.4|438.6|383.7|初期基準: 2026-07-05時点の直近価格548.2から、steelのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 482.4",
-        "main_buy_price: 未設定 → 438.6",
-        "strong_buy_price: 未設定 → 383.7",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格548.2から、steelのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800992+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "JP",
-      "symbol": "6383",
-      "raw": "BUYZONE JP 6383|5995|5120|4240|初期基準: 2026-07-05時点の直近価格7313から、logistics_automationのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 5995.0",
-        "main_buy_price: 未設定 → 5120.0",
-        "strong_buy_price: 未設定 → 4240.0",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格7313から、logistics_automationのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800987+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "JP",
-      "symbol": "7974",
-      "raw": "BUYZONE JP 7974|6420|5850|5205|初期基準: 2026-07-05時点の直近価格7132から、gameのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 6420.0",
-        "main_buy_price: 未設定 → 5850.0",
-        "strong_buy_price: 未設定 → 5205.0",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格7132から、gameのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800983+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "ZETA",
-      "raw": "BUYZONE US ZETA|15.52|12.42|9.31|初期基準: 2026-07-05時点の直近価格20.7から、marketing_aiのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 15.52",
-        "main_buy_price: 未設定 → 12.42",
-        "strong_buy_price: 未設定 → 9.31",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格20.7から、marketing_aiのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800979+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "AEM",
-      "raw": "BUYZONE US AEM|138.47|126.17|115.40|初期基準補正: 2026-07-05時点の直近価格153.86から、金鉱大型でも金価格・採掘コスト連動の株価ボラを考慮して10/18/25%下で設定",
-      "diffs": [
-        "watch_price: 未設定 → 138.47",
-        "main_buy_price: 未設定 → 126.17",
-        "strong_buy_price: 未設定 → 115.4",
-        "reason: 未設定 → 初期基準補正: 2026-07-05時点の直近価格153.86から、金鉱大型でも金価格・採掘コスト連動の株価ボラを考慮して10/18/25%下で設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800973+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "OPTX",
-      "raw": "BUYZONE US OPTX|7.61|5.44|3.81|初期基準: 2026-07-05時点の直近価格10.875から、precision_opticsのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 7.61",
-        "main_buy_price: 未設定 → 5.44",
-        "strong_buy_price: 未設定 → 3.81",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格10.875から、precision_opticsのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:16:43.800961+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "SNOW",
-      "raw": "BUYZONE US SNOW|213.32|182.1|150.89|初期基準: 2026-07-05時点の直近価格260.15から、data_cloudのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 213.32",
-        "main_buy_price: 未設定 → 182.1",
-        "strong_buy_price: 未設定 → 150.89",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格260.15から、data_cloudのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:15:50.062833+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "DDOG",
-      "raw": "BUYZONE US DDOG|213.5|182.25|151.01|初期基準: 2026-07-05時点の直近価格260.36から、cloud_monitoringのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 213.5",
-        "main_buy_price: 未設定 → 182.25",
-        "strong_buy_price: 未設定 → 151.01",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格260.36から、cloud_monitoringのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:15:50.062829+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "ANET",
-      "raw": "BUYZONE US ANET|131.19|115.19|95.99|初期基準: 2026-07-05時点の直近価格159.99から、datacenter_networkのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 131.19",
-        "main_buy_price: 未設定 → 115.19",
-        "strong_buy_price: 未設定 → 95.99",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格159.99から、datacenter_networkのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:15:50.062825+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "COHR",
-      "raw": "BUYZONE US COHR|250.02|206.68|166.68|初期基準: 2026-07-05時点の直近価格333.36から、optical_laserのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 250.02",
-        "main_buy_price: 未設定 → 206.68",
-        "strong_buy_price: 未設定 → 166.68",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格333.36から、optical_laserのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:15:50.062817+09:00"
-    },
-    {
-      "kind": "BUYZONE",
-      "market": "US",
-      "symbol": "AXTI",
-      "raw": "BUYZONE US AXTI|39.63|28.31|19.82|初期基準: 2026-07-05時点の直近価格56.62から、compound_semiconductorのボラ/質を考慮して段階設定",
-      "diffs": [
-        "watch_price: 未設定 → 39.63",
-        "main_buy_price: 未設定 → 28.31",
-        "strong_buy_price: 未設定 → 19.82",
-        "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格56.62から、compound_semiconductorのボラ/質を考慮して段階設定"
-      ],
-      "updated_at": "2026-07-05T22:15:50.062813+09:00"
     }
   ]
 }

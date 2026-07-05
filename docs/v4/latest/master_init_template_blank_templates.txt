@@ -1,16 +1,3 @@
-BUYZONE JP 5020|打診|本命|強く買いたい|根拠
-BUYZONE JP 4063|打診|本命|強く買いたい|根拠
-BUYZONE JP 4042|打診|本命|強く買いたい|根拠
-BUYZONE JP 1911|打診|本命|強く買いたい|根拠
-BUYZONE JP 1928|打診|本命|強く買いたい|根拠
-BUYZONE JP 6326|打診|本命|強く買いたい|根拠
-BUYZONE JP 7267|打診|本命|強く買いたい|根拠
-BUYZONE JP 6501|打診|本命|強く買いたい|根拠
-BUYZONE JP 9861|打診|本命|強く買いたい|根拠
-BUYZONE JP 7821|打診|本命|強く買いたい|根拠
-BUYZONE JP 1377|打診|本命|強く買いたい|根拠
-BUYZONE JP 6287|打診|本命|強く買いたい|根拠
-BUYZONE JP 4368|打診|本命|強く買いたい|根拠
 TV US AVAV|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AVAV|no_coverage|TradingViewにアナリスト予想なし  または  TV US AVAV|not_applicable|ETF等のため対象外
 TV US AXON|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AXON|no_coverage|TradingViewにアナリスト予想なし  または  TV US AXON|not_applicable|ETF等のため対象外
 TV US AUR|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AUR|no_coverage|TradingViewにアナリスト予想なし  または  TV US AUR|not_applicable|ETF等のため対象外
