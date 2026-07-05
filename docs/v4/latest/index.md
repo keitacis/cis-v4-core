@@ -1,10 +1,12 @@
 # CIS ホーム
 
-最終更新：2026/07/05 21:14 JST
+最終更新：2026/07/05 21:26 JST
 
 ## 要確認
 
 - 初期マスター投入テンプレート: BUYZONE未設定73件 / TV未設定48件
+- TradingView月次自動確認: TV取得失敗48件
+- 月次メンテナンス: partial
 
 ## 毎日見る
 
@@ -54,13 +56,13 @@
 
 ### ⚠️ 一部注意 初期マスター投入テンプレート
 
-- 更新：2026/07/05 21:14 JST
+- 更新：2026/07/05 21:26 JST
 - [開く](master_init_template_latest.html)
 
-### ⚪ 未生成 TradingView月次自動確認
+### ⚠️ 一部注意 TradingView月次自動確認
 
-- 更新：未生成
-- 状態：まだレポートが作成されていません。GitHub Actionsで該当Workflowを実行すると表示されます。
+- 更新：2026/07/05 21:26 JST
+- [開く](tv_monthly_refresh_latest.html)
 
 ### ⚪ 未生成 TradingView月次候補反映
 
@@ -72,7 +74,7 @@
 - 更新：未生成
 - 状態：まだレポートが作成されていません。GitHub Actionsで該当Workflowを実行すると表示されます。
 
-### ⚪ 未生成 月次メンテナンス
+### ⚠️ 一部注意 月次メンテナンス
 
-- 更新：未生成
-- 状態：まだレポートが作成されていません。GitHub Actionsで該当Workflowを実行すると表示されます。
+- 更新：2026/07/05 21:26 JST
+- [開く](monthly_maintenance_latest.html)

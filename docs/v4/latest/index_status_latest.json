@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-05T21:14:14.434101+09:00",
+  "generated_at_jst": "2026-07-05T21:26:52.952919+09:00",
   "items": {
     "buy_alert": {
       "status": "missing"
@@ -71,7 +71,7 @@
     },
     "master_init_template": {
       "status": "partial",
-      "generated_at_jst": "2026-07-05T21:14:14.362293+09:00",
+      "generated_at_jst": "2026-07-05T21:26:52.823869+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 73,
@@ -81,7 +81,17 @@
       "legacy_files": []
     },
     "tv_monthly_refresh": {
-      "status": "missing"
+      "status": "partial",
+      "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+      "us_watchlist_count": 48,
+      "fetched_count": 0,
+      "candidate_change_count": 0,
+      "unchanged_count": 0,
+      "failed_count": 48,
+      "apply_command_count": 0,
+      "changed_command_count": 0,
+      "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
+      "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。"
     },
     "apply_tv_monthly_candidate": {
       "status": "missing"
@@ -90,7 +100,24 @@
       "status": "missing"
     },
     "monthly_maintenance": {
-      "status": "missing"
+      "status": "partial",
+      "generated_at_jst": "2026-07-05T21:26:52.892435+09:00",
+      "watchlist_count": 73,
+      "us_count": 48,
+      "tv_count": 0,
+      "tv_covered_count": 0,
+      "tv_no_coverage_count": 0,
+      "tv_not_applicable_count": 0,
+      "tv_missing_count": 48,
+      "tv_stale_or_unknown_count": 0,
+      "tv_extra_count": 0,
+      "buyzone_count": 0,
+      "buyzone_missing_count": 73,
+      "buyzone_extra_count": 0,
+      "warnings": [
+        "TradingView未設定：48銘柄",
+        "買い場基準未設定：73銘柄"
+      ]
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "status": "partial",
+  "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+  "apply_command_count": 0,
+  "changed_command_count": 0,
+  "summary": {
+    "us_watchlist_count": 48,
+    "fetched_count": 0,
+    "candidate_change_count": 0,
+    "unchanged_count": 0,
+    "failed_count": 48
+  },
+  "command_files": {
+    "tv_monthly_refresh_apply_commands.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "bytes_utf8": 0
+    },
+    "tv_monthly_refresh_changed_only_commands.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "bytes_utf8": 0
+    },
+    "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "bytes_utf8": 0
+    },
+    "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "bytes_utf8": 0
+    }
+  },
+  "primary_files": {
+    "apply_all_success": "tv_monthly_refresh_apply_commands.txt",
+    "changed_only": "tv_monthly_refresh_changed_only_commands.txt"
+  }
+}
