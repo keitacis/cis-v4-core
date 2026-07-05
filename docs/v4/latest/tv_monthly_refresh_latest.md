@@ -1,6 +1,6 @@
 # CIS TradingView月次自動確認
 
-生成日時：2026/07/05 21:26 JST
+生成日時：2026/07/06 00:55 JST
 
 ## これは何をするレポートか
 
@@ -44,14 +44,14 @@
 - US:PYPL：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
 - US:TEM：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
 - US:FICO：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
-- US:AAOI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:OUST：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:APH：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:ASPI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:NBIS：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:EWY：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:ISRG：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
-- US:SPGI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
+- US:AAOI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:OUST：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:APH：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:ASPI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:NBIS：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:EWY：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: HTTPError 404 / OTC: HTTPError 404
+- US:ISRG：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
+- US:SPGI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404
 - US:MELI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
 - US:TMO：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
 - US:META：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403
