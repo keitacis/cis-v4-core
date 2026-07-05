@@ -1,6 +1,6 @@
 # CIS ホーム
 
-最終更新：2026/07/05 21:06 JST
+最終更新：2026/07/05 21:08 JST
 
 ## 毎日見る
 
@@ -28,10 +28,10 @@
 
 ## メンテナンス
 
-### ⚪ 未生成 CIS v4 Preflight
+### ✅ 更新済み CIS v4 Preflight
 
-- 更新：未生成
-- 状態：まだレポートが作成されていません。GitHub Actionsで該当Workflowを実行すると表示されます。
+- 更新：2026/07/05 21:08 JST
+- [開く](cis_v4_preflight_latest.html)
 
 ### ✅ 更新済み CIS v4 Apply Seed
 

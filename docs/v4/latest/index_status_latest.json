@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-05T21:06:44.477997+09:00",
+  "generated_at_jst": "2026-07-05T21:08:36.892529+09:00",
   "items": {
     "buy_alert": {
       "status": "missing"
@@ -15,7 +15,15 @@
       "status": "missing"
     },
     "cis_v4_preflight": {
-      "status": "missing"
+      "status": "ok",
+      "generated_at_jst": "2026-07-05T21:08:36.820473+09:00",
+      "problems": [],
+      "root_data": {
+        "missing": [],
+        "invalid": [],
+        "all_missing": false,
+        "all_ok": true
+      }
     },
     "cis_v4_apply_seed": {
       "status": "ok",
