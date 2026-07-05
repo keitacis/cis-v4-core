@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-05T21:12:05.080062+09:00",
+  "generated_at_jst": "2026-07-05T21:14:14.434101+09:00",
   "items": {
     "buy_alert": {
       "status": "missing"
@@ -70,7 +70,15 @@
       "status": "missing"
     },
     "master_init_template": {
-      "status": "missing"
+      "status": "partial",
+      "generated_at_jst": "2026-07-05T21:14:14.362293+09:00",
+      "active_count": 73,
+      "active_us_count": 48,
+      "buyzone_missing_count": 73,
+      "buyzone_invalid_count": 0,
+      "buyzone_legacy_ready_count": 0,
+      "tv_missing_count": 48,
+      "legacy_files": []
     },
     "tv_monthly_refresh": {
       "status": "missing"
