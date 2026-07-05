@@ -1,6 +1,114 @@
 {
   "items": [
     {
+      "symbol": "2871",
+      "market": "JP",
+      "watch_price": 1948.0,
+      "main_buy_price": 1774.0,
+      "strong_buy_price": 1580.0,
+      "updated_at": "2026-07-05T22:16:43.799821+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格2164から、frozen_foodのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "3402",
+      "market": "JP",
+      "watch_price": 1033.0,
+      "main_buy_price": 939.0,
+      "strong_buy_price": 821.0,
+      "updated_at": "2026-07-05T22:16:43.799800+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1173.5から、materialのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "3405",
+      "market": "JP",
+      "watch_price": 1520.0,
+      "main_buy_price": 1382.0,
+      "strong_buy_price": 1209.0,
+      "updated_at": "2026-07-05T22:16:43.799811+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1727から、chemical_materialのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "3407",
+      "market": "JP",
+      "watch_price": 1516.0,
+      "main_buy_price": 1294.0,
+      "strong_buy_price": 1072.0,
+      "updated_at": "2026-07-05T22:16:43.799787+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1849から、chemicalのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "4901",
+      "market": "JP",
+      "watch_price": 3260.0,
+      "main_buy_price": 2970.0,
+      "strong_buy_price": 2645.0,
+      "updated_at": "2026-07-05T22:16:43.799764+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格3621から、medical_materialsのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "5401",
+      "market": "JP",
+      "watch_price": 482.4,
+      "main_buy_price": 438.6,
+      "strong_buy_price": 383.7,
+      "updated_at": "2026-07-05T22:16:43.799752+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格548.2から、steelのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "6383",
+      "market": "JP",
+      "watch_price": 5995.0,
+      "main_buy_price": 5120.0,
+      "strong_buy_price": 4240.0,
+      "updated_at": "2026-07-05T22:16:43.799740+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格7313から、logistics_automationのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "6758",
+      "market": "JP",
+      "watch_price": 3040.0,
+      "main_buy_price": 2770.0,
+      "strong_buy_price": 2465.0,
+      "updated_at": "2026-07-05T22:16:43.799860+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格3380から、entertainment_semiconductorのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "6902",
+      "market": "JP",
+      "watch_price": 1721.0,
+      "main_buy_price": 1565.0,
+      "strong_buy_price": 1369.0,
+      "updated_at": "2026-07-05T22:16:43.799851+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1956から、auto_partsのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "7974",
+      "market": "JP",
+      "watch_price": 6420.0,
+      "main_buy_price": 5850.0,
+      "strong_buy_price": 5205.0,
+      "updated_at": "2026-07-05T22:16:43.799727+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格7132から、gameのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "8410",
+      "market": "JP",
+      "watch_price": 265.6,
+      "main_buy_price": 245.4,
+      "strong_buy_price": 225.2,
+      "updated_at": "2026-07-05T22:16:43.799841+09:00",
+      "reason": "初期基準補正: 2026-07-05時点の直近価格288.7から、低ボラ寄りでもATM/決済再評価待ちの構造リスクを考慮して8/15/22%下で設定"
+    },
+    {
+      "symbol": "8601",
+      "market": "JP",
+      "watch_price": 1482.0,
+      "main_buy_price": 1347.0,
+      "strong_buy_price": 1179.0,
+      "updated_at": "2026-07-05T22:16:43.799831+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格1684から、securitiesのボラ/質を考慮して段階設定"
+    },
+    {
       "symbol": "AAOI",
       "market": "US",
       "watch_price": 90.71,
@@ -8,6 +116,15 @@
       "strong_buy_price": 54.43,
       "updated_at": "2026-07-05T22:13:43.185618+09:00",
       "reason": "初期基準: 2026-07-05時点の直近価格120.95から、optical_communicationのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "AEM",
+      "market": "US",
+      "watch_price": 138.47,
+      "main_buy_price": 126.17,
+      "strong_buy_price": 115.4,
+      "updated_at": "2026-07-05T22:16:43.799694+09:00",
+      "reason": "初期基準補正: 2026-07-05時点の直近価格153.86から、金鉱大型でも金価格・採掘コスト連動の株価ボラを考慮して10/18/25%下で設定"
     },
     {
       "symbol": "ANET",
@@ -244,6 +361,15 @@
       "reason": "初期基準: 2026-07-05時点の直近価格106.32から、cloud_saasのボラ/質を考慮して段階設定"
     },
     {
+      "symbol": "OPTX",
+      "market": "US",
+      "watch_price": 7.61,
+      "main_buy_price": 5.44,
+      "strong_buy_price": 3.81,
+      "updated_at": "2026-07-05T22:16:43.799662+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格10.875から、precision_opticsのボラ/質を考慮して段階設定"
+    },
+    {
       "symbol": "OUST",
       "market": "US",
       "watch_price": 37.38,
@@ -404,6 +530,15 @@
       "strong_buy_price": 359.07,
       "updated_at": "2026-07-05T22:15:50.061515+09:00",
       "reason": "初期基準: 2026-07-05時点の直近価格528.04から、biotechのボラ/質を考慮して段階設定"
+    },
+    {
+      "symbol": "ZETA",
+      "market": "US",
+      "watch_price": 15.52,
+      "main_buy_price": 12.42,
+      "strong_buy_price": 9.31,
+      "updated_at": "2026-07-05T22:16:43.799713+09:00",
+      "reason": "初期基準: 2026-07-05時点の直近価格20.7から、marketing_aiのボラ/質を考慮して段階設定"
     }
   ]
 }

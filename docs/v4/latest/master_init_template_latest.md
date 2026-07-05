@@ -1,6 +1,6 @@
 # CIS 初期マスター投入テンプレート
 
-生成日時：2026/07/05 22:15 JST
+生成日時：2026/07/05 22:16 JST
 
 ## 目的
 
@@ -11,7 +11,7 @@
 
 - active銘柄：73
 - 米国株active銘柄：48
-- 買い場基準未設定：28
+- 買い場基準未設定：13
 - 買い場基準不正：0
 - 旧buy-zone CSVから変換候補あり：0
 - TradingView未設定/要区分入力：48
@@ -25,7 +25,6 @@
 価格を入れてから使います。空欄のまま貼らないでください。
 
 - 改行 part 01: [開く](master_init_buyzone_blank_part_01.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_01.txt)
-- 改行 part 02: [開く](master_init_buyzone_blank_part_02.txt) / 1行版: [開く](master_init_buyzone_blank_semicolon_part_02.txt)
 
 ### TradingView 分割
 
@@ -49,21 +48,6 @@ PCや長文貼り付けに慣れている場合はこちらを使えます。iPh
 価格を空欄のまま使ってはいけません。打診・本命・強く買いたい価格を入れてから使います。
 
 ```text
-BUYZONE US OPTX|打診|本命|強く買いたい|根拠
-BUYZONE US AEM|打診|本命|強く買いたい|根拠
-BUYZONE US ZETA|打診|本命|強く買いたい|根拠
-BUYZONE JP 7974|打診|本命|強く買いたい|根拠
-BUYZONE JP 6383|打診|本命|強く買いたい|根拠
-BUYZONE JP 5401|打診|本命|強く買いたい|根拠
-BUYZONE JP 4901|打診|本命|強く買いたい|根拠
-BUYZONE JP 3407|打診|本命|強く買いたい|根拠
-BUYZONE JP 3402|打診|本命|強く買いたい|根拠
-BUYZONE JP 3405|打診|本命|強く買いたい|根拠
-BUYZONE JP 2871|打診|本命|強く買いたい|根拠
-BUYZONE JP 8601|打診|本命|強く買いたい|根拠
-BUYZONE JP 8410|打診|本命|強く買いたい|根拠
-BUYZONE JP 6902|打診|本命|強く買いたい|根拠
-BUYZONE JP 6758|打診|本命|強く買いたい|根拠
 BUYZONE JP 5020|打診|本命|強く買いたい|根拠
 BUYZONE JP 4063|打診|本命|強く買いたい|根拠
 BUYZONE JP 4042|打診|本命|強く買いたい|根拠
