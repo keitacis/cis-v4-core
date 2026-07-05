@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Patch CIS v4 TradingView logic for analyst distribution.
 
-v5 fix: v4 still had one escaped-quote f-string insertion in Buy Alert display and one fragile indentation insertion in the monthly unchanged report. This version removes escaped quotes from inserted f-string expressions, captures indentation for report insertion, and keeps the compile gate.
+v6 fix: remove fragile monthly report distribution-line insertion that caused IndentationError. Distribution is still persisted in candidate commands/tv_snapshot and shown in Daily US, Weekly Performance, and Buy Alert after apply. Compile gate remains enabled.
 
 This patch intentionally uses TradingView data only. It does not add Yahoo,
 MarketWatch, TipRanks, MarketBeat, or any other substitute data provider.
@@ -170,31 +170,11 @@ def patch_tv_monthly_refresh() -> None:
     if '"strong_sell_count", getattr(old, "strong_sell_count", None)' not in text:
         text = sub_once(text, r'def\s+diff_fields\(old:\s*Optional\[TVSnapshot\],\s*new:\s*FetchedTV\)\s*->\s*List\[str\]:.*?(?=def\s+split_lines)', diff_fields_block, "diff_fields distribution checks")
 
-    if "dist_values = [" not in text:
-        text = sub_once(
-            text,
-            r'(\s*lines\.append\(f"- 新：\{new\.get\(\'coverage_status\'\)\} / \{new\.get\(\'rating\'\)\} / \{new\.get\(\'analyst_count\'\)\}人 / \{new\.get\(\'avg_target_price\'\)\}"\)\s*\n)',
-            r"""
-\1            dist_values = [
-                new.get("strong_buy_count") if new.get("strong_buy_count") is not None else "未取得",
-                new.get("buy_count") if new.get("buy_count") is not None else "未取得",
-                new.get("hold_count") if new.get("hold_count") is not None else "未取得",
-                new.get("sell_count") if new.get("sell_count") is not None else "未取得",
-                new.get("strong_sell_count") if new.get("strong_sell_count") is not None else "未取得",
-            ]
-            lines.append("- 分布：" + " / ".join(str(v) for v in dist_values))
-""",
-            "candidate report distribution display",
-        )
-
-    if "分布:" not in text.split("## 値は同じ・確認済み", 1)[-1]:
-        text = sub_once(
-            text,
-            '(?m)^(?P<indent>\\s*)lines\\.append\\(f"- \\{c\\[\\\'key\\\'\\]\\}：\\{new\\.get\\(\\\'rating\\\'\\)\\} / \\{new\\.get\\(\\\'analyst_count\\\'\\)\\}人 / \\{new\\.get\\(\\\'avg_target_price\\\'\\)\\}"\\)\\s*$',
-            '\\g<indent>dist_values = [\n\\g<indent>    new.get("strong_buy_count") if new.get("strong_buy_count") is not None else "未取得",\n\\g<indent>    new.get("buy_count") if new.get("buy_count") is not None else "未取得",\n\\g<indent>    new.get("hold_count") if new.get("hold_count") is not None else "未取得",\n\\g<indent>    new.get("sell_count") if new.get("sell_count") is not None else "未取得",\n\\g<indent>    new.get("strong_sell_count") if new.get("strong_sell_count") is not None else "未取得",\n\\g<indent>]\n\\g<indent>lines.append("- {}：{} / {}人 / {} / 分布:{}".format(\n\\g<indent>    c["key"],\n\\g<indent>    new.get("rating"),\n\\g<indent>    new.get("analyst_count"),\n\\g<indent>    new.get("avg_target_price"),\n\\g<indent>    "/".join(str(v) for v in dist_values),\n\\g<indent>))',
-            "unchanged report distribution display",
-            flags=re.M,
-        )
+    # v6 deliberately does not patch the human-readable monthly report list for
+    # distribution display. The distribution counts are still carried in generated
+    # apply commands, persisted through Master Update, and displayed in Daily US,
+    # Weekly Performance, and Buy Alert after apply. Avoiding this report-only
+    # insertion removes the indentation risk that stopped v5 at py_compile.
 
     write(path, text)
 
@@ -253,7 +233,7 @@ def main() -> int:
     patch_us_report(SCRIPTS / "cis_daily_us.py")
     patch_us_report(SCRIPTS / "cis_weekly_performance.py")
     patch_buy_alert()
-    print("TV distribution patch v5 applied. TradingView-only logic; no substitute data providers added.")
+    print("TV distribution patch v6 applied. TradingView-only logic; no substitute data providers added.")
     return 0
 
 
