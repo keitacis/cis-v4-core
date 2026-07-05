@@ -1,0 +1,3 @@
+UPDATE US OPTX|Syntec Optics|精密光学・フォトニクス|precision_optics
+UPDATE US AEM|Agnico Eagle Mines|金鉱株|gold_miner
+UPDATE US ZETA|Zeta Global|マーケティングAI|marketing_ai

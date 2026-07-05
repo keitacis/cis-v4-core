@@ -1,0 +1,15 @@
+UPDATE US AVAV|AeroVironment|軍用ドローン・無人機|defense_drone
+UPDATE US AXON|Axon Enterprise|警察向けテーザー・ボディカメラ|public_safety
+UPDATE US AUR|Aurora Innovation|自動運転トラック技術|autonomous_driving
+UPDATE US TMDX|TransMedics Group|臓器移植保存・輸送システム|medical_device
+UPDATE US NOW|ServiceNow|業務クラウド・ITワークフロー|cloud_saas
+UPDATE US RDW|Redwire|宇宙インフラ・衛星部品|space
+UPDATE US TRMB|Trimble|測位・建設農業テック|industrial_tech
+UPDATE US VEEV|Veeva Systems|製薬業界向けクラウドSaaS|healthcare_saas
+UPDATE US PYPL|PayPal|オンライン決済|fintech
+UPDATE US TEM|Tempus AI|AI医療・精密医療|ai_healthcare
+UPDATE US FICO|Fair Isaac|信用スコア・金融リスク分析|financial_data
+UPDATE US AAOI|Applied Optoelectronics|光通信部品|optical_communication
+UPDATE US OUST|Ouster|LiDARセンサー|lidar
+UPDATE US APH|Amphenol|電子コネクタ・センサー|connector_sensor
+UPDATE US ASPI|ASP Isotopes|核燃料・同位体濃縮|nuclear_isotope

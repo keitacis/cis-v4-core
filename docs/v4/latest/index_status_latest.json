@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "generated_at_jst": "2026-07-05T21:06:44.477997+09:00",
+  "items": {
+    "buy_alert": {
+      "status": "missing"
+    },
+    "daily_us": {
+      "status": "missing"
+    },
+    "daily_jp": {
+      "status": "missing"
+    },
+    "weekly_performance": {
+      "status": "missing"
+    },
+    "cis_v4_preflight": {
+      "status": "missing"
+    },
+    "cis_v4_apply_seed": {
+      "status": "ok",
+      "generated_at_jst": "2026-07-05T21:06:44.350256+09:00",
+      "actions": [
+        "コピー: data/v4_seed/watchlist_master.csv → data/watchlist_master.csv",
+        "コピー: data/v4_seed/company_master.csv → data/company_master.csv",
+        "コピー: data/v4_seed/buyzone_master.json → data/buyzone_master.json",
+        "コピー: data/v4_seed/tv_snapshot.json → data/tv_snapshot.json",
+        "コピー: data/v4_seed/cis_settings.json → data/cis_settings.json",
+        "コピー: data/v4_seed/watchlist_history.json → data/watchlist_history.json",
+        "コピー: data/v4_seed/master_update_history.json → data/master_update_history.json"
+      ],
+      "errors": [],
+      "checks": [
+        "data/v4_seed/company_master.csv: OK / count=73",
+        "data/v4_seed/watchlist_master.csv: OK / count=73",
+        "data/v4_seed/tv_snapshot.json: OK / count=0",
+        "data/v4_seed/buyzone_master.json: OK / count=0",
+        "data/v4_seed/cis_settings.json: OK / count=12",
+        "data/v4_seed/watchlist_history.json: OK / count=0",
+        "data/v4_seed/master_update_history.json: OK / count=0",
+        "watchlist/company整合性: OK",
+        "staged data/company_master.csv: OK / count=73",
+        "staged data/watchlist_master.csv: OK / count=73",
+        "staged data/tv_snapshot.json: OK / count=0",
+        "staged data/buyzone_master.json: OK / count=0",
+        "staged data/cis_settings.json: OK / count=12",
+        "staged data/watchlist_history.json: OK / count=0",
+        "staged data/master_update_history.json: OK / count=0",
+        "watchlist/company整合性: OK"
+      ]
+    },
+    "watchlist_template": {
+      "status": "ok",
+      "generated_at_jst": "2026-07-05T21:06:44.415709+09:00",
+      "total_count": 73,
+      "active_count": 73,
+      "inactive_count": 0,
+      "active_us_count": 48,
+      "active_jp_count": 25
+    },
+    "watchlist_update": {
+      "status": "missing"
+    },
+    "master_init_template": {
+      "status": "missing"
+    },
+    "tv_monthly_refresh": {
+      "status": "missing"
+    },
+    "apply_tv_monthly_candidate": {
+      "status": "missing"
+    },
+    "master_update": {
+      "status": "missing"
+    },
+    "monthly_maintenance": {
+      "status": "missing"
+    }
+  }
+}

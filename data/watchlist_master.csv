@@ -1,0 +1,74 @@
+symbol,market,name,asset_type,active,category,added_date,notes
+AVAV,US,AeroVironment,stock,true,defense_drone,2026-07-04,軍用ドローン・無人機
+AXON,US,Axon Enterprise,stock,true,public_safety,2026-07-04,警察向けテーザー・ボディカメラ
+AUR,US,Aurora Innovation,stock,true,autonomous_driving,2026-07-04,自動運転トラック技術
+TMDX,US,TransMedics Group,stock,true,medical_device,2026-07-04,臓器移植保存・輸送システム
+NOW,US,ServiceNow,stock,true,cloud_saas,2026-07-04,業務クラウド・ITワークフロー
+RDW,US,Redwire,stock,true,space,2026-07-04,宇宙インフラ・衛星部品
+TRMB,US,Trimble,stock,true,industrial_tech,2026-07-04,測位・建設農業テック
+VEEV,US,Veeva Systems,stock,true,healthcare_saas,2026-07-04,製薬業界向けクラウドSaaS
+PYPL,US,PayPal,stock,true,fintech,2026-07-04,オンライン決済
+TEM,US,Tempus AI,stock,true,ai_healthcare,2026-07-04,AI医療・精密医療
+FICO,US,Fair Isaac,stock,true,financial_data,2026-07-04,信用スコア・金融リスク分析
+AAOI,US,Applied Optoelectronics,stock,true,optical_communication,2026-07-04,光通信部品
+OUST,US,Ouster,stock,true,lidar,2026-07-04,LiDARセンサー
+APH,US,Amphenol,stock,true,connector_sensor,2026-07-04,電子コネクタ・センサー
+ASPI,US,ASP Isotopes,stock,true,nuclear_isotope,2026-07-04,核燃料・同位体濃縮
+NBIS,US,Nebius Group,stock,true,ai_cloud,2026-07-04,AIクラウド・GPUインフラ
+EWY,US,iShares MSCI South Korea ETF,etf,true,etf_korea,2026-07-04,韓国株ETF
+ISRG,US,Intuitive Surgical,stock,true,medical_robotics,2026-07-04,手術支援ロボット
+SPGI,US,S&P Global,stock,true,financial_data,2026-07-04,金融データ・格付け
+MELI,US,MercadoLibre,stock,true,ecommerce_fintech,2026-07-04,南米EC・決済
+TMO,US,Thermo Fisher Scientific,stock,true,life_science,2026-07-04,分析機器・ライフサイエンス
+META,US,Meta Platforms,stock,true,ai_ad_platform,2026-07-04,SNS・広告・AI
+IONQ,US,IonQ,stock,true,quantum,2026-07-04,量子コンピューター
+RGTI,US,Rigetti Computing,stock,true,quantum,2026-07-04,量子コンピューター
+SDGR,US,Schrodinger,stock,true,ai_drug_discovery,2026-07-04,AI創薬ソフト
+RXRX,US,Recursion Pharmaceuticals,stock,true,ai_drug_discovery,2026-07-04,AI創薬
+QCOM,US,Qualcomm,stock,true,semiconductor,2026-07-04,半導体・通信チップ
+HSAI,US,Hesai Group,stock,true,lidar,2026-07-04,LiDAR
+PL,US,Planet Labs,stock,true,satellite_data,2026-07-04,衛星画像
+V,US,Visa,stock,true,payment_network,2026-07-04,カード決済ネットワーク
+VRTX,US,Vertex Pharmaceuticals,stock,true,biotech,2026-07-04,バイオ医薬
+DIS,US,Walt Disney,stock,true,media_themepark,2026-07-04,メディア・テーマパーク
+KVYO,US,Klaviyo,stock,true,saas_marketing,2026-07-04,ECマーケティングSaaS
+DKNG,US,DraftKings,stock,true,sports_entertainment,2026-07-04,スポーツベッティング
+CRSP,US,CRISPR Therapeutics,stock,true,gene_editing,2026-07-04,遺伝子編集
+BEAM,US,Beam Therapeutics,stock,true,gene_editing,2026-07-04,遺伝子編集
+ETN,US,Eaton,stock,true,electrical_equipment,2026-07-04,電力機器・データセンター
+MSTR,US,MicroStrategy,stock,true,bitcoin_proxy,2026-07-04,ビットコイン保有企業
+POET,US,POET Technologies,stock,true,photonics,2026-07-04,光半導体・フォトニクス
+KITT,US,Nauticus Robotics,stock,true,robotics,2026-07-04,海洋ロボティクス
+AXTI,US,AXT,stock,true,compound_semiconductor,2026-07-04,化合物半導体基板
+COHR,US,Coherent,stock,true,optical_laser,2026-07-04,光通信・レーザー部品
+ANET,US,Arista Networks,stock,true,datacenter_network,2026-07-04,データセンターネットワーク
+DDOG,US,Datadog,stock,true,cloud_monitoring,2026-07-04,クラウド監視SaaS
+SNOW,US,Snowflake,stock,true,data_cloud,2026-07-04,データクラウド
+OPTX,US,Syntec Optics,stock,true,precision_optics,2026-07-04,精密光学・フォトニクス
+AEM,US,Agnico Eagle Mines,stock,true,gold_miner,2026-07-04,金鉱株
+ZETA,US,Zeta Global,stock,true,marketing_ai,2026-07-04,マーケティングAI
+7974,JP,任天堂,stock,true,game,2026-07-04,ゲーム
+6383,JP,ダイフク,stock,true,logistics_automation,2026-07-04,物流自動化
+5401,JP,日本製鉄,stock,true,steel,2026-07-04,鉄鋼
+4901,JP,富士フイルム,stock,true,medical_materials,2026-07-04,医療素材
+3407,JP,旭化成,stock,true,chemical,2026-07-04,総合化学
+3402,JP,東レ,stock,true,material,2026-07-04,繊維素材
+3405,JP,クラレ,stock,true,chemical_material,2026-07-04,化学素材
+2871,JP,ニチレイ,stock,true,frozen_food,2026-07-04,冷凍食品
+8601,JP,大和証券グループ本社,stock,true,securities,2026-07-04,証券
+8410,JP,セブン銀行,stock,true,bank_atm,2026-07-04,銀行ATM
+6902,JP,デンソー,stock,true,auto_parts,2026-07-04,車載部品
+6758,JP,ソニーグループ,stock,true,entertainment_semiconductor,2026-07-04,エンタメ半導体
+5020,JP,ENEOSホールディングス,stock,true,energy,2026-07-04,石油エネルギー
+4063,JP,信越化学工業,stock,true,semiconductor_materials,2026-07-04,半導体材料
+4042,JP,東ソー,stock,true,chemical,2026-07-04,化学
+1911,JP,住友林業,stock,true,housing_wood,2026-07-04,住宅木材
+1928,JP,積水ハウス,stock,true,housing,2026-07-04,住宅
+6326,JP,クボタ,stock,true,agricultural_machinery,2026-07-04,農機
+7267,JP,ホンダ,stock,true,automobile,2026-07-04,自動車
+6501,JP,日立製作所,stock,true,industrial_electronics,2026-07-04,総合電機
+9861,JP,吉野家ホールディングス,stock,true,restaurant,2026-07-04,外食
+7821,JP,前田工繊,stock,true,civil_engineering_materials,2026-07-04,土木資材
+1377,JP,サカタのタネ,stock,true,seeds,2026-07-04,種苗
+6287,JP,サトーホールディングス,stock,true,auto_id,2026-07-04,自動認識
+4368,JP,扶桑化学工業,stock,true,electronic_materials,2026-07-04,電子材料

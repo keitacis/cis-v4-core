@@ -1,0 +1,16 @@
+# いちばん簡単：名前や説明は後から整える
+ADD US CRDO
+ADD JP 7203
+
+# 名前・説明・テーマまで入れる
+ADD US CRDO|Credo Technology|高速接続チップ/CPO関連|ai_datacenter
+ADD JP 6758|ソニーグループ|ゲーム・半導体・エンタメ|大型成長
+
+# 既存銘柄の名前・説明・テーマを直す。active状態は変えない
+UPDATE US CRDO|Credo Technology|高速接続チップ/CPO関連|ai_datacenter
+
+# 監視から外す。完全削除ではなくinactive化
+STOP US CRDO|監視優先度を下げる
+
+# inactive銘柄を再開
+RESUME US CRDO|監視再開
