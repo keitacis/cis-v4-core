@@ -1,0 +1,15 @@
+UPDATE US NBIS|Nebius Group|AIクラウド・GPUインフラ|ai_cloud
+UPDATE US EWY|iShares MSCI South Korea ETF|韓国株ETF|etf_korea
+UPDATE US ISRG|Intuitive Surgical|手術支援ロボット|medical_robotics
+UPDATE US SPGI|S&P Global|金融データ・格付け|financial_data
+UPDATE US MELI|MercadoLibre|南米EC・決済|ecommerce_fintech
+UPDATE US TMO|Thermo Fisher Scientific|分析機器・ライフサイエンス|life_science
+UPDATE US META|Meta Platforms|SNS・広告・AI|ai_ad_platform
+UPDATE US IONQ|IonQ|量子コンピューター|quantum
+UPDATE US RGTI|Rigetti Computing|量子コンピューター|quantum
+UPDATE US SDGR|Schrodinger|AI創薬ソフト|ai_drug_discovery
+UPDATE US RXRX|Recursion Pharmaceuticals|AI創薬|ai_drug_discovery
+UPDATE US QCOM|Qualcomm|半導体・通信チップ|semiconductor
+UPDATE US HSAI|Hesai Group|LiDAR|lidar
+UPDATE US PL|Planet Labs|衛星画像|satellite_data
+UPDATE US V|Visa|カード決済ネットワーク|payment_network

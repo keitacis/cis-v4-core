@@ -1,0 +1,73 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>CIS v4 Preflight</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:16px;line-height:1.55}li{margin:6px 0}pre{white-space:pre-wrap;background:#f6f6f6;border-radius:10px;padding:12px;overflow:auto}h1,h2,h3{line-height:1.25}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS v4 Preflight</h1>
+<p>生成日時：2026/07/05 21:08 JST</p>
+<p>総合判定：✅ 構成OK（まだ運用開始前。次は初期マスター投入/手動確認）</p>
+<p>このPreflightは破壊的変更を行いません。既存CISを上書きせず、v4投入前の衝突・不足・root dataマスターのv4互換性を確認します。</p>
+<h2>重要</h2>
+<ul>
+<li>このOKは『ファイル構成とroot dataの形式がv4で読める』という意味です。</li>
+<li>まだCIS運用開始ではありません。BUYZONEとTradingViewの初期投入、各レポートの手動確認が必要です。</li>
+</ul>
+<h2>次にやること</h2>
+<ul>
+<li>root dataマスターはv4厳格検査OKです。次に `CIS v4 Master Init Template` を手動実行してください。</li>
+<li>BUYZONE/TradingViewの不足を確認し、`CIS v4 Master Update` で初期投入してください。</li>
+<li>その後、日次US/日次JP/週間/買い場を手動実行し、`docs/v4/index.html` を確認します。</li>
+</ul>
+<h2>スクリプト</h2>
+<ul>
+<li>✅ scripts/cis_v4/cis_core.py</li>
+<li>✅ scripts/cis_v4/cis_daily_us.py</li>
+<li>✅ scripts/cis_v4/cis_daily_jp.py</li>
+<li>✅ scripts/cis_v4/cis_buy_alert.py</li>
+<li>✅ scripts/cis_v4/cis_weekly_performance.py</li>
+<li>✅ scripts/cis_v4/cis_home.py</li>
+<li>✅ scripts/cis_v4/cis_watchlist_update.py</li>
+<li>✅ scripts/cis_v4/cis_master_update.py</li>
+<li>✅ scripts/cis_v4/cis_monthly_maintenance.py</li>
+<li>✅ scripts/cis_v4/cis_master_init_template.py</li>
+<li>✅ scripts/cis_v4/cis_v4_preflight.py</li>
+<li>✅ scripts/cis_v4/cis_v4_apply_seed.py</li>
+</ul>
+<h2>Workflow</h2>
+<ul>
+<li>✅ .github/workflows/cis_v4_preflight.yml</li>
+<li>✅ .github/workflows/cis_v4_apply_seed.yml</li>
+<li>✅ .github/workflows/cis_v4_daily_us.yml</li>
+<li>✅ .github/workflows/cis_v4_daily_jp.yml</li>
+<li>✅ .github/workflows/cis_v4_buy_alert.yml</li>
+<li>✅ .github/workflows/cis_v4_weekly_performance.yml</li>
+<li>✅ .github/workflows/cis_v4_home.yml</li>
+<li>✅ .github/workflows/cis_v4_watchlist_update.yml</li>
+<li>✅ .github/workflows/cis_v4_master_update.yml</li>
+<li>✅ .github/workflows/cis_v4_monthly_maintenance.yml</li>
+<li>✅ .github/workflows/cis_v4_master_init_template.yml</li>
+<li>✅ 既知の旧Workflow同名衝突なし</li>
+</ul>
+<h2>seed退避データ</h2>
+<ul>
+<li>✅ data/v4_seed/company_master.csv: v4厳格検査OK / count=73</li>
+<li>✅ data/v4_seed/watchlist_master.csv: v4厳格検査OK / count=73</li>
+<li>✅ data/v4_seed/tv_snapshot.json: v4厳格検査OK / count=0</li>
+<li>✅ data/v4_seed/buyzone_master.json: v4厳格検査OK / count=0</li>
+<li>✅ data/v4_seed/cis_settings.json: v4厳格検査OK / count=12</li>
+<li>✅ data/v4_seed/watchlist_history.json: 厳格JSON確認OK / count=0</li>
+<li>✅ data/v4_seed/master_update_history.json: 厳格JSON確認OK / count=0</li>
+<li>✅ data/v4_seed watchlist/company整合性: OK</li>
+</ul>
+<h2>root dataマスター v4厳格検査</h2>
+<ul>
+<li>✅ data/company_master.csv: v4厳格検査OK / count=73</li>
+<li>✅ data/watchlist_master.csv: v4厳格検査OK / count=73</li>
+<li>✅ data/tv_snapshot.json: v4厳格検査OK / count=0</li>
+<li>✅ data/buyzone_master.json: v4厳格検査OK / count=0</li>
+<li>✅ data/cis_settings.json: v4厳格検査OK / count=12</li>
+<li>✅ data/watchlist_history.json: 厳格JSON確認OK / count=0</li>
+<li>✅ data/master_update_history.json: 厳格JSON確認OK / count=0</li>
+<li>✅ root watchlist/company整合性: OK</li>
+</ul>
+<h2>安全メモ</h2>
+<ul>
+<li>v4 Workflowは `cis_v4_` 接頭辞付きで、旧Workflowと並走できる前提です。</li>
+<li>初回確認が終わるまで、v4の自動scheduleは有効化しません。</li>
+<li>PreflightでNGが出たroot dataを、seedで無条件上書きしないでください。</li>
+</ul><p><a href='../index.html'>CISホームへ戻る</a></p></body></html>

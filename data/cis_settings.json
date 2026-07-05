@@ -1,0 +1,24 @@
+{
+  "timezone": "Asia/Tokyo",
+  "daily_us_time_jst": "07:15",
+  "daily_jp_time_jst": "16:10",
+  "buy_alert_time_jst": "08:00",
+  "weekly_performance_time_jst": "Saturday 18:30",
+  "monthly_maintenance_day": "1",
+  "tv_snapshot_review_frequency": "monthly",
+  "tv_snapshot_stale_days": 45,
+  "buyzone_review_frequency": "monthly",
+  "iphone_home": "docs/v4/index.html",
+  "home_stale_days": {
+    "buy_alert": 2,
+    "daily_us": 3,
+    "daily_jp": 3,
+    "weekly_performance": 9,
+    "watchlist_update": 90,
+    "master_init_template": 45,
+    "master_update": 45,
+    "monthly_maintenance": 45,
+    "watchlist_template": 90
+  },
+  "note": "初回確認中のiPhoneホームは docs/v4/index.html です。GitHub Actionsの自動実行時刻はworkflowのcronで管理します。cis_settings.jsonを変更してもcron時刻は自動では変わりません。"
+}

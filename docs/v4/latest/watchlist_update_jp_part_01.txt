@@ -1,0 +1,15 @@
+UPDATE JP 7974|任天堂|ゲーム|game
+UPDATE JP 6383|ダイフク|物流自動化|logistics_automation
+UPDATE JP 5401|日本製鉄|鉄鋼|steel
+UPDATE JP 4901|富士フイルム|医療素材|medical_materials
+UPDATE JP 3407|旭化成|総合化学|chemical
+UPDATE JP 3402|東レ|繊維素材|material
+UPDATE JP 3405|クラレ|化学素材|chemical_material
+UPDATE JP 2871|ニチレイ|冷凍食品|frozen_food
+UPDATE JP 8601|大和証券グループ本社|証券|securities
+UPDATE JP 8410|セブン銀行|銀行ATM|bank_atm
+UPDATE JP 6902|デンソー|車載部品|auto_parts
+UPDATE JP 6758|ソニーグループ|エンタメ半導体|entertainment_semiconductor
+UPDATE JP 5020|ENEOSホールディングス|石油エネルギー|energy
+UPDATE JP 4063|信越化学工業|半導体材料|semiconductor_materials
+UPDATE JP 4042|東ソー|化学|chemical

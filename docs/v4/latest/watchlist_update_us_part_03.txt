@@ -1,0 +1,15 @@
+UPDATE US VRTX|Vertex Pharmaceuticals|バイオ医薬|biotech
+UPDATE US DIS|Walt Disney|メディア・テーマパーク|media_themepark
+UPDATE US KVYO|Klaviyo|ECマーケティングSaaS|saas_marketing
+UPDATE US DKNG|DraftKings|スポーツベッティング|sports_entertainment
+UPDATE US CRSP|CRISPR Therapeutics|遺伝子編集|gene_editing
+UPDATE US BEAM|Beam Therapeutics|遺伝子編集|gene_editing
+UPDATE US ETN|Eaton|電力機器・データセンター|electrical_equipment
+UPDATE US MSTR|MicroStrategy|ビットコイン保有企業|bitcoin_proxy
+UPDATE US POET|POET Technologies|光半導体・フォトニクス|photonics
+UPDATE US KITT|Nauticus Robotics|海洋ロボティクス|robotics
+UPDATE US AXTI|AXT|化合物半導体基板|compound_semiconductor
+UPDATE US COHR|Coherent|光通信・レーザー部品|optical_laser
+UPDATE US ANET|Arista Networks|データセンターネットワーク|datacenter_network
+UPDATE US DDOG|Datadog|クラウド監視SaaS|cloud_monitoring
+UPDATE US SNOW|Snowflake|データクラウド|data_cloud

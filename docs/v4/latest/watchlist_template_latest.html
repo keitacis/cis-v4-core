@@ -1,0 +1,67 @@
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>watchlist_template</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS 監視リスト追加・変更テンプレート</h1>
+<p>生成日時：2026/07/05 21:06 JST</p>
+<h2>目的</h2>
+<p>監視リストの追加・停止・再開・説明修正を、iPhoneからでもミスなく行うためのページです。</p>
+<p>このページはテンプレート作成だけで、監視リスト自体は変更しません。変更は `CIS v4 Watchlist Update` にコマンドを貼って実行します。</p>
+<h2>最短手順</h2>
+<p>1. このページのtxtを開いて、必要なコマンドをコピーします。</p>
+<p>2. GitHub Actions &gt; `CIS v4 Watchlist Update` を開きます。</p>
+<p>3. `commands` に貼って実行します。</p>
+<p>4. Homeの `監視リスト更新` と `初期マスター投入テンプレート` を確認します。</p>
+<p>5. 新規追加銘柄は、必要に応じて `CIS v4 Master Update` でBUYZONE/TVも投入します。</p>
+<h2>基本コマンド</h2>
+<ul>
+<li>`ADD US CRDO`：最低限の追加。名前はティッカーで仮登録。あとからUPDATE可能。</li>
+<li>`ADD US CRDO|Credo Technology|高速接続チップ|ai_datacenter`：説明つきで追加。</li>
+<li>`ADD JP 6758|ソニーグループ|ゲーム・半導体・エンタメ|大型成長`：日本株追加。</li>
+<li>`UPDATE US CRDO|Credo Technology|高速接続チップ|ai_datacenter`：既存銘柄の説明修正。active状態は変えません。</li>
+<li>`STOP US CRDO|理由`：監視停止。完全削除ではなくinactive化。</li>
+<li>`RESUME US CRDO|理由`：監視再開。</li>
+</ul>
+<h2>サマリー</h2>
+<ul>
+<li>全登録：73件</li>
+<li>active：73件（US 48件 / JP 25件）</li>
+<li>inactive：0件（US 0件 / JP 0件）</li>
+</ul>
+<h2>iPhone用txt</h2>
+<ul>
+<li><a href='watchlist_add_examples.txt'>追加・変更の例</a></li>
+<li><a href='watchlist_quick_add_blank.txt'>空の追加テンプレート</a></li>
+<li><a href='watchlist_active_list.txt'>active銘柄一覧</a></li>
+<li><a href='watchlist_inactive_list.txt'>inactive銘柄一覧</a></li>
+</ul>
+<div class='card'><h3>US停止テンプレート</h3>
+<ul>
+<li><a href='watchlist_stop_us_part_01.txt'>part 01</a></li>
+<li><a href='watchlist_stop_us_part_02.txt'>part 02</a></li>
+<li><a href='watchlist_stop_us_part_03.txt'>part 03</a></li>
+</ul>
+</div>
+<div class='card'><h3>JP停止テンプレート</h3>
+<ul>
+<li><a href='watchlist_stop_jp_part_01.txt'>part 01</a></li>
+<li><a href='watchlist_stop_jp_part_02.txt'>part 02</a></li>
+</ul>
+</div>
+<div class='card'><h3>US説明修正テンプレート</h3>
+<ul>
+<li><a href='watchlist_update_us_part_01.txt'>part 01</a></li>
+<li><a href='watchlist_update_us_part_02.txt'>part 02</a></li>
+<li><a href='watchlist_update_us_part_03.txt'>part 03</a></li>
+<li><a href='watchlist_update_us_part_04.txt'>part 04</a></li>
+</ul>
+</div>
+<div class='card'><h3>JP説明修正テンプレート</h3>
+<ul>
+<li><a href='watchlist_update_jp_part_01.txt'>part 01</a></li>
+<li><a href='watchlist_update_jp_part_02.txt'>part 02</a></li>
+</ul>
+</div>
+<h2>注意</h2>
+<ul>
+<li>新規追加後、BUYZONEやTradingViewが未設定の銘柄は `初期マスター投入テンプレート` に出ます。</li>
+<li>STOPはデータを消さず、active=falseにします。再開はRESUMEで戻せます。</li>
+<li>1回の入力内で同じ銘柄を複数回指定すると安全停止します。</li>
+<li>区切りは半角 `|` でも全角 `｜` でも使えます。</li>
+</ul><p><a href='../index.html'>CISホームへ戻る</a></p></body></html>

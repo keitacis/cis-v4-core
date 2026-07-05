@@ -1,0 +1,10 @@
+UPDATE JP 1911|住友林業|住宅木材|housing_wood
+UPDATE JP 1928|積水ハウス|住宅|housing
+UPDATE JP 6326|クボタ|農機|agricultural_machinery
+UPDATE JP 7267|ホンダ|自動車|automobile
+UPDATE JP 6501|日立製作所|総合電機|industrial_electronics
+UPDATE JP 9861|吉野家ホールディングス|外食|restaurant
+UPDATE JP 7821|前田工繊|土木資材|civil_engineering_materials
+UPDATE JP 1377|サカタのタネ|種苗|seeds
+UPDATE JP 6287|サトーホールディングス|自動認識|auto_id
+UPDATE JP 4368|扶桑化学工業|電子材料|electronic_materials

@@ -1,0 +1,73 @@
+US:AVAV	AeroVironment	active	defense_drone
+US:AXON	Axon Enterprise	active	public_safety
+US:AUR	Aurora Innovation	active	autonomous_driving
+US:TMDX	TransMedics Group	active	medical_device
+US:NOW	ServiceNow	active	cloud_saas
+US:RDW	Redwire	active	space
+US:TRMB	Trimble	active	industrial_tech
+US:VEEV	Veeva Systems	active	healthcare_saas
+US:PYPL	PayPal	active	fintech
+US:TEM	Tempus AI	active	ai_healthcare
+US:FICO	Fair Isaac	active	financial_data
+US:AAOI	Applied Optoelectronics	active	optical_communication
+US:OUST	Ouster	active	lidar
+US:APH	Amphenol	active	connector_sensor
+US:ASPI	ASP Isotopes	active	nuclear_isotope
+US:NBIS	Nebius Group	active	ai_cloud
+US:EWY	iShares MSCI South Korea ETF	active	etf_korea
+US:ISRG	Intuitive Surgical	active	medical_robotics
+US:SPGI	S&P Global	active	financial_data
+US:MELI	MercadoLibre	active	ecommerce_fintech
+US:TMO	Thermo Fisher Scientific	active	life_science
+US:META	Meta Platforms	active	ai_ad_platform
+US:IONQ	IonQ	active	quantum
+US:RGTI	Rigetti Computing	active	quantum
+US:SDGR	Schrodinger	active	ai_drug_discovery
+US:RXRX	Recursion Pharmaceuticals	active	ai_drug_discovery
+US:QCOM	Qualcomm	active	semiconductor
+US:HSAI	Hesai Group	active	lidar
+US:PL	Planet Labs	active	satellite_data
+US:V	Visa	active	payment_network
+US:VRTX	Vertex Pharmaceuticals	active	biotech
+US:DIS	Walt Disney	active	media_themepark
+US:KVYO	Klaviyo	active	saas_marketing
+US:DKNG	DraftKings	active	sports_entertainment
+US:CRSP	CRISPR Therapeutics	active	gene_editing
+US:BEAM	Beam Therapeutics	active	gene_editing
+US:ETN	Eaton	active	electrical_equipment
+US:MSTR	MicroStrategy	active	bitcoin_proxy
+US:POET	POET Technologies	active	photonics
+US:KITT	Nauticus Robotics	active	robotics
+US:AXTI	AXT	active	compound_semiconductor
+US:COHR	Coherent	active	optical_laser
+US:ANET	Arista Networks	active	datacenter_network
+US:DDOG	Datadog	active	cloud_monitoring
+US:SNOW	Snowflake	active	data_cloud
+US:OPTX	Syntec Optics	active	precision_optics
+US:AEM	Agnico Eagle Mines	active	gold_miner
+US:ZETA	Zeta Global	active	marketing_ai
+JP:7974	任天堂	active	game
+JP:6383	ダイフク	active	logistics_automation
+JP:5401	日本製鉄	active	steel
+JP:4901	富士フイルム	active	medical_materials
+JP:3407	旭化成	active	chemical
+JP:3402	東レ	active	material
+JP:3405	クラレ	active	chemical_material
+JP:2871	ニチレイ	active	frozen_food
+JP:8601	大和証券グループ本社	active	securities
+JP:8410	セブン銀行	active	bank_atm
+JP:6902	デンソー	active	auto_parts
+JP:6758	ソニーグループ	active	entertainment_semiconductor
+JP:5020	ENEOSホールディングス	active	energy
+JP:4063	信越化学工業	active	semiconductor_materials
+JP:4042	東ソー	active	chemical
+JP:1911	住友林業	active	housing_wood
+JP:1928	積水ハウス	active	housing
+JP:6326	クボタ	active	agricultural_machinery
+JP:7267	ホンダ	active	automobile
+JP:6501	日立製作所	active	industrial_electronics
+JP:9861	吉野家ホールディングス	active	restaurant
+JP:7821	前田工繊	active	civil_engineering_materials
+JP:1377	サカタのタネ	active	seeds
+JP:6287	サトーホールディングス	active	auto_id
+JP:4368	扶桑化学工業	active	electronic_materials

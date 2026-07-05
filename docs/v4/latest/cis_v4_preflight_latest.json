@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "generated_at_jst": "2026-07-05T21:08:36.820473+09:00",
+  "problems": [],
+  "root_data": {
+    "missing": [],
+    "invalid": [],
+    "all_missing": false,
+    "all_ok": true
+  }
+}

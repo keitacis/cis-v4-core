@@ -1,0 +1,8 @@
+STOP US AXTI|監視停止
+STOP US COHR|監視停止
+STOP US ANET|監視停止
+STOP US DDOG|監視停止
+STOP US SNOW|監視停止
+STOP US OPTX|監視停止
+STOP US AEM|監視停止
+STOP US ZETA|監視停止

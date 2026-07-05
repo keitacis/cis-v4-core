@@ -1,0 +1,301 @@
+{
+  "status": {
+    "status": "partial",
+    "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+    "us_watchlist_count": 48,
+    "fetched_count": 0,
+    "candidate_change_count": 0,
+    "unchanged_count": 0,
+    "failed_count": 48,
+    "apply_command_count": 0,
+    "changed_command_count": 0,
+    "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
+    "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。"
+  },
+  "manifest": {
+    "version": 1,
+    "status": "partial",
+    "generated_at_jst": "2026-07-05T21:26:52.751165+09:00",
+    "apply_command_count": 0,
+    "changed_command_count": 0,
+    "summary": {
+      "us_watchlist_count": 48,
+      "fetched_count": 0,
+      "candidate_change_count": 0,
+      "unchanged_count": 0,
+      "failed_count": 48
+    },
+    "command_files": {
+      "tv_monthly_refresh_apply_commands.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "line_count": 0,
+        "bytes_utf8": 0
+      },
+      "tv_monthly_refresh_changed_only_commands.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "line_count": 0,
+        "bytes_utf8": 0
+      },
+      "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "line_count": 0,
+        "bytes_utf8": 0
+      },
+      "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "line_count": 0,
+        "bytes_utf8": 0
+      }
+    },
+    "primary_files": {
+      "apply_all_success": "tv_monthly_refresh_apply_commands.txt",
+      "changed_only": "tv_monthly_refresh_changed_only_commands.txt"
+    }
+  },
+  "candidates": [],
+  "unchanged": [],
+  "failed": [
+    {
+      "key": "US:AVAV",
+      "symbol": "AVAV",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:AXON",
+      "symbol": "AXON",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:AUR",
+      "symbol": "AUR",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:TMDX",
+      "symbol": "TMDX",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:NOW",
+      "symbol": "NOW",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:RDW",
+      "symbol": "RDW",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:TRMB",
+      "symbol": "TRMB",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:VEEV",
+      "symbol": "VEEV",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:PYPL",
+      "symbol": "PYPL",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:TEM",
+      "symbol": "TEM",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:FICO",
+      "symbol": "FICO",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404"
+    },
+    {
+      "key": "US:AAOI",
+      "symbol": "AAOI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:OUST",
+      "symbol": "OUST",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:APH",
+      "symbol": "APH",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:ASPI",
+      "symbol": "ASPI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:NBIS",
+      "symbol": "NBIS",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:EWY",
+      "symbol": "EWY",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:ISRG",
+      "symbol": "ISRG",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:SPGI",
+      "symbol": "SPGI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:MELI",
+      "symbol": "MELI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:TMO",
+      "symbol": "TMO",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:META",
+      "symbol": "META",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:IONQ",
+      "symbol": "IONQ",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:RGTI",
+      "symbol": "RGTI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:SDGR",
+      "symbol": "SDGR",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:RXRX",
+      "symbol": "RXRX",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:QCOM",
+      "symbol": "QCOM",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:HSAI",
+      "symbol": "HSAI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:PL",
+      "symbol": "PL",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:V",
+      "symbol": "V",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:VRTX",
+      "symbol": "VRTX",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:DIS",
+      "symbol": "DIS",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:KVYO",
+      "symbol": "KVYO",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:DKNG",
+      "symbol": "DKNG",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:CRSP",
+      "symbol": "CRSP",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:BEAM",
+      "symbol": "BEAM",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:ETN",
+      "symbol": "ETN",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:MSTR",
+      "symbol": "MSTR",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:POET",
+      "symbol": "POET",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:KITT",
+      "symbol": "KITT",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:AXTI",
+      "symbol": "AXTI",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:COHR",
+      "symbol": "COHR",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:ANET",
+      "symbol": "ANET",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:DDOG",
+      "symbol": "DDOG",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:SNOW",
+      "symbol": "SNOW",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:OPTX",
+      "symbol": "OPTX",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:AEM",
+      "symbol": "AEM",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    },
+    {
+      "key": "US:ZETA",
+      "symbol": "ZETA",
+      "reason": "required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403"
+    }
+  ],
+  "apply_commands": [],
+  "changed_commands": []
+}
