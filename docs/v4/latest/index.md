@@ -1,25 +1,25 @@
 # CIS ホーム
 
-最終更新：2026/07/06 21:02 JST
+最終更新：2026/07/06 21:16 JST
 
 ## 要確認
 
 - 買い場アラート: partial
 - 週間騰落: partial
-- 初期マスター投入テンプレート: TV未設定23件
-- TradingView月次自動確認: TV変更候補44件 / TV取得失敗2件
+- 初期マスター投入テンプレート: TV未設定2件
+- TradingView月次自動確認: TV取得失敗2件
 - 月次メンテナンス: partial
 
 ## 毎日見る
 
 ### ⚠️ 一部注意 買い場アラート
 
-- 更新：2026/07/06 16:58 JST
+- 更新：2026/07/06 21:15 JST
 - [開く](buy_alert_latest.html)
 
 ### 休場 米国株騰落
 
-- 更新：2026/07/06 17:02 JST
+- 更新：2026/07/06 21:16 JST
 - [開く](daily_us_latest.html)
 
 ### ✅ 更新済み 日本株騰落
@@ -31,7 +31,7 @@
 
 ### ⚠️ 一部注意 週間騰落
 
-- 更新：2026/07/06 16:58 JST
+- 更新：2026/07/06 21:16 JST
 - [開く](weekly_performance_latest.html)
 
 ## メンテナンス
@@ -58,25 +58,26 @@
 
 ### ⚠️ 一部注意 初期マスター投入テンプレート
 
-- 更新：2026/07/06 21:02 JST
+- 更新：2026/07/06 21:15 JST
 - [開く](master_init_template_latest.html)
 
 ### ⚠️ 一部注意 TradingView月次自動確認
 
 - 更新：2026/07/06 21:02 JST
+- 状態：TV変更候補44件は反映済みです。TV取得失敗2件は残っています。
 - [開く](tv_monthly_refresh_latest.html)
 
 ### ✅ 更新済み TradingView月次候補反映
 
-- 更新：2026/07/06 16:58 JST
+- 更新：2026/07/06 21:15 JST
 - [開く](apply_tv_monthly_candidate_latest.html)
 
 ### ✅ 更新済み TV・買い場基準更新
 
-- 更新：2026/07/06 16:58 JST
+- 更新：2026/07/06 21:15 JST
 - [開く](master_update_latest.html)
 
 ### ⚠️ 一部注意 月次メンテナンス
 
-- 更新：2026/07/06 21:02 JST
+- 更新：2026/07/06 21:15 JST
 - [開く](monthly_maintenance_latest.html)

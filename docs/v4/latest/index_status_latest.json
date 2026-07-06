@@ -1,118 +1,55 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-06T21:02:57.738673+09:00",
+  "generated_at_jst": "2026-07-06T21:16:09.117625+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T16:58:47.478135+09:00",
+      "generated_at_jst": "2026-07-06T21:15:58.396747+09:00",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 48,
       "market_closed_count": 48,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
-      "tv_covered_count": 25,
+      "tv_covered_count": 45,
       "tv_no_coverage_count": 0,
-      "tv_not_applicable_count": 0,
-      "tv_missing_count": 23,
-      "tv_stale_or_unknown_count": 23,
+      "tv_not_applicable_count": 1,
+      "tv_missing_count": 2,
+      "tv_stale_or_unknown_count": 2,
       "tv_missing_symbols": [
-        "EWY",
-        "QCOM",
-        "HSAI",
-        "PL",
-        "V",
-        "VRTX",
-        "DIS",
-        "KVYO",
-        "DKNG",
-        "CRSP",
-        "BEAM",
-        "ETN",
-        "MSTR",
-        "POET",
         "KITT",
-        "AXTI",
-        "COHR",
-        "ANET",
-        "DDOG",
-        "SNOW",
-        "OPTX",
-        "AEM",
-        "ZETA"
+        "OPTX"
       ],
       "tv_stale_or_unknown_symbols": [
-        "EWY",
-        "QCOM",
-        "HSAI",
-        "PL",
-        "V",
-        "VRTX",
-        "DIS",
-        "KVYO",
-        "DKNG",
-        "CRSP",
-        "BEAM",
-        "ETN",
-        "MSTR",
-        "POET",
         "KITT",
-        "AXTI",
-        "COHR",
-        "ANET",
-        "DDOG",
-        "SNOW",
-        "OPTX",
-        "AEM",
-        "ZETA"
+        "OPTX"
       ],
       "warnings": [
         "休場/日付注意：48銘柄",
-        "TradingView未設定：23銘柄",
-        "TradingView鮮度注意：23銘柄"
+        "TradingView未設定：2銘柄",
+        "TradingView鮮度注意：2銘柄"
       ]
     },
     "daily_us": {
       "status": "market_closed",
-      "generated_at_jst": "2026-07-06T17:02:00.326131+09:00",
+      "generated_at_jst": "2026-07-06T21:16:02.601656+09:00",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
       "market_closed_count": 48,
-      "tv_saved_or_explicit_count": 25,
-      "tv_missing_count": 23,
+      "tv_saved_or_explicit_count": 46,
+      "tv_missing_count": 2,
       "tv_no_coverage_count": 0,
-      "tv_not_applicable_count": 0,
+      "tv_not_applicable_count": 1,
       "tv_stale_or_unknown_count": 0,
       "tv_missing_symbols": [
-        "CRSP",
-        "MSTR",
-        "VRTX",
-        "DIS",
-        "BEAM",
-        "KVYO",
-        "V",
-        "DKNG",
-        "SNOW",
-        "AEM",
-        "ZETA",
-        "PL",
-        "DDOG",
-        "EWY",
-        "QCOM",
-        "ETN",
-        "ANET",
-        "HSAI",
         "KITT",
-        "COHR",
-        "POET",
-        "OPTX",
-        "AXTI"
+        "OPTX"
       ],
       "tv_stale_or_unknown_symbols": [],
       "warnings": [
         "米国市場は休場または価格更新前の可能性があります。古い日付を当日更新として扱いません。",
-        "TradingViewスナップショット未設定：23銘柄"
+        "TradingViewスナップショット未設定：2銘柄"
       ]
     },
     "daily_jp": {
@@ -126,44 +63,23 @@
     },
     "weekly_performance": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T16:58:55.146283+09:00",
+      "generated_at_jst": "2026-07-06T21:16:08.676715+09:00",
       "price_success_count": 73,
       "price_missing_count": 0,
       "watchlist_count": 73,
       "us_count": 48,
-      "us_tv_saved_or_explicit_count": 25,
-      "us_tv_missing_count": 23,
+      "us_tv_saved_or_explicit_count": 46,
+      "us_tv_missing_count": 2,
       "us_tv_no_coverage_count": 0,
-      "us_tv_not_applicable_count": 0,
+      "us_tv_not_applicable_count": 1,
       "us_tv_stale_or_unknown_count": 0,
       "us_tv_missing_symbols": [
-        "KVYO",
-        "PL",
-        "MSTR",
-        "DDOG",
-        "ZETA",
-        "SNOW",
-        "HSAI",
-        "DKNG",
-        "CRSP",
         "OPTX",
-        "VRTX",
-        "V",
-        "KITT",
-        "BEAM",
-        "DIS",
-        "AEM",
-        "ANET",
-        "ETN",
-        "EWY",
-        "POET",
-        "QCOM",
-        "AXTI",
-        "COHR"
+        "KITT"
       ],
       "us_tv_stale_or_unknown_symbols": [],
       "warnings": [
-        "米国株TradingViewスナップショット未設定：23銘柄"
+        "米国株TradingViewスナップショット未設定：2銘柄"
       ]
     },
     "cis_v4_preflight": {
@@ -223,13 +139,13 @@
     },
     "master_init_template": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T21:02:57.599917+09:00",
+      "generated_at_jst": "2026-07-06T21:15:44.551665+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
       "buyzone_invalid_count": 0,
       "buyzone_legacy_ready_count": 0,
-      "tv_missing_count": 23,
+      "tv_missing_count": 2,
       "legacy_files": []
     },
     "tv_monthly_refresh": {
@@ -237,7 +153,7 @@
       "generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "us_watchlist_count": 48,
       "fetched_count": 46,
-      "candidate_change_count": 44,
+      "candidate_change_count": 0,
       "unchanged_count": 2,
       "failed_count": 2,
       "apply_command_count": 44,
@@ -247,39 +163,44 @@
       "not_applicable_candidate_count": 1,
       "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
       "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。",
-      "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
+      "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化",
+      "tv_candidate_applied": true,
+      "tv_candidate_applied_at_jst": "2026-07-06T21:15:44.103051+09:00",
+      "candidate_change_count_before_apply": 44,
+      "candidate_change_count_suppressed": 44,
+      "tv_candidate_applied_note": "TV変更候補44件は反映済みです。TV取得失敗2件は残っています。"
     },
     "apply_tv_monthly_candidate": {
       "status": "ok",
-      "generated_at_jst": "2026-07-06T16:58:37.963001+09:00",
+      "generated_at_jst": "2026-07-06T21:15:44.103051+09:00",
       "mode": "apply_all_success",
       "command_file": "tv_monthly_refresh_apply_commands.txt",
-      "applied_command_count": 25,
-      "candidate_generated_at_jst": "2026-07-06T16:49:35.826926+09:00"
+      "applied_command_count": 44,
+      "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00"
     },
     "master_update": {
       "status": "ok",
-      "generated_at_jst": "2026-07-06T16:58:37.889709+09:00",
-      "changed_count": 25,
+      "generated_at_jst": "2026-07-06T21:15:44.022416+09:00",
+      "changed_count": 44,
       "error_count": 0
     },
     "monthly_maintenance": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T21:02:57.672143+09:00",
+      "generated_at_jst": "2026-07-06T21:15:44.992852+09:00",
       "watchlist_count": 73,
       "us_count": 48,
-      "tv_count": 25,
-      "tv_covered_count": 25,
+      "tv_count": 46,
+      "tv_covered_count": 45,
       "tv_no_coverage_count": 0,
-      "tv_not_applicable_count": 0,
-      "tv_missing_count": 23,
+      "tv_not_applicable_count": 1,
+      "tv_missing_count": 2,
       "tv_stale_or_unknown_count": 0,
       "tv_extra_count": 0,
       "buyzone_count": 73,
       "buyzone_missing_count": 0,
       "buyzone_extra_count": 0,
       "warnings": [
-        "TradingView未設定：23銘柄"
+        "TradingView未設定：2銘柄"
       ]
     }
   }

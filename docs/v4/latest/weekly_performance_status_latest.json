@@ -1,42 +1,21 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-07-06T16:58:55.146283+09:00",
+  "generated_at_jst": "2026-07-06T21:16:08.676715+09:00",
   "price_success_count": 73,
   "price_missing_count": 0,
   "watchlist_count": 73,
   "us_count": 48,
-  "us_tv_saved_or_explicit_count": 25,
-  "us_tv_missing_count": 23,
+  "us_tv_saved_or_explicit_count": 46,
+  "us_tv_missing_count": 2,
   "us_tv_no_coverage_count": 0,
-  "us_tv_not_applicable_count": 0,
+  "us_tv_not_applicable_count": 1,
   "us_tv_stale_or_unknown_count": 0,
   "us_tv_missing_symbols": [
-    "KVYO",
-    "PL",
-    "MSTR",
-    "DDOG",
-    "ZETA",
-    "SNOW",
-    "HSAI",
-    "DKNG",
-    "CRSP",
     "OPTX",
-    "VRTX",
-    "V",
-    "KITT",
-    "BEAM",
-    "DIS",
-    "AEM",
-    "ANET",
-    "ETN",
-    "EWY",
-    "POET",
-    "QCOM",
-    "AXTI",
-    "COHR"
+    "KITT"
   ],
   "us_tv_stale_or_unknown_symbols": [],
   "warnings": [
-    "米国株TradingViewスナップショット未設定：23銘柄"
+    "米国株TradingViewスナップショット未設定：2銘柄"
   ]
 }
