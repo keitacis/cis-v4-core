@@ -1,0 +1,43 @@
+name: CIS v4 TV Refresh Integrated Fix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tv-refresh-integrated-fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Apply integrated TV refresh fix
+        run: python scripts/cis_v4/patch_tv_refresh_integrated_fix.py
+
+      - name: Compile patched monthly refresh
+        run: python -m py_compile scripts/cis_v4/cis_tv_monthly_refresh.py
+
+      - name: Commit integrated fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/cis_v4/cis_tv_monthly_refresh.py
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Fix TV monthly refresh scanner fields"
+            git pull --rebase --autostash
+            git push
+          fi
