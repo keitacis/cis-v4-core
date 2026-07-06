@@ -108,7 +108,7 @@ def main() -> int:
         price_success = sum(1 for r in rows if r.get("daily_pct") is not None)
         price_missing = max(0, total - price_success)
         closed = sum(1 for r in rows if r.get("market_closed"))
-        tv_count = sum(1 for r in rows if r.get("tv_coverage_status") in {"covered", "no_coverage", "not_applicable"})
+        tv_count = sum(1 for r in rows if r.get("tv_coverage_status") in {"covered", "covered_partial", "no_coverage", "not_applicable"})
         tv_missing = [r["symbol"] for r in rows if not r.get("tv_coverage_status")]
         tv_no_coverage = [r["symbol"] for r in rows if r.get("tv_coverage_status") == "no_coverage"]
         tv_not_applicable = [r["symbol"] for r in rows if r.get("tv_coverage_status") == "not_applicable"]
@@ -168,9 +168,9 @@ def main() -> int:
                 f"- TradingView区分：{tv_status_label(cov)}",
                 f"- TradingViewレーティング：{r.get('tv_rating') or na}",
                 f"- アナリスト人数：{ac}人" if ac is not None else f"- アナリスト人数：{na}",
-                "- アナリスト分布：" + str(r.get("tv_distribution") if cov == "covered" else na),
-                f"- 平均目標株価：{fmt_price(r.get('tv_avg_target_price'), 'US') if cov == 'covered' else na}",
-                f"- 現在価格→平均目標株価乖離率：{fmt_pct(r.get('tv_upside_pct')) if cov == 'covered' else na}",
+                "- アナリスト分布：" + str(r.get("tv_distribution") if cov in {'covered', 'covered_partial'} else na),
+                f"- 平均目標株価：{fmt_price(r.get('tv_avg_target_price'), 'US') if cov in {'covered', 'covered_partial'} else na}",
+                f"- 現在価格→平均目標株価乖離率：{fmt_pct(r.get('tv_upside_pct')) if cov in {'covered', 'covered_partial'} else na}",
                 f"- TV更新：{r.get('tv_freshness')}",
             ]
             if r.get("tv_reason") and cov in {"no_coverage", "not_applicable"}:

@@ -142,9 +142,9 @@ def render(rows: List[Dict[str, Any]], status: Dict[str, Any]) -> str:
             f"- TradingView区分：{tv_status_label(cov)}",
             f"- TradingViewレーティング：{r.get('tv_rating') or na}",
             f"- アナリスト人数：{ac}人" if ac is not None else f"- アナリスト人数：{na}",
-            "- アナリスト分布：" + str(r.get("tv_distribution") if cov == "covered" else na),
-            f"- 平均目標株価：{fmt_price(r.get('tv_avg_target_price'), 'US') if cov == 'covered' else na}",
-            f"- 現在価格→平均目標株価乖離率：{fmt_pct(r.get('tv_upside_pct')) if cov == 'covered' else na}",
+            "- アナリスト分布：" + str(r.get("tv_distribution") if cov in {'covered', 'covered_partial'} else na),
+            f"- 平均目標株価：{fmt_price(r.get('tv_avg_target_price'), 'US') if cov in {'covered', 'covered_partial'} else na}",
+            f"- 現在価格→平均目標株価乖離率：{fmt_pct(r.get('tv_upside_pct')) if cov in {'covered', 'covered_partial'} else na}",
             f"- TV更新：{r.get('tv_freshness')}",
         ]
         if r.get("tv_reason") and cov in {"no_coverage", "not_applicable"}:
@@ -176,7 +176,7 @@ def main() -> int:
         us_count = sum(1 for r in rows if r["market"] == "US")
         tv_complete_count = sum(
             1 for r in rows
-            if r["market"] == "US" and r.get("tv_coverage_status") in {"covered", "no_coverage", "not_applicable"}
+            if r["market"] == "US" and r.get("tv_coverage_status") in {"covered", "covered_partial", "no_coverage", "not_applicable"}
         )
         tv_missing = [r["symbol"] for r in rows if r["market"] == "US" and not r.get("tv_coverage_status")]
         tv_no_coverage = [r["symbol"] for r in rows if r["market"] == "US" and r.get("tv_coverage_status") == "no_coverage"]

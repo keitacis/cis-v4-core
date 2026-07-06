@@ -995,3 +995,135 @@ def md_link(label: str, href: str) -> str:
 
 def html_escape(s: Any) -> str:
     return html.escape(str(s or ""))
+
+# --- CIS R7 TV covered_partial compatibility START ---
+# R7: Treat TradingView partial coverage as a first-class state.
+# covered         : rating + analyst_count + avg_target_price required
+# covered_partial : rating + avg_target_price required, analyst_count optional
+TV_COVERAGE_STATUSES = set(TV_COVERAGE_STATUSES) | {"covered_partial"}
+TV_COVERAGE_ALIASES.update({
+    "COVERED_PARTIAL": "covered_partial",
+    "COVERED PARTIAL": "covered_partial",
+    "PARTIAL": "covered_partial",
+    "一部取得": "covered_partial",
+    "アナリスト予想あり（一部取得）": "covered_partial",
+})
+
+def normalize_coverage_status(value: Any) -> str:  # type: ignore[override]
+    raw = str(value or "covered").strip()
+    if not raw:
+        return "covered"
+    key = raw.upper()
+    if key in TV_COVERAGE_ALIASES:
+        return TV_COVERAGE_ALIASES[key]
+    low = raw.lower().replace("-", "_").replace(" ", "_")
+    if low in TV_COVERAGE_STATUSES:
+        return low
+    raise ValueError(f"TradingView coverage_status が不正です: {value!r}")
+
+def _tv_r7_is_covered(self: TVSnapshot) -> bool:
+    return self.coverage_status in {"covered", "covered_partial"}
+
+def _tv_r7_is_tv_ok(self: TVSnapshot) -> bool:
+    if self.coverage_status in {"no_coverage", "not_applicable"}:
+        return True
+    if self.coverage_status == "covered":
+        return bool(self.rating) and self.analyst_count is not None and self.analyst_count > 0 and self.avg_target_price is not None and self.avg_target_price > 0
+    if self.coverage_status == "covered_partial":
+        return bool(self.rating) and self.avg_target_price is not None and self.avg_target_price > 0 and (self.analyst_count is None or self.analyst_count > 0)
+    return False
+
+TVSnapshot.is_covered = property(_tv_r7_is_covered)  # type: ignore[assignment]
+TVSnapshot.is_tv_ok = property(_tv_r7_is_tv_ok)  # type: ignore[assignment]
+
+def load_tv_snapshot() -> Dict[str, TVSnapshot]:  # type: ignore[override]
+    path = DATA_DIR / "tv_snapshot.json"
+    data = read_json_strict(path, default={}) or {}
+    rows = data.get("items") if isinstance(data, dict) else data
+    out: Dict[str, TVSnapshot] = {}
+    if rows in [None, ""]:
+        return out
+    if not isinstance(rows, list):
+        raise ValueError("tv_snapshot.json のitemsがlistではありません。")
+    for idx, row in enumerate(rows, start=1):
+        if not isinstance(row, dict):
+            raise ValueError(f"tv_snapshot.json のitems[{idx}]がobjectではありません。")
+        market = str(row.get("market") or "US").upper()
+        try:
+            symbol = validate_symbol_for_market(market, str(row.get("symbol") or ""))
+        except Exception as e:
+            raise ValueError(f"tv_snapshot.json の銘柄行が不正です: items[{idx}] / {e}") from e
+        if market != "US":
+            raise ValueError(f"tv_snapshot.json はUS銘柄のみです: items[{idx}] {market}:{symbol}")
+        coverage_status = normalize_coverage_status(row.get("coverage_status") or "covered")
+        rating = str(row.get("rating") or "").strip() or None
+        analyst_count = safe_int(row.get("analyst_count"))
+        avg_target_price = safe_float(row.get("avg_target_price"))
+        if coverage_status == "covered":
+            try:
+                rating = parse_tv_rating(rating)
+            except Exception as e:
+                raise ValueError(f"tv_snapshot.json のratingが不正です: US:{symbol} items[{idx}] / {e}") from e
+            if analyst_count is None or analyst_count <= 0 or avg_target_price is None or avg_target_price <= 0:
+                raise ValueError(f"tv_snapshot.json のcovered行は analyst_count>0 / avg_target_price>0 が必要です: US:{symbol} items[{idx}]")
+        elif coverage_status == "covered_partial":
+            try:
+                rating = parse_tv_rating(rating)
+            except Exception as e:
+                raise ValueError(f"tv_snapshot.json のcovered_partial行のratingが不正です: US:{symbol} items[{idx}] / {e}") from e
+            if avg_target_price is None or avg_target_price <= 0:
+                raise ValueError(f"tv_snapshot.json のcovered_partial行は avg_target_price>0 が必要です: US:{symbol} items[{idx}]")
+            if analyst_count is not None and analyst_count <= 0:
+                raise ValueError(f"tv_snapshot.json のcovered_partial行の analyst_count は未取得または正の整数が必要です: US:{symbol} items[{idx}]")
+        else:
+            try:
+                validate_tv_noncovered_blank_fields(row, f"US:{symbol} items[{idx}]")
+            except Exception as e:
+                raise ValueError(str(e)) from e
+            rating = None
+            analyst_count = None
+            avg_target_price = None
+        k = f"US:{symbol}"
+        if k in out:
+            raise ValueError(f"tv_snapshot.json に重複銘柄があります: {k} items[{idx}]")
+        out[k] = TVSnapshot(
+            symbol=symbol,
+            market="US",
+            coverage_status=coverage_status,
+            rating=rating,
+            analyst_count=analyst_count,
+            avg_target_price=avg_target_price,
+            strong_buy_count=safe_int(row.get("strong_buy_count")),
+            buy_count=safe_int(row.get("buy_count")),
+            hold_count=safe_int(row.get("hold_count")),
+            sell_count=safe_int(row.get("sell_count")),
+            strong_sell_count=safe_int(row.get("strong_sell_count")),
+            updated_at=str(row.get("updated_at") or "").strip() or None,
+            source=str(row.get("source") or "TradingView"),
+            reason=str(row.get("reason") or "").strip(),
+        )
+    return out
+
+def tv_upside(latest_price: Optional[float], tv: Optional[TVSnapshot]) -> Optional[float]:  # type: ignore[override]
+    if latest_price is None or not tv or tv.coverage_status not in {"covered", "covered_partial"} or tv.avg_target_price is None or latest_price == 0:
+        return None
+    return (tv.avg_target_price - latest_price) / latest_price * 100.0
+
+def tv_distribution_dict(tv: Optional[TVSnapshot]) -> Dict[str, int]:  # type: ignore[override]
+    if not tv or tv.coverage_status not in {"covered", "covered_partial"}:
+        return {}
+    pairs = [
+        ("strong_buy_count", getattr(tv, "strong_buy_count", None)),
+        ("buy_count", getattr(tv, "buy_count", None)),
+        ("hold_count", getattr(tv, "hold_count", None)),
+        ("sell_count", getattr(tv, "sell_count", None)),
+        ("strong_sell_count", getattr(tv, "strong_sell_count", None)),
+    ]
+    if all(v is None for _k, v in pairs):
+        return {}
+    out: Dict[str, int] = {}
+    for k, v in pairs:
+        n = safe_int(v)
+        out[k] = int(n) if n is not None and n >= 0 else 0
+    return out
+# --- CIS R7 TV covered_partial compatibility END ---

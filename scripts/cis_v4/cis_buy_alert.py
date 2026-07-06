@@ -220,7 +220,7 @@ def main() -> int:
         us_rows = [r for r in rows if r.get("market") == "US"]
         tv_missing = [r["symbol"] for r in us_rows if not r.get("tv_coverage_status")]
         tv_stale = [r["symbol"] for r in us_rows if r.get("tv_stale")]
-        tv_covered = [r["symbol"] for r in us_rows if r.get("tv_coverage_status") == "covered"]
+        tv_covered = [r["symbol"] for r in us_rows if r.get("tv_coverage_status") in {"covered", "covered_partial"}]
         tv_no_coverage = [r["symbol"] for r in us_rows if r.get("tv_coverage_status") == "no_coverage"]
         tv_not_applicable = [r["symbol"] for r in us_rows if r.get("tv_coverage_status") == "not_applicable"]
 
@@ -282,7 +282,7 @@ def main() -> int:
             f"- 価格取得成功：{price_success}/{len(price_checked)}",
             f"- 休場/日付注意：{market_closed_count}",
             f"- 買い場基準不備：{len(missing_or_invalid)}",
-            f"- 米国株TradingView covered：{len(tv_covered)}",
+            f"- 米国株TradingView 予想あり：{len(tv_covered)}",
             f"- TradingView未設定：{len(tv_missing)}",
             f"- カバレッジなし：{len(tv_no_coverage)}",
             f"- 対象外：{len(tv_not_applicable)}",
@@ -350,6 +350,18 @@ def main() -> int:
         write_error_report(STEM, TITLE, f"{type(e).__name__}: {e}")
         return 1
 
+# --- CIS R7 TV covered_partial buy alert compatibility START ---
+def tv_status_label(status: Optional[str]) -> str:  # type: ignore[override]
+    return {
+        "covered": "アナリスト予想あり",
+        "covered_partial": "アナリスト予想あり（一部取得）",
+        "no_coverage": "カバレッジなし",
+        "not_applicable": "対象外",
+        "not_required": "日本株は対象外",
+        None: "未設定",
+        "": "未設定",
+    }.get(status, str(status))
+# --- CIS R7 TV covered_partial buy alert compatibility END ---
 
 if __name__ == "__main__":
     sys.exit(main())
