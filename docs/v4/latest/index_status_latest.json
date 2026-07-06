@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-06T17:02:00.908524+09:00",
+  "generated_at_jst": "2026-07-06T21:02:57.738673+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -223,7 +223,7 @@
     },
     "master_init_template": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T16:58:38.513294+09:00",
+      "generated_at_jst": "2026-07-06T21:02:57.599917+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
@@ -234,22 +234,20 @@
     },
     "tv_monthly_refresh": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T16:49:35.826926+09:00",
+      "generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "us_watchlist_count": 48,
-      "fetched_count": 25,
-      "candidate_change_count": 0,
-      "unchanged_count": 0,
-      "failed_count": 23,
-      "apply_command_count": 25,
-      "changed_command_count": 25,
+      "fetched_count": 46,
+      "candidate_change_count": 44,
+      "unchanged_count": 2,
+      "failed_count": 2,
+      "apply_command_count": 44,
+      "changed_command_count": 44,
+      "covered_candidate_count": 43,
+      "covered_partial_candidate_count": 0,
+      "not_applicable_candidate_count": 1,
       "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
       "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。",
-      "success_condition": "rating + analyst_count + avg_target_price が揃った銘柄のみ反映候補化",
-      "tv_candidate_applied": true,
-      "tv_candidate_applied_at_jst": "2026-07-06T16:58:37.963001+09:00",
-      "candidate_change_count_before_apply": 25,
-      "candidate_change_count_suppressed": 25,
-      "tv_candidate_applied_note": "TV変更候補25件は反映済みです。TV取得失敗23件は残っています。"
+      "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
     },
     "apply_tv_monthly_candidate": {
       "status": "ok",
@@ -267,7 +265,7 @@
     },
     "monthly_maintenance": {
       "status": "partial",
-      "generated_at_jst": "2026-07-06T16:58:39.067664+09:00",
+      "generated_at_jst": "2026-07-06T21:02:57.672143+09:00",
       "watchlist_count": 73,
       "us_count": 48,
       "tv_count": 25,

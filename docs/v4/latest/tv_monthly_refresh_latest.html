@@ -1,383 +1,420 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>tv_monthly_refresh</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS TradingView月次自動確認</h1>
-<p>生成日時：2026/07/06 16:49 JST</p>
-<h2>これは何をするレポートか</h2>
-<ul>
-<li>月1でTradingView候補値を自動確認し、保存済み tv_snapshot.json と比較します。</li>
-<li>このレポート自体は tv_snapshot.json を直接書き換えません。</li>
-<li>rating + analyst_count + 平均目標株価が揃った銘柄だけ、反映用コマンドを自動生成します。</li>
-<li>分布は取れた場合だけ反映コマンドに含めます。取れなくても、rating・人数・平均目標株価が揃っていれば候補化します。</li>
-</ul>
+<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>tv_monthly_refresh</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS TradingView 月次確認</h1>
+<p>生成日時：2026/07/06 21:02 JST</p>
 <h2>ステータス</h2>
 <ul>
 <li>米国株監視リスト：48件</li>
-<li>自動取得成功：25件</li>
-<li>値の変更候補：25件</li>
-<li>値は同じ・確認済み：0件</li>
-<li>取得失敗・手動確認候補：23件</li>
+<li>反映候補：44件</li>
+<li>完全取得候補：43件</li>
+<li>一部取得候補：0件</li>
+<li>対象外候補：1件</li>
+<li>値は同じ・確認済み：2件</li>
+<li>取得失敗・確認候補：2件</li>
 </ul>
-<h2>取得経路サマリー</h2>
+<h2>方針</h2>
 <ul>
-<li>source: TradingView scanner + TradingView forecast page analyst_count：25件</li>
-<li>analyst_count経路: forecast_page_text：25件</li>
-<li>分布あり：0件</li>
-<li>分布なし：25件</li>
+<li>covered：rating + analyst_count + avg_target_price が揃った候補</li>
+<li>covered_partial：rating + avg_target_price は取れたが、analyst_count は未取得でも候補化</li>
+<li>not_applicable：EWYなどETFの対象外明示</li>
 </ul>
-<h2>iPhone用・反映導線</h2>
-<div class='card'><h3>推奨：コピーなしで反映する</h3>
+<h2>候補</h2>
+<div class='card'><h3>1. AVAV AeroVironment</h3>
 <ul>
-<li>GitHub Actions → `CIS v4 Apply TV Monthly Candidate` → `Run workflow` を押してください。</li>
-<li>このWorkflowは、この月次確認で取得できた銘柄だけをMaster Updateに渡します。</li>
-<li>取得失敗銘柄は反映対象外なので、既存値は維持されます。</li>
-</ul>
-</div>
-<div class='card'><h3>手動で貼る場合</h3>
-<p>iPhoneでは、まず分割版を使うのが安全です。</p>
-<p>#### 全成功取得分・iPhone分割1行版</p>
-<ul>
-<li><a href='tv_monthly_refresh_apply_iphone_part_01_1line.txt'>tv_monthly_refresh_apply_iphone_part_01_1line.txt</a></li>
-<li><a href='tv_monthly_refresh_apply_iphone_part_02_1line.txt'>tv_monthly_refresh_apply_iphone_part_02_1line.txt</a></li>
-</ul>
-<p>#### 変更ありだけ・iPhone分割1行版</p>
-<ul>
-<li><a href='tv_monthly_refresh_changed_only_iphone_part_01_1line.txt'>tv_monthly_refresh_changed_only_iphone_part_01_1line.txt</a></li>
-<li><a href='tv_monthly_refresh_changed_only_iphone_part_02_1line.txt'>tv_monthly_refresh_changed_only_iphone_part_02_1line.txt</a></li>
-</ul>
-<p>#### PC向け・全件</p>
-<ul>
-<li><a href='tv_monthly_refresh_apply_commands_iphone_1line.txt'>全成功取得分・1行版</a></li>
-<li><a href='tv_monthly_refresh_changed_only_commands_iphone_1line.txt'>変更ありだけ・1行版</a></li>
-<li><a href='tv_monthly_refresh_apply_commands.txt'>全成功取得分・改行版</a></li>
-<li><a href='tv_monthly_refresh_changed_only_commands.txt'>変更ありだけ・改行版</a></li>
-<li><a href='tv_monthly_refresh_candidate_manifest.json'>候補manifest</a></li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：17</li>
+<li>avg_target_price：$241.47</li>
+<li>command：`TV US AVAV|Strong Buy|17|241.47|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<h2>値の変更候補</h2>
-<div class='card'><h3>US:AVAV AeroVironment</h3>
+<div class='card'><h3>2. AXON Axon Enterprise</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 19人 / 241.470588</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.131579 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AVAV/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：17</li>
+<li>avg_target_price：$676.88</li>
+<li>command：`TV US AXON|Strong Buy|17|676.88|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:AXON Axon Enterprise</h3>
+<div class='card'><h3>3. AUR Aurora Innovation</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 23人 / 676.882353</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.173913 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AXON/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：11</li>
+<li>avg_target_price：$11.14</li>
+<li>command：`TV US AUR|Strong Buy|11|11.14|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:AUR Aurora Innovation</h3>
+<div class='card'><h3>4. TMDX TransMedics Group</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 14人 / 11.144545</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.464286 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AUR/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：9</li>
+<li>avg_target_price：$117.33</li>
+<li>command：`TV US TMDX|Strong Buy|9|117.33|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:TMDX TransMedics Group</h3>
+<div class='card'><h3>5. NOW ServiceNow</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 11人 / 117.333333</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.318182 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TMDX/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：42</li>
+<li>avg_target_price：$140.38</li>
+<li>command：`TV US NOW|Strong Buy|42|140.38|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:NOW ServiceNow</h3>
+<div class='card'><h3>6. RDW Redwire</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 50人 / 140.380952</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.16 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-NOW/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：7</li>
+<li>avg_target_price：$15.71</li>
+<li>command：`TV US RDW|Strong Buy|7|15.71|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:RDW Redwire</h3>
+<div class='card'><h3>7. TRMB Trimble</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 8人 / 15.714286</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.4375 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-RDW/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：12</li>
+<li>avg_target_price：$84.08</li>
+<li>command：`TV US TRMB|Strong Buy|12|84.08|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:TRMB Trimble</h3>
+<div class='card'><h3>8. VEEV Veeva Systems</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 16人 / 84.083333</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.15625 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TRMB/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：23</li>
+<li>avg_target_price：$241.43</li>
+<li>command：`TV US VEEV|Strong Buy|23|241.43|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:VEEV Veeva Systems</h3>
+<div class='card'><h3>9. PYPL PayPal</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 29人 / 241.434783</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.431034 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-VEEV/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Buy</li>
+<li>analyst_count：31</li>
+<li>avg_target_price：$47.11</li>
+<li>command：`TV US PYPL|Buy|31|47.11|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:PYPL PayPal</h3>
+<div class='card'><h3>10. TEM Tempus AI</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Buy / 46人 / 47.112903</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.934783 → Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-PYPL/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Buy</li>
+<li>analyst_count：16</li>
+<li>avg_target_price：$66.06</li>
+<li>command：`TV US TEM|Buy|16|66.06|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:TEM Tempus AI</h3>
+<div class='card'><h3>11. FICO Fair Isaac</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Buy / 20人 / 66.0625</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.55 → Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TEM/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：20</li>
+<li>avg_target_price：$1,501.65</li>
+<li>command：`TV US FICO|Strong Buy|20|1501.65|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:FICO Fair Isaac</h3>
+<div class='card'><h3>12. AAOI Applied Optoelectronics</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 25人 / 1501.65</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.48 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-FICO/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Buy</li>
+<li>analyst_count：6</li>
+<li>avg_target_price：$172.75</li>
+<li>command：`TV US AAOI|Buy|6|172.75|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:AAOI Applied Optoelectronics</h3>
+<div class='card'><h3>13. OUST Ouster</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Buy / 8人 / 172.75</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.5625 → Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AAOI/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：7</li>
+<li>avg_target_price：$47.29</li>
+<li>command：`TV US OUST|Strong Buy|7|47.29|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:OUST Ouster</h3>
+<div class='card'><h3>14. APH Amphenol</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 8人 / 47.285714</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.25 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-OUST/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：18</li>
+<li>avg_target_price：$184.61</li>
+<li>command：`TV US APH|Strong Buy|18|184.61|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:APH Amphenol</h3>
+<div class='card'><h3>15. NBIS Nebius Group</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 24人 / 184.611111</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.270833 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-APH/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：14</li>
+<li>avg_target_price：$257.79</li>
+<li>command：`TV US NBIS|Strong Buy|14|257.79|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:ASPI ASP Isotopes</h3>
+<div class='card'><h3>16. EWY iShares MSCI South Korea ETF</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 3人 / 13.0</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-ASPI/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：not_applicable</li>
+<li>rating：なし</li>
+<li>analyst_count：未取得</li>
+<li>avg_target_price：なし</li>
+<li>command：`TV US EWY|not_applicable|ETFのためTradingView個別株アナリスト予想対象外`</li>
 </ul>
 </div>
-<div class='card'><h3>US:NBIS Nebius Group</h3>
+<div class='card'><h3>17. ISRG Intuitive Surgical</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 17人 / 257.785714</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.470588 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-NBIS/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：27</li>
+<li>avg_target_price：$573.44</li>
+<li>command：`TV US ISRG|Strong Buy|27|573.44|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:ISRG Intuitive Surgical</h3>
+<div class='card'><h3>18. SPGI S&amp;P Global</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 35人 / 573.444444</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.414286 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-ISRG/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：22</li>
+<li>avg_target_price：$501.24</li>
+<li>command：`TV US SPGI|Strong Buy|22|501.24|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:SPGI S&amp;P Global</h3>
+<div class='card'><h3>19. MELI MercadoLibre</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 29人 / 501.235852</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.12069 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-SPGI/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：22</li>
+<li>avg_target_price：$2,235.41</li>
+<li>command：`TV US MELI|Strong Buy|22|2235.41|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:MELI MercadoLibre</h3>
+<div class='card'><h3>20. TMO Thermo Fisher Scientific</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 25人 / 2235.409091</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.2 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-MELI/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：24</li>
+<li>avg_target_price：$595.21</li>
+<li>command：`TV US TMO|Strong Buy|24|595.21|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:TMO Thermo Fisher Scientific</h3>
+<div class='card'><h3>21. META Meta Platforms</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 31人 / 595.208333</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.290323 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-TMO/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：58</li>
+<li>avg_target_price：$821.00</li>
+<li>command：`TV US META|Strong Buy|58|821.00|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:META Meta Platforms</h3>
+<div class='card'><h3>22. IONQ IonQ</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 69人 / 820.996334</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.130435 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-META/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：11</li>
+<li>avg_target_price：$71.32</li>
+<li>command：`TV US IONQ|Strong Buy|11|71.32|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:IONQ IonQ</h3>
+<div class='card'><h3>23. RGTI Rigetti Computing</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 14人 / 71.318182</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NYSE</li>
-<li>recommendation_mark(raw)：1.321429 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-IONQ/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：10</li>
+<li>avg_target_price：$31.00</li>
+<li>command：`TV US RGTI|Strong Buy|10|31.00|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:RGTI Rigetti Computing</h3>
+<div class='card'><h3>24. RXRX Recursion Pharmaceuticals</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 13人 / 31.0</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.346154 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-RGTI/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Buy</li>
+<li>analyst_count：7</li>
+<li>avg_target_price：$6.64</li>
+<li>command：`TV US RXRX|Buy|7|6.64|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:SDGR Schrodinger</h3>
+<div class='card'><h3>25. QCOM Qualcomm</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Strong Buy / 8人 / 20.875</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.25 → Strong Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-SDGR/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Buy</li>
+<li>analyst_count：30</li>
+<li>avg_target_price：$224.43</li>
+<li>command：`TV US QCOM|Buy|30|224.43|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<div class='card'><h3>US:RXRX Recursion Pharmaceuticals</h3>
+<div class='card'><h3>26. HSAI Hesai Group</h3>
 <ul>
-<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
-<li>新：covered / Buy / 8人 / 6.642857</li>
-<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
-<li>取引所候補：NASDAQ</li>
-<li>recommendation_mark(raw)：1.625 → Buy</li>
-<li>平均目標株価フィールド：price_target_average</li>
-<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-RXRX/forecast/</li>
-<li>差分：新規取得</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：20</li>
+<li>avg_target_price：$30.02</li>
+<li>command：`TV US HSAI|Strong Buy|20|30.02|TradingView monthly auto-check 2026/07`</li>
 </ul>
 </div>
-<h2>値は同じ・確認済み</h2>
-<p>なし</p>
-<h2>取得失敗・手動確認候補</h2>
-<p>取得失敗銘柄は候補コマンドから除外しています。既存の tv_snapshot.json は守られます。</p>
+<div class='card'><h3>27. PL Planet Labs</h3>
 <ul>
-<li>US:EWY：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 404 / NYSEARCA: forecast HTTPError 404 / BATS: forecast HTTPError 404 / OTC: forecast HTTPError 404 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:QCOM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:HSAI：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:PL：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:V：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:VRTX：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:DIS：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:KVYO：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:DKNG：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:CRSP：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:BEAM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:ETN：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:MSTR：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:POET：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:KITT：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:AXTI：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:COHR：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:ANET：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:DDOG：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:SNOW：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:OPTX：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:AEM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
-<li>US:ZETA：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：10</li>
+<li>avg_target_price：$41.10</li>
+<li>command：`TV US PL|Strong Buy|10|41.10|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>28. V Visa</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：34</li>
+<li>avg_target_price：$401.79</li>
+<li>command：`TV US V|Strong Buy|34|401.79|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>29. VRTX Vertex Pharmaceuticals</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：28</li>
+<li>avg_target_price：$553.64</li>
+<li>command：`TV US VRTX|Strong Buy|28|553.64|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>30. DIS Walt Disney</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：27</li>
+<li>avg_target_price：$130.44</li>
+<li>command：`TV US DIS|Strong Buy|27|130.44|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>31. KVYO Klaviyo</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：22</li>
+<li>avg_target_price：$28.82</li>
+<li>command：`TV US KVYO|Strong Buy|22|28.82|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>32. DKNG DraftKings</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：36</li>
+<li>avg_target_price：$34.16</li>
+<li>command：`TV US DKNG|Strong Buy|36|34.16|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>33. CRSP CRISPR Therapeutics</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：21</li>
+<li>avg_target_price：$81.10</li>
+<li>command：`TV US CRSP|Strong Buy|21|81.10|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>34. BEAM Beam Therapeutics</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：15</li>
+<li>avg_target_price：$49.87</li>
+<li>command：`TV US BEAM|Strong Buy|15|49.87|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>35. ETN Eaton</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：22</li>
+<li>avg_target_price：$469.41</li>
+<li>command：`TV US ETN|Strong Buy|22|469.41|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>36. MSTR MicroStrategy</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：15</li>
+<li>avg_target_price：$309.87</li>
+<li>command：`TV US MSTR|Strong Buy|15|309.87|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>37. POET POET Technologies</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：1</li>
+<li>avg_target_price：$20.25</li>
+<li>command：`TV US POET|Strong Buy|1|20.25|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>38. AXTI AXT</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：4</li>
+<li>avg_target_price：$96.50</li>
+<li>command：`TV US AXTI|Strong Buy|4|96.50|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>39. COHR Coherent</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：22</li>
+<li>avg_target_price：$391.00</li>
+<li>command：`TV US COHR|Strong Buy|22|391.00|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>40. ANET Arista Networks</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：25</li>
+<li>avg_target_price：$190.30</li>
+<li>command：`TV US ANET|Strong Buy|25|190.30|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>41. DDOG Datadog</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：44</li>
+<li>avg_target_price：$245.82</li>
+<li>command：`TV US DDOG|Strong Buy|44|245.82|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>42. SNOW Snowflake</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：44</li>
+<li>avg_target_price：$298.16</li>
+<li>command：`TV US SNOW|Strong Buy|44|298.16|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>43. AEM Agnico Eagle Mines</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：19</li>
+<li>avg_target_price：$250.41</li>
+<li>command：`TV US AEM|Strong Buy|19|250.41|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<div class='card'><h3>44. ZETA Zeta Global</h3>
+<ul>
+<li>coverage：covered</li>
+<li>rating：Strong Buy</li>
+<li>analyst_count：14</li>
+<li>avg_target_price：$28.68</li>
+<li>command：`TV US ZETA|Strong Buy|14|28.68|TradingView monthly auto-check 2026/07`</li>
+</ul>
+</div>
+<h2>取得失敗・確認候補</h2>
+<ul>
+<li>KITT：rating, avg_target_price</li>
+<li>OPTX：rating, avg_target_price</li>
 </ul><p><a href='../index.html'>CISホームへ戻る</a></p></body></html>

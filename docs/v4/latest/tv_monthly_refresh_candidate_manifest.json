@@ -1,87 +1,39 @@
 {
-  "version": 2,
+  "version": 3,
   "status": "partial",
-  "generated_at_jst": "2026-07-06T16:49:35.826926+09:00",
-  "apply_command_count": 25,
-  "changed_command_count": 25,
+  "generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
+  "apply_command_count": 44,
+  "changed_command_count": 44,
   "summary": {
     "us_watchlist_count": 48,
-    "fetched_count": 25,
-    "candidate_change_count": 25,
-    "unchanged_count": 0,
-    "failed_count": 23,
-    "source_counts": {
-      "TradingView scanner + TradingView forecast page analyst_count": 25
-    },
-    "count_source_counts": {
-      "forecast_page_text": 25
-    },
-    "distribution_counts": {
-      "available": 0,
-      "unavailable": 25
-    },
-    "success_condition": "rating + analyst_count + avg_target_price が揃った銘柄のみ反映候補化"
+    "candidate_change_count": 44,
+    "unchanged_count": 2,
+    "failed_count": 2,
+    "covered_candidate_count": 43,
+    "covered_partial_candidate_count": 0,
+    "not_applicable_candidate_count": 1,
+    "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
   },
   "command_files": {
     "tv_monthly_refresh_apply_commands.txt": {
-      "sha256": "b98af768b474c3fea3563342f15d4a9233542fd8fd5c1b79c14054e068b67f90",
-      "line_count": 25,
-      "bytes_utf8": 1725
+      "sha256": "8b89c529140968d745fddff9b418faa19e0fd514055f210461014f372192665c",
+      "line_count": 44,
+      "bytes_utf8": 3068
     },
     "tv_monthly_refresh_changed_only_commands.txt": {
-      "sha256": "b98af768b474c3fea3563342f15d4a9233542fd8fd5c1b79c14054e068b67f90",
-      "line_count": 25,
-      "bytes_utf8": 1725
+      "sha256": "8b89c529140968d745fddff9b418faa19e0fd514055f210461014f372192665c",
+      "line_count": 44,
+      "bytes_utf8": 3068
     },
     "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
-      "sha256": "fd60a801e650b125c94d914520b4c872ee64b2a96ba68b0cba5fc4d875399571",
+      "sha256": "b5a1c12e4d70bba84128b7ccc69aebb36a124032df2f0a25fbd2483c5c143216",
       "line_count": 1,
-      "bytes_utf8": 1773
+      "bytes_utf8": 3111
     },
     "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
-      "sha256": "fd60a801e650b125c94d914520b4c872ee64b2a96ba68b0cba5fc4d875399571",
+      "sha256": "b5a1c12e4d70bba84128b7ccc69aebb36a124032df2f0a25fbd2483c5c143216",
       "line_count": 1,
-      "bytes_utf8": 1773
-    },
-    "tv_monthly_refresh_apply_iphone_part_01.txt": {
-      "sha256": "4d239c7a60bab18096be8d2193a7666a63ce260f2ce4bce774cde5e8e00dcb30",
-      "line_count": 15,
-      "bytes_utf8": 1029
-    },
-    "tv_monthly_refresh_apply_iphone_part_01_1line.txt": {
-      "sha256": "510ace3c081208a1b31336378a08a12e0578bab0949fafba695bb1a0b9d57e3d",
-      "line_count": 1,
-      "bytes_utf8": 1057
-    },
-    "tv_monthly_refresh_apply_iphone_part_02.txt": {
-      "sha256": "a97bdadabef18feffd93239f5151825a72c28bbba2c2c43e3b21b2d0fd1678d0",
-      "line_count": 10,
-      "bytes_utf8": 696
-    },
-    "tv_monthly_refresh_apply_iphone_part_02_1line.txt": {
-      "sha256": "46bdbc7749e6c855b33922d9c00cda813769ae27af327a144908c4dd290ea4af",
-      "line_count": 1,
-      "bytes_utf8": 714
-    },
-    "tv_monthly_refresh_changed_only_iphone_part_01.txt": {
-      "sha256": "4d239c7a60bab18096be8d2193a7666a63ce260f2ce4bce774cde5e8e00dcb30",
-      "line_count": 15,
-      "bytes_utf8": 1029
-    },
-    "tv_monthly_refresh_changed_only_iphone_part_01_1line.txt": {
-      "sha256": "510ace3c081208a1b31336378a08a12e0578bab0949fafba695bb1a0b9d57e3d",
-      "line_count": 1,
-      "bytes_utf8": 1057
-    },
-    "tv_monthly_refresh_changed_only_iphone_part_02.txt": {
-      "sha256": "a97bdadabef18feffd93239f5151825a72c28bbba2c2c43e3b21b2d0fd1678d0",
-      "line_count": 10,
-      "bytes_utf8": 696
-    },
-    "tv_monthly_refresh_changed_only_iphone_part_02_1line.txt": {
-      "sha256": "46bdbc7749e6c855b33922d9c00cda813769ae27af327a144908c4dd290ea4af",
-      "line_count": 1,
-      "bytes_utf8": 714
+      "bytes_utf8": 3111
     }
   },
   "primary_files": {
