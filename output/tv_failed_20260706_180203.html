@@ -1,0 +1,2304 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIS TradingView失敗23件 抽出レポート</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  margin: 0;
+  padding: 20px;
+  color: #111;
+  background: #fafafa;
+}
+a { color: #0645ad; }
+h1 { font-size: 2rem; margin-top: 24px; }
+h2 { font-size: 1.35rem; }
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.summary {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 16px;
+}
+code, pre {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+pre {
+  overflow-x: auto;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+.badge {
+  display: inline-block;
+  background: #f2f2f2;
+  border-radius: 999px;
+  padding: 4px 10px;
+  margin: 3px;
+}
+</style>
+</head>
+<body>
+<p><a href="../">CISホームへ戻る</a></p>
+<h1>CIS TradingView失敗23件 抽出レポート</h1>
+<p>生成日時：2026/07/06 18:02 JST</p>
+<div class="summary">
+  <h2>これは何をするレポートか</h2>
+  <ul>
+    <li>Monthly Refreshで取得失敗・手動確認になった銘柄だけを抽出します。</li>
+    <li>このレポートは診断専用です。<code>tv_snapshot.json</code>、Master、Apply、Daily/Weekly/Buy Alertは変更しません。</li>
+    <li>残件を「追加取得」「対象外」「カバレッジなし」に分けるための材料です。</li>
+  </ul>
+  <h2>ステータス</h2>
+  <ul>
+    <li>元JSON：<code>docs/v4/latest/tv_monthly_refresh_latest.json</code></li>
+    <li>失敗抽出件数：23件</li>
+  </ul>
+  <h2>判定候補サマリー</h2>
+  <p><span class="badge">ETF/対象外候補：1件</span> <span class="badge">カバレッジなし候補：22件</span></p>
+  <h2>HTTPエラーサマリー</h2>
+  <p>なし</p>
+  <h2>不足項目サマリー</h2>
+  <p><span class="badge">rating：23件</span> <span class="badge">avg_target_price：23件</span> <span class="badge">analyst_count：23件</span></p>
+</div>
+<h1>取得失敗・手動確認候補</h1>
+
+        <section class="card">
+          <h2>1. US:EWY </h2>
+          <p><strong>判定候補：</strong>ETF/対象外候補</p>
+          <p><strong>次の見方：</strong>ETFやファンド系はTradingViewの個別株アナリスト予想対象外の可能性があります。</p>
+          <p><strong>不足項目：</strong><code>rating, avg_target_price, analyst_count</code></p>
+          <p><strong>試した取引所：</strong><code>AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 404 / NYSEARCA: forecast HTTPError 404 / BATS: forecast HTTPError 404 / OTC: forecast HTTPError 404</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;AMEX&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 404&quot;,
+        &quot;BATS: forecast HTTPError 404&quot;,
+        &quot;OTC: forecast HTTPError 404&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;AMEX&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 404&quot;,
+        &quot;BATS: forecast HTTPError 404&quot;,
+        &quot;OTC: forecast HTTPError 404&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;AMEX&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 404&quot;,
+        &quot;BATS: forecast HTTPError 404&quot;,
+        &quot;OTC: forecast HTTPError 404&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;AMEX&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 404&quot;,
+        &quot;BATS: forecast HTTPError 404&quot;,
+        &quot;OTC: forecast HTTPError 404&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;AMEX&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 404&quot;,
+        &quot;BATS: forecast HTTPError 404&quot;,
+        &quot;OTC: forecast HTTPError 404&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>2. US:AEM </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>3. US:ANET </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>4. US:AXTI </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>5. US:BEAM </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>6. US:COHR </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>7. US:CRSP </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>8. US:DDOG </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>9. US:DIS </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>10. US:DKNG </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>11. US:ETN </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>12. US:HSAI </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>13. US:KITT </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>rating, avg_target_price, analyst_count</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>14. US:KVYO </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>15. US:MSTR </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>16. US:OPTX </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>rating, avg_target_price, analyst_count</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>17. US:PL </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>18. US:POET </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>19. US:QCOM </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>20. US:SNOW </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>21. US:V </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>22. US:VRTX </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NASDAQ, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NASDAQ&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+        <section class="card">
+          <h2>23. US:ZETA </h2>
+          <p><strong>判定候補：</strong>カバレッジなし候補</p>
+          <p><strong>次の見方：</strong>scannerでrating・人数・平均目標株価が揃いません。実質カバレッジなしの可能性があります。</p>
+          <p><strong>不足項目：</strong><code>analyst_count, rating, avg_target_price</code></p>
+          <p><strong>試した取引所：</strong><code>NYSE, AMEX, NYSEARCA, BATS, OTC</code></p>
+          <p><strong>理由：</strong>scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403</p>
+          <details>
+            <summary>forecast / scanner詳細</summary>
+            <ul><li>なし</li></ul>
+            <pre>{
+  &quot;attempts&quot;: [
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: &quot;price_target_average&quot;,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: &quot;recommendation_mark&quot;,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    },
+    {
+      &quot;exchange&quot;: &quot;NYSE&quot;,
+      &quot;resolution_status&quot;: &quot;failed&quot;,
+      &quot;missing&quot;: [
+        &quot;rating&quot;,
+        &quot;avg_target_price&quot;,
+        &quot;analyst_count&quot;
+      ],
+      &quot;rating_field&quot;: null,
+      &quot;target_field&quot;: null,
+      &quot;count_source&quot;: null,
+      &quot;forecast_count_errors&quot;: [
+        &quot;NYSEARCA: forecast HTTPError 403&quot;,
+        &quot;BATS: forecast HTTPError 403&quot;,
+        &quot;OTC: forecast HTTPError 403&quot;
+      ]
+    }
+  ]
+}</pre>
+          </details>
+        </section>
+        
+</body>
+</html>
