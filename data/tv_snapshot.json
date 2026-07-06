@@ -1,3 +1,279 @@
 {
-  "items": []
+  "items": [
+    {
+      "symbol": "AAOI",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Buy",
+      "analyst_count": 8,
+      "avg_target_price": 172.75,
+      "updated_at": "2026-07-06T16:58:37.877644+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "APH",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 24,
+      "avg_target_price": 184.61,
+      "updated_at": "2026-07-06T16:58:37.877675+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "ASPI",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 3,
+      "avg_target_price": 13.0,
+      "updated_at": "2026-07-06T16:58:37.877689+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "AUR",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 14,
+      "avg_target_price": 11.14,
+      "updated_at": "2026-07-06T16:58:37.877474+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "AVAV",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 19,
+      "avg_target_price": 241.47,
+      "updated_at": "2026-07-06T16:58:37.877416+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "AXON",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 23,
+      "avg_target_price": 676.88,
+      "updated_at": "2026-07-06T16:58:37.877452+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "FICO",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 25,
+      "avg_target_price": 1501.65,
+      "updated_at": "2026-07-06T16:58:37.877631+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "IONQ",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 14,
+      "avg_target_price": 71.32,
+      "updated_at": "2026-07-06T16:58:37.877777+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "ISRG",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 35,
+      "avg_target_price": 573.44,
+      "updated_at": "2026-07-06T16:58:37.877714+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "MELI",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 25,
+      "avg_target_price": 2235.41,
+      "updated_at": "2026-07-06T16:58:37.877740+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "META",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 69,
+      "avg_target_price": 821.0,
+      "updated_at": "2026-07-06T16:58:37.877765+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "NBIS",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 17,
+      "avg_target_price": 257.79,
+      "updated_at": "2026-07-06T16:58:37.877702+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "NOW",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 50,
+      "avg_target_price": 140.38,
+      "updated_at": "2026-07-06T16:58:37.877512+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "OUST",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 8,
+      "avg_target_price": 47.29,
+      "updated_at": "2026-07-06T16:58:37.877659+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "PYPL",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Buy",
+      "analyst_count": 46,
+      "avg_target_price": 47.11,
+      "updated_at": "2026-07-06T16:58:37.877601+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "RDW",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 8,
+      "avg_target_price": 15.71,
+      "updated_at": "2026-07-06T16:58:37.877530+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "RGTI",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 13,
+      "avg_target_price": 31.0,
+      "updated_at": "2026-07-06T16:58:37.877788+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "RXRX",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Buy",
+      "analyst_count": 8,
+      "avg_target_price": 6.64,
+      "updated_at": "2026-07-06T16:58:37.877830+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "SDGR",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 8,
+      "avg_target_price": 20.88,
+      "updated_at": "2026-07-06T16:58:37.877800+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "SPGI",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 29,
+      "avg_target_price": 501.24,
+      "updated_at": "2026-07-06T16:58:37.877727+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "TEM",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Buy",
+      "analyst_count": 20,
+      "avg_target_price": 66.06,
+      "updated_at": "2026-07-06T16:58:37.877617+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "TMDX",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 11,
+      "avg_target_price": 117.33,
+      "updated_at": "2026-07-06T16:58:37.877494+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "TMO",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 31,
+      "avg_target_price": 595.21,
+      "updated_at": "2026-07-06T16:58:37.877753+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "TRMB",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 16,
+      "avg_target_price": 84.08,
+      "updated_at": "2026-07-06T16:58:37.877547+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    },
+    {
+      "symbol": "VEEV",
+      "market": "US",
+      "coverage_status": "covered",
+      "rating": "Strong Buy",
+      "analyst_count": 29,
+      "avg_target_price": 241.43,
+      "updated_at": "2026-07-06T16:58:37.877580+09:00",
+      "source": "TradingView",
+      "reason": "TradingView monthly auto-check 2026/07"
+    }
+  ]
 }

@@ -1,19 +1,19 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-07-06T16:49:35.992737+09:00",
+  "generated_at_jst": "2026-07-06T16:58:39.067664+09:00",
   "watchlist_count": 73,
   "us_count": 48,
-  "tv_count": 0,
-  "tv_covered_count": 0,
+  "tv_count": 25,
+  "tv_covered_count": 25,
   "tv_no_coverage_count": 0,
   "tv_not_applicable_count": 0,
-  "tv_missing_count": 48,
+  "tv_missing_count": 23,
   "tv_stale_or_unknown_count": 0,
   "tv_extra_count": 0,
   "buyzone_count": 73,
   "buyzone_missing_count": 0,
   "buyzone_extra_count": 0,
   "warnings": [
-    "TradingView未設定：48銘柄"
+    "TradingView未設定：23銘柄"
   ]
 }

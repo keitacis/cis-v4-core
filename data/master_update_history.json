@@ -948,6 +948,381 @@
         "reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定"
       ],
       "updated_at": "2026-07-05T22:17:32.405509+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "AVAV",
+      "raw": "TV US AVAV|Strong Buy|19|241.47|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 19",
+        "avg_target_price: 未設定 → 241.47",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879091+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "AXON",
+      "raw": "TV US AXON|Strong Buy|23|676.88|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 23",
+        "avg_target_price: 未設定 → 676.88",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879103+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "AUR",
+      "raw": "TV US AUR|Strong Buy|14|11.14|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 14",
+        "avg_target_price: 未設定 → 11.14",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879109+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "TMDX",
+      "raw": "TV US TMDX|Strong Buy|11|117.33|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 11",
+        "avg_target_price: 未設定 → 117.33",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879114+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "NOW",
+      "raw": "TV US NOW|Strong Buy|50|140.38|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 50",
+        "avg_target_price: 未設定 → 140.38",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879119+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "RDW",
+      "raw": "TV US RDW|Strong Buy|8|15.71|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 8",
+        "avg_target_price: 未設定 → 15.71",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879127+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "TRMB",
+      "raw": "TV US TRMB|Strong Buy|16|84.08|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 16",
+        "avg_target_price: 未設定 → 84.08",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879132+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "VEEV",
+      "raw": "TV US VEEV|Strong Buy|29|241.43|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 29",
+        "avg_target_price: 未設定 → 241.43",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879136+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "PYPL",
+      "raw": "TV US PYPL|Buy|46|47.11|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Buy",
+        "analyst_count: 未設定 → 46",
+        "avg_target_price: 未設定 → 47.11",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879143+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "TEM",
+      "raw": "TV US TEM|Buy|20|66.06|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Buy",
+        "analyst_count: 未設定 → 20",
+        "avg_target_price: 未設定 → 66.06",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879150+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "FICO",
+      "raw": "TV US FICO|Strong Buy|25|1501.65|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 25",
+        "avg_target_price: 未設定 → 1501.65",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879155+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "AAOI",
+      "raw": "TV US AAOI|Buy|8|172.75|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Buy",
+        "analyst_count: 未設定 → 8",
+        "avg_target_price: 未設定 → 172.75",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879159+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "OUST",
+      "raw": "TV US OUST|Strong Buy|8|47.29|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 8",
+        "avg_target_price: 未設定 → 47.29",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879166+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "APH",
+      "raw": "TV US APH|Strong Buy|24|184.61|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 24",
+        "avg_target_price: 未設定 → 184.61",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879170+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "ASPI",
+      "raw": "TV US ASPI|Strong Buy|3|13.00|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 3",
+        "avg_target_price: 未設定 → 13.0",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879175+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "NBIS",
+      "raw": "TV US NBIS|Strong Buy|17|257.79|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 17",
+        "avg_target_price: 未設定 → 257.79",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879179+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "ISRG",
+      "raw": "TV US ISRG|Strong Buy|35|573.44|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 35",
+        "avg_target_price: 未設定 → 573.44",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879184+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "SPGI",
+      "raw": "TV US SPGI|Strong Buy|29|501.24|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 29",
+        "avg_target_price: 未設定 → 501.24",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879188+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "MELI",
+      "raw": "TV US MELI|Strong Buy|25|2235.41|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 25",
+        "avg_target_price: 未設定 → 2235.41",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879192+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "TMO",
+      "raw": "TV US TMO|Strong Buy|31|595.21|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 31",
+        "avg_target_price: 未設定 → 595.21",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879197+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "META",
+      "raw": "TV US META|Strong Buy|69|821.00|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 69",
+        "avg_target_price: 未設定 → 821.0",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879203+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "IONQ",
+      "raw": "TV US IONQ|Strong Buy|14|71.32|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 14",
+        "avg_target_price: 未設定 → 71.32",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879208+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "RGTI",
+      "raw": "TV US RGTI|Strong Buy|13|31.00|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 13",
+        "avg_target_price: 未設定 → 31.0",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879212+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "SDGR",
+      "raw": "TV US SDGR|Strong Buy|8|20.88|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Strong Buy",
+        "analyst_count: 未設定 → 8",
+        "avg_target_price: 未設定 → 20.88",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879216+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "RXRX",
+      "raw": "TV US RXRX|Buy|8|6.64|TradingView monthly auto-check 2026/07",
+      "diffs": [
+        "coverage_status: 未設定 → covered",
+        "rating: 未設定 → Buy",
+        "analyst_count: 未設定 → 8",
+        "avg_target_price: 未設定 → 6.64",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → TradingView monthly auto-check 2026/07"
+      ],
+      "updated_at": "2026-07-06T16:58:37.879221+09:00"
     }
   ]
 }
