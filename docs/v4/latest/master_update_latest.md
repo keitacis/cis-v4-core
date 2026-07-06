@@ -1,122 +1,280 @@
 # CIS マスター更新
 
-生成日時：2026/07/05 22:17 JST
+生成日時：2026/07/06 16:58 JST
 
 ## 反映内容
 
-### BUYZONE JP 5020
+### TV US AVAV
 
-- 入力：BUYZONE JP 5020|1074|977|855|初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定
+- 入力：TV US AVAV|Strong Buy|19|241.47|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 1074.0
-  - main_buy_price: 未設定 → 977.0
-  - strong_buy_price: 未設定 → 855.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1221から、energyのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 19
+  - avg_target_price: 未設定 → 241.47
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 4063
+### TV US AXON
 
-- 入力：BUYZONE JP 4063|5705|4870|4035|初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定
+- 入力：TV US AXON|Strong Buy|23|676.88|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 5705.0
-  - main_buy_price: 未設定 → 4870.0
-  - strong_buy_price: 未設定 → 4035.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格6958から、semiconductor_materialsのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 23
+  - avg_target_price: 未設定 → 676.88
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 4042
+### TV US AUR
 
-- 入力：BUYZONE JP 4042|2485|2260|1979|初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定
+- 入力：TV US AUR|Strong Buy|14|11.14|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 2485.0
-  - main_buy_price: 未設定 → 2260.0
-  - strong_buy_price: 未設定 → 1979.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2826.5から、chemicalのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 14
+  - avg_target_price: 未設定 → 11.14
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 1911
+### TV US TMDX
 
-- 入力：BUYZONE JP 1911|1198|1089|953|初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定
+- 入力：TV US TMDX|Strong Buy|11|117.33|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 1198.0
-  - main_buy_price: 未設定 → 1089.0
-  - strong_buy_price: 未設定 → 953.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1361.5から、housing_woodのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 11
+  - avg_target_price: 未設定 → 117.33
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 1928
+### TV US NOW
 
-- 入力：BUYZONE JP 1928|3100|2825|2515|初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定
+- 入力：TV US NOW|Strong Buy|50|140.38|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 3100.0
-  - main_buy_price: 未設定 → 2825.0
-  - strong_buy_price: 未設定 → 2515.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3445から、housingのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 50
+  - avg_target_price: 未設定 → 140.38
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 6326
+### TV US RDW
 
-- 入力：BUYZONE JP 6326|2415|2195|1922|初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定
+- 入力：TV US RDW|Strong Buy|8|15.71|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 2415.0
-  - main_buy_price: 未設定 → 2195.0
-  - strong_buy_price: 未設定 → 1922.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2745.5から、agricultural_machineryのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 8
+  - avg_target_price: 未設定 → 15.71
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 7267
+### TV US TRMB
 
-- 入力：BUYZONE JP 7267|1364|1240|1085|初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定
+- 入力：TV US TRMB|Strong Buy|16|84.08|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 1364.0
-  - main_buy_price: 未設定 → 1240.0
-  - strong_buy_price: 未設定 → 1085.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1550から、automobileのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 16
+  - avg_target_price: 未設定 → 84.08
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 6501
+### TV US VEEV
 
-- 入力：BUYZONE JP 6501|3785|3230|2675|初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定
+- 入力：TV US VEEV|Strong Buy|29|241.43|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 3785.0
-  - main_buy_price: 未設定 → 3230.0
-  - strong_buy_price: 未設定 → 2675.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4615から、industrial_electronicsのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 29
+  - avg_target_price: 未設定 → 241.43
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 9861
+### TV US PYPL
 
-- 入力：BUYZONE JP 9861|2715|2475|2200|初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定
+- 入力：TV US PYPL|Buy|46|47.11|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 2715.0
-  - main_buy_price: 未設定 → 2475.0
-  - strong_buy_price: 未設定 → 2200.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格3017から、restaurantのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Buy
+  - analyst_count: 未設定 → 46
+  - avg_target_price: 未設定 → 47.11
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 7821
+### TV US TEM
 
-- 入力：BUYZONE JP 7821|1624|1476|1292|初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定
+- 入力：TV US TEM|Buy|20|66.06|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 1624.0
-  - main_buy_price: 未設定 → 1476.0
-  - strong_buy_price: 未設定 → 1292.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格1845から、civil_engineering_materialsのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Buy
+  - analyst_count: 未設定 → 20
+  - avg_target_price: 未設定 → 66.06
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 1377
+### TV US FICO
 
-- 入力：BUYZONE JP 1377|3750|3415|3040|初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定
+- 入力：TV US FICO|Strong Buy|25|1501.65|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 3750.0
-  - main_buy_price: 未設定 → 3415.0
-  - strong_buy_price: 未設定 → 3040.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4165から、seedsのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 25
+  - avg_target_price: 未設定 → 1501.65
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 6287
+### TV US AAOI
 
-- 入力：BUYZONE JP 6287|2100|1913|1703|初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定
+- 入力：TV US AAOI|Buy|8|172.75|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 2100.0
-  - main_buy_price: 未設定 → 1913.0
-  - strong_buy_price: 未設定 → 1703.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格2333から、auto_idのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Buy
+  - analyst_count: 未設定 → 8
+  - avg_target_price: 未設定 → 172.75
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
 
-### BUYZONE JP 4368
+### TV US OUST
 
-- 入力：BUYZONE JP 4368|3550|3030|2510|初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定
+- 入力：TV US OUST|Strong Buy|8|47.29|TradingView monthly auto-check 2026/07
 - 変更点：
-  - watch_price: 未設定 → 3550.0
-  - main_buy_price: 未設定 → 3030.0
-  - strong_buy_price: 未設定 → 2510.0
-  - reason: 未設定 → 初期基準: 2026-07-05時点の直近価格4330から、electronic_materialsのボラ/質を考慮して段階設定
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 8
+  - avg_target_price: 未設定 → 47.29
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US APH
+
+- 入力：TV US APH|Strong Buy|24|184.61|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 24
+  - avg_target_price: 未設定 → 184.61
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US ASPI
+
+- 入力：TV US ASPI|Strong Buy|3|13.00|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 3
+  - avg_target_price: 未設定 → 13.0
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US NBIS
+
+- 入力：TV US NBIS|Strong Buy|17|257.79|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 17
+  - avg_target_price: 未設定 → 257.79
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US ISRG
+
+- 入力：TV US ISRG|Strong Buy|35|573.44|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 35
+  - avg_target_price: 未設定 → 573.44
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US SPGI
+
+- 入力：TV US SPGI|Strong Buy|29|501.24|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 29
+  - avg_target_price: 未設定 → 501.24
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US MELI
+
+- 入力：TV US MELI|Strong Buy|25|2235.41|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 25
+  - avg_target_price: 未設定 → 2235.41
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US TMO
+
+- 入力：TV US TMO|Strong Buy|31|595.21|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 31
+  - avg_target_price: 未設定 → 595.21
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US META
+
+- 入力：TV US META|Strong Buy|69|821.00|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 69
+  - avg_target_price: 未設定 → 821.0
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US IONQ
+
+- 入力：TV US IONQ|Strong Buy|14|71.32|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 14
+  - avg_target_price: 未設定 → 71.32
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US RGTI
+
+- 入力：TV US RGTI|Strong Buy|13|31.00|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 13
+  - avg_target_price: 未設定 → 31.0
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US SDGR
+
+- 入力：TV US SDGR|Strong Buy|8|20.88|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Strong Buy
+  - analyst_count: 未設定 → 8
+  - avg_target_price: 未設定 → 20.88
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07
+
+### TV US RXRX
+
+- 入力：TV US RXRX|Buy|8|6.64|TradingView monthly auto-check 2026/07
+- 変更点：
+  - coverage_status: 未設定 → covered
+  - rating: 未設定 → Buy
+  - analyst_count: 未設定 → 8
+  - avg_target_price: 未設定 → 6.64
+  - source: 未設定 → TradingView
+  - reason: 未設定 → TradingView monthly auto-check 2026/07

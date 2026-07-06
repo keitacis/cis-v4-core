@@ -1,6 +1,6 @@
 # CIS 初期マスター投入テンプレート
 
-生成日時：2026/07/06 00:55 JST
+生成日時：2026/07/06 16:58 JST
 
 ## 目的
 
@@ -14,7 +14,7 @@
 - 買い場基準未設定：0
 - 買い場基準不正：0
 - 旧buy-zone CSVから変換候補あり：0
-- TradingView未設定/要区分入力：48
+- TradingView未設定/要区分入力：23
 
 ## iPhone用・分割コピー
 
@@ -26,8 +26,6 @@
 
 - 改行 part 01: [開く](master_init_tv_blank_part_01.txt) / 1行版: [開く](master_init_tv_blank_semicolon_part_01.txt)
 - 改行 part 02: [開く](master_init_tv_blank_part_02.txt) / 1行版: [開く](master_init_tv_blank_semicolon_part_02.txt)
-- 改行 part 03: [開く](master_init_tv_blank_part_03.txt) / 1行版: [開く](master_init_tv_blank_semicolon_part_03.txt)
-- 改行 part 04: [開く](master_init_tv_blank_part_04.txt) / 1行版: [開く](master_init_tv_blank_semicolon_part_04.txt)
 
 ## PC向け・全件コピー
 
@@ -42,32 +40,7 @@ PCや長文貼り付けに慣れている場合はこちらを使えます。iPh
 TradingViewにアナリスト予想がある銘柄はレーティング・人数・平均目標株価を入れます。ETFやカバレッジなし銘柄は、未取得ではなく `not_applicable` / `no_coverage` と明示します。
 
 ```text
-TV US AVAV|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AVAV|no_coverage|TradingViewにアナリスト予想なし  または  TV US AVAV|not_applicable|ETF等のため対象外
-TV US AXON|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AXON|no_coverage|TradingViewにアナリスト予想なし  または  TV US AXON|not_applicable|ETF等のため対象外
-TV US AUR|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AUR|no_coverage|TradingViewにアナリスト予想なし  または  TV US AUR|not_applicable|ETF等のため対象外
-TV US TMDX|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US TMDX|no_coverage|TradingViewにアナリスト予想なし  または  TV US TMDX|not_applicable|ETF等のため対象外
-TV US NOW|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US NOW|no_coverage|TradingViewにアナリスト予想なし  または  TV US NOW|not_applicable|ETF等のため対象外
-TV US RDW|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US RDW|no_coverage|TradingViewにアナリスト予想なし  または  TV US RDW|not_applicable|ETF等のため対象外
-TV US TRMB|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US TRMB|no_coverage|TradingViewにアナリスト予想なし  または  TV US TRMB|not_applicable|ETF等のため対象外
-TV US VEEV|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US VEEV|no_coverage|TradingViewにアナリスト予想なし  または  TV US VEEV|not_applicable|ETF等のため対象外
-TV US PYPL|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US PYPL|no_coverage|TradingViewにアナリスト予想なし  または  TV US PYPL|not_applicable|ETF等のため対象外
-TV US TEM|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US TEM|no_coverage|TradingViewにアナリスト予想なし  または  TV US TEM|not_applicable|ETF等のため対象外
-TV US FICO|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US FICO|no_coverage|TradingViewにアナリスト予想なし  または  TV US FICO|not_applicable|ETF等のため対象外
-TV US AAOI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US AAOI|no_coverage|TradingViewにアナリスト予想なし  または  TV US AAOI|not_applicable|ETF等のため対象外
-TV US OUST|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US OUST|no_coverage|TradingViewにアナリスト予想なし  または  TV US OUST|not_applicable|ETF等のため対象外
-TV US APH|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US APH|no_coverage|TradingViewにアナリスト予想なし  または  TV US APH|not_applicable|ETF等のため対象外
-TV US ASPI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US ASPI|no_coverage|TradingViewにアナリスト予想なし  または  TV US ASPI|not_applicable|ETF等のため対象外
-TV US NBIS|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US NBIS|no_coverage|TradingViewにアナリスト予想なし  または  TV US NBIS|not_applicable|ETF等のため対象外
 TV US EWY|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US EWY|no_coverage|TradingViewにアナリスト予想なし  または  TV US EWY|not_applicable|ETF等のため対象外
-TV US ISRG|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US ISRG|no_coverage|TradingViewにアナリスト予想なし  または  TV US ISRG|not_applicable|ETF等のため対象外
-TV US SPGI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US SPGI|no_coverage|TradingViewにアナリスト予想なし  または  TV US SPGI|not_applicable|ETF等のため対象外
-TV US MELI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US MELI|no_coverage|TradingViewにアナリスト予想なし  または  TV US MELI|not_applicable|ETF等のため対象外
-TV US TMO|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US TMO|no_coverage|TradingViewにアナリスト予想なし  または  TV US TMO|not_applicable|ETF等のため対象外
-TV US META|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US META|no_coverage|TradingViewにアナリスト予想なし  または  TV US META|not_applicable|ETF等のため対象外
-TV US IONQ|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US IONQ|no_coverage|TradingViewにアナリスト予想なし  または  TV US IONQ|not_applicable|ETF等のため対象外
-TV US RGTI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US RGTI|no_coverage|TradingViewにアナリスト予想なし  または  TV US RGTI|not_applicable|ETF等のため対象外
-TV US SDGR|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US SDGR|no_coverage|TradingViewにアナリスト予想なし  または  TV US SDGR|not_applicable|ETF等のため対象外
-TV US RXRX|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US RXRX|no_coverage|TradingViewにアナリスト予想なし  または  TV US RXRX|not_applicable|ETF等のため対象外
 TV US QCOM|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US QCOM|no_coverage|TradingViewにアナリスト予想なし  または  TV US QCOM|not_applicable|ETF等のため対象外
 TV US HSAI|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US HSAI|no_coverage|TradingViewにアナリスト予想なし  または  TV US HSAI|not_applicable|ETF等のため対象外
 TV US PL|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US PL|no_coverage|TradingViewにアナリスト予想なし  または  TV US PL|not_applicable|ETF等のため対象外

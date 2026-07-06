@@ -1,0 +1,15 @@
+TV US AVAV|Strong Buy|19|241.47|TradingView monthly auto-check 2026/07
+TV US AXON|Strong Buy|23|676.88|TradingView monthly auto-check 2026/07
+TV US AUR|Strong Buy|14|11.14|TradingView monthly auto-check 2026/07
+TV US TMDX|Strong Buy|11|117.33|TradingView monthly auto-check 2026/07
+TV US NOW|Strong Buy|50|140.38|TradingView monthly auto-check 2026/07
+TV US RDW|Strong Buy|8|15.71|TradingView monthly auto-check 2026/07
+TV US TRMB|Strong Buy|16|84.08|TradingView monthly auto-check 2026/07
+TV US VEEV|Strong Buy|29|241.43|TradingView monthly auto-check 2026/07
+TV US PYPL|Buy|46|47.11|TradingView monthly auto-check 2026/07
+TV US TEM|Buy|20|66.06|TradingView monthly auto-check 2026/07
+TV US FICO|Strong Buy|25|1501.65|TradingView monthly auto-check 2026/07
+TV US AAOI|Buy|8|172.75|TradingView monthly auto-check 2026/07
+TV US OUST|Strong Buy|8|47.29|TradingView monthly auto-check 2026/07
+TV US APH|Strong Buy|24|184.61|TradingView monthly auto-check 2026/07
+TV US ASPI|Strong Buy|3|13.00|TradingView monthly auto-check 2026/07

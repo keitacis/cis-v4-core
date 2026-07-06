@@ -1,0 +1,10 @@
+TV US NBIS|Strong Buy|17|257.79|TradingView monthly auto-check 2026/07
+TV US ISRG|Strong Buy|35|573.44|TradingView monthly auto-check 2026/07
+TV US SPGI|Strong Buy|29|501.24|TradingView monthly auto-check 2026/07
+TV US MELI|Strong Buy|25|2235.41|TradingView monthly auto-check 2026/07
+TV US TMO|Strong Buy|31|595.21|TradingView monthly auto-check 2026/07
+TV US META|Strong Buy|69|821.00|TradingView monthly auto-check 2026/07
+TV US IONQ|Strong Buy|14|71.32|TradingView monthly auto-check 2026/07
+TV US RGTI|Strong Buy|13|31.00|TradingView monthly auto-check 2026/07
+TV US SDGR|Strong Buy|8|20.88|TradingView monthly auto-check 2026/07
+TV US RXRX|Buy|8|6.64|TradingView monthly auto-check 2026/07
