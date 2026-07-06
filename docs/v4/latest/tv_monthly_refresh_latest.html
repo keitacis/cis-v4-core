@@ -1,75 +1,383 @@
 <!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>tv_monthly_refresh</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS TradingView月次自動確認</h1>
-<p>生成日時：2026/07/06 00:55 JST</p>
+<p>生成日時：2026/07/06 16:49 JST</p>
 <h2>これは何をするレポートか</h2>
 <ul>
 <li>月1でTradingView候補値を自動確認し、保存済み tv_snapshot.json と比較します。</li>
 <li>このレポート自体は tv_snapshot.json を直接書き換えません。</li>
-<li>取得できた銘柄だけ、反映用コマンドを自動生成します。取得失敗銘柄の既存値は守ります。</li>
-<li>iPhoneでは、問題なさそうなら GitHub Actions の `CIS v4 Apply TV Monthly Candidate` を実行すると、コピー作業なしで候補を反映できます。</li>
+<li>rating + analyst_count + 平均目標株価が揃った銘柄だけ、反映用コマンドを自動生成します。</li>
+<li>分布は取れた場合だけ反映コマンドに含めます。取れなくても、rating・人数・平均目標株価が揃っていれば候補化します。</li>
 </ul>
 <h2>ステータス</h2>
 <ul>
 <li>米国株監視リスト：48件</li>
-<li>自動取得成功：0件</li>
-<li>値の変更候補：0件</li>
+<li>自動取得成功：25件</li>
+<li>値の変更候補：25件</li>
 <li>値は同じ・確認済み：0件</li>
-<li>取得失敗・手動確認候補：48件</li>
+<li>取得失敗・手動確認候補：23件</li>
+</ul>
+<h2>取得経路サマリー</h2>
+<ul>
+<li>source: TradingView scanner + TradingView forecast page analyst_count：25件</li>
+<li>analyst_count経路: forecast_page_text：25件</li>
+<li>分布あり：0件</li>
+<li>分布なし：25件</li>
 </ul>
 <h2>iPhone用・反映導線</h2>
-<p>反映できる自動取得結果がありません。</p>
+<div class='card'><h3>推奨：コピーなしで反映する</h3>
+<ul>
+<li>GitHub Actions → `CIS v4 Apply TV Monthly Candidate` → `Run workflow` を押してください。</li>
+<li>このWorkflowは、この月次確認で取得できた銘柄だけをMaster Updateに渡します。</li>
+<li>取得失敗銘柄は反映対象外なので、既存値は維持されます。</li>
+</ul>
+</div>
+<div class='card'><h3>手動で貼る場合</h3>
+<p>iPhoneでは、まず分割版を使うのが安全です。</p>
+<p>#### 全成功取得分・iPhone分割1行版</p>
+<ul>
+<li><a href='tv_monthly_refresh_apply_iphone_part_01_1line.txt'>tv_monthly_refresh_apply_iphone_part_01_1line.txt</a></li>
+<li><a href='tv_monthly_refresh_apply_iphone_part_02_1line.txt'>tv_monthly_refresh_apply_iphone_part_02_1line.txt</a></li>
+</ul>
+<p>#### 変更ありだけ・iPhone分割1行版</p>
+<ul>
+<li><a href='tv_monthly_refresh_changed_only_iphone_part_01_1line.txt'>tv_monthly_refresh_changed_only_iphone_part_01_1line.txt</a></li>
+<li><a href='tv_monthly_refresh_changed_only_iphone_part_02_1line.txt'>tv_monthly_refresh_changed_only_iphone_part_02_1line.txt</a></li>
+</ul>
+<p>#### PC向け・全件</p>
+<ul>
+<li><a href='tv_monthly_refresh_apply_commands_iphone_1line.txt'>全成功取得分・1行版</a></li>
+<li><a href='tv_monthly_refresh_changed_only_commands_iphone_1line.txt'>変更ありだけ・1行版</a></li>
+<li><a href='tv_monthly_refresh_apply_commands.txt'>全成功取得分・改行版</a></li>
+<li><a href='tv_monthly_refresh_changed_only_commands.txt'>変更ありだけ・改行版</a></li>
+<li><a href='tv_monthly_refresh_candidate_manifest.json'>候補manifest</a></li>
+</ul>
+</div>
 <h2>値の変更候補</h2>
-<p>変更候補なし</p>
+<div class='card'><h3>US:AVAV AeroVironment</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 19人 / 241.470588</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.131579 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AVAV/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:AXON Axon Enterprise</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 23人 / 676.882353</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.173913 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AXON/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:AUR Aurora Innovation</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 14人 / 11.144545</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.464286 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AUR/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:TMDX TransMedics Group</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 11人 / 117.333333</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.318182 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TMDX/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:NOW ServiceNow</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 50人 / 140.380952</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.16 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-NOW/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:RDW Redwire</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 8人 / 15.714286</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.4375 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-RDW/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:TRMB Trimble</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 16人 / 84.083333</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.15625 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TRMB/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:VEEV Veeva Systems</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 29人 / 241.434783</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.431034 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-VEEV/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:PYPL PayPal</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Buy / 46人 / 47.112903</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.934783 → Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-PYPL/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:TEM Tempus AI</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Buy / 20人 / 66.0625</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.55 → Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-TEM/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:FICO Fair Isaac</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 25人 / 1501.65</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.48 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-FICO/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:AAOI Applied Optoelectronics</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Buy / 8人 / 172.75</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.5625 → Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-AAOI/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:OUST Ouster</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 8人 / 47.285714</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.25 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-OUST/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:APH Amphenol</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 24人 / 184.611111</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.270833 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-APH/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:ASPI ASP Isotopes</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 3人 / 13.0</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-ASPI/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:NBIS Nebius Group</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 17人 / 257.785714</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.470588 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-NBIS/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:ISRG Intuitive Surgical</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 35人 / 573.444444</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.414286 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-ISRG/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:SPGI S&amp;P Global</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 29人 / 501.235852</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.12069 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-SPGI/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:MELI MercadoLibre</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 25人 / 2235.409091</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.2 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-MELI/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:TMO Thermo Fisher Scientific</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 31人 / 595.208333</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.290323 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-TMO/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:META Meta Platforms</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 69人 / 820.996334</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.130435 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-META/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:IONQ IonQ</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 14人 / 71.318182</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NYSE</li>
+<li>recommendation_mark(raw)：1.321429 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NYSE-IONQ/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:RGTI Rigetti Computing</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 13人 / 31.0</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.346154 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-RGTI/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:SDGR Schrodinger</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Strong Buy / 8人 / 20.875</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.25 → Strong Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-SDGR/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
+<div class='card'><h3>US:RXRX Recursion Pharmaceuticals</h3>
+<ul>
+<li>旧：未設定 / 未設定 / 未設定人 / 未設定</li>
+<li>新：covered / Buy / 8人 / 6.642857</li>
+<li>取得経路：TradingView scanner + TradingView forecast page analyst_count / 人数はforecast本文補完 / 分布なし</li>
+<li>取引所候補：NASDAQ</li>
+<li>recommendation_mark(raw)：1.625 → Buy</li>
+<li>平均目標株価フィールド：price_target_average</li>
+<li>analyst_count補完URL：https://www.tradingview.com/symbols/NASDAQ-RXRX/forecast/</li>
+<li>差分：新規取得</li>
+</ul>
+</div>
 <h2>値は同じ・確認済み</h2>
 <p>なし</p>
 <h2>取得失敗・手動確認候補</h2>
 <p>取得失敗銘柄は候補コマンドから除外しています。既存の tv_snapshot.json は守られます。</p>
 <ul>
-<li>US:AVAV：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:AXON：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:AUR：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:TMDX：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:NOW：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:RDW：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:TRMB：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:VEEV：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:PYPL：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:TEM：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:FICO：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:AAOI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:OUST：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:APH：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:ASPI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:NBIS：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:EWY：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: HTTPError 404 / OTC: HTTPError 404</li>
-<li>US:ISRG：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:SPGI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 404 / BATS: forecast fields not found / OTC: HTTPError 404</li>
-<li>US:MELI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:TMO：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:META：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:IONQ：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:RGTI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:SDGR：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:RXRX：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:QCOM：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:HSAI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:PL：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:V：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:VRTX：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:DIS：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:KVYO：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:DKNG：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:CRSP：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:BEAM：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:ETN：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:MSTR：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:POET：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:KITT：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:AXTI：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:COHR：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:ANET：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:DDOG：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:SNOW：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:OPTX：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:AEM：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
-<li>US:ZETA：required analyst fields not found / required analyst fields not found / required analyst fields not found / NYSEARCA: HTTPError 403 / BATS: HTTPError 403 / OTC: HTTPError 403</li>
+<li>US:EWY：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 404 / NYSEARCA: forecast HTTPError 404 / BATS: forecast HTTPError 404 / OTC: forecast HTTPError 404 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:QCOM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:HSAI：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:PL：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:V：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:VRTX：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:DIS：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:KVYO：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:DKNG：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:CRSP：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:BEAM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:ETN：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:MSTR：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:POET：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:KITT：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:AXTI：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:COHR：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:ANET：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:DDOG：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:SNOW：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:OPTX：scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:AEM：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
+<li>US:ZETA：scanner fields missing analyst_count / scanner fields missing analyst_count / scanner fields missing rating,analyst_count / scanner fields missing avg_target_price,analyst_count / scanner fields missing rating,avg_target_price,analyst_count / AMEX: forecast HTTPError 403 / NYSEARCA: forecast HTTPError 403 / BATS: forecast HTTPError 403 / OTC: forecast HTTPError 403 / 不足:rating,avg_target_price,analyst_count</li>
 </ul><p><a href='../index.html'>CISホームへ戻る</a></p></body></html>

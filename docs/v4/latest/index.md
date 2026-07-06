@@ -1,13 +1,13 @@
 # CIS ホーム
 
-最終更新：2026/07/06 00:55 JST
+最終更新：2026/07/06 16:49 JST
 
 ## 要確認
 
 - 買い場アラート: partial
 - 週間騰落: partial
 - 初期マスター投入テンプレート: TV未設定48件
-- TradingView月次自動確認: TV取得失敗48件
+- TradingView月次自動確認: TV変更候補25件 / TV取得失敗23件
 - TradingView月次候補反映: RuntimeError: 候補コマンドファイルが存在しないか空です: /home/runner/work/cis-v4-core/cis-v4-core/docs/v4/latest/tv_monthly_refresh_apply_commands.txt
 - 月次メンテナンス: partial
 
@@ -59,12 +59,12 @@
 
 ### ⚠️ 一部注意 初期マスター投入テンプレート
 
-- 更新：2026/07/06 00:55 JST
+- 更新：2026/07/06 16:49 JST
 - [開く](master_init_template_latest.html)
 
 ### ⚠️ 一部注意 TradingView月次自動確認
 
-- 更新：2026/07/06 00:55 JST
+- 更新：2026/07/06 16:49 JST
 - [開く](tv_monthly_refresh_latest.html)
 
 ### ❌ エラー TradingView月次候補反映
@@ -79,5 +79,5 @@
 
 ### ⚠️ 一部注意 月次メンテナンス
 
-- 更新：2026/07/06 00:55 JST
+- 更新：2026/07/06 16:49 JST
 - [開く](monthly_maintenance_latest.html)
