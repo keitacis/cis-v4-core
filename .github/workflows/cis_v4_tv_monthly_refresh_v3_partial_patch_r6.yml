@@ -1,0 +1,41 @@
+name: CIS v4 TV Monthly Refresh v3 Partial Patch R6
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  patch-tv-monthly-refresh-v3-partial-r6:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Apply R6 patch and run safety tests
+        run: python scripts/cis_v4/patch_tv_monthly_refresh_v3_partial_safe_r6.py
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/cis_v4/cis_core.py \
+                  scripts/cis_v4/cis_master_update.py \
+                  scripts/cis_v4/cis_tv_monthly_refresh.py \
+                  scripts/cis_v4/cis_daily_us.py \
+                  scripts/cis_v4/cis_weekly_performance.py \
+                  scripts/cis_v4/cis_buy_alert.py
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Patch CIS TV monthly refresh partial coverage R6"
+            git pull --rebase --autostash
+            git push
+          fi
