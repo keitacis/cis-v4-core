@@ -1,0 +1,44 @@
+name: CIS v4 TV Failed Extract
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tv-failed-extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Compile extractor
+        run: python -m py_compile scripts/cis_v4/cis_tv_failed_extract.py
+
+      - name: Run TV failed extractor
+        run: python scripts/cis_v4/cis_tv_failed_extract.py
+
+      - name: Commit failed extract report
+        run: |
+          git add docs/v4/latest/tv_failed_latest.* output/tv_failed_* || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Generate CIS v4 TV failed extract report"
+            git push
+          fi
