@@ -1,0 +1,55 @@
+name: CIS v4 TV Targeted Retry Probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_mode:
+        description: "Probe scope: priority_failed =大型/中型中心、all_failed =失敗全件"
+        required: true
+        default: "priority_failed"
+        type: choice
+        options:
+          - priority_failed
+          - all_failed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tv-targeted-retry-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Compile targeted retry probe
+        run: python -m py_compile scripts/cis_v4/cis_tv_targeted_retry_probe.py
+
+      - name: Run TradingView targeted retry probe
+        env:
+          TV_TARGET_MODE: ${{ inputs.target_mode }}
+        run: python scripts/cis_v4/cis_tv_targeted_retry_probe.py
+
+      - name: Commit targeted retry probe report
+        run: |
+          git add docs/v4/latest/tv_targeted_retry_probe_latest.* output/tv_targeted_retry_probe_* || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Run CIS v4 TV targeted retry probe"
+            git push
+          fi
