@@ -1,8 +1,8 @@
 {
   "timezone": "Asia/Tokyo",
   "daily_us_time_jst": "07:15",
-  "daily_jp_time_jst": "16:10",
-  "buy_alert_time_jst": "08:00",
+  "daily_jp_time_jst": "17:40",
+  "buy_alert_time_jst": "08:20",
   "weekly_performance_time_jst": "Saturday 18:30",
   "monthly_maintenance_day": "1",
   "tv_snapshot_review_frequency": "monthly",
@@ -20,5 +20,8 @@
     "monthly_maintenance": 45,
     "watchlist_template": 90
   },
-  "note": "初回確認中のiPhoneホームは docs/v4/index.html です。GitHub Actionsの自動実行時刻はworkflowのcronで管理します。cis_settings.jsonを変更してもcron時刻は自動では変わりません。"
+  "note": "GitHub Actionsの自動実行時刻はworkflowのcronが実体です。R7以降、日次系は価格ソース反映遅延に備えて予備実行を併用します。",
+  "daily_us_backup_time_jst": "08:45",
+  "daily_jp_backup_time_jst": "18:40",
+  "buy_alert_backup_time_jst": "09:20"
 }

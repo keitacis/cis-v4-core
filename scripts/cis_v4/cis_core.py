@@ -322,9 +322,9 @@ def read_json_strict(path: Path, default: Any = None) -> Any:
 
 DEFAULT_SETTINGS = {
     "timezone": "Asia/Tokyo",
-    "daily_us_time_jst": "07:15",
-    "daily_jp_time_jst": "16:10",
-    "buy_alert_time_jst": "08:00",
+    "daily_us_time_jst": "07:15", "daily_us_backup_time_jst": "08:45",
+    "daily_jp_time_jst": "17:40", "daily_jp_backup_time_jst": "18:40",
+    "buy_alert_time_jst": "08:20", "buy_alert_backup_time_jst": "09:20",
     "weekly_performance_time_jst": "Saturday 18:30",
     "monthly_maintenance_day": "1",
     "tv_snapshot_review_frequency": "monthly",
@@ -967,17 +967,16 @@ def write_error_report(stem: str, title: str, message: str) -> None:
     md = f"# {title}\n\n生成日時：{now_jst().strftime('%Y/%m/%d %H:%M JST')}\n\n## エラー\n\n{message}\n"
     write_report(stem, md, {"status": status, "rows": []}, status)
 
-
 def status_badge(status: str) -> str:
     return {
         "ok": "✅ 更新済み",
         "partial": "⚠️ 一部注意",
         "error": "❌ エラー",
+        "price_stale": "⚠️ 価格未更新",
         "market_closed": "休場",
         "missing": "⚪ 未生成",
         "stale": "⚠️ 古い",
     }.get(status, f"⚪ {status}")
-
 
 def load_status(stem: str) -> Dict[str, Any]:
     path = DOCS_LATEST_DIR / f"{stem}_status_latest.json"

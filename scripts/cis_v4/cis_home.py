@@ -143,8 +143,13 @@ def mark_tv_monthly_candidate_applied(statuses: Dict[str, Dict[str, Any]]) -> No
             tv["status"] = "ok"
 
 def alert_reason(stem: str, st: Dict[str, Any]) -> str:
-    """Compact reason text for the Home '要確認' box."""
+    # Compact reason text for the Home 要確認 box.
     status = str(st.get("status", "missing"))
+    if status == "price_stale":
+        warnings = st.get("warnings") or []
+        if isinstance(warnings, list) and warnings:
+            return str(warnings[0])
+        return str(st.get("message") or "価格日付が想定より古いです")
     if stem == "tv_monthly_refresh" and status == "partial":
         changed = int(st.get("candidate_change_count") or 0)
         failed = int(st.get("failed_count") or 0)
@@ -175,7 +180,6 @@ def alert_reason(stem: str, st: Dict[str, Any]) -> str:
     if isinstance(reason, list):
         reason = " / ".join(str(x) for x in reason[:3])
     return str(reason)
-
 
 def card_markdown(stem: str, label: str, href: str, st: Dict[str, Any]) -> str:
     status = str(st.get("status", "missing"))
@@ -250,7 +254,7 @@ def build_home() -> int:
     for stem, label, href, section, max_age_days in ITEMS:
         st = statuses.get(stem, {"status": "missing"})
         sections.setdefault(section, []).append(card_markdown(stem, label, href, st))
-        if st.get("status") in {"error", "partial", "stale"}:
+        if st.get("status") in {"error", "partial", "stale", "price_stale"}:
             alert_lines.append(f"- {label}: {alert_reason(stem, st)}")
     md = ["# CIS ホーム", "", f"最終更新：{now.strftime('%Y/%m/%d %H:%M JST')}", ""]
     if alert_lines:
