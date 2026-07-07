@@ -286,6 +286,32 @@ def main() -> int:
         unchanged: List[Dict[str, Any]] = []
         for item in items:
             sym = item.symbol
+
+            # CIS_V4_TV_MONTHLY_NO_COVERAGE_R9
+            # If a symbol is already explicitly registered as no_coverage/not_applicable,
+            # do not try to fetch TradingView analyst data again and do not count it as failure.
+            old = old_map.get(item.key)
+            old_cov = getattr(old, "coverage_status", None)
+            if old_cov in {"no_coverage", "not_applicable"}:
+                new = {
+                    "symbol": sym,
+                    "market": "US",
+                    "coverage_status": old_cov,
+                    "rating": None,
+                    "analyst_count": None,
+                    "avg_target_price": None,
+                    "source": getattr(old, "source", None) or "CIS tv_snapshot",
+                    "reason": getattr(old, "reason", None) or ("TradingView analyst forecast not tracked" if old_cov == "no_coverage" else "TradingView analyst forecast not applicable"),
+                }
+                unchanged.append({
+                    "key": item.key,
+                    "symbol": sym,
+                    "name": item.name,
+                    "old": old.__dict__ if old else None,
+                    "new": new,
+                    "resolution_label": "保存済み対象外/カバレッジなし：月次取得対象外",
+                })
+                continue
             if sym in ETF_NOT_APPLICABLE:
                 new = {"symbol": sym, "market": "US", "coverage_status": "not_applicable", "rating": None, "analyst_count": None, "avg_target_price": None, "source": "TradingView", "reason": "ETF"}
                 old = old_map.get(item.key)
@@ -380,7 +406,7 @@ def main() -> int:
             "covered_partial_candidate_count": partial_count,
             "not_applicable_candidate_count": not_applicable_count,
             "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
-            "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。",
+            "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。no_coverage/not_applicableは月次取得失敗に数えません。",
             "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化",
         }
         lines = [
@@ -397,6 +423,7 @@ def main() -> int:
             "- covered：rating + analyst_count + avg_target_price が揃った候補",
             "- covered_partial：rating + avg_target_price は取れたが、analyst_count は未取得でも候補化",
             "- not_applicable：EWYなどETFの対象外明示",
+        "- no_coverage / not_applicable：保存済み対象外は月次取得失敗に数えない",
             "", "## 候補", "",
         ]
         if not candidates:
