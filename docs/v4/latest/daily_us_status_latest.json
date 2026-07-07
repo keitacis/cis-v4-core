@@ -1,21 +1,20 @@
 {
-  "status": "partial",
-  "generated_at_jst": "2026-07-07T19:37:25.001428+09:00",
+  "status": "ok",
+  "generated_at_jst": "2026-07-07T21:49:31.990779+09:00",
+  "message": "",
+  "expected_price_date": "2026-07-06",
   "price_success_count": 48,
   "price_missing_count": 0,
   "us_count": 48,
+  "price_stale_count": 0,
+  "price_stale_symbols": [],
   "market_closed_count": 0,
-  "tv_saved_or_explicit_count": 46,
-  "tv_missing_count": 2,
-  "tv_no_coverage_count": 0,
+  "tv_saved_or_explicit_count": 48,
+  "tv_missing_count": 0,
+  "tv_no_coverage_count": 2,
   "tv_not_applicable_count": 1,
   "tv_stale_or_unknown_count": 0,
-  "tv_missing_symbols": [
-    "KITT",
-    "OPTX"
-  ],
+  "tv_missing_symbols": [],
   "tv_stale_or_unknown_symbols": [],
-  "warnings": [
-    "TradingViewスナップショット未設定：2銘柄"
-  ]
+  "warnings": []
 }
