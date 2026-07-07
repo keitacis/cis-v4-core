@@ -1,6 +1,6 @@
 # CIS ホーム
 
-最終更新：2026/07/07 19:39 JST
+最終更新：2026/07/07 21:40 JST
 
 ## 要確認
 
@@ -9,6 +9,7 @@
 - 週間騰落: partial
 - 初期マスター投入テンプレート: TV未設定2件
 - TradingView月次自動確認: TV取得失敗2件
+- TV・買い場基準更新: ValueError: 更新前検証でエラー: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 → ValueError: no_coverage更新は TV US SYMBOL｜no_coverage｜reason 形式です。rating/人数/目標株価/分布など余計な列は入れないでください: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外
 - 月次メンテナンス: partial
 
 ## 毎日見る
@@ -59,7 +60,7 @@
 
 ### ⚠️ 一部注意 初期マスター投入テンプレート
 
-- 更新：2026/07/06 21:15 JST
+- 更新：2026/07/07 21:40 JST
 - [開く](master_init_template_latest.html)
 
 ### ⚠️ 一部注意 TradingView月次自動確認
@@ -73,12 +74,12 @@
 - 更新：2026/07/06 21:15 JST
 - [開く](apply_tv_monthly_candidate_latest.html)
 
-### ✅ 更新済み TV・買い場基準更新
+### ❌ エラー TV・買い場基準更新
 
-- 更新：2026/07/06 21:15 JST
+- 更新：2026/07/07 21:40 JST
 - [開く](master_update_latest.html)
 
 ### ⚠️ 一部注意 月次メンテナンス
 
-- 更新：2026/07/06 21:15 JST
+- 更新：2026/07/07 21:40 JST
 - [開く](monthly_maintenance_latest.html)
