@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-07T21:52:14.620970+09:00",
+  "generated_at_jst": "2026-07-07T21:53:31.004560+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -65,29 +65,26 @@
       "warnings": []
     },
     "weekly_performance": {
-      "status": "stale",
-      "generated_at_jst": "2026-07-06T21:30:46.155147+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T21:53:30.444049+09:00",
+      "message": "",
+      "expected_us_price_date": "2026-07-06",
+      "expected_jp_price_date": "2026-07-07",
       "price_success_count": 73,
       "price_missing_count": 0,
+      "price_stale_count": 0,
+      "price_stale_symbols": [],
+      "market_closed_count": 0,
       "watchlist_count": 73,
       "us_count": 48,
-      "us_tv_saved_or_explicit_count": 46,
-      "us_tv_missing_count": 2,
-      "us_tv_no_coverage_count": 0,
+      "us_tv_saved_or_explicit_count": 48,
+      "us_tv_missing_count": 0,
+      "us_tv_no_coverage_count": 2,
       "us_tv_not_applicable_count": 1,
       "us_tv_stale_or_unknown_count": 0,
-      "us_tv_missing_symbols": [
-        "OPTX",
-        "KITT"
-      ],
+      "us_tv_missing_symbols": [],
       "us_tv_stale_or_unknown_symbols": [],
-      "warnings": [
-        "米国株TradingViewスナップショット未設定：2銘柄"
-      ],
-      "original_status": "partial",
-      "dependency_stale": true,
-      "dependency_source": "master_update",
-      "dependency_reason": "TV更新後、週間騰落未再生成"
+      "warnings": []
     },
     "cis_v4_preflight": {
       "status": "ok",
