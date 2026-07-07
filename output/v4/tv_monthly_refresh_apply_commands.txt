@@ -1,44 +1,13 @@
-TV US AVAV|Strong Buy|17|241.47|TradingView monthly auto-check 2026/07
-TV US AXON|Strong Buy|17|676.88|TradingView monthly auto-check 2026/07
-TV US AUR|Strong Buy|11|11.14|TradingView monthly auto-check 2026/07
-TV US TMDX|Strong Buy|9|117.33|TradingView monthly auto-check 2026/07
-TV US NOW|Strong Buy|42|140.38|TradingView monthly auto-check 2026/07
-TV US RDW|Strong Buy|7|15.71|TradingView monthly auto-check 2026/07
-TV US TRMB|Strong Buy|12|84.08|TradingView monthly auto-check 2026/07
-TV US VEEV|Strong Buy|23|241.43|TradingView monthly auto-check 2026/07
-TV US PYPL|Buy|31|47.11|TradingView monthly auto-check 2026/07
-TV US TEM|Buy|16|66.06|TradingView monthly auto-check 2026/07
-TV US FICO|Strong Buy|20|1501.65|TradingView monthly auto-check 2026/07
-TV US AAOI|Buy|6|172.75|TradingView monthly auto-check 2026/07
-TV US OUST|Strong Buy|7|47.29|TradingView monthly auto-check 2026/07
-TV US APH|Strong Buy|18|184.61|TradingView monthly auto-check 2026/07
-TV US NBIS|Strong Buy|14|257.79|TradingView monthly auto-check 2026/07
-TV US EWY|not_applicable|ETFのためTradingView個別株アナリスト予想対象外
-TV US ISRG|Strong Buy|27|573.44|TradingView monthly auto-check 2026/07
-TV US SPGI|Strong Buy|22|501.24|TradingView monthly auto-check 2026/07
-TV US MELI|Strong Buy|22|2235.41|TradingView monthly auto-check 2026/07
-TV US TMO|Strong Buy|24|595.21|TradingView monthly auto-check 2026/07
-TV US META|Strong Buy|58|821.00|TradingView monthly auto-check 2026/07
-TV US IONQ|Strong Buy|11|71.32|TradingView monthly auto-check 2026/07
-TV US RGTI|Strong Buy|10|31.00|TradingView monthly auto-check 2026/07
-TV US RXRX|Buy|7|6.64|TradingView monthly auto-check 2026/07
-TV US QCOM|Buy|30|224.43|TradingView monthly auto-check 2026/07
-TV US HSAI|Strong Buy|20|30.02|TradingView monthly auto-check 2026/07
-TV US PL|Strong Buy|10|41.10|TradingView monthly auto-check 2026/07
-TV US V|Strong Buy|34|401.79|TradingView monthly auto-check 2026/07
-TV US VRTX|Strong Buy|28|553.64|TradingView monthly auto-check 2026/07
-TV US DIS|Strong Buy|27|130.44|TradingView monthly auto-check 2026/07
-TV US KVYO|Strong Buy|22|28.82|TradingView monthly auto-check 2026/07
-TV US DKNG|Strong Buy|36|34.16|TradingView monthly auto-check 2026/07
-TV US CRSP|Strong Buy|21|81.10|TradingView monthly auto-check 2026/07
-TV US BEAM|Strong Buy|15|49.87|TradingView monthly auto-check 2026/07
-TV US ETN|Strong Buy|22|469.41|TradingView monthly auto-check 2026/07
-TV US MSTR|Strong Buy|15|309.87|TradingView monthly auto-check 2026/07
-TV US POET|Strong Buy|1|20.25|TradingView monthly auto-check 2026/07
-TV US AXTI|Strong Buy|4|96.50|TradingView monthly auto-check 2026/07
-TV US COHR|Strong Buy|22|391.00|TradingView monthly auto-check 2026/07
-TV US ANET|Strong Buy|25|190.30|TradingView monthly auto-check 2026/07
-TV US DDOG|Strong Buy|44|245.82|TradingView monthly auto-check 2026/07
-TV US SNOW|Strong Buy|44|298.16|TradingView monthly auto-check 2026/07
-TV US AEM|Strong Buy|19|250.41|TradingView monthly auto-check 2026/07
-TV US ZETA|Strong Buy|14|28.68|TradingView monthly auto-check 2026/07
+TV US AXON|Strong Buy|17|685.71|TradingView monthly auto-check 2026/07
+TV US TMDX|Strong Buy|9|116.22|TradingView monthly auto-check 2026/07
+TV US ISRG|Strong Buy|27|571.59|TradingView monthly auto-check 2026/07
+TV US SPGI|Strong Buy|22|501.37|TradingView monthly auto-check 2026/07
+TV US TMO|Strong Buy|24|595.00|TradingView monthly auto-check 2026/07
+TV US SDGR|Strong Buy|7|20.57|TradingView monthly auto-check 2026/07
+TV US RXRX|Buy|7|7.25|TradingView monthly auto-check 2026/07
+TV US V|Strong Buy|34|403.03|TradingView monthly auto-check 2026/07
+TV US VRTX|Strong Buy|28|555.00|TradingView monthly auto-check 2026/07
+TV US CRSP|Strong Buy|20|82.15|TradingView monthly auto-check 2026/07
+TV US BEAM|Strong Buy|14|50.07|TradingView monthly auto-check 2026/07
+TV US MSTR|Strong Buy|15|306.40|TradingView monthly auto-check 2026/07
+TV US AEM|Strong Buy|18|250.41|TradingView monthly auto-check 2026/07

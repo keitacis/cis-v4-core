@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-07T22:00:28.152691+09:00",
+  "generated_at_jst": "2026-07-07T22:22:55.741039+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -143,7 +143,7 @@
     },
     "master_init_template": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T21:47:56.104491+09:00",
+      "generated_at_jst": "2026-07-07T22:22:55.615254+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
@@ -153,26 +153,21 @@
       "legacy_files": []
     },
     "tv_monthly_refresh": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T22:22:55.526989+09:00",
       "us_watchlist_count": 48,
-      "fetched_count": 46,
-      "candidate_change_count": 0,
-      "unchanged_count": 2,
-      "failed_count": 2,
-      "apply_command_count": 44,
-      "changed_command_count": 44,
-      "covered_candidate_count": 43,
+      "fetched_count": 48,
+      "candidate_change_count": 13,
+      "unchanged_count": 35,
+      "failed_count": 0,
+      "apply_command_count": 13,
+      "changed_command_count": 13,
+      "covered_candidate_count": 13,
       "covered_partial_candidate_count": 0,
-      "not_applicable_candidate_count": 1,
+      "not_applicable_candidate_count": 0,
       "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
-      "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。",
-      "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化",
-      "tv_candidate_applied": true,
-      "tv_candidate_applied_at_jst": "2026-07-06T21:15:44.103051+09:00",
-      "candidate_change_count_before_apply": 44,
-      "candidate_change_count_suppressed": 44,
-      "tv_candidate_applied_note": "TV変更候補44件は反映済みです。TV取得失敗2件は残っています。"
+      "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。no_coverage/not_applicableは月次取得失敗に数えません。",
+      "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
     },
     "apply_tv_monthly_candidate": {
       "status": "ok",
@@ -190,7 +185,7 @@
     },
     "monthly_maintenance": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T21:47:56.177147+09:00",
+      "generated_at_jst": "2026-07-07T22:22:55.679707+09:00",
       "watchlist_count": 73,
       "us_count": 48,
       "tv_count": 48,
