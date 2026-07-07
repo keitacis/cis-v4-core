@@ -1,24 +1,36 @@
 {
   "status": {
     "status": "partial",
-    "generated_at_jst": "2026-07-07T21:40:39.990577+09:00",
+    "generated_at_jst": "2026-07-07T21:45:42.896471+09:00",
     "watchlist_count": 73,
     "us_count": 48,
-    "tv_count": 46,
+    "tv_count": 47,
     "tv_covered_count": 45,
-    "tv_no_coverage_count": 0,
+    "tv_no_coverage_count": 1,
     "tv_not_applicable_count": 1,
-    "tv_missing_count": 2,
+    "tv_missing_count": 1,
     "tv_stale_or_unknown_count": 0,
     "tv_extra_count": 0,
     "buyzone_count": 73,
     "buyzone_missing_count": 0,
     "buyzone_extra_count": 0,
     "warnings": [
-      "TradingView未設定：2銘柄"
+      "TradingView未設定：1銘柄"
     ]
   },
   "history": [
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "KITT",
+      "raw": "TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外",
+      "diffs": [
+        "coverage_status: 未設定 → no_coverage",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → 超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+      ],
+      "updated_at": "2026-07-07T21:45:42.724932+09:00"
+    },
     {
       "kind": "TV",
       "market": "US",
@@ -303,21 +315,6 @@
         "reason: 未設定 → TradingView monthly auto-check 2026/07"
       ],
       "updated_at": "2026-07-06T21:15:43.856361+09:00"
-    },
-    {
-      "kind": "TV",
-      "market": "US",
-      "symbol": "QCOM",
-      "raw": "TV US QCOM|Buy|30|224.43|TradingView monthly auto-check 2026/07",
-      "diffs": [
-        "coverage_status: 未設定 → covered",
-        "rating: 未設定 → Buy",
-        "analyst_count: 未設定 → 30",
-        "avg_target_price: 未設定 → 224.43",
-        "source: 未設定 → TradingView",
-        "reason: 未設定 → TradingView monthly auto-check 2026/07"
-      ],
-      "updated_at": "2026-07-06T21:15:43.856357+09:00"
     }
   ]
 }

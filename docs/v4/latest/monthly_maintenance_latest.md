@@ -1,16 +1,16 @@
 # CIS 月次メンテナンス
 
-生成日時：2026/07/07 21:40 JST
+生成日時：2026/07/07 21:45 JST
 
 ## ステータス
 
 - 監視銘柄：73
 - 米国株：48
-- TradingView保存：46
+- TradingView保存：47
 - TradingView covered：45
-- TradingView カバレッジなし：0
+- TradingView カバレッジなし：1
 - TradingView 対象外：1
-- TradingView未設定：2
+- TradingView未設定：1
 - TradingView鮮度注意：0
 - TradingView active外：0
 - 買い場基準：73
@@ -19,12 +19,12 @@
 
 ## 要確認
 
-- ⚠️ TradingView未設定：2銘柄
+- ⚠️ TradingView未設定：1銘柄
 
 ## TradingView 未設定/鮮度注意/対象外
 
-- 未設定：US:KITT
 - 未設定：US:OPTX
+- カバレッジなし：US:KITT
 - 対象外：US:EWY
 
 ## 買い場基準 未設定/active外
@@ -33,6 +33,7 @@
 
 ## 直近のマスター更新
 
+- 2026-07-07T21:45:42.724932+09:00｜TV US KITT
 - 2026-07-06T21:15:43.856429+09:00｜TV US ZETA
 - 2026-07-06T21:15:43.856426+09:00｜TV US AEM
 - 2026-07-06T21:15:43.856423+09:00｜TV US SNOW
@@ -52,4 +53,3 @@
 - 2026-07-06T21:15:43.856369+09:00｜TV US V
 - 2026-07-06T21:15:43.856365+09:00｜TV US PL
 - 2026-07-06T21:15:43.856361+09:00｜TV US HSAI
-- 2026-07-06T21:15:43.856357+09:00｜TV US QCOM

@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-07T21:40:40.046635+09:00",
+  "generated_at_jst": "2026-07-07T21:45:42.968786+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-07-07T19:39:42.663382+09:00",
       "watchlist_count": 73,
       "price_success_count": 73,
@@ -27,10 +27,14 @@
       "warnings": [
         "TradingView未設定：2銘柄",
         "TradingView鮮度注意：2銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "master_update",
+      "dependency_reason": "TV・買い場基準更新後、買い場アラート未再生成"
     },
     "daily_us": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-07-07T19:37:25.001428+09:00",
       "price_success_count": 48,
       "price_missing_count": 0,
@@ -48,7 +52,11 @@
       "tv_stale_or_unknown_symbols": [],
       "warnings": [
         "TradingViewスナップショット未設定：2銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "master_update",
+      "dependency_reason": "TV更新後、米国株騰落未再生成"
     },
     "daily_jp": {
       "status": "market_closed",
@@ -62,7 +70,7 @@
       ]
     },
     "weekly_performance": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-07-06T21:30:46.155147+09:00",
       "price_success_count": 73,
       "price_missing_count": 0,
@@ -80,7 +88,11 @@
       "us_tv_stale_or_unknown_symbols": [],
       "warnings": [
         "米国株TradingViewスナップショット未設定：2銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "master_update",
+      "dependency_reason": "TV更新後、週間騰落未再生成"
     },
     "cis_v4_preflight": {
       "status": "ok",
@@ -139,13 +151,13 @@
     },
     "master_init_template": {
       "status": "partial",
-      "generated_at_jst": "2026-07-07T21:40:39.930277+09:00",
+      "generated_at_jst": "2026-07-07T21:45:42.811347+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
       "buyzone_invalid_count": 0,
       "buyzone_legacy_ready_count": 0,
-      "tv_missing_count": 2,
+      "tv_missing_count": 1,
       "legacy_files": []
     },
     "tv_monthly_refresh": {
@@ -179,29 +191,28 @@
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00"
     },
     "master_update": {
-      "status": "error",
-      "generated_at_jst": "2026-07-07T21:40:39.865063+09:00",
-      "changed_count": 0,
-      "error_count": 1,
-      "error": "ValueError: 更新前検証でエラー: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 → ValueError: no_coverage更新は TV US SYMBOL｜no_coverage｜reason 形式です。rating/人数/目標株価/分布など余計な列は入れないでください: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T21:45:42.736470+09:00",
+      "changed_count": 1,
+      "error_count": 0
     },
     "monthly_maintenance": {
       "status": "partial",
-      "generated_at_jst": "2026-07-07T21:40:39.990577+09:00",
+      "generated_at_jst": "2026-07-07T21:45:42.896471+09:00",
       "watchlist_count": 73,
       "us_count": 48,
-      "tv_count": 46,
+      "tv_count": 47,
       "tv_covered_count": 45,
-      "tv_no_coverage_count": 0,
+      "tv_no_coverage_count": 1,
       "tv_not_applicable_count": 1,
-      "tv_missing_count": 2,
+      "tv_missing_count": 1,
       "tv_stale_or_unknown_count": 0,
       "tv_extra_count": 0,
       "buyzone_count": 73,
       "buyzone_missing_count": 0,
       "buyzone_extra_count": 0,
       "warnings": [
-        "TradingView未設定：2銘柄"
+        "TradingView未設定：1銘柄"
       ]
     }
   }

@@ -1,13 +1,13 @@
 # CIS マスター更新
 
-生成日時：2026/07/07 21:40 JST
-
-## エラー
-
-この更新は反映していません。1件でもエラーがある場合、TV・BUYZONE・履歴は書き換えません。
-
-- ValueError: 更新前検証でエラー: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 → ValueError: no_coverage更新は TV US SYMBOL｜no_coverage｜reason 形式です。rating/人数/目標株価/分布など余計な列は入れないでください: TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外 TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外
+生成日時：2026/07/07 21:45 JST
 
 ## 反映内容
 
-変更なし
+### TV US KITT
+
+- 入力：TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外
+- 変更点：
+  - coverage_status: 未設定 → no_coverage
+  - source: 未設定 → TradingView
+  - reason: 未設定 → 超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外

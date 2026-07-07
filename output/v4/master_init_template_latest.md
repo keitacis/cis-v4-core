@@ -1,6 +1,6 @@
 # CIS 初期マスター投入テンプレート
 
-生成日時：2026/07/07 21:40 JST
+生成日時：2026/07/07 21:45 JST
 
 ## 目的
 
@@ -14,7 +14,7 @@
 - 買い場基準未設定：0
 - 買い場基準不正：0
 - 旧buy-zone CSVから変換候補あり：0
-- TradingView未設定/要区分入力：2
+- TradingView未設定/要区分入力：1
 
 ## iPhone用・分割コピー
 
@@ -39,6 +39,5 @@ PCや長文貼り付けに慣れている場合はこちらを使えます。iPh
 TradingViewにアナリスト予想がある銘柄はレーティング・人数・平均目標株価を入れます。ETFやカバレッジなし銘柄は、未取得ではなく `not_applicable` / `no_coverage` と明示します。
 
 ```text
-TV US KITT|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US KITT|no_coverage|TradingViewにアナリスト予想なし  または  TV US KITT|not_applicable|ETF等のため対象外
 TV US OPTX|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US OPTX|no_coverage|TradingViewにアナリスト予想なし  または  TV US OPTX|not_applicable|ETF等のため対象外
 ```

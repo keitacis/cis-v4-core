@@ -1,2 +1,1 @@
-TV US KITT|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US KITT|no_coverage|TradingViewにアナリスト予想なし  または  TV US KITT|not_applicable|ETF等のため対象外
 TV US OPTX|Strong Buy/Buy/Neutral/Sell|人数|平均目標株価|TradingView YYYY/MM/DD  または  TV US OPTX|no_coverage|TradingViewにアナリスト予想なし  または  TV US OPTX|not_applicable|ETF等のため対象外

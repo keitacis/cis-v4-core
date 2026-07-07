@@ -1865,6 +1865,18 @@
         "reason: 未設定 → TradingView monthly auto-check 2026/07"
       ],
       "updated_at": "2026-07-06T21:15:43.856429+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "KITT",
+      "raw": "TV US KITT|no_coverage|超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外",
+      "diffs": [
+        "coverage_status: 未設定 → no_coverage",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → 超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+      ],
+      "updated_at": "2026-07-07T21:45:42.724932+09:00"
     }
   ]
 }
