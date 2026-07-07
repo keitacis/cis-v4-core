@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-07T21:49:32.464060+09:00",
+  "generated_at_jst": "2026-07-07T21:51:09.003483+09:00",
   "items": {
     "buy_alert": {
       "status": "stale",
@@ -54,15 +54,17 @@
       "warnings": []
     },
     "daily_jp": {
-      "status": "market_closed",
-      "generated_at_jst": "2026-07-07T02:30:53.449130+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T21:51:08.357420+09:00",
+      "message": "",
+      "expected_price_date": "2026-07-07",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
-      "market_closed_count": 25,
-      "warnings": [
-        "日本株は休場または価格更新前の可能性があります。古い日付を当日更新として扱いません。"
-      ]
+      "price_stale_count": 0,
+      "price_stale_symbols": [],
+      "market_closed_count": 0,
+      "warnings": []
     },
     "weekly_performance": {
       "status": "stale",
