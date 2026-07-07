@@ -3,8 +3,11 @@ name: CIS v4 Buy Alert
 on:
   workflow_dispatch:
   schedule:
-    # JST 月〜金08:00。買い場アラートを自動更新する。
-    - cron: '0 23 * * 0-4'
+    # JST 月〜金08:20。米国市場の前営業日終値反映を待って買い場アラートを自動更新する。
+    - cron: '20 23 * * 0-4'
+    # JST 月〜金09:20。価格ソース反映遅延・Actions遅延対策の予備実行。
+    - cron: '20 0 * * 1-5'
+
 permissions:
   contents: write
 
@@ -17,24 +20,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Sync latest branch
         run: git pull --rebase --autostash
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install yfinance pandas
+
       - name: Run buy alert
         id: run_report
         continue-on-error: true
         run: python scripts/cis_v4/cis_buy_alert.py
+
       - name: Rebuild CIS home
         id: rebuild_home
         if: always()
         continue-on-error: true
         run: python scripts/cis_v4/cis_home.py
+
       - name: Commit outputs
         if: always()
         run: |
@@ -54,6 +63,7 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+
       - name: Fail if buy alert failed
         if: steps.run_report.outcome == 'failure' || steps.rebuild_home.outcome == 'failure'
         run: exit 1

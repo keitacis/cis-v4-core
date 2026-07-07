@@ -5,6 +5,9 @@ on:
   schedule:
     # JST 火〜土07:15。米国市場の前営業日終値ベースで自動更新する。
     - cron: '15 22 * * 1-5'
+    # JST 火〜土08:45。価格ソース反映遅延・Actions遅延対策の予備実行。
+    - cron: '45 23 * * 1-5'
+
 permissions:
   contents: write
 
@@ -17,24 +20,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Sync latest branch
         run: git pull --rebase --autostash
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install yfinance pandas
+
       - name: Run daily US
         id: run_report
         continue-on-error: true
         run: python scripts/cis_v4/cis_daily_us.py
+
       - name: Rebuild CIS home
         id: rebuild_home
         if: always()
         continue-on-error: true
         run: python scripts/cis_v4/cis_home.py
+
       - name: Commit outputs
         if: always()
         run: |
