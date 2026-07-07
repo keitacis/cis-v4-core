@@ -1,0 +1,43 @@
+name: CIS v4 Price Freshness Buy Alert Patch R8 Core
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Apply R8 core patch
+        run: python scripts/cis_v4/patch_price_freshness_buy_alert_r8_core.py
+
+      - name: Syntax check
+        run: |
+          python -m py_compile             scripts/cis_v4/cis_core.py             scripts/cis_v4/cis_home.py             scripts/cis_v4/cis_daily_us.py             scripts/cis_v4/cis_daily_jp.py             scripts/cis_v4/cis_buy_alert.py             scripts/cis_v4/cis_weekly_performance.py             scripts/cis_v4/patch_price_freshness_buy_alert_r8_core.py
+
+      - name: Commit core patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add             scripts/cis_v4/cis_core.py             scripts/cis_v4/cis_home.py             scripts/cis_v4/cis_daily_us.py             scripts/cis_v4/cis_daily_jp.py             scripts/cis_v4/cis_buy_alert.py             scripts/cis_v4/cis_weekly_performance.py             data/cis_settings.json
+          if git diff --cached --quiet; then
+            echo "No R8 core changes to commit."
+            exit 0
+          fi
+          git commit -m "Apply price freshness buy alert core patch R8"
+          git push
