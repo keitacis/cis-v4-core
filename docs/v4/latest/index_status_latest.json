@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-07T21:45:42.968786+09:00",
+  "generated_at_jst": "2026-07-07T21:47:56.244444+09:00",
   "items": {
     "buy_alert": {
       "status": "stale",
@@ -150,14 +150,14 @@
       "status": "missing"
     },
     "master_init_template": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-07T21:45:42.811347+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T21:47:56.104491+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
       "buyzone_invalid_count": 0,
       "buyzone_legacy_ready_count": 0,
-      "tv_missing_count": 1,
+      "tv_missing_count": 0,
       "legacy_files": []
     },
     "tv_monthly_refresh": {
@@ -192,28 +192,26 @@
     },
     "master_update": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T21:45:42.736470+09:00",
+      "generated_at_jst": "2026-07-07T21:47:56.030910+09:00",
       "changed_count": 1,
       "error_count": 0
     },
     "monthly_maintenance": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-07T21:45:42.896471+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-07T21:47:56.177147+09:00",
       "watchlist_count": 73,
       "us_count": 48,
-      "tv_count": 47,
+      "tv_count": 48,
       "tv_covered_count": 45,
-      "tv_no_coverage_count": 1,
+      "tv_no_coverage_count": 2,
       "tv_not_applicable_count": 1,
-      "tv_missing_count": 1,
+      "tv_missing_count": 0,
       "tv_stale_or_unknown_count": 0,
       "tv_extra_count": 0,
       "buyzone_count": 73,
       "buyzone_missing_count": 0,
       "buyzone_extra_count": 0,
-      "warnings": [
-        "TradingView未設定：1銘柄"
-      ]
+      "warnings": []
     }
   }
 }

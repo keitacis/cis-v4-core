@@ -309,6 +309,17 @@
       "reason": "TradingView monthly auto-check 2026/07"
     },
     {
+      "symbol": "OPTX",
+      "market": "US",
+      "coverage_status": "no_coverage",
+      "rating": null,
+      "analyst_count": null,
+      "avg_target_price": null,
+      "updated_at": "2026-07-07T21:47:56.017939+09:00",
+      "source": "TradingView",
+      "reason": "超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+    },
+    {
       "symbol": "OUST",
       "market": "US",
       "coverage_status": "covered",

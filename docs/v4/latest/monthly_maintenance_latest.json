@@ -1,24 +1,34 @@
 {
   "status": {
-    "status": "partial",
-    "generated_at_jst": "2026-07-07T21:45:42.896471+09:00",
+    "status": "ok",
+    "generated_at_jst": "2026-07-07T21:47:56.177147+09:00",
     "watchlist_count": 73,
     "us_count": 48,
-    "tv_count": 47,
+    "tv_count": 48,
     "tv_covered_count": 45,
-    "tv_no_coverage_count": 1,
+    "tv_no_coverage_count": 2,
     "tv_not_applicable_count": 1,
-    "tv_missing_count": 1,
+    "tv_missing_count": 0,
     "tv_stale_or_unknown_count": 0,
     "tv_extra_count": 0,
     "buyzone_count": 73,
     "buyzone_missing_count": 0,
     "buyzone_extra_count": 0,
-    "warnings": [
-      "TradingView未設定：1銘柄"
-    ]
+    "warnings": []
   },
   "history": [
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "OPTX",
+      "raw": "TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外",
+      "diffs": [
+        "coverage_status: 未設定 → no_coverage",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → 超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+      ],
+      "updated_at": "2026-07-07T21:47:56.020427+09:00"
+    },
     {
       "kind": "TV",
       "market": "US",
@@ -300,21 +310,6 @@
         "reason: 未設定 → TradingView monthly auto-check 2026/07"
       ],
       "updated_at": "2026-07-06T21:15:43.856365+09:00"
-    },
-    {
-      "kind": "TV",
-      "market": "US",
-      "symbol": "HSAI",
-      "raw": "TV US HSAI|Strong Buy|20|30.02|TradingView monthly auto-check 2026/07",
-      "diffs": [
-        "coverage_status: 未設定 → covered",
-        "rating: 未設定 → Strong Buy",
-        "analyst_count: 未設定 → 20",
-        "avg_target_price: 未設定 → 30.02",
-        "source: 未設定 → TradingView",
-        "reason: 未設定 → TradingView monthly auto-check 2026/07"
-      ],
-      "updated_at": "2026-07-06T21:15:43.856361+09:00"
     }
   ]
 }

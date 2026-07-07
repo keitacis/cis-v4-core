@@ -1877,6 +1877,18 @@
         "reason: 未設定 → 超小型・夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
       ],
       "updated_at": "2026-07-07T21:45:42.724932+09:00"
+    },
+    {
+      "kind": "TV",
+      "market": "US",
+      "symbol": "OPTX",
+      "raw": "TV US OPTX|no_coverage|超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外",
+      "diffs": [
+        "coverage_status: 未設定 → no_coverage",
+        "source: 未設定 → TradingView",
+        "reason: 未設定 → 超小型・精密光学/フォトニクス夢枠のためTradingViewアナリスト予想はCISでは追跡対象外"
+      ],
+      "updated_at": "2026-07-07T21:47:56.020427+09:00"
     }
   ]
 }
