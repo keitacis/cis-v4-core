@@ -1,0 +1,74 @@
+name: CIS v4 Schedule Catchup R10.4
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["CIS v4 Home"]
+    types: [completed]
+  schedule:
+    # JST 月〜土10:05。米国株日次・買い場アラートの朝更新取りこぼし確認。
+    - cron: '5 1 * * 1-6'
+    # JST 月〜土12:05。GitHub Actions遅延・価格ソース遅延の二次確認。
+    - cron: '5 3 * * 1-6'
+    # JST 月〜金19:05。日本株日次・買い場アラートの夕方更新取りこぼし確認。
+    - cron: '5 10 * * 1-5'
+    # JST 月〜金20:05。東証・価格ソース遅延の二次確認。
+    - cron: '5 11 * * 1-5'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  catchup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yfinance pandas
+
+      - name: Run schedule catchup R10.4
+        id: catchup
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/cis_v4/cis_schedule_catchup_r10.py
+
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Run CIS schedule catchup R10.4"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Fail if catchup failed
+        if: steps.catchup.outcome == 'failure'
+        run: exit 1
