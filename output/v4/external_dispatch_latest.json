@@ -1,0 +1,32 @@
+{
+  "schema_version": "r11.2",
+  "status": "ok",
+  "generated_at_jst": "2026-07-08T20:29:32.868251+09:00",
+  "finished_at_jst": "2026-07-08T20:29:35.735573+09:00",
+  "timestamp_jst": "2026-07-08T20:29:32.868251+09:00",
+  "mode": "catchup",
+  "source": "manual_test",
+  "planned_scripts": [
+    "scripts/cis_v4/cis_schedule_catchup_r10.py"
+  ],
+  "planned_step_count": 1,
+  "steps": [
+    {
+      "script": "scripts/cis_v4/cis_schedule_catchup_r10.py",
+      "started_at_jst": "2026-07-08T20:29:32.868260+09:00",
+      "cmd": [
+        "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python",
+        "scripts/cis_v4/cis_schedule_catchup_r10.py"
+      ],
+      "finished_at_jst": "2026-07-08T20:29:35.735536+09:00",
+      "duration_seconds": 2.867,
+      "exit_code": 0,
+      "ok": true,
+      "stdout_tail": "",
+      "stderr_tail": ""
+    }
+  ],
+  "step_count": 1,
+  "ok_count": 1,
+  "auto_decisions": []
+}

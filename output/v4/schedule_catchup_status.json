@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-08T19:23:35.941066+09:00",
+  "generated_at_jst": "2026-07-08T20:29:35.656224+09:00",
   "checked_count": 4,
-  "regen_count": 1,
-  "recovered_count": 1,
+  "regen_count": 0,
+  "recovered_count": 0,
   "failed_count": 0,
   "decisions": [
     {
@@ -188,15 +188,12 @@
       "stem": "daily_jp",
       "label": "日本株日次騰落",
       "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "生成日が当日ではない：2026-07-07",
-        "JP価格日付が想定2026-07-08より古い：['2026-07-07']"
-      ],
+      "needs_regen": false,
+      "reasons": [],
       "status_before": "ok",
-      "generated_at_jst_before": "2026-07-07T21:51:08.357420+09:00",
+      "generated_at_jst_before": "2026-07-08T19:23:35.319457+09:00",
       "row_dates": [
-        "2026-07-07"
+        "2026-07-08"
       ],
       "expected_price_dates": {
         "JP": "2026-07-08"
@@ -339,21 +336,6 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_daily_jp.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "",
-      "task": "daily_jp",
-      "label": "日本株日次騰落",
-      "status_after": {
-        "status": "ok",
-        "generated_at_jst": "2026-07-08T19:23:35.319457+09:00",
-        "row_dates": [
-          "2026-07-08"
-        ]
-      }
-    },
-    {
       "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -362,7 +344,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-08T19:23:35.852101+09:00",
+        "generated_at_jst": "2026-07-08T20:29:35.576415+09:00",
         "row_dates": []
       }
     }

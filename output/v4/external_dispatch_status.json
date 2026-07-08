@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "generated_at_jst": "2026-07-08T20:29:32.868251+09:00",
+  "finished_at_jst": "2026-07-08T20:29:35.735608+09:00",
+  "mode": "catchup",
+  "source": "manual_test",
+  "planned_step_count": 1,
+  "step_count": 1,
+  "ok_count": 1,
+  "has_error": false
+}
