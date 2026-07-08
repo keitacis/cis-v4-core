@@ -1,0 +1,74 @@
+name: CIS v4 External Dispatch R11.2
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode: auto / us_morning / us_retry / buy_alert_morning / jp_evening / jp_retry / catchup'
+        required: true
+        default: 'auto'
+      source:
+        description: 'Trigger source label, e.g. manual / cron-job.org'
+        required: false
+        default: 'manual'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: cis-v4-global-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  external-dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync latest branch
+        run: git pull --rebase --autostash
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yfinance pandas
+
+      - name: Run external dispatch R11.2
+        id: external_dispatch
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: >-
+          python scripts/cis_v4/cis_external_dispatch_r11.py
+          --mode "${{ inputs.mode }}"
+          --source "${{ inputs.source }}"
+
+      - name: Commit outputs
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in output/v4 docs/v4; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            else
+              echo "skip missing path: $p"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Run CIS external dispatch R11.2"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Fail if external dispatch failed
+        if: steps.external_dispatch.outcome == 'failure'
+        run: exit 1
