@@ -1,6 +1,6 @@
 {
   "status": "price_stale",
-  "generated_at_jst": "2026-07-09T01:09:10.849234+09:00",
+  "generated_at_jst": "2026-07-09T01:14:59.399899+09:00",
   "message": "価格未更新：日本株の価格日付が想定取引日 2026-07-08 より古いです。",
   "expected_price_date": "2026-07-08",
   "price_success_count": 25,
