@@ -1,12 +1,12 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-08T09:16:24.135177+09:00",
+  "generated_at_jst": "2026-07-08T13:44:53.645865+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T21:52:14.012885+09:00",
+      "generated_at_jst": "2026-07-08T13:44:52.729784+09:00",
       "message": "",
-      "expected_us_price_date": "2026-07-06",
+      "expected_us_price_date": "2026-07-07",
       "expected_jp_price_date": "2026-07-07",
       "watchlist_count": 73,
       "price_success_count": 73,
@@ -33,9 +33,9 @@
     },
     "daily_us": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T21:49:31.990779+09:00",
+      "generated_at_jst": "2026-07-08T13:44:44.199635+09:00",
       "message": "",
-      "expected_price_date": "2026-07-06",
+      "expected_price_date": "2026-07-07",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -63,6 +63,9 @@
       "price_stale_symbols": [],
       "market_closed_count": 0,
       "warnings": []
+    },
+    "schedule_catchup": {
+      "status": "missing"
     },
     "weekly_performance": {
       "status": "ok",
