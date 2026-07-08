@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-08T16:41:59.376590+09:00",
+  "generated_at_jst": "2026-07-08T16:58:46.644522+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-07-08T13:44:52.729784+09:00",
+      "generated_at_jst": "2026-07-08T16:58:46.089010+09:00",
       "message": "",
       "expected_us_price_date": "2026-07-07",
-      "expected_jp_price_date": "2026-07-07",
+      "expected_jp_price_date": "2026-07-08",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
