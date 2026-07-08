@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from __future__ import annotations
+import json
 import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-from cis_core import DOCS_LATEST_DIR, html_escape, load_settings, load_status, now_jst, status_badge, write_json, write_text
+from cis_core import expected_daily_trade_date, DOCS_LATEST_DIR, html_escape, load_settings, load_status, now_jst, status_badge, write_json, write_text
 
 ITEMS = [
     ("buy_alert", "買い場アラート", "buy_alert_latest.html", "毎日見る", 2),
     ("daily_us", "米国株騰落", "daily_us_latest.html", "毎日見る", 3),
     ("daily_jp", "日本株騰落", "daily_jp_latest.html", "毎日見る", 2),
+    ("schedule_catchup", "自動更新取りこぼし確認", "schedule_catchup_latest.html", "メンテナンス", 2),
     ("weekly_performance", "週間騰落", "weekly_performance_latest.html", "週末見る", 9),
     ("cis_v4_preflight", "CIS v4 Preflight", "cis_v4_preflight_latest.html", "メンテナンス", 45),
     ("cis_v4_apply_seed", "CIS v4 Apply Seed", "cis_v4_apply_seed_latest.html", "メンテナンス", 45),
@@ -142,6 +144,95 @@ def mark_tv_monthly_candidate_applied(statuses: Dict[str, Dict[str, Any]]) -> No
             tv.setdefault("original_status", "partial")
             tv["status"] = "ok"
 
+
+# --- CIS R10 daily freshness guard START ---
+def _r10_read_payload(stem: str) -> Dict[str, Any]:
+    path = DOCS_LATEST_DIR / f"{stem}_latest.json"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def _r10_generated_today(st: Dict[str, Any]) -> bool:
+    dt = parse_status_time(st.get("generated_at_jst"))
+    return bool(dt and dt.astimezone(now_jst().tzinfo).date() == now_jst().date())
+
+
+def _r10_rows_for_market(stem: str, market: str) -> List[Dict[str, Any]]:
+    payload = _r10_read_payload(stem)
+    rows = payload.get("rows")
+    if not isinstance(rows, list):
+        return []
+    out: List[Dict[str, Any]] = []
+    for row in rows:
+        if isinstance(row, dict) and str(row.get("market") or "").upper() == market:
+            out.append(row)
+    return out
+
+
+def _r10_price_dates_stale(stem: str, market: str, expected: str) -> bool:
+    rows = _r10_rows_for_market(stem, market)
+    if not rows:
+        return True
+    dates = [str(r.get("latest_date") or "")[:10] for r in rows if r.get("latest_date")]
+    if not dates:
+        return True
+    return all(d < expected for d in dates)
+
+
+def mark_daily_freshness(statuses: Dict[str, Dict[str, Any]]) -> None:
+    """R10: prevent Home from looking green when only Home was refreshed.
+
+    If a daily report is still yesterday's generated report after its expected
+    automatic update window, Home marks it stale even if the report status itself
+    is ok. This catches the exact failure mode where CIS v4 Home runs but Daily
+    US / Buy Alert / Daily JP scheduled workflows did not fire.
+    """
+    now = now_jst()
+    # Python weekday: Monday=0 ... Sunday=6.
+    checks = [
+        ("daily_us", "US", 9, {1, 2, 3, 4, 5}, "米国株日次が自動更新予定後も未更新"),
+        ("buy_alert", "US", 10, {0, 1, 2, 3, 4}, "買い場アラートの米国価格が自動更新予定後も未更新"),
+        ("daily_jp", "JP", 19, {0, 1, 2, 3, 4}, "日本株日次が自動更新予定後も未更新"),
+        ("buy_alert", "JP", 19, {0, 1, 2, 3, 4}, "買い場アラートの日本価格が自動更新予定後も未更新"),
+    ]
+    reasons_by_stem: Dict[str, List[str]] = {}
+    for stem, market, min_hour, active_weekdays, reason in checks:
+        if now.weekday() not in active_weekdays or now.hour < min_hour:
+            continue
+        st = statuses.get(stem)
+        if not isinstance(st, dict):
+            continue
+        # Only override reports that are otherwise green-ish. If the report
+        # already says market_closed or price_stale, keep that first-class status
+        # instead of turning a valid holiday/delay signal into a schedule failure.
+        if st.get("status") not in {"ok", "partial"}:
+            continue
+        expected = expected_daily_trade_date(market)
+        stale_generated = not _r10_generated_today(st)
+        stale_dates = _r10_price_dates_stale(stem, market, expected)
+        if stale_generated or stale_dates:
+            detail = reason
+            if stale_generated:
+                detail += " / 生成日が当日ではありません"
+            if stale_dates:
+                detail += f" / {market}価格日付が想定{expected}より古い可能性"
+            reasons_by_stem.setdefault(stem, []).append(detail)
+    for stem, reasons in reasons_by_stem.items():
+        st = statuses.get(stem)
+        if not st:
+            continue
+        st.setdefault("original_status", st.get("status"))
+        st["status"] = "stale"
+        st["dependency_stale"] = True
+        st["dependency_source"] = "schedule_catchup"
+        st["dependency_reason"] = " / ".join(reasons)
+        st["daily_freshness_stale"] = True
+# --- CIS R10 daily freshness guard END ---
+
+
 def alert_reason(stem: str, st: Dict[str, Any]) -> str:
     # Compact reason text for the Home 要確認 box.
     status = str(st.get("status", "missing"))
@@ -251,6 +342,7 @@ def build_home() -> int:
         statuses[stem] = st
     mark_dependency_stale(statuses)
     mark_tv_monthly_candidate_applied(statuses)
+    mark_daily_freshness(statuses)
     for stem, label, href, section, max_age_days in ITEMS:
         st = statuses.get(stem, {"status": "missing"})
         sections.setdefault(section, []).append(card_markdown(stem, label, href, st))
