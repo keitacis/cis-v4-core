@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-09T17:57:15.127463+09:00",
+  "generated_at_jst": "2026-07-09T19:25:37.785563+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-07-09T08:25:41.452213+09:00",
+      "generated_at_jst": "2026-07-09T19:25:37.295585+09:00",
       "message": "",
       "expected_us_price_date": "2026-07-08",
-      "expected_jp_price_date": "2026-07-08",
+      "expected_jp_price_date": "2026-07-09",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
@@ -52,50 +52,22 @@
       "warnings": []
     },
     "daily_jp": {
-      "status": "price_stale",
-      "generated_at_jst": "2026-07-09T01:14:59.399899+09:00",
-      "message": "価格未更新：日本株の価格日付が想定取引日 2026-07-08 より古いです。",
-      "expected_price_date": "2026-07-08",
+      "status": "ok",
+      "generated_at_jst": "2026-07-09T19:25:31.419268+09:00",
+      "message": "",
+      "expected_price_date": "2026-07-09",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
-      "price_stale_count": 25,
-      "price_stale_symbols": [
-        "8601",
-        "6501",
-        "6758",
-        "9861",
-        "7974",
-        "8410",
-        "6287",
-        "7821",
-        "1377",
-        "4901",
-        "2871",
-        "5401",
-        "1928",
-        "1911",
-        "6902",
-        "3402",
-        "6326",
-        "5020",
-        "3407",
-        "3405",
-        "7267",
-        "4042",
-        "4063",
-        "6383",
-        "4368"
-      ],
-      "market_closed_count": 25,
-      "warnings": [
-        "価格未更新：日本株の価格日付が想定取引日 2026-07-08 より古いです。"
-      ]
+      "price_stale_count": 0,
+      "price_stale_symbols": [],
+      "market_closed_count": 0,
+      "warnings": []
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-09T01:53:16.626214+09:00",
-      "checked_count": 0,
+      "generated_at_jst": "2026-07-09T17:57:15.219391+09:00",
+      "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -104,16 +76,16 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "reasons": [],
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-08T17:01:25.221772+09:00",
+          "generated_at_jst_before": "2026-07-09T07:25:39.678055+09:00",
           "row_dates": [
-            "2026-07-07"
+            "2026-07-08"
           ],
           "expected_price_dates": {
-            "US": "2026-07-07"
+            "US": "2026-07-08"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -188,16 +160,16 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 10:00 以降に確認",
+          "reasons": [],
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-08T18:34:27.904648+09:00",
+          "generated_at_jst_before": "2026-07-09T08:25:41.452213+09:00",
           "row_dates": [
-            "2026-07-07"
+            "2026-07-08"
           ],
           "expected_price_dates": {
-            "US": "2026-07-07"
+            "US": "2026-07-08"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -290,7 +262,7 @@
             "2026-07-07"
           ],
           "expected_price_dates": {
-            "JP": "2026-07-08"
+            "JP": "2026-07-09"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -360,12 +332,12 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-08T18:34:27.904648+09:00",
+          "generated_at_jst_before": "2026-07-09T08:25:41.452213+09:00",
           "row_dates": [
             "2026-07-08"
           ],
           "expected_price_dates": {
-            "JP": "2026-07-08"
+            "JP": "2026-07-09"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -456,7 +428,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-09T01:53:16.500035+09:00",
+            "generated_at_jst": "2026-07-09T17:57:15.127463+09:00",
             "row_dates": []
           }
         }
