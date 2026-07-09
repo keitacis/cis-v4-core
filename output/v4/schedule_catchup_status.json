@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-09T01:53:16.626214+09:00",
-  "checked_count": 0,
+  "generated_at_jst": "2026-07-09T17:57:15.219391+09:00",
+  "checked_count": 2,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,16 +10,16 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
+      "reasons": [],
       "status_before": "ok",
-      "generated_at_jst_before": "2026-07-08T17:01:25.221772+09:00",
+      "generated_at_jst_before": "2026-07-09T07:25:39.678055+09:00",
       "row_dates": [
-        "2026-07-07"
+        "2026-07-08"
       ],
       "expected_price_dates": {
-        "US": "2026-07-07"
+        "US": "2026-07-08"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -94,16 +94,16 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 10:00 以降に確認",
+      "reasons": [],
       "status_before": "ok",
-      "generated_at_jst_before": "2026-07-08T18:34:27.904648+09:00",
+      "generated_at_jst_before": "2026-07-09T08:25:41.452213+09:00",
       "row_dates": [
-        "2026-07-07"
+        "2026-07-08"
       ],
       "expected_price_dates": {
-        "US": "2026-07-07"
+        "US": "2026-07-08"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -196,7 +196,7 @@
         "2026-07-07"
       ],
       "expected_price_dates": {
-        "JP": "2026-07-08"
+        "JP": "2026-07-09"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -266,12 +266,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "ok",
-      "generated_at_jst_before": "2026-07-08T18:34:27.904648+09:00",
+      "generated_at_jst_before": "2026-07-09T08:25:41.452213+09:00",
       "row_dates": [
         "2026-07-08"
       ],
       "expected_price_dates": {
-        "JP": "2026-07-08"
+        "JP": "2026-07-09"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -362,7 +362,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-09T01:53:16.500035+09:00",
+        "generated_at_jst": "2026-07-09T17:57:15.127463+09:00",
         "row_dates": []
       }
     }
