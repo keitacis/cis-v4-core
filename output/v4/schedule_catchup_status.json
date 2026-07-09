@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-09T21:18:58.960018+09:00",
-  "checked_count": 4,
+  "generated_at_jst": "2026-07-10T02:30:18.498966+09:00",
+  "checked_count": 0,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,9 +10,9 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-09T19:46:45.895923+09:00",
       "row_dates": [
@@ -112,9 +112,9 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-09T20:31:45.429627+09:00",
       "row_dates": [
@@ -223,13 +223,13 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
-      "status_before": "ok",
-      "generated_at_jst_before": "2026-07-09T19:25:31.419268+09:00",
+      "reason": "判定前：JST 19:00 以降に確認",
+      "status_before": "price_stale",
+      "generated_at_jst_before": "2026-07-10T02:28:47.012332+09:00",
       "row_dates": [
-        "2026-07-09"
+        "2026-07-08"
       ],
       "expected_price_dates": {
         "JP": "2026-07-09"
@@ -237,6 +237,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-07-09T17:28:20Z",
+            "run_started_at": "2026-07-09T17:28:20Z",
+            "updated_at": "2026-07-09T17:28:51Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29037158247"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-07-09T17:25:03Z",
+            "run_started_at": "2026-07-09T17:25:03Z",
+            "updated_at": "2026-07-09T17:25:33Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29036964888"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -298,9 +316,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-09T20:31:45.429627+09:00",
       "row_dates": [
@@ -416,7 +434,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-09T21:18:58.839007+09:00",
+        "generated_at_jst": "2026-07-10T02:30:18.398411+09:00",
         "row_dates": []
       }
     }
