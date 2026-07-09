@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-09T19:25:27.187200+09:00",
-  "finished_at_jst": "2026-07-09T19:25:37.371329+09:00",
+  "generated_at_jst": "2026-07-10T07:25:25.141238+09:00",
+  "finished_at_jst": "2026-07-10T07:25:31.628137+09:00",
   "mode": "auto",
-  "source": "cron-job.org-evening",
-  "planned_step_count": 2,
-  "step_count": 2,
-  "ok_count": 2,
+  "source": "cron-job.org-morning",
+  "planned_step_count": 1,
+  "step_count": 1,
+  "ok_count": 1,
   "has_error": false
 }
