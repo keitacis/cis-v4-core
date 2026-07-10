@@ -1,6 +1,13 @@
-# CIS v4 R12.1 劣化上書き防止パッチ
+# CIS v4 R12.2 劣化上書き防止パッチ
 
-R12.1 は、正常な latest レポートがある状態で、後続実行が全銘柄 `price_stale` / 価格未更新を返した場合に、その悪い結果で latest 本文・latest JSON を上書きしないためのガードです。
+R12.2 は、R12.1 の GitHub Actions 実行時エラーを修正した版です。
+
+## R12.1 の失敗原因
+
+R12.1 のパッチスクリプトは `re.subn(pattern, R12_CORE_CODE, ...)` で `cis_core.py` の `write_report()` を差し替える構造でした。
+差し替え後のコード文字列内に `\d{4}-\d{2}-\d{2}` が含まれていたため、Python の正規表現置換処理が replacement 側の `\d` を不正なエスケープとして解釈し、`re.error: bad escape \d` で停止しました。
+
+R12.2 では `re.subn(pattern, lambda _m: R12_CORE_CODE, ...)` に変更し、replacement 側のバックスラッシュを正規表現エスケープとして解釈させないようにしています。
 
 ## 目的
 
@@ -21,7 +28,12 @@ R12.1 は、正常な latest レポートがある状態で、後続実行が全
 
 ## 適用後の確認
 
-1. `CIS v4 Degradation Guard Patch R12.1` を手動実行。
+1. `CIS v4 Degradation Guard Patch R12.2` を手動実行。
 2. 緑成功を確認。
-3. 必要なら Home を1回実行。
+3. 必要なら `CIS v4 Home` を1回実行。
 4. 翌朝、夜中の価格未更新で daily_jp latest 本文が劣化上書きされていないか確認。
+
+## 注意
+
+R12.1 の失敗は、パッチスクリプトが `cis_core.py` を書き換える前に停止したものです。したがって、CIS本体の `cis_core.py` / `cis_home.py` はR12.1で壊れていない想定です。
+R12.1 workflow は再実行しないでください。R12.2 workflow を使ってください。
