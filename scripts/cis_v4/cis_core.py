@@ -951,8 +951,86 @@ def markdown_to_simple_html(markdown: str, title: str = "CIS") -> str:
     return """<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>%s</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p>%s<p><a href='../index.html'>CISホームへ戻る</a></p></body></html>""" % (html_escape(title), "\n".join(body))
 
 
+# --- CIS R12 degradation guard START ---
+DEGRADATION_GUARD_STEMS = {"daily_jp", "daily_us", "buy_alert"}
+
+
+def _r12_status_name(status: Dict[str, Any]) -> str:
+    if not isinstance(status, dict):
+        return ""
+    return str(status.get("status") or "").strip().lower()
+
+
+def _r12_existing_status_for_guard(stem: str) -> Dict[str, Any]:
+    try:
+        data = read_json(report_paths(stem)["docs_status"], default={}) or {}
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def _r12_should_guard_degradation(stem: str, payload: Dict[str, Any], status: Dict[str, Any]) -> Tuple[bool, Dict[str, Any]]:
+    """Return True when a stale follow-up run should not overwrite a good latest.
+
+    This is deliberately conservative. It only blocks first-class price_stale
+    reports for the daily/buy-alert reports after a previous ok/partial latest
+    already exists. Missing/error reports are not hidden by this guard.
+    """
+    if stem not in DEGRADATION_GUARD_STEMS:
+        return False, {}
+    if _r12_status_name(status) != "price_stale":
+        return False, {}
+    existing = _r12_existing_status_for_guard(stem)
+    existing_status = _r12_status_name(existing)
+    if existing_status not in {"ok", "partial"}:
+        return False, existing
+    return True, existing
+
+
+def _r12_write_degraded_attempt(stem: str, markdown: str, payload: Dict[str, Any], status: Dict[str, Any]) -> None:
+    attempt_stem = f"{stem}_degraded_attempt"
+    paths = report_paths(attempt_stem)
+    attempt_status = dict(status or {})
+    attempt_status["degradation_guard_attempt"] = True
+    attempt_status["guarded_stem"] = stem
+    attempt_status["stored_at_jst"] = timestamp_jst()
+    for k in ["output_md", "docs_md"]:
+        write_text(paths[k], markdown)
+    write_text(paths["docs_html"], markdown_to_simple_html(markdown, attempt_stem))
+    attempt_payload = payload if isinstance(payload, dict) else {"payload": payload}
+    for k in ["output_json", "docs_json"]:
+        write_json(paths[k], attempt_payload)
+    for k in ["output_status", "docs_status"]:
+        write_json(paths[k], attempt_status)
+
+
 def write_report(stem: str, markdown: str, payload: Dict[str, Any], status: Dict[str, Any]) -> None:
     paths = report_paths(stem)
+    should_guard, existing = _r12_should_guard_degradation(stem, payload, status)
+    if should_guard:
+        _r12_write_degraded_attempt(stem, markdown, payload, status)
+        guarded_status = dict(existing or {})
+        guarded_status["status"] = "partial"
+        guarded_status["generated_at_jst"] = timestamp_jst()
+        guarded_status["degradation_guard_triggered"] = True
+        guarded_status["degradation_guard_version"] = "R12.3"
+        guarded_status["degradation_guard_source_status"] = _r12_status_name(status)
+        guarded_status["retained_latest_generated_at_jst"] = existing.get("generated_at_jst")
+        guarded_status["degraded_attempt_stem"] = f"{stem}_degraded_attempt"
+        guarded_status["message"] = (
+            "劣化上書き防止：価格未更新の実行結果だったため、"
+            f"{stem} の正常なlatest本文を保持しました。"
+        )
+        warnings = []
+        incoming_warnings = status.get("warnings") if isinstance(status, dict) else None
+        if isinstance(incoming_warnings, list):
+            warnings.extend(str(x) for x in incoming_warnings[:3])
+        warnings.insert(0, guarded_status["message"])
+        guarded_status["warnings"] = warnings
+        for k in ["output_status", "docs_status"]:
+            write_json(paths[k], guarded_status)
+        return
+
     for k in ["output_md", "docs_md"]:
         write_text(paths[k], markdown)
     write_text(paths["docs_html"], markdown_to_simple_html(markdown, stem))
@@ -961,7 +1039,7 @@ def write_report(stem: str, markdown: str, payload: Dict[str, Any], status: Dict
     for k in ["output_status", "docs_status"]:
         write_json(paths[k], status)
 
-
+# --- CIS R12 degradation guard END ---
 def write_error_report(stem: str, title: str, message: str) -> None:
     status = {"status": "error", "generated_at_jst": timestamp_jst(), "error": message}
     md = f"# {title}\n\n生成日時：{now_jst().strftime('%Y/%m/%d %H:%M JST')}\n\n## エラー\n\n{message}\n"
