@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/11 02:12 JST
+生成日時：2026/07/11 02:30 JST
 
 ## 判定サマリー
 
@@ -12,7 +12,7 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-11T02:12:59.227969+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-11T02:30:45.466287+09:00 / dates=[]
 
 ## 詳細
 
