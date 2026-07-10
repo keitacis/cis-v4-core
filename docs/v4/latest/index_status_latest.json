@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-10T21:16:34.167782+09:00",
+  "generated_at_jst": "2026-07-11T01:37:40.753002+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -52,9 +52,9 @@
       "warnings": []
     },
     "daily_jp": {
-      "status": "ok",
-      "generated_at_jst": "2026-07-10T18:25:33.245191+09:00",
-      "message": "",
+      "status": "partial",
+      "generated_at_jst": "2026-07-11T01:37:40.205479+09:00",
+      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-07-10",
       "price_success_count": 25,
       "price_missing_count": 0,
@@ -62,11 +62,19 @@
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": []
+      "warnings": [
+        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
+        "価格未更新：日本株の価格日付が想定取引日 2026-07-10 より古いです。"
+      ],
+      "degradation_guard_triggered": true,
+      "degradation_guard_version": "R12.3",
+      "degradation_guard_source_status": "price_stale",
+      "retained_latest_generated_at_jst": "2026-07-10T18:25:33.245191+09:00",
+      "degraded_attempt_stem": "daily_jp_degraded_attempt"
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-10T21:09:44.382876+09:00",
+      "generated_at_jst": "2026-07-10T21:16:34.243727+09:00",
       "checked_count": 4,
       "regen_count": 0,
       "recovered_count": 0,
@@ -509,7 +517,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-10T21:09:44.287134+09:00",
+            "generated_at_jst": "2026-07-10T21:16:34.167782+09:00",
             "row_dates": []
           }
         }
