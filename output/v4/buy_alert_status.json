@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-13T08:25:39.422731+09:00",
+  "generated_at_jst": "2026-07-13T18:25:36.321853+09:00",
   "message": "",
   "expected_us_price_date": "2026-07-10",
-  "expected_jp_price_date": "2026-07-10",
+  "expected_jp_price_date": "2026-07-13",
   "watchlist_count": 73,
   "price_success_count": 73,
   "price_error_count": 0,

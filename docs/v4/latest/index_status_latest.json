@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-13T09:14:46.904514+09:00",
+  "generated_at_jst": "2026-07-13T18:25:36.840493+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-07-13T08:25:39.422731+09:00",
+      "generated_at_jst": "2026-07-13T18:25:36.321853+09:00",
       "message": "",
       "expected_us_price_date": "2026-07-10",
-      "expected_jp_price_date": "2026-07-10",
+      "expected_jp_price_date": "2026-07-13",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
@@ -52,29 +52,21 @@
       "warnings": []
     },
     "daily_jp": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-11T02:04:53.131354+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
-      "expected_price_date": "2026-07-10",
+      "status": "ok",
+      "generated_at_jst": "2026-07-13T18:25:28.684549+09:00",
+      "message": "",
+      "expected_price_date": "2026-07-13",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
-        "価格未更新：日本株の価格日付が想定取引日 2026-07-10 より古いです。"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-07-11T01:37:40.205479+09:00",
-      "degraded_attempt_stem": "daily_jp_degraded_attempt"
+      "warnings": []
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-12T09:15:46.749427+09:00",
+      "generated_at_jst": "2026-07-13T09:14:46.977013+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -86,7 +78,7 @@
           "label": "米国株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定対象外曜日：weekday=0",
           "status_before": "ok",
           "generated_at_jst_before": "2026-07-11T16:21:30.333634+09:00",
           "row_dates": [
@@ -197,11 +189,11 @@
           "label": "買い場アラート（米国価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-10T20:30:23.449323+09:00",
+          "generated_at_jst_before": "2026-07-13T08:25:39.422731+09:00",
           "row_dates": [
-            "2026-07-09"
+            "2026-07-10"
           ],
           "expected_price_dates": {
             "US": "2026-07-10"
@@ -308,7 +300,7 @@
           "label": "日本株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-07-11T02:04:53.131354+09:00",
           "row_dates": [
@@ -419,9 +411,9 @@
           "label": "買い場アラート（日本価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-10T20:30:23.449323+09:00",
+          "generated_at_jst_before": "2026-07-13T08:25:39.422731+09:00",
           "row_dates": [
             "2026-07-10"
           ],
@@ -535,7 +527,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-12T09:15:46.665515+09:00",
+            "generated_at_jst": "2026-07-13T09:14:46.904514+09:00",
             "row_dates": []
           }
         }
