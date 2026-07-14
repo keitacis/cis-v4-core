@@ -1,25 +1,25 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-07-14T08:25:26.267310+09:00",
-  "finished_at_jst": "2026-07-14T08:25:34.767601+09:00",
-  "timestamp_jst": "2026-07-14T08:25:26.267310+09:00",
+  "generated_at_jst": "2026-07-14T18:25:29.426058+09:00",
+  "finished_at_jst": "2026-07-14T18:25:34.109303+09:00",
+  "timestamp_jst": "2026-07-14T18:25:29.426058+09:00",
   "mode": "auto",
-  "source": "cron-job.org-morning",
+  "source": "cron-job.org-evening",
   "planned_scripts": [
-    "scripts/cis_v4/cis_buy_alert.py"
+    "scripts/cis_v4/cis_daily_jp.py"
   ],
   "planned_step_count": 1,
   "steps": [
     {
-      "script": "scripts/cis_v4/cis_buy_alert.py",
-      "started_at_jst": "2026-07-14T08:25:26.269108+09:00",
+      "script": "scripts/cis_v4/cis_daily_jp.py",
+      "started_at_jst": "2026-07-14T18:25:29.427532+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python",
-        "scripts/cis_v4/cis_buy_alert.py"
+        "scripts/cis_v4/cis_daily_jp.py"
       ],
-      "finished_at_jst": "2026-07-14T08:25:34.767567+09:00",
-      "duration_seconds": 8.498,
+      "finished_at_jst": "2026-07-14T18:25:34.109268+09:00",
+      "duration_seconds": 4.682,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -31,45 +31,47 @@
   "auto_decisions": [
     {
       "label": "米国株日次",
-      "active": true,
-      "fresh": true,
-      "stem": "daily_us",
-      "market": "US",
-      "status": "ok",
-      "generated_at_jst": "2026-07-14T07:25:35.411611+09:00",
-      "expected_price_date": "2026-07-13",
-      "row_dates": [
-        "2026-07-13"
-      ],
-      "min_hour_jst": 7,
-      "row_count": 48,
-      "dated_row_count": 48,
-      "fresh_reason": "row_dates_ge_expected"
+      "active": false,
+      "reason": "outside_window"
     },
     {
       "label": "買い場アラート（米国価格）",
-      "active": true,
-      "fresh": false,
-      "stem": "buy_alert",
-      "market": "US",
-      "status": "ok",
-      "generated_at_jst": "2026-07-13T20:45:16.958064+09:00",
-      "expected_price_date": "2026-07-13",
-      "row_dates": [
-        "2026-07-10"
-      ],
-      "min_hour_jst": 8,
-      "stale_reason": "not_generated_today"
+      "active": false,
+      "reason": "outside_window"
     },
     {
       "label": "日本株日次",
-      "active": false,
-      "reason": "outside_window"
+      "active": true,
+      "fresh": false,
+      "stem": "daily_jp",
+      "market": "JP",
+      "status": "partial",
+      "generated_at_jst": "2026-07-14T02:26:00.343039+09:00",
+      "expected_price_date": "2026-07-14",
+      "row_dates": [
+        "2026-07-13"
+      ],
+      "min_hour_jst": 18,
+      "row_count": 25,
+      "dated_row_count": 25,
+      "stale_reason": "row_dates_lt_expected"
     },
     {
       "label": "買い場アラート（日本価格）",
-      "active": false,
-      "reason": "outside_window"
+      "active": true,
+      "fresh": true,
+      "stem": "buy_alert",
+      "market": "JP",
+      "status": "ok",
+      "generated_at_jst": "2026-07-14T16:27:15.613571+09:00",
+      "expected_price_date": "2026-07-14",
+      "row_dates": [
+        "2026-07-14"
+      ],
+      "min_hour_jst": 18,
+      "row_count": 25,
+      "dated_row_count": 25,
+      "fresh_reason": "row_dates_ge_expected"
     }
   ]
 }
