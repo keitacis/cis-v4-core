@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-07-14T15:30:36.959942+09:00",
+    "generated_at_jst": "2026-07-14T16:22:43.825702+09:00",
     "message": "",
     "expected_price_date": "2026-07-13",
     "price_success_count": 48,
@@ -42,7 +42,7 @@
       "tv_avg_target_price": 117.33,
       "tv_upside_pct": 54.9115438464056,
       "tv_updated_at": "2026-07-06T21:15:43.854602+09:00",
-      "tv_age_days": 7.7602769299537036,
+      "tv_age_days": 7.796412960428241,
       "tv_freshness": "8日前更新"
     },
     {
@@ -67,7 +67,7 @@
       "tv_avg_target_price": 241.43,
       "tv_upside_pct": 22.671613736554267,
       "tv_updated_at": "2026-07-06T21:15:43.854662+09:00",
-      "tv_age_days": 7.760281728101853,
+      "tv_age_days": 7.79642239587963,
       "tv_freshness": "8日前更新"
     },
     {
@@ -92,7 +92,7 @@
       "tv_avg_target_price": 140.38,
       "tv_upside_pct": 26.172925853546207,
       "tv_updated_at": "2026-07-06T21:15:43.854613+09:00",
-      "tv_age_days": 7.760278569756944,
+      "tv_age_days": 7.796414855462962,
       "tv_freshness": "8日前更新"
     },
     {
@@ -117,7 +117,7 @@
       "tv_avg_target_price": 28.82,
       "tv_upside_pct": 65.06300980067005,
       "tv_updated_at": "2026-07-06T21:15:43.854865+09:00",
-      "tv_age_days": 7.76031512824074,
+      "tv_age_days": 7.796493917835648,
       "tv_freshness": "8日前更新"
     },
     {
@@ -142,7 +142,7 @@
       "tv_avg_target_price": 47.11,
       "tv_upside_pct": -1.133266544777821,
       "tv_updated_at": "2026-07-06T21:15:43.854675+09:00",
-      "tv_age_days": 7.7602827769097225,
+      "tv_age_days": 7.7964255679398144,
       "tv_freshness": "8日前更新"
     },
     {
@@ -167,7 +167,7 @@
       "tv_avg_target_price": 298.16,
       "tv_upside_pct": 10.984554913068928,
       "tv_updated_at": "2026-07-06T21:15:43.854960+09:00",
-      "tv_age_days": 7.760332739259259,
+      "tv_age_days": 7.796521138101851,
       "tv_freshness": "8日前更新"
     },
     {
@@ -192,7 +192,7 @@
       "tv_avg_target_price": 401.79,
       "tv_upside_pct": 12.310272536687638,
       "tv_updated_at": "2026-07-06T21:15:43.854839+09:00",
-      "tv_age_days": 7.760310240856482,
+      "tv_age_days": 7.796483530914352,
       "tv_freshness": "8日前更新"
     },
     {
@@ -217,7 +217,7 @@
       "tv_avg_target_price": 1501.65,
       "tv_upside_pct": 17.47701936240955,
       "tv_updated_at": "2026-07-06T21:15:43.854695+09:00",
-      "tv_age_days": 7.760285663668982,
+      "tv_age_days": 7.796433128645833,
       "tv_freshness": "8日前更新"
     },
     {
@@ -242,7 +242,7 @@
       "tv_avg_target_price": 28.68,
       "tv_upside_pct": 31.138540921086268,
       "tv_updated_at": "2026-07-06T21:15:43.854977+09:00",
-      "tv_age_days": 7.760336862106482,
+      "tv_age_days": 7.796527437916668,
       "tv_freshness": "8日前更新"
     },
     {
@@ -267,7 +267,7 @@
       "tv_avg_target_price": 501.24,
       "tv_upside_pct": 14.480176364057481,
       "tv_updated_at": "2026-07-06T21:15:43.854754+09:00",
-      "tv_age_days": 7.7602965025,
+      "tv_age_days": 7.796452458807869,
       "tv_freshness": "8日前更新"
     },
     {
@@ -292,7 +292,7 @@
       "tv_avg_target_price": 245.82,
       "tv_upside_pct": -5.541035496269503,
       "tv_updated_at": "2026-07-06T21:15:43.854952+09:00",
-      "tv_age_days": 7.7603316667361115,
+      "tv_age_days": 7.79651925712963,
       "tv_freshness": "8日前更新"
     },
     {
@@ -317,7 +317,7 @@
       "tv_avg_target_price": 2235.41,
       "tv_upside_pct": 19.713486935476293,
       "tv_updated_at": "2026-07-06T21:15:43.854765+09:00",
-      "tv_age_days": 7.760297690706018,
+      "tv_age_days": 7.79645600119213,
       "tv_freshness": "8日前更新"
     },
     {
@@ -342,7 +342,7 @@
       "tv_avg_target_price": 130.44,
       "tv_upside_pct": 35.87499999999999,
       "tv_updated_at": "2026-07-06T21:15:43.854857+09:00",
-      "tv_age_days": 7.760313783564815,
+      "tv_age_days": 7.796491251226852,
       "tv_freshness": "8日前更新"
     },
     {
@@ -367,7 +367,7 @@
       "tv_avg_target_price": 595.21,
       "tv_upside_pct": 12.620383531421488,
       "tv_updated_at": "2026-07-06T21:15:43.854773+09:00",
-      "tv_age_days": 7.760299600659722,
+      "tv_age_days": 7.796460214432869,
       "tv_freshness": "8日前更新"
     },
     {
@@ -392,7 +392,7 @@
       "tv_avg_target_price": 573.44,
       "tv_upside_pct": 40.85282149675261,
       "tv_updated_at": "2026-07-06T21:15:43.854746+09:00",
-      "tv_age_days": 7.760294408530092,
+      "tv_age_days": 7.796449170347222,
       "tv_freshness": "8日前更新"
     },
     {
@@ -417,7 +417,7 @@
       "tv_avg_target_price": 34.16,
       "tv_upside_pct": 29.14933464903126,
       "tv_updated_at": "2026-07-06T21:15:43.854874+09:00",
-      "tv_age_days": 7.760316231840277,
+      "tv_age_days": 7.796496019641204,
       "tv_freshness": "8日前更新"
     },
     {
@@ -442,7 +442,7 @@
       "tv_avg_target_price": 41.1,
       "tv_upside_pct": 58.32049864972056,
       "tv_updated_at": "2026-07-06T21:15:43.854831+09:00",
-      "tv_age_days": 7.760308723877315,
+      "tv_age_days": 7.796481193310186,
       "tv_freshness": "8日前更新"
     },
     {
@@ -467,7 +467,7 @@
       "tv_avg_target_price": 20.88,
       "tv_upside_pct": 27.23948930013438,
       "tv_updated_at": "2026-07-06T16:58:37.877800+09:00",
-      "tv_age_days": 7.938845135636575,
+      "tv_age_days": 7.975014213738427,
       "tv_freshness": "8日前更新"
     },
     {
@@ -492,7 +492,7 @@
       "tv_avg_target_price": 84.08,
       "tv_upside_pct": 60.79556038988846,
       "tv_updated_at": "2026-07-06T21:15:43.854634+09:00",
-      "tv_age_days": 7.7602806929513894,
+      "tv_age_days": 7.7964199506134255,
       "tv_freshness": "8日前更新"
     },
     {
@@ -517,7 +517,7 @@
       "tv_avg_target_price": 553.64,
       "tv_upside_pct": 15.28162415408641,
       "tv_updated_at": "2026-07-06T21:15:43.854848+09:00",
-      "tv_age_days": 7.760311222928241,
+      "tv_age_days": 7.796485835462963,
       "tv_freshness": "8日前更新"
     },
     {
@@ -542,7 +542,7 @@
       "tv_avg_target_price": 469.41,
       "tv_upside_pct": 16.52227699839758,
       "tv_updated_at": "2026-07-06T21:15:43.854902+09:00",
-      "tv_age_days": 7.760321092569444,
+      "tv_age_days": 7.796505417615741,
       "tv_freshness": "8日前更新"
     },
     {
@@ -567,7 +567,7 @@
       "tv_avg_target_price": 821.0,
       "tv_upside_pct": 25.01332730599569,
       "tv_updated_at": "2026-07-06T21:15:43.854782+09:00",
-      "tv_age_days": 7.760300642326389,
+      "tv_age_days": 7.796463044675926,
       "tv_freshness": "8日前更新"
     },
     {
@@ -592,7 +592,7 @@
       "tv_avg_target_price": 241.47,
       "tv_upside_pct": 70.28913596839773,
       "tv_updated_at": "2026-07-06T21:15:43.854542+09:00",
-      "tv_age_days": 7.760273906284723,
+      "tv_age_days": 7.796407267673612,
       "tv_freshness": "8日前更新"
     },
     {
@@ -617,7 +617,7 @@
       "tv_avg_target_price": 184.61,
       "tv_upside_pct": 18.347325789465508,
       "tv_updated_at": "2026-07-06T21:15:43.854721+09:00",
-      "tv_age_days": 7.760289577152778,
+      "tv_age_days": 7.796440787453704,
       "tv_freshness": "8日前更新"
     },
     {
@@ -642,7 +642,7 @@
       "tv_avg_target_price": 250.41,
       "tv_upside_pct": 74.48958928646046,
       "tv_updated_at": "2026-07-06T21:15:43.854967+09:00",
-      "tv_age_days": 7.76033578542824,
+      "tv_age_days": 7.796525635925926,
       "tv_freshness": "8日前更新"
     },
     {
@@ -667,7 +667,7 @@
       "tv_avg_target_price": 309.87,
       "tv_upside_pct": 236.44951697482327,
       "tv_updated_at": "2026-07-06T21:15:43.854911+09:00",
-      "tv_age_days": 7.760324795717593,
+      "tv_age_days": 7.796507776400463,
       "tv_freshness": "8日前更新"
     },
     {
@@ -692,7 +692,7 @@
       "tv_avg_target_price": 224.43,
       "tv_upside_pct": 21.986088276882256,
       "tv_updated_at": "2026-07-06T21:15:43.854813+09:00",
-      "tv_age_days": 7.760306566863426,
+      "tv_age_days": 7.7964774233101855,
       "tv_freshness": "8日前更新"
     },
     {
@@ -717,7 +717,7 @@
       "tv_avg_target_price": 190.3,
       "tv_upside_pct": 5.051066194760282,
       "tv_updated_at": "2026-07-06T21:15:43.854944+09:00",
-      "tv_age_days": 7.7603306644791665,
+      "tv_age_days": 7.796517383622685,
       "tv_freshness": "8日前更新"
     },
     {
@@ -742,7 +742,7 @@
       "tv_avg_target_price": 676.88,
       "tv_upside_pct": 23.737265551952905,
       "tv_updated_at": "2026-07-06T21:15:43.854573+09:00",
-      "tv_age_days": 7.760274942951389,
+      "tv_age_days": 7.796409308576389,
       "tv_freshness": "8日前更新"
     },
     {
@@ -767,7 +767,7 @@
       "tv_avg_target_price": 20.25,
       "tv_upside_pct": 153.125,
       "tv_updated_at": "2026-07-06T21:15:43.854919+09:00",
-      "tv_age_days": 7.760325903842594,
+      "tv_age_days": 7.796509634722223,
       "tv_freshness": "8日前更新"
     },
     {
@@ -792,7 +792,7 @@
       "tv_avg_target_price": 66.06,
       "tv_upside_pct": 18.111924976847867,
       "tv_updated_at": "2026-07-06T21:15:43.854686+09:00",
-      "tv_age_days": 7.760283808252314,
+      "tv_age_days": 7.796429564837963,
       "tv_freshness": "8日前更新"
     },
     {
@@ -817,7 +817,7 @@
       "tv_avg_target_price": 257.79,
       "tv_upside_pct": 22.459743825430934,
       "tv_updated_at": "2026-07-06T21:15:43.854729+09:00",
-      "tv_age_days": 7.760291626597223,
+      "tv_age_days": 7.796444623761574,
       "tv_freshness": "8日前更新"
     },
     {
@@ -842,7 +842,7 @@
       "tv_avg_target_price": 81.1,
       "tv_upside_pct": 60.18170706907916,
       "tv_updated_at": "2026-07-06T21:15:43.854882+09:00",
-      "tv_age_days": 7.760317340497685,
+      "tv_age_days": 7.796498952083333,
       "tv_freshness": "8日前更新"
     },
     {
@@ -867,7 +867,7 @@
       "tv_avg_target_price": 49.87,
       "tv_upside_pct": 60.87096774193548,
       "tv_updated_at": "2026-07-06T21:15:43.854894+09:00",
-      "tv_age_days": 7.7603183504513895,
+      "tv_age_days": 7.796501930694444,
       "tv_freshness": "8日前更新"
     },
     {
@@ -892,7 +892,7 @@
       "tv_avg_target_price": 11.14,
       "tv_upside_pct": 84.13222559992813,
       "tv_updated_at": "2026-07-06T21:15:43.854588+09:00",
-      "tv_age_days": 7.7602759415625,
+      "tv_age_days": 7.796411132986111,
       "tv_freshness": "8日前更新"
     },
     {
@@ -917,7 +917,7 @@
       "tv_avg_target_price": 391.0,
       "tv_upside_pct": 27.1999679128118,
       "tv_updated_at": "2026-07-06T21:15:43.854936+09:00",
-      "tv_age_days": 7.760329586539353,
+      "tv_age_days": 7.796515558229167,
       "tv_freshness": "8日前更新"
     },
     {
@@ -942,7 +942,7 @@
       "tv_avg_target_price": 15.71,
       "tv_upside_pct": 63.816472888799794,
       "tv_updated_at": "2026-07-06T21:15:43.854624+09:00",
-      "tv_age_days": 7.760279605706018,
+      "tv_age_days": 7.796417524976851,
       "tv_freshness": "8日前更新"
     },
     {
@@ -967,7 +967,7 @@
       "tv_avg_target_price": 30.02,
       "tv_upside_pct": 98.41374602071042,
       "tv_updated_at": "2026-07-06T21:15:43.854821+09:00",
-      "tv_age_days": 7.760307729236112,
+      "tv_age_days": 7.796479417835648,
       "tv_freshness": "8日前更新"
     },
     {
@@ -992,7 +992,7 @@
       "tv_avg_target_price": 172.75,
       "tv_upside_pct": 54.40651076233597,
       "tv_updated_at": "2026-07-06T21:15:43.854704+09:00",
-      "tv_age_days": 7.760286921689814,
+      "tv_age_days": 7.796434966840278,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1017,7 +1017,7 @@
       "tv_avg_target_price": 31.0,
       "tv_upside_pct": 101.82292117776048,
       "tv_updated_at": "2026-07-06T21:15:43.854797+09:00",
-      "tv_age_days": 7.760302709687501,
+      "tv_age_days": 7.796469738449074,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1042,7 +1042,7 @@
       "tv_avg_target_price": 6.64,
       "tv_upside_pct": 101.21212411955808,
       "tv_updated_at": "2026-07-06T21:15:43.854805+09:00",
-      "tv_age_days": 7.760304782581018,
+      "tv_age_days": 7.796474804803242,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1067,7 +1067,7 @@
       "tv_avg_target_price": 47.29,
       "tv_upside_pct": 18.13640130425866,
       "tv_updated_at": "2026-07-06T21:15:43.854713+09:00",
-      "tv_age_days": 7.760287899108796,
+      "tv_age_days": 7.796437246249999,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1092,7 +1092,7 @@
       "tv_avg_target_price": 13.0,
       "tv_upside_pct": 183.22439145607572,
       "tv_updated_at": "2026-07-06T16:58:37.877689+09:00",
-      "tv_age_days": 7.938832008101852,
+      "tv_age_days": 7.974984235127314,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1117,7 +1117,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-06T21:15:43.854738+09:00",
-      "tv_age_days": 7.760293411574073,
+      "tv_age_days": 7.796447252303241,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1142,7 +1142,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-07T21:45:42.722563+09:00",
-      "tv_age_days": 6.739506748194445,
+      "tv_age_days": 6.775691195474537,
       "tv_freshness": "7日前更新"
     },
     {
@@ -1167,7 +1167,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-07T21:47:56.017939+09:00",
-      "tv_age_days": 6.737970839837963,
+      "tv_age_days": 6.774159924039352,
       "tv_freshness": "7日前更新"
     },
     {
@@ -1192,7 +1192,7 @@
       "tv_avg_target_price": 71.32,
       "tv_upside_pct": 83.43620895239172,
       "tv_updated_at": "2026-07-06T21:15:43.854789+09:00",
-      "tv_age_days": 7.760301703217592,
+      "tv_age_days": 7.796466568680556,
       "tv_freshness": "8日前更新"
     },
     {
@@ -1217,7 +1217,7 @@
       "tv_avg_target_price": 96.5,
       "tv_upside_pct": 91.24059007304774,
       "tv_updated_at": "2026-07-06T21:15:43.854927+09:00",
-      "tv_age_days": 7.7603285770138895,
+      "tv_age_days": 7.796513265509259,
       "tv_freshness": "8日前更新"
     }
   ]
