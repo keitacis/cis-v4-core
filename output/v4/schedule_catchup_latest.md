@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/15 18:20 JST
+生成日時：2026/07/15 19:18 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-15T18:20:29.092814+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-15T19:18:24.181658+09:00 / dates=[]
 
 ## 詳細
 
@@ -44,10 +44,10 @@
 
 ### 日本株日次騰落
 
-- status_before：partial
-- generated_at_before：2026-07-15T00:10:39.748971+09:00
+- status_before：ok
+- generated_at_before：2026-07-15T18:25:33.322203+09:00
 - expected_price_dates：{'JP': '2026-07-15'}
-- row_dates：['2026-07-14']
+- row_dates：['2026-07-15']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-14T15:10:16Z / updated=2026-07-14T15:10:44Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-14T12:51:37Z / updated=2026-07-14T12:52:04Z
