@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-16T01:10:06.913406+09:00",
+  "generated_at_jst": "2026-07-16T07:25:39.301001+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -55,37 +55,16 @@
       ]
     },
     "daily_us": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-15T16:27:26.025998+09:00",
+      "status": "ok",
+      "generated_at_jst": "2026-07-16T07:25:38.895189+09:00",
       "message": "",
-      "expected_price_date": "2026-07-14",
+      "expected_price_date": "2026-07-15",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
-      "price_stale_count": 20,
-      "price_stale_symbols": [
-        "V",
-        "FICO",
-        "SPGI",
-        "MELI",
-        "DIS",
-        "TMO",
-        "ISRG",
-        "TRMB",
-        "VRTX",
-        "ETN",
-        "AVAV",
-        "APH",
-        "AEM",
-        "MSTR",
-        "QCOM",
-        "AXON",
-        "POET",
-        "COHR",
-        "EWY",
-        "AXTI"
-      ],
-      "market_closed_count": 20,
+      "price_stale_count": 0,
+      "price_stale_symbols": [],
+      "market_closed_count": 0,
       "tv_saved_or_explicit_count": 48,
       "tv_missing_count": 0,
       "tv_no_coverage_count": 2,
@@ -93,9 +72,7 @@
       "tv_stale_or_unknown_count": 0,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [],
-      "warnings": [
-        "価格日付が古い銘柄があります：20銘柄（想定：2026-07-14）"
-      ]
+      "warnings": []
     },
     "daily_jp": {
       "status": "partial",
@@ -120,7 +97,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-16T00:13:44.718676+09:00",
+      "generated_at_jst": "2026-07-16T01:10:07.007261+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -583,7 +560,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-16T00:13:44.640270+09:00",
+            "generated_at_jst": "2026-07-16T01:10:06.913406+09:00",
             "row_dates": []
           }
         }
