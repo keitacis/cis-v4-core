@@ -1,8 +1,8 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-07-16T01:10:07.007261+09:00",
-    "checked_count": 0,
+    "generated_at_jst": "2026-07-16T09:13:47.944039+09:00",
+    "checked_count": 1,
     "regen_count": 0,
     "recovered_count": 0,
     "failed_count": 0,
@@ -11,17 +11,16 @@
         "task": "daily_us",
         "stem": "daily_us",
         "label": "米国株日次騰落",
-        "checked": false,
+        "checked": true,
         "needs_regen": false,
-        "reason": "判定前：JST 9:00 以降に確認",
-        "status_before": "partial",
-        "generated_at_jst_before": "2026-07-15T16:27:26.025998+09:00",
+        "reasons": [],
+        "status_before": "ok",
+        "generated_at_jst_before": "2026-07-16T07:25:38.895189+09:00",
         "row_dates": [
-          "2026-07-13",
-          "2026-07-14"
+          "2026-07-15"
         ],
         "expected_price_dates": {
-          "US": "2026-07-14"
+          "US": "2026-07-15"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -126,14 +125,13 @@
         "checked": false,
         "needs_regen": false,
         "reason": "判定前：JST 10:00 以降に確認",
-        "status_before": "partial",
-        "generated_at_jst_before": "2026-07-15T16:32:08.696198+09:00",
+        "status_before": "ok",
+        "generated_at_jst_before": "2026-07-16T08:25:50.971907+09:00",
         "row_dates": [
-          "2026-07-13",
-          "2026-07-14"
+          "2026-07-15"
         ],
         "expected_price_dates": {
-          "US": "2026-07-14"
+          "US": "2026-07-15"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -349,8 +347,8 @@
         "checked": false,
         "needs_regen": false,
         "reason": "判定前：JST 19:00 以降に確認",
-        "status_before": "partial",
-        "generated_at_jst_before": "2026-07-15T16:32:08.696198+09:00",
+        "status_before": "ok",
+        "generated_at_jst_before": "2026-07-16T08:25:50.971907+09:00",
         "row_dates": [
           "2026-07-15"
         ],
@@ -464,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-07-16T01:10:06.913406+09:00",
+          "generated_at_jst": "2026-07-16T09:13:47.874092+09:00",
           "row_dates": []
         }
       }
@@ -475,17 +473,16 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
-      "status_before": "partial",
-      "generated_at_jst_before": "2026-07-15T16:27:26.025998+09:00",
+      "reasons": [],
+      "status_before": "ok",
+      "generated_at_jst_before": "2026-07-16T07:25:38.895189+09:00",
       "row_dates": [
-        "2026-07-13",
-        "2026-07-14"
+        "2026-07-15"
       ],
       "expected_price_dates": {
-        "US": "2026-07-14"
+        "US": "2026-07-15"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -590,14 +587,13 @@
       "checked": false,
       "needs_regen": false,
       "reason": "判定前：JST 10:00 以降に確認",
-      "status_before": "partial",
-      "generated_at_jst_before": "2026-07-15T16:32:08.696198+09:00",
+      "status_before": "ok",
+      "generated_at_jst_before": "2026-07-16T08:25:50.971907+09:00",
       "row_dates": [
-        "2026-07-13",
-        "2026-07-14"
+        "2026-07-15"
       ],
       "expected_price_dates": {
-        "US": "2026-07-14"
+        "US": "2026-07-15"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -813,8 +809,8 @@
       "checked": false,
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
-      "status_before": "partial",
-      "generated_at_jst_before": "2026-07-15T16:32:08.696198+09:00",
+      "status_before": "ok",
+      "generated_at_jst_before": "2026-07-16T08:25:50.971907+09:00",
       "row_dates": [
         "2026-07-15"
       ],
@@ -928,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-16T01:10:06.913406+09:00",
+        "generated_at_jst": "2026-07-16T09:13:47.874092+09:00",
         "row_dates": []
       }
     }
