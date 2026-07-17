@@ -1,52 +1,52 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/17 09:16 JST
+生成日時：2026/07/17 18:20 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
-- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-17T09:16:41.735064+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-17T18:20:22.231913+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-07-17T07:25:36.577792+09:00
+- generated_at_before：2026-07-17T16:33:51.804887+09:00
 - expected_price_dates：{'US': '2026-07-16'}
 - row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T07:33:28Z / updated=2026-07-17T07:33:56Z
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T06:32:18Z / updated=2026-07-17T06:32:46Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:36:53Z / updated=2026-07-16T07:37:23Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:10:51Z / updated=2026-07-16T07:11:19Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-15T07:26:46Z / updated=2026-07-15T07:27:32Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-15T06:33:29Z / updated=2026-07-15T06:33:55Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-14T07:22:12Z / updated=2026-07-14T07:22:49Z
 
 ### 買い場アラート（米国価格）
 
 - status_before：ok
-- generated_at_before：2026-07-17T08:25:34.240456+09:00
+- generated_at_before：2026-07-17T16:36:56.718347+09:00
 - expected_price_dates：{'US': '2026-07-16'}
 - row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T07:36:07Z / updated=2026-07-17T07:37:02Z
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T07:30:48Z / updated=2026-07-17T07:31:32Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:48:49Z / updated=2026-07-16T07:49:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:33:21Z / updated=2026-07-16T07:33:53Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-15T07:31:23Z / updated=2026-07-15T07:32:14Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-15T07:24:42Z / updated=2026-07-15T07:25:34Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-14T07:26:43Z / updated=2026-07-14T07:27:21Z
 
 ### 日本株日次騰落
 
 - status_before：partial
 - generated_at_before：2026-07-17T00:21:53.442648+09:00
-- expected_price_dates：{'JP': '2026-07-16'}
+- expected_price_dates：{'JP': '2026-07-17'}
 - row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T15:21:24Z / updated=2026-07-16T15:21:59Z
@@ -58,12 +58,12 @@
 ### 買い場アラート（日本価格）
 
 - status_before：ok
-- generated_at_before：2026-07-17T08:25:34.240456+09:00
-- expected_price_dates：{'JP': '2026-07-16'}
-- row_dates：['2026-07-16']
+- generated_at_before：2026-07-17T16:36:56.718347+09:00
+- expected_price_dates：{'JP': '2026-07-17'}
+- row_dates：['2026-07-17']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T07:36:07Z / updated=2026-07-17T07:37:02Z
+  - event=schedule / status=completed / conclusion=success / started=2026-07-17T07:30:48Z / updated=2026-07-17T07:31:32Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:48:49Z / updated=2026-07-16T07:49:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:33:21Z / updated=2026-07-16T07:33:53Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-15T07:31:23Z / updated=2026-07-15T07:32:14Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-15T07:24:42Z / updated=2026-07-15T07:25:34Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-14T07:26:43Z / updated=2026-07-14T07:27:21Z
