@@ -1,10 +1,10 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/17 01:03 JST
+生成日時：2026/07/17 09:16 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
+- ✅ 米国株日次騰落：最新扱い
 - 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
@@ -12,16 +12,16 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-17T01:03:03.236894+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-17T09:16:41.735064+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-07-16T16:37:19.035788+09:00
-- expected_price_dates：{'US': '2026-07-15'}
-- row_dates：['2026-07-15']
+- generated_at_before：2026-07-17T07:25:36.577792+09:00
+- expected_price_dates：{'US': '2026-07-16'}
+- row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:36:53Z / updated=2026-07-16T07:37:23Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:10:51Z / updated=2026-07-16T07:11:19Z
@@ -32,9 +32,9 @@
 ### 買い場アラート（米国価格）
 
 - status_before：ok
-- generated_at_before：2026-07-16T16:49:49.154081+09:00
-- expected_price_dates：{'US': '2026-07-15'}
-- row_dates：['2026-07-15']
+- generated_at_before：2026-07-17T08:25:34.240456+09:00
+- expected_price_dates：{'US': '2026-07-16'}
+- row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:48:49Z / updated=2026-07-16T07:49:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-16T07:33:21Z / updated=2026-07-16T07:33:53Z
@@ -58,7 +58,7 @@
 ### 買い場アラート（日本価格）
 
 - status_before：ok
-- generated_at_before：2026-07-16T16:49:49.154081+09:00
+- generated_at_before：2026-07-17T08:25:34.240456+09:00
 - expected_price_dates：{'JP': '2026-07-16'}
 - row_dates：['2026-07-16']
 - recent_workflow_runs_available：True
