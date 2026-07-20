@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-20T19:25:55.369530+09:00",
+  "generated_at_jst": "2026-07-20T19:27:47.215684+09:00",
   "items": {
     "buy_alert": {
       "status": "stale",
-      "generated_at_jst": "2026-07-20T19:25:54.863687+09:00",
+      "generated_at_jst": "2026-07-20T19:27:46.648270+09:00",
       "message": "",
       "expected_us_price_date": "2026-07-17",
       "expected_jp_price_date": "2026-07-20",
