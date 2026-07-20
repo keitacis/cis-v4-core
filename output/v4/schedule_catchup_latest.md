@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/20 20:30 JST
+生成日時：2026/07/20 21:03 JST
 
 ## 判定サマリー
 
@@ -12,11 +12,11 @@
 ## 実行結果
 
 - 日本株日次騰落：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_daily_jp.py`
-  - after：status=partial / generated=2026-07-20T20:30:35.096717+09:00 / dates=['2026-07-17']
+  - after：status=partial / generated=2026-07-20T21:03:47.470664+09:00 / dates=['2026-07-17']
 - 買い場アラート（日本価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
-  - after：status=partial / generated=2026-07-20T20:30:57.421996+09:00 / dates=['2026-07-17']
+  - after：status=partial / generated=2026-07-20T21:03:55.860107+09:00 / dates=['2026-07-17']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-20T20:30:57.865613+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-20T21:03:56.416490+09:00 / dates=[]
 
 ## 詳細
 
@@ -36,7 +36,7 @@
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-07-20T20:25:53.434691+09:00
+- generated_at_before：2026-07-20T20:30:57.421996+09:00
 - expected_price_dates：{'US': '2026-07-17'}
 - row_dates：['2026-07-17']
 - recent_workflow_runs_available：True
@@ -49,7 +49,7 @@
 ### 日本株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-07-20T20:25:33.694151+09:00
+- generated_at_before：2026-07-20T20:30:35.096717+09:00
 - expected_price_dates：{'JP': '2026-07-20'}
 - row_dates：['2026-07-17']
 - recent_workflow_runs_available：True
@@ -62,7 +62,7 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-07-20T20:25:53.434691+09:00
+- generated_at_before：2026-07-20T20:30:57.421996+09:00
 - expected_price_dates：{'JP': '2026-07-20'}
 - row_dates：['2026-07-17']
 - recent_workflow_runs_available：True

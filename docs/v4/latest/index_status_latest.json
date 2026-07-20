@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-20T20:30:57.865613+09:00",
+  "generated_at_jst": "2026-07-20T21:03:56.416490+09:00",
   "items": {
     "buy_alert": {
       "status": "stale",
-      "generated_at_jst": "2026-07-20T20:30:57.421996+09:00",
+      "generated_at_jst": "2026-07-20T21:03:55.860107+09:00",
       "message": "",
       "expected_us_price_date": "2026-07-17",
       "expected_jp_price_date": "2026-07-20",
@@ -86,7 +86,7 @@
     },
     "daily_jp": {
       "status": "stale",
-      "generated_at_jst": "2026-07-20T20:30:35.096717+09:00",
+      "generated_at_jst": "2026-07-20T21:03:47.470664+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-07-17",
       "price_success_count": 25,
@@ -102,7 +102,7 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-07-20T20:25:33.694151+09:00",
+      "retained_latest_generated_at_jst": "2026-07-20T20:30:35.096717+09:00",
       "degraded_attempt_stem": "daily_jp_degraded_attempt",
       "original_status": "partial",
       "dependency_stale": true,
@@ -112,10 +112,10 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-20T17:21:29.936304+09:00",
-      "checked_count": 1,
-      "regen_count": 0,
-      "recovered_count": 0,
+      "generated_at_jst": "2026-07-20T20:30:57.943668+09:00",
+      "checked_count": 3,
+      "regen_count": 2,
+      "recovered_count": 2,
       "failed_count": 0,
       "decisions": [
         {
@@ -236,8 +236,8 @@
           "checked": true,
           "needs_regen": false,
           "reasons": [],
-          "status_before": "ok",
-          "generated_at_jst_before": "2026-07-20T08:27:07.746759+09:00",
+          "status_before": "partial",
+          "generated_at_jst_before": "2026-07-20T20:25:53.434691+09:00",
           "row_dates": [
             "2026-07-17"
           ],
@@ -247,6 +247,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-07-20T11:24:17Z",
+                "run_started_at": "2026-07-20T11:24:17Z",
+                "updated_at": "2026-07-20T11:25:04Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29738424579"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-07-20T10:27:15Z",
+                "run_started_at": "2026-07-20T10:27:15Z",
+                "updated_at": "2026-07-20T10:27:50Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29735114197"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -318,24 +336,6 @@
                 "run_started_at": "2026-07-14T07:20:41Z",
                 "updated_at": "2026-07-14T07:21:13Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29314240286"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-13T11:44:50Z",
-                "run_started_at": "2026-07-13T11:44:50Z",
-                "updated_at": "2026-07-13T11:45:21Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29247322019"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-13T10:43:51Z",
-                "run_started_at": "2026-07-13T10:43:51Z",
-                "updated_at": "2026-07-13T10:44:26Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29243764206"
               }
             ]
           }
@@ -344,11 +344,13 @@
           "task": "daily_jp",
           "stem": "daily_jp",
           "label": "日本株日次騰落",
-          "checked": false,
-          "needs_regen": false,
-          "reason": "判定前：JST 19:00 以降に確認",
-          "status_before": "ok",
-          "generated_at_jst_before": "2026-07-17T23:59:53.699005+09:00",
+          "checked": true,
+          "needs_regen": true,
+          "reasons": [
+            "JP価格日付が想定2026-07-20より古い：['2026-07-17']"
+          ],
+          "status_before": "partial",
+          "generated_at_jst_before": "2026-07-20T20:25:33.694151+09:00",
           "row_dates": [
             "2026-07-17"
           ],
@@ -455,11 +457,13 @@
           "task": "buy_alert_jp",
           "stem": "buy_alert",
           "label": "買い場アラート（日本価格）",
-          "checked": false,
-          "needs_regen": false,
-          "reason": "判定前：JST 19:00 以降に確認",
-          "status_before": "ok",
-          "generated_at_jst_before": "2026-07-20T08:27:07.746759+09:00",
+          "checked": true,
+          "needs_regen": true,
+          "reasons": [
+            "JP価格日付が想定2026-07-20より古い：['2026-07-17']"
+          ],
+          "status_before": "partial",
+          "generated_at_jst_before": "2026-07-20T20:25:53.434691+09:00",
           "row_dates": [
             "2026-07-17"
           ],
@@ -469,6 +473,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-07-20T11:24:17Z",
+                "run_started_at": "2026-07-20T11:24:17Z",
+                "updated_at": "2026-07-20T11:25:04Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29738424579"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-07-20T10:27:15Z",
+                "run_started_at": "2026-07-20T10:27:15Z",
+                "updated_at": "2026-07-20T10:27:50Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29735114197"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -540,30 +562,42 @@
                 "run_started_at": "2026-07-14T07:20:41Z",
                 "updated_at": "2026-07-14T07:21:13Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29314240286"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-13T11:44:50Z",
-                "run_started_at": "2026-07-13T11:44:50Z",
-                "updated_at": "2026-07-13T11:45:21Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29247322019"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-13T10:43:51Z",
-                "run_started_at": "2026-07-13T10:43:51Z",
-                "updated_at": "2026-07-13T10:44:26Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29243764206"
               }
             ]
           }
         }
       ],
       "executed": [
+        {
+          "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_daily_jp.py",
+          "returncode": 0,
+          "stdout_tail": "",
+          "stderr_tail": "",
+          "task": "daily_jp",
+          "label": "日本株日次騰落",
+          "status_after": {
+            "status": "partial",
+            "generated_at_jst": "2026-07-20T20:30:35.096717+09:00",
+            "row_dates": [
+              "2026-07-17"
+            ]
+          }
+        },
+        {
+          "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_buy_alert.py",
+          "returncode": 0,
+          "stdout_tail": "",
+          "stderr_tail": "",
+          "task": "buy_alert_jp",
+          "label": "買い場アラート（日本価格）",
+          "status_after": {
+            "status": "partial",
+            "generated_at_jst": "2026-07-20T20:30:57.421996+09:00",
+            "row_dates": [
+              "2026-07-17"
+            ]
+          }
+        },
         {
           "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py",
           "returncode": 0,
@@ -573,7 +607,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-20T17:21:29.863546+09:00",
+            "generated_at_jst": "2026-07-20T20:30:57.865613+09:00",
             "row_dates": []
           }
         }
