@@ -1,6 +1,6 @@
 {
   "status": "price_stale",
-  "generated_at_jst": "2026-07-20T19:25:35.482426+09:00",
+  "generated_at_jst": "2026-07-20T20:25:33.692374+09:00",
   "message": "価格未更新：日本株の価格日付が想定取引日 2026-07-20 より古いです。",
   "expected_price_date": "2026-07-20",
   "price_success_count": 25,
@@ -40,5 +40,5 @@
   ],
   "degradation_guard_attempt": true,
   "guarded_stem": "daily_jp",
-  "stored_at_jst": "2026-07-20T19:25:35.482642+09:00"
+  "stored_at_jst": "2026-07-20T20:25:33.692577+09:00"
 }

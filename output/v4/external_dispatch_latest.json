@@ -1,9 +1,9 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-07-20T19:25:26.063570+09:00",
-  "finished_at_jst": "2026-07-20T19:25:54.942237+09:00",
-  "timestamp_jst": "2026-07-20T19:25:26.063570+09:00",
+  "generated_at_jst": "2026-07-20T20:25:24.008814+09:00",
+  "finished_at_jst": "2026-07-20T20:25:53.500318+09:00",
+  "timestamp_jst": "2026-07-20T20:25:24.008814+09:00",
   "mode": "auto",
   "source": "cron-job.org-evening",
   "planned_scripts": [
@@ -14,13 +14,13 @@
   "steps": [
     {
       "script": "scripts/cis_v4/cis_daily_jp.py",
-      "started_at_jst": "2026-07-20T19:25:26.065090+09:00",
+      "started_at_jst": "2026-07-20T20:25:24.009953+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python",
         "scripts/cis_v4/cis_daily_jp.py"
       ],
-      "finished_at_jst": "2026-07-20T19:25:35.552541+09:00",
-      "duration_seconds": 9.487,
+      "finished_at_jst": "2026-07-20T20:25:33.764539+09:00",
+      "duration_seconds": 9.755,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -28,13 +28,13 @@
     },
     {
       "script": "scripts/cis_v4/cis_buy_alert.py",
-      "started_at_jst": "2026-07-20T19:25:35.552580+09:00",
+      "started_at_jst": "2026-07-20T20:25:33.764577+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python",
         "scripts/cis_v4/cis_buy_alert.py"
       ],
-      "finished_at_jst": "2026-07-20T19:25:54.942199+09:00",
-      "duration_seconds": 19.39,
+      "finished_at_jst": "2026-07-20T20:25:53.500282+09:00",
+      "duration_seconds": 19.736,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -61,7 +61,7 @@
       "stem": "daily_jp",
       "market": "JP",
       "status": "partial",
-      "generated_at_jst": "2026-07-20T18:25:30.346090+09:00",
+      "generated_at_jst": "2026-07-20T19:25:35.484532+09:00",
       "expected_price_date": "2026-07-20",
       "row_dates": [
         "2026-07-17"
@@ -78,7 +78,7 @@
       "stem": "buy_alert",
       "market": "JP",
       "status": "partial",
-      "generated_at_jst": "2026-07-20T18:25:39.648024+09:00",
+      "generated_at_jst": "2026-07-20T20:24:58.192112+09:00",
       "expected_price_date": "2026-07-20",
       "row_dates": [
         "2026-07-17"
