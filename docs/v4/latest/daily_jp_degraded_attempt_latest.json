@@ -1,9 +1,9 @@
 {
   "status": {
     "status": "price_stale",
-    "generated_at_jst": "2026-07-21T01:05:07.357158+09:00",
-    "message": "価格未更新：日本株の価格日付が想定取引日 2026-07-20 より古いです。",
-    "expected_price_date": "2026-07-20",
+    "generated_at_jst": "2026-07-22T00:27:35.523429+09:00",
+    "message": "価格未更新：日本株の価格日付が想定取引日 2026-07-21 より古いです。",
+    "expected_price_date": "2026-07-21",
     "price_success_count": 25,
     "price_missing_count": 0,
     "jp_count": 25,
@@ -37,7 +37,7 @@
     ],
     "market_closed_count": 25,
     "warnings": [
-      "価格未更新：日本株の価格日付が想定取引日 2026-07-20 より古いです。"
+      "価格未更新：日本株の価格日付が想定取引日 2026-07-21 より古いです。"
     ]
   },
   "rows": [
@@ -51,11 +51,11 @@
       "daily_pct": 5.37873180360227,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "7974",
@@ -67,11 +67,11 @@
       "daily_pct": 3.0225988700564974,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "9861",
@@ -83,11 +83,11 @@
       "daily_pct": 0.9676527508985348,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6758",
@@ -99,11 +99,11 @@
       "daily_pct": 0.9307737056428156,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "5401",
@@ -115,11 +115,11 @@
       "daily_pct": 0.9307072156660684,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6287",
@@ -131,11 +131,11 @@
       "daily_pct": 0.6167763157894737,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "3405",
@@ -147,11 +147,11 @@
       "daily_pct": 0.42456835550523636,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "4901",
@@ -163,11 +163,11 @@
       "daily_pct": 0.24834437086092717,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "1911",
@@ -179,11 +179,11 @@
       "daily_pct": 0.03661662394727206,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "8410",
@@ -195,11 +195,11 @@
       "daily_pct": -0.16485328721519693,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "7821",
@@ -211,11 +211,11 @@
       "daily_pct": -0.21739130434782608,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "1928",
@@ -227,11 +227,11 @@
       "daily_pct": -0.25316455696202533,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "1377",
@@ -243,11 +243,11 @@
       "daily_pct": -0.3424657534246575,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6902",
@@ -259,11 +259,11 @@
       "daily_pct": -0.5821311060491015,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "7267",
@@ -275,11 +275,11 @@
       "daily_pct": -1.4757779916586462,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "3402",
@@ -291,11 +291,11 @@
       "daily_pct": -1.5430775825117875,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "4042",
@@ -307,11 +307,11 @@
       "daily_pct": -1.7543859649122806,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6501",
@@ -323,11 +323,11 @@
       "daily_pct": -2.299088649544325,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "5020",
@@ -339,11 +339,11 @@
       "daily_pct": -2.39403453689168,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "3407",
@@ -355,11 +355,11 @@
       "daily_pct": -2.478678038379531,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6326",
@@ -371,11 +371,11 @@
       "daily_pct": -2.5454545454545454,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "4063",
@@ -387,11 +387,11 @@
       "daily_pct": -2.771362586605081,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "4368",
@@ -403,11 +403,11 @@
       "daily_pct": -4.779411764705882,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "8601",
@@ -419,11 +419,11 @@
       "daily_pct": -5.118635030658491,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     },
     {
       "symbol": "6383",
@@ -435,11 +435,11 @@
       "daily_pct": -5.294386125057052,
       "latest_date": "2026-07-17",
       "previous_date": "2026-07-16",
-      "expected_price_date": "2026-07-20",
+      "expected_price_date": "2026-07-21",
       "market_closed": true,
       "stale_price": true,
       "price_source": "yfinance",
-      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-20; market closed or delayed data"
+      "price_error": "latest trade date 2026-07-17 is older than expected 2026-07-21; market closed or delayed data"
     }
   ]
 }
