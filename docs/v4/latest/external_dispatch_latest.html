@@ -1,19 +1,19 @@
 <!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>external_dispatch</title><style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:16px;line-height:1.55;background:#f7f7f7}h1{font-size:26px}.card{background:#fff;border-radius:14px;padding:12px;margin:12px 0;box-shadow:0 1px 4px #ddd}li{margin:6px 0}a{font-size:18px}pre{background:#111;color:#fff;border-radius:12px;padding:12px;white-space:pre-wrap;word-break:break-word;overflow-x:auto;font-size:14px;line-height:1.45}</style></head><body><p><a href='../index.html'>CISホームへ戻る</a></p><h1>CIS 外部起動確認 R11.2</h1>
-<p>生成日時：2026-07-22T18:25:37.145645+09:00</p>
+<p>生成日時：2026-07-23T07:25:29.413514+09:00</p>
 <p>mode：auto</p>
-<p>source：cron-job.org-evening</p>
+<p>source：cron-job.org-morning</p>
 <p>status：ok</p>
 <p>planned_steps：1</p>
 <h2>auto判定</h2>
 <ul>
-<li>米国株日次：対象時間外</li>
+<li>⚠️ 米国株日次：再生成対象 / reason=not_generated_today / dates=[&#x27;2026-07-21&#x27;] / expected=2026-07-22</li>
 <li>買い場アラート（米国価格）：対象時間外</li>
-<li>⚠️ 日本株日次：再生成対象 / reason=row_dates_lt_expected / dates=[&#x27;2026-07-21&#x27;] / expected=2026-07-22</li>
-<li>✅ 買い場アラート（日本価格）：最新扱い / dates=[&#x27;2026-07-22&#x27;]</li>
+<li>日本株日次：対象時間外</li>
+<li>買い場アラート（日本価格）：対象時間外</li>
 </ul>
 <h2>実行ステップ</h2>
-<p>1. ✅ `scripts/cis_v4/cis_daily_jp.py` exit=0</p>
-<p>   - duration：11.025s</p>
+<p>1. ✅ `scripts/cis_v4/cis_daily_us.py` exit=0</p>
+<p>   - duration：18.225s</p>
 <h2>役割</h2>
 <p>このレポートは、GitHub scheduleに頼らず外部スケジューラからworkflow_dispatchされた実行記録です。</p>
 <p>CIS本体の表示は、各レポートとHomeの更新日時を優先して確認してください。</p><p><a href='../index.html'>CISホームへ戻る</a></p></body></html>
