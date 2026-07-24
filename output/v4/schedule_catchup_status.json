@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-24T19:35:55.462289+09:00",
-  "checked_count": 4,
+  "generated_at_jst": "2026-07-25T00:19:29.781006+09:00",
+  "checked_count": 0,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,9 +10,9 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-24T16:59:51.615266+09:00",
       "row_dates": [
@@ -121,9 +121,9 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-24T18:15:26.430409+09:00",
       "row_dates": [
@@ -232,11 +232,11 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
-      "status_before": "ok",
-      "generated_at_jst_before": "2026-07-24T18:25:41.408980+09:00",
+      "reason": "判定対象外曜日：weekday=5",
+      "status_before": "partial",
+      "generated_at_jst_before": "2026-07-25T00:17:52.103597+09:00",
       "row_dates": [
         "2026-07-24"
       ],
@@ -246,6 +246,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-07-24T15:17:19Z",
+            "run_started_at": "2026-07-24T15:17:19Z",
+            "updated_at": "2026-07-24T15:17:57Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30104631518"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-07-24T15:12:11Z",
+            "run_started_at": "2026-07-24T15:12:11Z",
+            "updated_at": "2026-07-24T15:12:41Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30104265303"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -317,24 +335,6 @@
             "run_started_at": "2026-07-20T15:32:01Z",
             "updated_at": "2026-07-20T15:32:28Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29755590333"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-07-17T14:59:29Z",
-            "run_started_at": "2026-07-17T14:59:29Z",
-            "updated_at": "2026-07-17T14:59:58Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29590254480"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-07-17T12:45:46Z",
-            "run_started_at": "2026-07-17T12:45:46Z",
-            "updated_at": "2026-07-17T12:46:20Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/29581423202"
           }
         ]
       }
@@ -343,9 +343,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-24T18:15:26.430409+09:00",
       "row_dates": [
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-24T19:35:55.382345+09:00",
+        "generated_at_jst": "2026-07-25T00:19:29.706261+09:00",
         "row_dates": []
       }
     }

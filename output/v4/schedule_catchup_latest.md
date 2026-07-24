@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/07/24 19:35 JST
+生成日時：2026/07/25 00:19 JST
 
 ## 判定サマリー
 
-- ✅ 米国株日次騰落：最新扱い
-- ✅ 買い場アラート（米国価格）：最新扱い
-- ✅ 日本株日次騰落：最新扱い
-- ✅ 買い場アラート（日本価格）：最新扱い
+- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
+- 買い場アラート（米国価格）：判定対象外/判定前（判定対象外曜日：weekday=5）
+- 日本株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=5）
+- 買い場アラート（日本価格）：判定対象外/判定前（判定対象外曜日：weekday=5）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-07-24T19:35:55.382345+09:00 / dates=[]
+  - after：status=ok / generated=2026-07-25T00:19:29.706261+09:00 / dates=[]
 
 ## 詳細
 
@@ -44,16 +44,16 @@
 
 ### 日本株日次騰落
 
-- status_before：ok
-- generated_at_before：2026-07-24T18:25:41.408980+09:00
+- status_before：partial
+- generated_at_before：2026-07-25T00:17:52.103597+09:00
 - expected_price_dates：{'JP': '2026-07-24'}
 - row_dates：['2026-07-24']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-07-24T15:17:19Z / updated=2026-07-24T15:17:57Z
+  - event=schedule / status=completed / conclusion=success / started=2026-07-24T15:12:11Z / updated=2026-07-24T15:12:41Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-23T16:05:14Z / updated=2026-07-23T16:06:01Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-23T15:45:32Z / updated=2026-07-23T15:46:00Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-22T15:23:13Z / updated=2026-07-22T15:23:51Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-22T15:21:26Z / updated=2026-07-22T15:22:03Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-21T15:27:12Z / updated=2026-07-21T15:27:40Z
 
 ### 買い場アラート（日本価格）
 
