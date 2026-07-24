@@ -1,8 +1,8 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-07-24T18:59:25.698955+09:00",
-    "checked_count": 2,
+    "generated_at_jst": "2026-07-24T19:35:55.462289+09:00",
+    "checked_count": 4,
     "regen_count": 0,
     "recovered_count": 0,
     "failed_count": 0,
@@ -233,9 +233,9 @@
         "task": "daily_jp",
         "stem": "daily_jp",
         "label": "日本株日次騰落",
-        "checked": false,
+        "checked": true,
         "needs_regen": false,
-        "reason": "判定前：JST 19:00 以降に確認",
+        "reasons": [],
         "status_before": "ok",
         "generated_at_jst_before": "2026-07-24T18:25:41.408980+09:00",
         "row_dates": [
@@ -344,9 +344,9 @@
         "task": "buy_alert_jp",
         "stem": "buy_alert",
         "label": "買い場アラート（日本価格）",
-        "checked": false,
+        "checked": true,
         "needs_regen": false,
-        "reason": "判定前：JST 19:00 以降に確認",
+        "reasons": [],
         "status_before": "ok",
         "generated_at_jst_before": "2026-07-24T18:15:26.430409+09:00",
         "row_dates": [
@@ -462,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-07-24T18:59:25.615481+09:00",
+          "generated_at_jst": "2026-07-24T19:35:55.382345+09:00",
           "row_dates": []
         }
       }
@@ -695,9 +695,9 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 19:00 以降に確認",
+      "reasons": [],
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-24T18:25:41.408980+09:00",
       "row_dates": [
@@ -806,9 +806,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 19:00 以降に確認",
+      "reasons": [],
       "status_before": "ok",
       "generated_at_jst_before": "2026-07-24T18:15:26.430409+09:00",
       "row_dates": [
@@ -924,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-07-24T18:59:25.615481+09:00",
+        "generated_at_jst": "2026-07-24T19:35:55.382345+09:00",
         "row_dates": []
       }
     }
