@@ -1,22 +1,22 @@
 # CIS 外部起動確認 R11.2
 
-生成日時：2026-07-24T18:25:32.120866+09:00
+生成日時：2026-07-25T07:25:31.869227+09:00
 mode：auto
-source：cron-job.org-evening
+source：cron-job.org-morning
 status：ok
 planned_steps：1
 
 ## auto判定
 
-- 米国株日次：対象時間外
+- ⚠️ 米国株日次：再生成対象 / reason=not_generated_today / dates=['2026-07-23'] / expected=2026-07-24
 - 買い場アラート（米国価格）：対象時間外
-- ⚠️ 日本株日次：再生成対象 / reason=row_dates_lt_expected / dates=['2026-07-23'] / expected=2026-07-24
-- ✅ 買い場アラート（日本価格）：最新扱い / dates=['2026-07-24']
+- 日本株日次：対象時間外
+- 買い場アラート（日本価格）：対象時間外
 
 ## 実行ステップ
 
-1. ✅ `scripts/cis_v4/cis_daily_jp.py` exit=0
-   - duration：9.373s
+1. ✅ `scripts/cis_v4/cis_daily_us.py` exit=0
+   - duration：14.241s
 
 ## 役割
 
