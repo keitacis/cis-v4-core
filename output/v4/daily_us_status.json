@@ -1,14 +1,17 @@
 {
-  "status": "ok",
-  "generated_at_jst": "2026-07-25T15:37:28.441304+09:00",
+  "status": "partial",
+  "generated_at_jst": "2026-07-25T16:32:59.229562+09:00",
   "message": "",
   "expected_price_date": "2026-07-24",
   "price_success_count": 48,
   "price_missing_count": 0,
   "us_count": 48,
-  "price_stale_count": 0,
-  "price_stale_symbols": [],
-  "market_closed_count": 0,
+  "price_stale_count": 2,
+  "price_stale_symbols": [
+    "SNOW",
+    "OPTX"
+  ],
+  "market_closed_count": 2,
   "tv_saved_or_explicit_count": 48,
   "tv_missing_count": 0,
   "tv_no_coverage_count": 2,
@@ -16,5 +19,7 @@
   "tv_stale_or_unknown_count": 0,
   "tv_missing_symbols": [],
   "tv_stale_or_unknown_symbols": [],
-  "warnings": []
+  "warnings": [
+    "価格日付が古い銘柄があります：2銘柄（想定：2026-07-24）"
+  ]
 }
