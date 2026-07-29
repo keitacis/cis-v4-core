@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-29T09:12:59.820297+09:00",
+  "generated_at_jst": "2026-07-29T17:07:56.493009+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -32,9 +32,9 @@
       "warnings": []
     },
     "daily_us": {
-      "status": "ok",
-      "generated_at_jst": "2026-07-29T07:25:53.347661+09:00",
-      "message": "",
+      "status": "partial",
+      "generated_at_jst": "2026-07-29T17:07:55.957608+09:00",
+      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-07-28",
       "price_success_count": 48,
       "price_missing_count": 0,
@@ -49,7 +49,15 @@
       "tv_stale_or_unknown_count": 0,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [],
-      "warnings": []
+      "warnings": [
+        "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
+        "価格未更新：米国株の価格日付が想定取引日 2026-07-28 より古いです。"
+      ],
+      "degradation_guard_triggered": true,
+      "degradation_guard_version": "R12.3",
+      "degradation_guard_source_status": "price_stale",
+      "retained_latest_generated_at_jst": "2026-07-29T07:25:53.347661+09:00",
+      "degraded_attempt_stem": "daily_us_degraded_attempt"
     },
     "daily_jp": {
       "status": "partial",
@@ -74,8 +82,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-07-29T01:54:30.799646+09:00",
-      "checked_count": 0,
+      "generated_at_jst": "2026-07-29T09:12:59.899531+09:00",
+      "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -84,16 +92,16 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "reasons": [],
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-28T18:43:32.712812+09:00",
+          "generated_at_jst_before": "2026-07-29T07:25:53.347661+09:00",
           "row_dates": [
-            "2026-07-27"
+            "2026-07-28"
           ],
           "expected_price_dates": {
-            "US": "2026-07-27"
+            "US": "2026-07-28"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -199,12 +207,12 @@
           "needs_regen": false,
           "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-28T19:13:35.860146+09:00",
+          "generated_at_jst_before": "2026-07-29T08:25:35.241741+09:00",
           "row_dates": [
-            "2026-07-27"
+            "2026-07-28"
           ],
           "expected_price_dates": {
-            "US": "2026-07-27"
+            "US": "2026-07-28"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -421,7 +429,7 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-07-28T19:13:35.860146+09:00",
+          "generated_at_jst_before": "2026-07-29T08:25:35.241741+09:00",
           "row_dates": [
             "2026-07-28"
           ],
@@ -535,7 +543,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-07-29T01:54:30.691032+09:00",
+            "generated_at_jst": "2026-07-29T09:12:59.820297+09:00",
             "row_dates": []
           }
         }
