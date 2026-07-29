@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-07-29T18:25:36.669787+09:00",
+  "generated_at_jst": "2026-07-29T18:48:12.624495+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -32,9 +32,9 @@
       "warnings": []
     },
     "daily_us": {
-      "status": "partial",
-      "generated_at_jst": "2026-07-29T17:07:55.957608+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
+      "status": "ok",
+      "generated_at_jst": "2026-07-29T18:48:12.051006+09:00",
+      "message": "",
       "expected_price_date": "2026-07-28",
       "price_success_count": 48,
       "price_missing_count": 0,
@@ -49,15 +49,7 @@
       "tv_stale_or_unknown_count": 0,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [],
-      "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
-        "価格未更新：米国株の価格日付が想定取引日 2026-07-28 より古いです。"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-07-29T07:25:53.347661+09:00",
-      "degraded_attempt_stem": "daily_us_degraded_attempt"
+      "warnings": []
     },
     "daily_jp": {
       "status": "ok",
