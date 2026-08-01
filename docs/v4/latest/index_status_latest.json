@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-01T16:53:05.429659+09:00",
+  "generated_at_jst": "2026-08-01T16:56:07.553686+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -671,7 +671,7 @@
     },
     "master_init_template": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T22:22:55.615254+09:00",
+      "generated_at_jst": "2026-08-01T16:56:07.440382+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
@@ -713,7 +713,7 @@
     },
     "monthly_maintenance": {
       "status": "ok",
-      "generated_at_jst": "2026-07-07T22:22:55.679707+09:00",
+      "generated_at_jst": "2026-08-01T16:56:07.499036+09:00",
       "watchlist_count": 73,
       "us_count": 48,
       "tv_count": 48,
