@@ -1,39 +1,39 @@
 {
   "version": 3,
   "status": "ok",
-  "generated_at_jst": "2026-07-07T22:22:55.526989+09:00",
-  "apply_command_count": 13,
-  "changed_command_count": 13,
+  "generated_at_jst": "2026-08-01T17:42:59.945033+09:00",
+  "apply_command_count": 42,
+  "changed_command_count": 42,
   "summary": {
     "us_watchlist_count": 48,
-    "candidate_change_count": 13,
-    "unchanged_count": 35,
+    "candidate_change_count": 42,
+    "unchanged_count": 6,
     "failed_count": 0,
-    "covered_candidate_count": 13,
-    "covered_partial_candidate_count": 0,
+    "covered_candidate_count": 39,
+    "covered_partial_candidate_count": 3,
     "not_applicable_candidate_count": 0,
     "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
   },
   "command_files": {
     "tv_monthly_refresh_apply_commands.txt": {
-      "sha256": "6905d8c691dc8af32675ce80db11c75f8a23e3a7f2713885f8a908a19d72294f",
-      "line_count": 13,
-      "bytes_utf8": 903
+      "sha256": "21b28618866b9d79fefc84e2aac9aef5650e6f7afa031f26810174db12aa317f",
+      "line_count": 42,
+      "bytes_utf8": 3068
     },
     "tv_monthly_refresh_changed_only_commands.txt": {
-      "sha256": "6905d8c691dc8af32675ce80db11c75f8a23e3a7f2713885f8a908a19d72294f",
-      "line_count": 13,
-      "bytes_utf8": 903
+      "sha256": "21b28618866b9d79fefc84e2aac9aef5650e6f7afa031f26810174db12aa317f",
+      "line_count": 42,
+      "bytes_utf8": 3068
     },
     "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
-      "sha256": "7a0ffa4e48bdfec05abaa6138cf86f92bd9fe59aedc0a498d2a7c73e3cd8690b",
+      "sha256": "77df58d62d357b8f90228d31ed470bb3523886ebd314df6b9c6dcf6a4915ae52",
       "line_count": 1,
-      "bytes_utf8": 915
+      "bytes_utf8": 3109
     },
     "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
-      "sha256": "7a0ffa4e48bdfec05abaa6138cf86f92bd9fe59aedc0a498d2a7c73e3cd8690b",
+      "sha256": "77df58d62d357b8f90228d31ed470bb3523886ebd314df6b9c6dcf6a4915ae52",
       "line_count": 1,
-      "bytes_utf8": 915
+      "bytes_utf8": 3109
     }
   },
   "primary_files": {
