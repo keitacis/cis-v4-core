@@ -1,25 +1,25 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-08-01T07:27:29.706774+09:00",
-  "finished_at_jst": "2026-08-01T07:27:36.366644+09:00",
-  "timestamp_jst": "2026-08-01T07:27:29.706774+09:00",
+  "generated_at_jst": "2026-08-03T08:25:28.145719+09:00",
+  "finished_at_jst": "2026-08-03T08:25:38.852252+09:00",
+  "timestamp_jst": "2026-08-03T08:25:28.145719+09:00",
   "mode": "auto",
   "source": "cron-job.org-morning",
   "planned_scripts": [
-    "scripts/cis_v4/cis_daily_us.py"
+    "scripts/cis_v4/cis_buy_alert.py"
   ],
   "planned_step_count": 1,
   "steps": [
     {
-      "script": "scripts/cis_v4/cis_daily_us.py",
-      "started_at_jst": "2026-08-01T07:27:29.707433+09:00",
+      "script": "scripts/cis_v4/cis_buy_alert.py",
+      "started_at_jst": "2026-08-03T08:25:28.146883+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python",
-        "scripts/cis_v4/cis_daily_us.py"
+        "scripts/cis_v4/cis_buy_alert.py"
       ],
-      "finished_at_jst": "2026-08-01T07:27:36.366607+09:00",
-      "duration_seconds": 6.659,
+      "finished_at_jst": "2026-08-03T08:25:38.852217+09:00",
+      "duration_seconds": 10.705,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -31,23 +31,23 @@
   "auto_decisions": [
     {
       "label": "米国株日次",
+      "active": false,
+      "reason": "outside_window"
+    },
+    {
+      "label": "買い場アラート（米国価格）",
       "active": true,
       "fresh": false,
-      "stem": "daily_us",
+      "stem": "buy_alert",
       "market": "US",
       "status": "ok",
-      "generated_at_jst": "2026-07-31T19:01:04.191567+09:00",
+      "generated_at_jst": "2026-07-31T19:12:55.996584+09:00",
       "expected_price_date": "2026-07-31",
       "row_dates": [
         "2026-07-30"
       ],
-      "min_hour_jst": 7,
+      "min_hour_jst": 8,
       "stale_reason": "not_generated_today"
-    },
-    {
-      "label": "買い場アラート（米国価格）",
-      "active": false,
-      "reason": "outside_window"
     },
     {
       "label": "日本株日次",
