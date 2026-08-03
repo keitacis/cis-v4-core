@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/02 15:47 JST
+生成日時：2026/08/03 17:59 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=6）
-- 買い場アラート（米国価格）：判定対象外/判定前（判定対象外曜日：weekday=6）
-- 日本株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=6）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定対象外曜日：weekday=6）
+- 米国株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=0）
+- ✅ 買い場アラート（米国価格）：最新扱い
+- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-02T15:47:45.579739+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-03T17:59:17.429993+09:00 / dates=[]
 
 ## 詳細
 
@@ -32,9 +32,9 @@
 ### 買い場アラート（米国価格）
 
 - status_before：ok
-- generated_at_before：2026-07-31T19:12:55.996584+09:00
+- generated_at_before：2026-08-03T08:25:38.779289+09:00
 - expected_price_dates：{'US': '2026-07-31'}
-- row_dates：['2026-07-30']
+- row_dates：['2026-07-31']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-31T10:12:24Z / updated=2026-07-31T10:13:01Z
   - event=schedule / status=completed / conclusion=success / started=2026-07-31T09:50:41Z / updated=2026-07-31T09:51:22Z
@@ -46,7 +46,7 @@
 
 - status_before：partial
 - generated_at_before：2026-08-01T01:18:10.037490+09:00
-- expected_price_dates：{'JP': '2026-07-31'}
+- expected_price_dates：{'JP': '2026-08-03'}
 - row_dates：['2026-07-31']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-31T16:17:39Z / updated=2026-07-31T16:18:14Z
@@ -58,8 +58,8 @@
 ### 買い場アラート（日本価格）
 
 - status_before：ok
-- generated_at_before：2026-07-31T19:12:55.996584+09:00
-- expected_price_dates：{'JP': '2026-07-31'}
+- generated_at_before：2026-08-03T08:25:38.779289+09:00
+- expected_price_dates：{'JP': '2026-08-03'}
 - row_dates：['2026-07-31']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-07-31T10:12:24Z / updated=2026-07-31T10:13:01Z
