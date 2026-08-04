@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-05T01:25:17.468590+09:00",
+  "generated_at_jst": "2026-08-05T01:30:23.795272+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -112,7 +112,7 @@
     },
     "daily_jp": {
       "status": "partial",
-      "generated_at_jst": "2026-08-05T01:25:16.930389+09:00",
+      "generated_at_jst": "2026-08-05T01:30:23.270026+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-08-04",
       "price_success_count": 25,
@@ -128,7 +128,7 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-08-04T18:25:32.830601+09:00",
+      "retained_latest_generated_at_jst": "2026-08-05T01:25:16.930389+09:00",
       "degraded_attempt_stem": "daily_jp_degraded_attempt"
     },
     "schedule_catchup": {
