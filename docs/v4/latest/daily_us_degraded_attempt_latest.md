@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/07/29 17:07 JST
-想定価格日付：2026-07-28
+生成日時：2026/08/04 17:01 JST
+想定価格日付：2026-08-03
 
 ## ステータス
 
@@ -16,12 +16,12 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-07-28 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-08-03 より古いです。
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-07-28 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-08-03 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-KVYO, TRMB, RGTI, IONQ, ZETA, VEEV, MSTR, NOW, AXON, FICO, ISRG, HSAI, DKNG, SPGI, ASPI, TMDX, AUR, KITT, OUST, AVAV, POET, PL, SDGR, DDOG, V, DIS, QCOM, SNOW, RXRX, RDW, AXTI, VRTX, MELI, AEM, TEM, NBIS, BEAM, PYPL, META, EWY, CRSP, ANET, APH, TMO, AAOI, COHR, ETN, OPTX
+AXTI, OUST, ETN, COHR, ANET, KITT, AAOI, AUR, META, OPTX, HSAI, AVAV, IONQ, RDW, PL, VEEV, ZETA, NOW, NBIS, RGTI, APH, ASPI, TMDX, AXON, ISRG, DIS, V, DDOG, MELI, TMO, SPGI, PYPL, TRMB, CRSP, TEM, VRTX, DKNG, RXRX, SDGR, FICO, SNOW, EWY, QCOM, KVYO, AEM, BEAM, POET, MSTR
