@@ -1,27 +1,27 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/04 02:29 JST
+生成日時：2026/08/04 15:17 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
-- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
+- ✅ 米国株日次騰落：最新扱い
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-04T02:29:27.537876+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-04T15:17:16.023062+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-01T16:53:04.863865+09:00
-- expected_price_dates：{'US': '2026-07-31'}
-- row_dates：['2026-07-31']
+- generated_at_before：2026-08-04T07:25:39.205808+09:00
+- expected_price_dates：{'US': '2026-08-03'}
+- row_dates：['2026-08-03']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-01T07:51:03Z / updated=2026-08-01T07:53:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-01T07:37:10Z / updated=2026-08-01T07:37:45Z
@@ -31,10 +31,10 @@
 
 ### 買い場アラート（米国価格）
 
-- status_before：ok
-- generated_at_before：2026-08-03T21:43:35.313747+09:00
-- expected_price_dates：{'US': '2026-07-31'}
-- row_dates：['2026-07-31']
+- status_before：partial
+- generated_at_before：2026-08-04T08:25:36.846998+09:00
+- expected_price_dates：{'US': '2026-08-03'}
+- row_dates：['2026-08-03']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:43:00Z / updated=2026-08-03T12:43:40Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:01:35Z / updated=2026-08-03T12:02:08Z
@@ -46,7 +46,7 @@
 
 - status_before：partial
 - generated_at_before：2026-08-04T02:21:48.169900+09:00
-- expected_price_dates：{'JP': '2026-08-03'}
+- expected_price_dates：{'JP': '2026-08-04'}
 - row_dates：['2026-08-03']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T17:21:26Z / updated=2026-08-03T17:21:53Z
@@ -57,10 +57,10 @@
 
 ### 買い場アラート（日本価格）
 
-- status_before：ok
-- generated_at_before：2026-08-03T21:43:35.313747+09:00
-- expected_price_dates：{'JP': '2026-08-03'}
-- row_dates：['2026-08-03']
+- status_before：partial
+- generated_at_before：2026-08-04T08:25:36.846998+09:00
+- expected_price_dates：{'JP': '2026-08-04'}
+- row_dates：['2026-07-31']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:43:00Z / updated=2026-08-03T12:43:40Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:01:35Z / updated=2026-08-03T12:02:08Z
