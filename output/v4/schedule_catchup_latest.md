@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/04 20:02 JST
+生成日時：2026/08/04 20:36 JST
 
 ## 判定サマリー
 
@@ -12,9 +12,9 @@
 ## 実行結果
 
 - 買い場アラート（米国価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
-  - after：status=partial / generated=2026-08-04T20:02:00.504396+09:00 / dates=['2026-07-31']
+  - after：status=partial / generated=2026-08-04T20:36:50.012185+09:00 / dates=['2026-07-31']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-04T20:02:01.740424+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-04T20:36:50.901012+09:00 / dates=[]
 
 ## 詳細
 
@@ -34,7 +34,7 @@
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-08-04T19:19:09.636978+09:00
+- generated_at_before：2026-08-04T20:02:00.504396+09:00
 - expected_price_dates：{'US': '2026-08-03'}
 - row_dates：['2026-07-31']
 - recent_workflow_runs_available：True
@@ -60,7 +60,7 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-08-04T20:02:00.504396+09:00
+- generated_at_before：2026-08-04T20:36:50.012185+09:00
 - expected_price_dates：{'JP': '2026-08-04'}
 - row_dates：['2026-08-04']
 - recent_workflow_runs_available：True

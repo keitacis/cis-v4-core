@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-08-04T20:02:01.822668+09:00",
+    "generated_at_jst": "2026-08-04T20:36:50.985955+09:00",
     "checked_count": 4,
     "regen_count": 1,
     "recovered_count": 1,
@@ -128,7 +128,7 @@
           "US価格日付が想定2026-08-03より古い：['2026-07-31']"
         ],
         "status_before": "partial",
-        "generated_at_jst_before": "2026-08-04T19:19:09.636978+09:00",
+        "generated_at_jst_before": "2026-08-04T20:02:00.504396+09:00",
         "row_dates": [
           "2026-07-31"
         ],
@@ -350,7 +350,7 @@
         "needs_regen": false,
         "reasons": [],
         "status_before": "partial",
-        "generated_at_jst_before": "2026-08-04T20:02:00.504396+09:00",
+        "generated_at_jst_before": "2026-08-04T20:36:50.012185+09:00",
         "row_dates": [
           "2026-08-04"
         ],
@@ -464,7 +464,7 @@
         "label": "買い場アラート（米国価格）",
         "status_after": {
           "status": "partial",
-          "generated_at_jst": "2026-08-04T20:02:00.504396+09:00",
+          "generated_at_jst": "2026-08-04T20:36:50.012185+09:00",
           "row_dates": [
             "2026-07-31"
           ]
@@ -479,7 +479,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-08-04T20:02:01.740424+09:00",
+          "generated_at_jst": "2026-08-04T20:36:50.901012+09:00",
           "row_dates": []
         }
       }
@@ -607,7 +607,7 @@
         "US価格日付が想定2026-08-03より古い：['2026-07-31']"
       ],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-08-04T19:19:09.636978+09:00",
+      "generated_at_jst_before": "2026-08-04T20:02:00.504396+09:00",
       "row_dates": [
         "2026-07-31"
       ],
@@ -829,7 +829,7 @@
       "needs_regen": false,
       "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-08-04T20:02:00.504396+09:00",
+      "generated_at_jst_before": "2026-08-04T20:36:50.012185+09:00",
       "row_dates": [
         "2026-08-04"
       ],
@@ -943,7 +943,7 @@
       "label": "買い場アラート（米国価格）",
       "status_after": {
         "status": "partial",
-        "generated_at_jst": "2026-08-04T20:02:00.504396+09:00",
+        "generated_at_jst": "2026-08-04T20:36:50.012185+09:00",
         "row_dates": [
           "2026-07-31"
         ]
@@ -958,7 +958,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-08-04T20:02:01.740424+09:00",
+        "generated_at_jst": "2026-08-04T20:36:50.901012+09:00",
         "row_dates": []
       }
     }
