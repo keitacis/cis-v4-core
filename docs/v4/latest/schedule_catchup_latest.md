@@ -1,53 +1,53 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/05 15:14 JST
+生成日時：2026/08/05 19:46 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-05T15:14:33.570771+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-05T19:46:53.289871+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-05T07:25:32.779635+09:00
+- generated_at_before：2026-08-05T18:46:01.973866+09:00
 - expected_price_dates：{'US': '2026-08-04'}
 - row_dates：['2026-08-04']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T09:45:39Z / updated=2026-08-05T09:46:08Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T08:03:13Z / updated=2026-08-05T08:03:40Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T09:49:45Z / updated=2026-08-04T09:50:15Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T08:01:02Z / updated=2026-08-04T08:01:44Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-01T07:51:03Z / updated=2026-08-01T07:53:10Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-01T07:37:10Z / updated=2026-08-01T07:37:45Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-31T10:00:41Z / updated=2026-07-31T10:01:10Z
 
 ### 買い場アラート（米国価格）
 
 - status_before：ok
-- generated_at_before：2026-08-05T08:25:58.555841+09:00
+- generated_at_before：2026-08-05T19:15:35.392474+09:00
 - expected_price_dates：{'US': '2026-08-04'}
 - row_dates：['2026-08-04']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T10:14:53Z / updated=2026-08-05T10:15:41Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T08:08:59Z / updated=2026-08-05T08:09:34Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T10:18:32Z / updated=2026-08-04T10:19:16Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T08:10:15Z / updated=2026-08-04T08:10:56Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:43:00Z / updated=2026-08-03T12:43:40Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:01:35Z / updated=2026-08-03T12:02:08Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-31T10:12:24Z / updated=2026-07-31T10:13:01Z
 
 ### 日本株日次騰落
 
-- status_before：partial
-- generated_at_before：2026-08-05T01:30:23.270026+09:00
+- status_before：ok
+- generated_at_before：2026-08-05T18:25:31.312177+09:00
 - expected_price_dates：{'JP': '2026-08-05'}
-- row_dates：['2026-08-04']
+- row_dates：['2026-08-05']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T16:29:56Z / updated=2026-08-04T16:30:29Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T16:24:52Z / updated=2026-08-04T16:25:23Z
@@ -58,12 +58,12 @@
 ### 買い場アラート（日本価格）
 
 - status_before：ok
-- generated_at_before：2026-08-05T08:25:58.555841+09:00
+- generated_at_before：2026-08-05T19:15:35.392474+09:00
 - expected_price_dates：{'JP': '2026-08-05'}
-- row_dates：['2026-08-04']
+- row_dates：['2026-08-05']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T10:14:53Z / updated=2026-08-05T10:15:41Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-05T08:08:59Z / updated=2026-08-05T08:09:34Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T10:18:32Z / updated=2026-08-04T10:19:16Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-04T08:10:15Z / updated=2026-08-04T08:10:56Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:43:00Z / updated=2026-08-03T12:43:40Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-03T12:01:35Z / updated=2026-08-03T12:02:08Z
-  - event=schedule / status=completed / conclusion=success / started=2026-07-31T10:12:24Z / updated=2026-07-31T10:13:01Z
