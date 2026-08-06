@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-06T13:22:27.857503+09:00",
+  "generated_at_jst": "2026-08-06T15:02:18.276453+09:00",
   "checked_count": 2,
   "regen_count": 0,
   "recovered_count": 0,
@@ -241,7 +241,7 @@
         "2026-08-05"
       ],
       "expected_price_dates": {
-        "JP": "2026-08-05"
+        "JP": "2026-08-06"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -352,7 +352,7 @@
         "2026-08-06"
       ],
       "expected_price_dates": {
-        "JP": "2026-08-05"
+        "JP": "2026-08-06"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-08-06T13:22:27.760243+09:00",
+        "generated_at_jst": "2026-08-06T15:02:18.181752+09:00",
         "row_dates": []
       }
     }
