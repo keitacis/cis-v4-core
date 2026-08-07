@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-07T18:25:29.532350+09:00",
-  "finished_at_jst": "2026-08-07T18:25:37.648431+09:00",
+  "generated_at_jst": "2026-08-08T07:25:31.909027+09:00",
+  "finished_at_jst": "2026-08-08T07:25:38.389453+09:00",
   "mode": "auto",
-  "source": "cron-job.org-evening",
+  "source": "cron-job.org-morning",
   "planned_step_count": 1,
   "step_count": 1,
   "ok_count": 1,
