@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/07 14:00 JST
+生成日時：2026/08/07 20:00 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-07T14:00:12.458614+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-07T20:00:46.878243+09:00 / dates=[]
 
 ## 詳細
 
@@ -45,21 +45,21 @@
 ### 日本株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-06T20:49:56.252272+09:00
-- expected_price_dates：{'JP': '2026-08-06'}
-- row_dates：['2026-08-06']
+- generated_at_before：2026-08-07T19:30:02.056494+09:00
+- expected_price_dates：{'JP': '2026-08-07'}
+- row_dates：['2026-08-07']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-07T10:29:27Z / updated=2026-08-07T10:30:08Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-07T09:35:12Z / updated=2026-08-07T09:35:49Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-06T11:49:28Z / updated=2026-08-06T11:50:01Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-06T11:03:55Z / updated=2026-08-06T11:04:34Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-05T11:38:12Z / updated=2026-08-05T11:38:38Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-05T11:02:18Z / updated=2026-08-05T11:02:54Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-04T16:29:56Z / updated=2026-08-04T16:30:29Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：ok
 - generated_at_before：2026-08-07T12:20:35.383702+09:00
-- expected_price_dates：{'JP': '2026-08-06'}
+- expected_price_dates：{'JP': '2026-08-07'}
 - row_dates：['2026-08-07']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-07T03:20:00Z / updated=2026-08-07T03:20:40Z
