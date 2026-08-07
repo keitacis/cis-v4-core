@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-07T12:56:28.376778+09:00",
+  "generated_at_jst": "2026-08-07T14:00:12.458614+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -66,7 +66,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-07T10:01:51.571089+09:00",
+      "generated_at_jst": "2026-08-07T12:56:28.459868+09:00",
       "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
@@ -80,7 +80,7 @@
           "needs_regen": false,
           "reasons": [],
           "status_before": "ok",
-          "generated_at_jst_before": "2026-08-07T07:25:45.640798+09:00",
+          "generated_at_jst_before": "2026-08-07T10:52:50.524597+09:00",
           "row_dates": [
             "2026-08-06"
           ],
@@ -90,6 +90,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T01:52:18Z",
+                "run_started_at": "2026-08-07T01:52:18Z",
+                "updated_at": "2026-08-07T01:52:54Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31139412458"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T01:33:49Z",
+                "run_started_at": "2026-08-07T01:33:49Z",
+                "updated_at": "2026-08-07T01:34:21Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31138419368"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -161,24 +179,6 @@
                 "run_started_at": "2026-08-01T07:37:10Z",
                 "updated_at": "2026-08-01T07:37:45Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30690097464"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T10:00:41Z",
-                "run_started_at": "2026-07-31T10:00:41Z",
-                "updated_at": "2026-07-31T10:01:10Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30622023476"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T08:20:35Z",
-                "run_started_at": "2026-07-31T08:20:35Z",
-                "updated_at": "2026-07-31T08:21:09Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30615959008"
               }
             ]
           }
@@ -191,7 +191,7 @@
           "needs_regen": false,
           "reasons": [],
           "status_before": "ok",
-          "generated_at_jst_before": "2026-08-07T08:25:48.697095+09:00",
+          "generated_at_jst_before": "2026-08-07T12:20:35.383702+09:00",
           "row_dates": [
             "2026-08-06"
           ],
@@ -201,6 +201,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T03:20:00Z",
+                "run_started_at": "2026-08-07T03:20:00Z",
+                "updated_at": "2026-08-07T03:20:40Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31144023118"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T01:43:31Z",
+                "run_started_at": "2026-08-07T01:43:31Z",
+                "updated_at": "2026-08-07T01:44:19Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31138939652"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -272,24 +290,6 @@
                 "run_started_at": "2026-08-03T12:01:35Z",
                 "updated_at": "2026-08-03T12:02:08Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30811851342"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T10:12:24Z",
-                "run_started_at": "2026-07-31T10:12:24Z",
-                "updated_at": "2026-07-31T10:13:01Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30622738332"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T09:50:41Z",
-                "run_started_at": "2026-07-31T09:50:41Z",
-                "updated_at": "2026-07-31T09:51:22Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30621405490"
               }
             ]
           }
@@ -413,9 +413,9 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-08-07T08:25:48.697095+09:00",
+          "generated_at_jst_before": "2026-08-07T12:20:35.383702+09:00",
           "row_dates": [
-            "2026-08-06"
+            "2026-08-07"
           ],
           "expected_price_dates": {
             "JP": "2026-08-06"
@@ -423,6 +423,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T03:20:00Z",
+                "run_started_at": "2026-08-07T03:20:00Z",
+                "updated_at": "2026-08-07T03:20:40Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31144023118"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-07T01:43:31Z",
+                "run_started_at": "2026-08-07T01:43:31Z",
+                "updated_at": "2026-08-07T01:44:19Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/31138939652"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -494,24 +512,6 @@
                 "run_started_at": "2026-08-03T12:01:35Z",
                 "updated_at": "2026-08-03T12:02:08Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30811851342"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T10:12:24Z",
-                "run_started_at": "2026-07-31T10:12:24Z",
-                "updated_at": "2026-07-31T10:13:01Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30622738332"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-07-31T09:50:41Z",
-                "run_started_at": "2026-07-31T09:50:41Z",
-                "updated_at": "2026-07-31T09:51:22Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/30621405490"
               }
             ]
           }
@@ -527,7 +527,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-07T10:01:51.499078+09:00",
+            "generated_at_jst": "2026-08-07T12:56:28.376778+09:00",
             "row_dates": []
           }
         }
