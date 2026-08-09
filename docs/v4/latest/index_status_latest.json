@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-09T06:35:12.027320+09:00",
+  "generated_at_jst": "2026-08-10T06:37:42.943903+09:00",
   "items": {
     "buy_alert": {
-      "status": "ok",
+      "status": "stale",
       "generated_at_jst": "2026-08-07T12:20:35.383702+09:00",
       "message": "",
       "expected_us_price_date": "2026-08-06",
@@ -29,7 +29,9 @@
       "tv_stale_or_unknown_count": 0,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [],
-      "warnings": []
+      "warnings": [],
+      "original_status": "ok",
+      "stale_age_days": 2.8
     },
     "daily_us": {
       "status": "ok",
@@ -66,8 +68,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-08T13:17:04.904208+09:00",
-      "checked_count": 1,
+      "generated_at_jst": "2026-08-09T06:35:12.112994+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -76,9 +78,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "ok",
           "generated_at_jst_before": "2026-08-08T09:05:15.724253+09:00",
           "row_dates": [
@@ -189,7 +191,7 @@
           "label": "買い場アラート（米国価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "ok",
           "generated_at_jst_before": "2026-08-07T12:20:35.383702+09:00",
           "row_dates": [
@@ -300,7 +302,7 @@
           "label": "日本株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "ok",
           "generated_at_jst_before": "2026-08-07T19:30:02.056494+09:00",
           "row_dates": [
@@ -411,7 +413,7 @@
           "label": "買い場アラート（日本価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "ok",
           "generated_at_jst_before": "2026-08-07T12:20:35.383702+09:00",
           "row_dates": [
@@ -527,7 +529,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-08T13:17:04.776476+09:00",
+            "generated_at_jst": "2026-08-09T06:35:12.027320+09:00",
             "row_dates": []
           }
         }
