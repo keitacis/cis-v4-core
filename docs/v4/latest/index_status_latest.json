@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-10T08:50:26.082387+09:00",
+  "generated_at_jst": "2026-08-10T11:38:36.657323+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-08-10T08:50:25.520773+09:00",
+      "generated_at_jst": "2026-08-10T11:38:36.104635+09:00",
       "message": "",
       "expected_us_price_date": "2026-08-07",
       "expected_jp_price_date": "2026-08-07",
@@ -18,9 +18,9 @@
       "invalid_buyzone": [],
       "strong_buy_count": 0,
       "main_buy_count": 0,
-      "watch_buy_count": 2,
+      "watch_buy_count": 3,
       "near_buy_count": 2,
-      "display_count": 4,
+      "display_count": 5,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
