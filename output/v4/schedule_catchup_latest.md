@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/10 13:47 JST
+生成日時：2026/08/10 20:15 JST
 
 ## 判定サマリー
 
 - 米国株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=0）
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-10T13:47:24.537908+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-10T20:15:13.501114+09:00 / dates=[]
 
 ## 詳細
 
@@ -45,21 +45,21 @@
 ### 日本株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-07T19:30:02.056494+09:00
-- expected_price_dates：{'JP': '2026-08-07'}
-- row_dates：['2026-08-07']
+- generated_at_before：2026-08-10T19:46:03.874144+09:00
+- expected_price_dates：{'JP': '2026-08-10'}
+- row_dates：['2026-08-10']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-10T10:45:33Z / updated=2026-08-10T10:46:08Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-10T09:59:33Z / updated=2026-08-10T10:00:13Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-07T10:29:27Z / updated=2026-08-07T10:30:08Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-07T09:35:12Z / updated=2026-08-07T09:35:49Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-06T11:49:28Z / updated=2026-08-06T11:50:01Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-06T11:03:55Z / updated=2026-08-06T11:04:34Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-05T11:38:12Z / updated=2026-08-05T11:38:38Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：ok
 - generated_at_before：2026-08-10T11:38:36.104635+09:00
-- expected_price_dates：{'JP': '2026-08-07'}
+- expected_price_dates：{'JP': '2026-08-10'}
 - row_dates：['2026-08-10']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-10T02:37:58Z / updated=2026-08-10T02:38:42Z
