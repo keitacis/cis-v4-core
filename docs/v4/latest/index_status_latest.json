@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-11T18:35:10.584020+09:00",
+  "generated_at_jst": "2026-08-11T19:25:57.349150+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
-      "generated_at_jst": "2026-08-11T18:25:53.736101+09:00",
+      "status": "stale",
+      "generated_at_jst": "2026-08-11T19:25:56.843760+09:00",
       "message": "",
       "expected_us_price_date": "2026-08-10",
       "expected_jp_price_date": "2026-08-11",
@@ -57,7 +57,12 @@
       "tv_stale_or_unknown_symbols": [],
       "warnings": [
         "価格日付が古い銘柄があります：25銘柄（想定：米国 2026-08-10 / 日本 2026-08-11）"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "買い場アラートの日本価格が自動更新予定後も未更新 / JP価格日付が想定2026-08-11より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_us": {
       "status": "ok",
@@ -80,8 +85,8 @@
       "warnings": []
     },
     "daily_jp": {
-      "status": "partial",
-      "generated_at_jst": "2026-08-11T18:35:09.929717+09:00",
+      "status": "stale",
+      "generated_at_jst": "2026-08-11T19:25:36.245724+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-08-10",
       "price_success_count": 25,
@@ -97,8 +102,13 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-08-11T18:25:38.134708+09:00",
-      "degraded_attempt_stem": "daily_jp_degraded_attempt"
+      "retained_latest_generated_at_jst": "2026-08-11T18:35:09.929717+09:00",
+      "degraded_attempt_stem": "daily_jp_degraded_attempt",
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "日本株日次が自動更新予定後も未更新 / JP価格日付が想定2026-08-11より古い可能性",
+      "daily_freshness_stale": true
     },
     "schedule_catchup": {
       "status": "ok",
