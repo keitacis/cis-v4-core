@@ -1,6 +1,6 @@
 # CIS 外部起動確認 R11.2
 
-生成日時：2026-08-11T19:25:27.316616+09:00
+生成日時：2026-08-11T20:25:26.572633+09:00
 mode：auto
 source：cron-job.org-evening
 status：ok
@@ -16,9 +16,9 @@ planned_steps：2
 ## 実行ステップ
 
 1. ✅ `scripts/cis_v4/cis_daily_jp.py` exit=0
-   - duration：9.008s
+   - duration：7.585s
 2. ✅ `scripts/cis_v4/cis_buy_alert.py` exit=0
-   - duration：20.597s
+   - duration：12.669s
 
 ## 役割
 
