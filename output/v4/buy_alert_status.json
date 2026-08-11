@@ -1,8 +1,8 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-08-11T20:51:54.520471+09:00",
+  "generated_at_jst": "2026-08-12T08:25:40.313013+09:00",
   "message": "",
-  "expected_us_price_date": "2026-08-10",
+  "expected_us_price_date": "2026-08-11",
   "expected_jp_price_date": "2026-08-11",
   "watchlist_count": 73,
   "price_success_count": 73,
@@ -40,9 +40,9 @@
   "invalid_buyzone": [],
   "strong_buy_count": 0,
   "main_buy_count": 0,
-  "watch_buy_count": 2,
-  "near_buy_count": 2,
-  "display_count": 4,
+  "watch_buy_count": 1,
+  "near_buy_count": 1,
+  "display_count": 2,
   "fallback_display": false,
   "tv_covered_count": 45,
   "tv_no_coverage_count": 2,
@@ -52,6 +52,6 @@
   "tv_missing_symbols": [],
   "tv_stale_or_unknown_symbols": [],
   "warnings": [
-    "価格日付が古い銘柄があります：25銘柄（想定：米国 2026-08-10 / 日本 2026-08-11）"
+    "価格日付が古い銘柄があります：25銘柄（想定：米国 2026-08-11 / 日本 2026-08-11）"
   ]
 }
