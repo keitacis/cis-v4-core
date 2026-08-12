@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/12 13:55 JST
+生成日時：2026/08/12 20:05 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-12T13:55:58.637010+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-12T20:05:55.049963+09:00 / dates=[]
 
 ## 詳細
 
@@ -44,22 +44,22 @@
 
 ### 日本株日次騰落
 
-- status_before：partial
-- generated_at_before：2026-08-11T20:51:38.245444+09:00
-- expected_price_dates：{'JP': '2026-08-11'}
-- row_dates：['2026-08-10']
+- status_before：ok
+- generated_at_before：2026-08-12T19:39:36.317776+09:00
+- expected_price_dates：{'JP': '2026-08-12'}
+- row_dates：['2026-08-12']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-12T10:39:07Z / updated=2026-08-12T10:39:42Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-12T09:43:20Z / updated=2026-08-12T09:43:44Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-11T10:28:08Z / updated=2026-08-11T10:28:42Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-11T09:34:47Z / updated=2026-08-11T09:35:14Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-10T10:45:33Z / updated=2026-08-10T10:46:08Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-10T09:59:33Z / updated=2026-08-10T10:00:13Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-07T10:29:27Z / updated=2026-08-07T10:30:08Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：ok
 - generated_at_before：2026-08-12T12:00:02.055603+09:00
-- expected_price_dates：{'JP': '2026-08-11'}
+- expected_price_dates：{'JP': '2026-08-12'}
 - row_dates：['2026-08-12']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-12T02:59:34Z / updated=2026-08-12T03:00:06Z
