@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-13T09:01:06.303399+09:00",
+  "generated_at_jst": "2026-08-13T12:02:57.839575+09:00",
   "message": "",
   "expected_us_price_date": "2026-08-12",
   "expected_jp_price_date": "2026-08-12",
@@ -14,8 +14,8 @@
   "invalid_buyzone": [],
   "strong_buy_count": 0,
   "main_buy_count": 0,
-  "watch_buy_count": 2,
-  "near_buy_count": 1,
+  "watch_buy_count": 1,
+  "near_buy_count": 2,
   "display_count": 3,
   "fallback_display": false,
   "tv_covered_count": 45,
