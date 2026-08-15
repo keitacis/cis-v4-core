@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-15T11:17:37.822109+09:00",
+  "generated_at_jst": "2026-08-15T12:48:51.927364+09:00",
   "checked_count": 1,
   "regen_count": 0,
   "recovered_count": 0,
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-08-15T11:17:37.750895+09:00",
+        "generated_at_jst": "2026-08-15T12:48:51.847312+09:00",
         "row_dates": []
       }
     }
