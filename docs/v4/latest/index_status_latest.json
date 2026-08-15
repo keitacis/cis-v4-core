@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-15T12:48:51.847312+09:00",
+  "generated_at_jst": "2026-08-15T18:47:46.846853+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -66,7 +66,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-15T11:17:37.822109+09:00",
+      "generated_at_jst": "2026-08-15T12:48:51.927364+09:00",
       "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
@@ -527,7 +527,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-15T11:17:37.750895+09:00",
+            "generated_at_jst": "2026-08-15T12:48:51.847312+09:00",
             "row_dates": []
           }
         }
@@ -535,10 +535,10 @@
     },
     "weekly_performance": {
       "status": "ok",
-      "generated_at_jst": "2026-08-08T20:03:34.196050+09:00",
+      "generated_at_jst": "2026-08-15T18:47:46.318343+09:00",
       "message": "",
-      "expected_us_price_date": "2026-08-07",
-      "expected_jp_price_date": "2026-08-07",
+      "expected_us_price_date": "2026-08-14",
+      "expected_jp_price_date": "2026-08-14",
       "price_success_count": 73,
       "price_missing_count": 0,
       "price_stale_count": 0,
