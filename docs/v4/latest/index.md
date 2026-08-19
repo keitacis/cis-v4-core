@@ -1,6 +1,11 @@
 # CIS ホーム
 
-最終更新：2026/08/19 20:33 JST
+最終更新：2026/08/20 06:29 JST
+
+## 要確認
+
+- CIS v4 Preflight: 更新から45.4日経過
+- CIS v4 Apply Seed: 更新から45.4日経過
 
 ## 毎日見る
 
@@ -30,15 +35,15 @@
 
 ### ✅ 更新済み 自動更新取りこぼし確認
 
-- 更新：2026/08/19 19:37 JST
+- 更新：2026/08/19 20:33 JST
 - [開く](schedule_catchup_latest.html)
 
-### ✅ 更新済み CIS v4 Preflight
+### ⚠️ 古い CIS v4 Preflight
 
 - 更新：2026/07/05 21:08 JST
 - [開く](cis_v4_preflight_latest.html)
 
-### ✅ 更新済み CIS v4 Apply Seed
+### ⚠️ 古い CIS v4 Apply Seed
 
 - 更新：2026/07/05 21:06 JST
 - [開く](cis_v4_apply_seed_latest.html)

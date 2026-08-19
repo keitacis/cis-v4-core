@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-19T20:33:56.602668+09:00",
+  "generated_at_jst": "2026-08-20T06:29:37.746414+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -66,7 +66,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-19T19:37:10.003368+09:00",
+      "generated_at_jst": "2026-08-19T20:33:56.696899+09:00",
       "checked_count": 4,
       "regen_count": 0,
       "recovered_count": 0,
@@ -527,7 +527,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-19T19:37:09.931966+09:00",
+            "generated_at_jst": "2026-08-19T20:33:56.602668+09:00",
             "row_dates": []
           }
         }
@@ -556,7 +556,7 @@
       "warnings": []
     },
     "cis_v4_preflight": {
-      "status": "ok",
+      "status": "stale",
       "generated_at_jst": "2026-07-05T21:08:36.820473+09:00",
       "problems": [],
       "root_data": {
@@ -564,10 +564,12 @@
         "invalid": [],
         "all_missing": false,
         "all_ok": true
-      }
+      },
+      "original_status": "ok",
+      "stale_age_days": 45.4
     },
     "cis_v4_apply_seed": {
-      "status": "ok",
+      "status": "stale",
       "generated_at_jst": "2026-07-05T21:06:44.350256+09:00",
       "actions": [
         "コピー: data/v4_seed/watchlist_master.csv → data/watchlist_master.csv",
@@ -596,7 +598,9 @@
         "staged data/watchlist_history.json: OK / count=0",
         "staged data/master_update_history.json: OK / count=0",
         "watchlist/company整合性: OK"
-      ]
+      ],
+      "original_status": "ok",
+      "stale_age_days": 45.4
     },
     "watchlist_template": {
       "status": "ok",
