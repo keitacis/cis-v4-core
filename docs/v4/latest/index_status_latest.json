@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-19T18:07:38.484248+09:00",
+  "generated_at_jst": "2026-08-19T19:01:56.222953+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -53,7 +53,7 @@
     },
     "daily_jp": {
       "status": "ok",
-      "generated_at_jst": "2026-08-19T18:07:38.093459+09:00",
+      "generated_at_jst": "2026-08-19T19:01:55.684473+09:00",
       "message": "",
       "expected_price_date": "2026-08-19",
       "price_success_count": 25,
