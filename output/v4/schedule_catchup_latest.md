@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/19 12:53 JST
+生成日時：2026/08/19 19:37 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
-- CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-19T12:53:24.822111+09:00 / dates=[]
+- CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py`
+  - after：status=ok / generated=2026-08-19T19:37:09.931966+09:00 / dates=[]
 
 ## 詳細
 
@@ -45,21 +45,21 @@
 ### 日本株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-18T19:01:12.701004+09:00
-- expected_price_dates：{'JP': '2026-08-18'}
-- row_dates：['2026-08-18']
+- generated_at_before：2026-08-19T19:01:55.684473+09:00
+- expected_price_dates：{'JP': '2026-08-19'}
+- row_dates：['2026-08-19']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-19T10:01:36Z / updated=2026-08-19T10:02:00Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-19T09:06:59Z / updated=2026-08-19T09:07:43Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-18T10:00:50Z / updated=2026-08-18T10:01:17Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-18T09:05:35Z / updated=2026-08-18T09:06:05Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-17T10:07:11Z / updated=2026-08-17T10:07:37Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-17T09:21:02Z / updated=2026-08-17T09:21:29Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-14T10:35:50Z / updated=2026-08-14T10:36:15Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：ok
 - generated_at_before：2026-08-19T10:56:17.512480+09:00
-- expected_price_dates：{'JP': '2026-08-18'}
+- expected_price_dates：{'JP': '2026-08-19'}
 - row_dates：['2026-08-19']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-19T01:55:33Z / updated=2026-08-19T01:56:22Z
