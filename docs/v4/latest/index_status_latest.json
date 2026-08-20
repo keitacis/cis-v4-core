@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-20T08:57:51.267411+09:00",
+  "generated_at_jst": "2026-08-20T10:55:09.253707+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
-      "generated_at_jst": "2026-08-20T08:41:13.233493+09:00",
+      "generated_at_jst": "2026-08-20T10:55:08.709187+09:00",
       "message": "",
       "expected_us_price_date": "2026-08-19",
       "expected_jp_price_date": "2026-08-19",
@@ -19,8 +19,8 @@
       "strong_buy_count": 0,
       "main_buy_count": 0,
       "watch_buy_count": 4,
-      "near_buy_count": 3,
-      "display_count": 7,
+      "near_buy_count": 2,
+      "display_count": 6,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -566,7 +566,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 45.5
+      "stale_age_days": 45.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -600,7 +600,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 45.5
+      "stale_age_days": 45.6
     },
     "watchlist_template": {
       "status": "ok",
