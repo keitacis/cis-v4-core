@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-20T19:38:44.436200+09:00",
+  "generated_at_jst": "2026-08-20T20:35:28.520836+09:00",
   "checked_count": 4,
   "regen_count": 0,
   "recovered_count": 0,
@@ -453,7 +453,7 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py",
+      "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
       "stderr_tail": "",
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-08-20T19:38:44.337326+09:00",
+        "generated_at_jst": "2026-08-20T20:35:28.447532+09:00",
         "row_dates": []
       }
     }
