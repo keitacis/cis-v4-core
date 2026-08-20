@@ -1,11 +1,12 @@
 # CIS ホーム
 
-最終更新：2026/08/20 20:35 JST
+最終更新：2026/08/21 06:32 JST
 
 ## 要確認
 
-- CIS v4 Preflight: 更新から46.0日経過
-- CIS v4 Apply Seed: 更新から46.0日経過
+- CIS v4 Preflight: 更新から46.4日経過
+- CIS v4 Apply Seed: 更新から46.4日経過
+- TradingView月次候補反映: 更新から45.4日経過
 
 ## 毎日見る
 
@@ -35,7 +36,7 @@
 
 ### ✅ 更新済み 自動更新取りこぼし確認
 
-- 更新：2026/08/20 19:38 JST
+- 更新：2026/08/20 20:35 JST
 - [開く](schedule_catchup_latest.html)
 
 ### ⚠️ 古い CIS v4 Preflight
@@ -68,7 +69,7 @@
 - 更新：2026/08/01 17:42 JST
 - [開く](tv_monthly_refresh_latest.html)
 
-### ✅ 更新済み TradingView月次候補反映
+### ⚠️ 古い TradingView月次候補反映
 
 - 更新：2026/07/06 21:15 JST
 - [開く](apply_tv_monthly_candidate_latest.html)

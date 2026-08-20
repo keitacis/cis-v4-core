@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-20T20:35:28.447532+09:00",
+  "generated_at_jst": "2026-08-21T06:32:16.072261+09:00",
   "items": {
     "buy_alert": {
       "status": "ok",
@@ -66,7 +66,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-20T19:38:44.436200+09:00",
+      "generated_at_jst": "2026-08-20T20:35:28.520836+09:00",
       "checked_count": 4,
       "regen_count": 0,
       "recovered_count": 0,
@@ -519,7 +519,7 @@
       ],
       "executed": [
         {
-          "command": "/opt/hostedtoolcache/Python/3.11.15/x64/bin/python scripts/cis_v4/cis_home.py",
+          "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
           "returncode": 0,
           "stdout_tail": "",
           "stderr_tail": "",
@@ -527,7 +527,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-20T19:38:44.337326+09:00",
+            "generated_at_jst": "2026-08-20T20:35:28.447532+09:00",
             "row_dates": []
           }
         }
@@ -566,7 +566,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 46.0
+      "stale_age_days": 46.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -600,7 +600,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 46.0
+      "stale_age_days": 46.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -643,12 +643,14 @@
       "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
     },
     "apply_tv_monthly_candidate": {
-      "status": "ok",
+      "status": "stale",
       "generated_at_jst": "2026-07-06T21:15:44.103051+09:00",
       "mode": "apply_all_success",
       "command_file": "tv_monthly_refresh_apply_commands.txt",
       "applied_command_count": 44,
-      "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00"
+      "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
+      "original_status": "ok",
+      "stale_age_days": 45.4
     },
     "master_update": {
       "status": "ok",
