@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-21T20:34:34.567953+09:00",
+  "generated_at_jst": "2026-08-22T06:29:11.913137+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -162,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-21T19:37:51.875595+09:00",
+      "generated_at_jst": "2026-08-21T20:34:34.637841+09:00",
       "checked_count": 4,
       "regen_count": 0,
       "recovered_count": 0,
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-21T19:37:51.796655+09:00",
+            "generated_at_jst": "2026-08-21T20:34:34.567953+09:00",
             "row_dates": []
           }
         }
@@ -662,7 +662,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 47.0
+      "stale_age_days": 47.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -696,7 +696,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 47.0
+      "stale_age_days": 47.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -746,13 +746,15 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 46.0
+      "stale_age_days": 46.4
     },
     "master_update": {
-      "status": "ok",
+      "status": "stale",
       "generated_at_jst": "2026-07-07T21:47:56.030910+09:00",
       "changed_count": 1,
-      "error_count": 0
+      "error_count": 0,
+      "original_status": "ok",
+      "stale_age_days": 45.4
     },
     "monthly_maintenance": {
       "status": "ok",
