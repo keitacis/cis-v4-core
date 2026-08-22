@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-22T18:49:23.423509+09:00",
+  "generated_at_jst": "2026-08-23T06:26:17.782612+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 47.9
+      "stale_age_days": 48.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 47.9
+      "stale_age_days": 48.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 46.9
+      "stale_age_days": 47.4
     },
     "master_update": {
       "status": "stale",
@@ -802,7 +802,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 45.9
+      "stale_age_days": 46.4
     },
     "monthly_maintenance": {
       "status": "ok",
