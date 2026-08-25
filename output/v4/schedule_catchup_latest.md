@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/08/25 12:55 JST
+生成日時：2026/08/25 19:40 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ✅ 日本株日次騰落：最新扱い
+- ✅ 買い場アラート（日本価格）：最新扱い
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-08-25T12:55:11.951477+09:00 / dates=[]
+  - after：status=ok / generated=2026-08-25T19:40:47.594627+09:00 / dates=[]
 
 ## 詳細
 
@@ -45,21 +45,21 @@
 ### 日本株日次騰落
 
 - status_before：ok
-- generated_at_before：2026-08-24T19:20:19.087151+09:00
-- expected_price_dates：{'JP': '2026-08-24'}
-- row_dates：['2026-08-24']
+- generated_at_before：2026-08-25T19:03:58.632834+09:00
+- expected_price_dates：{'JP': '2026-08-25'}
+- row_dates：['2026-08-25']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-08-25T10:03:31Z / updated=2026-08-25T10:04:03Z
+  - event=schedule / status=completed / conclusion=success / started=2026-08-25T09:16:55Z / updated=2026-08-25T09:17:35Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-24T10:19:56Z / updated=2026-08-24T10:20:25Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-24T09:26:30Z / updated=2026-08-24T09:27:00Z
   - event=schedule / status=completed / conclusion=success / started=2026-08-21T10:03:21Z / updated=2026-08-21T10:03:52Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-21T09:17:16Z / updated=2026-08-21T09:17:44Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-20T10:03:27Z / updated=2026-08-20T10:03:56Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：partial
 - generated_at_before：2026-08-25T10:56:28.861953+09:00
-- expected_price_dates：{'JP': '2026-08-24'}
+- expected_price_dates：{'JP': '2026-08-25'}
 - row_dates：['2026-08-25']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-08-25T01:55:44Z / updated=2026-08-25T01:56:35Z
