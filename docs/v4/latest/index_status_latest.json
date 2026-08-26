@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-26T12:59:21.747680+09:00",
+  "generated_at_jst": "2026-08-26T18:21:55.442350+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -149,9 +149,9 @@
     },
     "daily_jp": {
       "status": "ok",
-      "generated_at_jst": "2026-08-25T19:03:58.632834+09:00",
+      "generated_at_jst": "2026-08-26T18:21:54.909479+09:00",
       "message": "",
-      "expected_price_date": "2026-08-25",
+      "expected_price_date": "2026-08-26",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
@@ -162,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-26T11:36:55.817992+09:00",
+      "generated_at_jst": "2026-08-26T12:59:21.820566+09:00",
       "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-26T11:36:55.752126+09:00",
+            "generated_at_jst": "2026-08-26T12:59:21.747680+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 51.7
+      "stale_age_days": 51.9
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 51.7
+      "stale_age_days": 51.9
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 50.7
+      "stale_age_days": 50.9
     },
     "master_update": {
       "status": "stale",
@@ -802,7 +802,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 49.6
+      "stale_age_days": 49.9
     },
     "monthly_maintenance": {
       "status": "ok",
