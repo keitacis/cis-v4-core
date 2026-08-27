@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "partial",
-    "generated_at_jst": "2026-08-27T12:21:06.163947+09:00",
+    "generated_at_jst": "2026-08-27T14:02:43.901207+09:00",
     "message": "",
     "expected_price_date": "2026-08-26",
     "price_success_count": 48,
@@ -90,7 +90,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-07T21:47:56.017939+09:00",
-      "tv_age_days": 50.606360854699076,
+      "tv_age_days": 50.67694006636574,
       "tv_freshness": "古い可能性あり（51日前）"
     },
     {
@@ -115,7 +115,7 @@
       "tv_avg_target_price": 190.3,
       "tv_upside_pct": -5.908529048207658,
       "tv_updated_at": "2026-07-06T21:15:43.854944+09:00",
-      "tv_age_days": 51.628713110775465,
+      "tv_age_days": 51.69929952247685,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -140,7 +140,7 @@
       "tv_avg_target_price": 469.41,
       "tv_upside_pct": 11.913503067837299,
       "tv_updated_at": "2026-07-06T21:15:43.854902+09:00",
-      "tv_age_days": 51.62869364481482,
+      "tv_age_days": 51.699288179143515,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -165,7 +165,7 @@
       "tv_avg_target_price": 391.0,
       "tv_upside_pct": 32.82603746497482,
       "tv_updated_at": "2026-07-06T21:15:43.854936+09:00",
-      "tv_age_days": 51.62871005527778,
+      "tv_age_days": 51.69929812089121,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -190,7 +190,7 @@
       "tv_avg_target_price": 245.82,
       "tv_upside_pct": 7.972065699050187,
       "tv_updated_at": "2026-07-06T21:15:43.854952+09:00",
-      "tv_age_days": 51.628716840462964,
+      "tv_age_days": 51.699300692824075,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -215,7 +215,7 @@
       "tv_avg_target_price": 224.43,
       "tv_upside_pct": 37.081601714293065,
       "tv_updated_at": "2026-07-06T21:15:43.854813+09:00",
-      "tv_age_days": 51.62865830659722,
+      "tv_age_days": 51.699271756400464,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -240,7 +240,7 @@
       "tv_avg_target_price": 184.61,
       "tv_upside_pct": 14.422960326201792,
       "tv_updated_at": "2026-07-06T21:15:43.854721+09:00",
-      "tv_age_days": 51.62861507743056,
+      "tv_age_days": 51.699252202581015,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -265,7 +265,7 @@
       "tv_avg_target_price": 28.68,
       "tv_upside_pct": 1.594050531564491,
       "tv_updated_at": "2026-07-06T21:15:43.854977+09:00",
-      "tv_age_days": 51.62873042689815,
+      "tv_age_days": 51.69930608951388,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -290,7 +290,7 @@
       "tv_avg_target_price": 28.82,
       "tv_upside_pct": 62.001115890025225,
       "tv_updated_at": "2026-07-06T21:15:43.854865+09:00",
-      "tv_age_days": 51.62867847521991,
+      "tv_age_days": 51.69928111513889,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -315,7 +315,7 @@
       "tv_avg_target_price": 821.0,
       "tv_upside_pct": 42.50008316137821,
       "tv_updated_at": "2026-07-06T21:15:43.854782+09:00",
-      "tv_age_days": 51.62864222925926,
+      "tv_age_days": 51.69926479210648,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -340,7 +340,7 @@
       "tv_avg_target_price": 595.21,
       "tv_upside_pct": -6.075337400032066,
       "tv_updated_at": "2026-07-06T21:15:43.854773+09:00",
-      "tv_age_days": 51.62863895796296,
+      "tv_age_days": 51.69926322365741,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -365,7 +365,7 @@
       "tv_avg_target_price": 501.24,
       "tv_upside_pct": 14.83424848548239,
       "tv_updated_at": "2026-07-06T21:15:43.854754+09:00",
-      "tv_age_days": 51.6286316093287,
+      "tv_age_days": 51.699259916122685,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -390,7 +390,7 @@
       "tv_avg_target_price": 172.75,
       "tv_upside_pct": 51.854779145597696,
       "tv_updated_at": "2026-07-06T21:15:43.854704+09:00",
-      "tv_age_days": 51.62860857702546,
+      "tv_age_days": 51.69924946864583,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -415,7 +415,7 @@
       "tv_avg_target_price": 84.08,
       "tv_upside_pct": 40.88471777824055,
       "tv_updated_at": "2026-07-06T21:15:43.854634+09:00",
-      "tv_age_days": 51.62859272675926,
+      "tv_age_days": 51.69924193797454,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -440,7 +440,7 @@
       "tv_avg_target_price": 20.25,
       "tv_upside_pct": 150.61881424761114,
       "tv_updated_at": "2026-07-06T21:15:43.854919+09:00",
-      "tv_age_days": 51.62870073710648,
+      "tv_age_days": 51.699290777337964,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -465,7 +465,7 @@
       "tv_avg_target_price": 401.79,
       "tv_upside_pct": 4.660069389930635,
       "tv_updated_at": "2026-07-06T21:15:43.854839+09:00",
-      "tv_age_days": 51.62866818643519,
+      "tv_age_days": 51.699275897523144,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -490,7 +490,7 @@
       "tv_avg_target_price": 11.14,
       "tv_upside_pct": 93.40277009264219,
       "tv_updated_at": "2026-07-06T21:15:43.854588+09:00",
-      "tv_age_days": 51.62858023026621,
+      "tv_age_days": 51.69923572638889,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -515,7 +515,7 @@
       "tv_avg_target_price": 1501.65,
       "tv_upside_pct": 32.45568180961683,
       "tv_updated_at": "2026-07-06T21:15:43.854695+09:00",
-      "tv_age_days": 51.62860556013889,
+      "tv_age_days": 51.69924823259259,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -540,7 +540,7 @@
       "tv_avg_target_price": 66.06,
       "tv_upside_pct": -3.5338832335039108,
       "tv_updated_at": "2026-07-06T21:15:43.854686+09:00",
-      "tv_age_days": 51.6286020156713,
+      "tv_age_days": 51.69924601480324,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -565,7 +565,7 @@
       "tv_avg_target_price": 241.47,
       "tv_upside_pct": 64.39950433869856,
       "tv_updated_at": "2026-07-06T21:15:43.854542+09:00",
-      "tv_age_days": 51.628573981909724,
+      "tv_age_days": 51.69923321987268,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -590,7 +590,7 @@
       "tv_avg_target_price": 573.44,
       "tv_upside_pct": 54.808050108737724,
       "tv_updated_at": "2026-07-06T21:15:43.854746+09:00",
-      "tv_age_days": 51.62862778322917,
+      "tv_age_days": 51.69925770225694,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -615,7 +615,7 @@
       "tv_avg_target_price": 298.16,
       "tv_upside_pct": -5.457080693676156,
       "tv_updated_at": "2026-07-06T21:15:43.854960+09:00",
-      "tv_age_days": 51.62872064200231,
+      "tv_age_days": 51.69930189112268,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -640,7 +640,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-06T21:15:43.854738+09:00",
-      "tv_age_days": 51.628624556319444,
+      "tv_age_days": 51.69925649888889,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -665,7 +665,7 @@
       "tv_avg_target_price": 47.11,
       "tv_upside_pct": -23.782561149793302,
       "tv_updated_at": "2026-07-06T21:15:43.854675+09:00",
-      "tv_age_days": 51.62859889658564,
+      "tv_age_days": 51.69924445109954,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -690,7 +690,7 @@
       "tv_avg_target_price": 241.43,
       "tv_upside_pct": -1.4209316116423576,
       "tv_updated_at": "2026-07-06T21:15:43.854662+09:00",
-      "tv_age_days": 51.628595838298615,
+      "tv_age_days": 51.699243209976856,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -715,7 +715,7 @@
       "tv_avg_target_price": 676.88,
       "tv_upside_pct": 11.424248001999809,
       "tv_updated_at": "2026-07-06T21:15:43.854573+09:00",
-      "tv_age_days": 51.628576825370374,
+      "tv_age_days": 51.69923454642362,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -740,7 +740,7 @@
       "tv_avg_target_price": 140.38,
       "tv_upside_pct": 11.589822412201013,
       "tv_updated_at": "2026-07-06T21:15:43.854613+09:00",
-      "tv_age_days": 51.62858639207176,
+      "tv_age_days": 51.69923910787037,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -765,7 +765,7 @@
       "tv_avg_target_price": 47.29,
       "tv_upside_pct": 31.837193778012683,
       "tv_updated_at": "2026-07-06T21:15:43.854713+09:00",
-      "tv_age_days": 51.62861165425925,
+      "tv_age_days": 51.699250605277776,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -790,7 +790,7 @@
       "tv_avg_target_price": 553.64,
       "tv_upside_pct": 1.160266445138335,
       "tv_updated_at": "2026-07-06T21:15:43.854848+09:00",
-      "tv_age_days": 51.62867114186343,
+      "tv_age_days": 51.69927711428241,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -815,7 +815,7 @@
       "tv_avg_target_price": 13.0,
       "tv_upside_pct": 229.53105754082927,
       "tv_updated_at": "2026-07-06T16:58:37.877689+09:00",
-      "tv_age_days": 51.80715942978009,
+      "tv_age_days": 51.877794936701385,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -840,7 +840,7 @@
       "tv_avg_target_price": 130.44,
       "tv_upside_pct": 18.98203344699366,
       "tv_updated_at": "2026-07-06T21:15:43.854857+09:00",
-      "tv_age_days": 51.6286756050463,
+      "tv_age_days": 51.69927973856481,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -865,7 +865,7 @@
       "tv_avg_target_price": 117.33,
       "tv_upside_pct": 27.228365264497256,
       "tv_updated_at": "2026-07-06T21:15:43.854602+09:00",
-      "tv_age_days": 51.62858325061343,
+      "tv_age_days": 51.699237138275464,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -890,7 +890,7 @@
       "tv_avg_target_price": 41.1,
       "tv_upside_pct": 94.23440593751505,
       "tv_updated_at": "2026-07-06T21:15:43.854831+09:00",
-      "tv_age_days": 51.62866460325232,
+      "tv_age_days": 51.699274381030094,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -915,7 +915,7 @@
       "tv_avg_target_price": 15.71,
       "tv_upside_pct": 39.396622554506685,
       "tv_updated_at": "2026-07-06T21:15:43.854624+09:00",
-      "tv_age_days": 51.62858957928241,
+      "tv_age_days": 51.699240277754626,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -940,7 +940,7 @@
       "tv_avg_target_price": 6.64,
       "tv_upside_pct": 90.25787913626345,
       "tv_updated_at": "2026-07-06T21:15:43.854805+09:00",
-      "tv_age_days": 51.62865472898148,
+      "tv_age_days": 51.6992698944213,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -965,7 +965,7 @@
       "tv_avg_target_price": null,
       "tv_upside_pct": null,
       "tv_updated_at": "2026-07-07T21:45:42.722563+09:00",
-      "tv_age_days": 50.607883541967595,
+      "tv_age_days": 50.6784749609838,
       "tv_freshness": "古い可能性あり（51日前）"
     },
     {
@@ -990,7 +990,7 @@
       "tv_avg_target_price": 2235.41,
       "tv_upside_pct": 14.610552857540899,
       "tv_updated_at": "2026-07-06T21:15:43.854765+09:00",
-      "tv_age_days": 51.62863532853009,
+      "tv_age_days": 51.69926126042824,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1015,7 +1015,7 @@
       "tv_avg_target_price": 20.88,
       "tv_upside_pct": 7.241914413825305,
       "tv_updated_at": "2026-07-06T16:58:37.877800+09:00",
-      "tv_age_days": 51.80719303211805,
+      "tv_age_days": 51.87781008225694,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1040,7 +1040,7 @@
       "tv_avg_target_price": 49.87,
       "tv_upside_pct": 65.18714514013072,
       "tv_updated_at": "2026-07-06T21:15:43.854894+09:00",
-      "tv_age_days": 51.628687747592586,
+      "tv_age_days": 51.699285481006946,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1065,7 +1065,7 @@
       "tv_avg_target_price": 81.1,
       "tv_upside_pct": 36.92385721220272,
       "tv_updated_at": "2026-07-06T21:15:43.854882+09:00",
-      "tv_age_days": 51.62868467704861,
+      "tv_age_days": 51.69928392658565,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1090,7 +1090,7 @@
       "tv_avg_target_price": 309.87,
       "tv_upside_pct": 151.53826922552884,
       "tv_updated_at": "2026-07-06T21:15:43.854911+09:00",
-      "tv_age_days": 51.62869676282407,
+      "tv_age_days": 51.6992895641088,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1115,7 +1115,7 @@
       "tv_avg_target_price": 96.5,
       "tv_upside_pct": 48.05154886189403,
       "tv_updated_at": "2026-07-06T21:15:43.854927+09:00",
-      "tv_age_days": 51.628706917222225,
+      "tv_age_days": 51.699296969664346,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1140,7 +1140,7 @@
       "tv_avg_target_price": 257.79,
       "tv_upside_pct": 20.50203750097361,
       "tv_updated_at": "2026-07-06T21:15:43.854729+09:00",
-      "tv_age_days": 51.62862109533565,
+      "tv_age_days": 51.699254780601855,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1165,7 +1165,7 @@
       "tv_avg_target_price": 34.16,
       "tv_upside_pct": 37.85310352476939,
       "tv_updated_at": "2026-07-06T21:15:43.854874+09:00",
-      "tv_age_days": 51.62868157537037,
+      "tv_age_days": 51.69928264969907,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1190,7 +1190,7 @@
       "tv_avg_target_price": 250.41,
       "tv_upside_pct": 16.992154669546757,
       "tv_updated_at": "2026-07-06T21:15:43.854967+09:00",
-      "tv_age_days": 51.62872739542824,
+      "tv_age_days": 51.69930497766204,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1215,7 +1215,7 @@
       "tv_avg_target_price": 71.32,
       "tv_upside_pct": 78.16638065171763,
       "tv_updated_at": "2026-07-06T21:15:43.854789+09:00",
-      "tv_age_days": 51.628645353148144,
+      "tv_age_days": 51.699266366099536,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1240,7 +1240,7 @@
       "tv_avg_target_price": 31.0,
       "tv_upside_pct": 94.47930248474046,
       "tv_updated_at": "2026-07-06T21:15:43.854797+09:00",
-      "tv_age_days": 51.628648559884255,
+      "tv_age_days": 51.69926751550926,
       "tv_freshness": "古い可能性あり（52日前）"
     },
     {
@@ -1265,7 +1265,7 @@
       "tv_avg_target_price": 30.02,
       "tv_upside_pct": 75.76112490687996,
       "tv_updated_at": "2026-07-06T21:15:43.854821+09:00",
-      "tv_age_days": 51.62866147642361,
+      "tv_age_days": 51.69927299931713,
       "tv_freshness": "古い可能性あり（52日前）"
     }
   ]
