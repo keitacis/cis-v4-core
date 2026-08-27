@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-28T07:25:26.745507+09:00",
-  "finished_at_jst": "2026-08-28T07:25:35.911568+09:00",
+  "generated_at_jst": "2026-08-28T08:25:24.654322+09:00",
+  "finished_at_jst": "2026-08-28T08:25:35.866518+09:00",
   "mode": "auto",
   "source": "cron-job.org-morning",
   "planned_step_count": 1,
