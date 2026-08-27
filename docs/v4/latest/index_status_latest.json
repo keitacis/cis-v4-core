@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-27T09:35:37.061586+09:00",
+  "generated_at_jst": "2026-08-27T12:21:06.809426+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,7 +81,7 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-08-27T07:25:32.503327+09:00",
+      "generated_at_jst": "2026-08-27T12:21:06.163947+09:00",
       "message": "",
       "expected_price_date": "2026-08-26",
       "price_success_count": 48,
@@ -162,8 +162,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-26T20:37:45.116352+09:00",
-      "checked_count": 4,
+      "generated_at_jst": "2026-08-27T09:35:37.140796+09:00",
+      "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -176,12 +176,12 @@
           "needs_regen": false,
           "reasons": [],
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-26T08:58:52.485031+09:00",
+          "generated_at_jst_before": "2026-08-27T07:25:32.503327+09:00",
           "row_dates": [
-            "2026-08-25"
+            "2026-08-26"
           ],
           "expected_price_dates": {
-            "US": "2026-08-25"
+            "US": "2026-08-26"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -283,16 +283,16 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-26T11:02:03.646042+09:00",
+          "generated_at_jst_before": "2026-08-27T08:25:49.055523+09:00",
           "row_dates": [
-            "2026-08-25"
+            "2026-08-26"
           ],
           "expected_price_dates": {
-            "US": "2026-08-25"
+            "US": "2026-08-26"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -394,9 +394,9 @@
           "task": "daily_jp",
           "stem": "daily_jp",
           "label": "日本株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
           "generated_at_jst_before": "2026-08-26T19:10:02.387289+09:00",
           "row_dates": [
@@ -505,11 +505,11 @@
           "task": "buy_alert_jp",
           "stem": "buy_alert",
           "label": "買い場アラート（日本価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-26T11:02:03.646042+09:00",
+          "generated_at_jst_before": "2026-08-27T08:25:49.055523+09:00",
           "row_dates": [
             "2026-08-26"
           ],
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-26T20:37:44.994484+09:00",
+            "generated_at_jst": "2026-08-27T09:35:37.061586+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 52.5
+      "stale_age_days": 52.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 52.5
+      "stale_age_days": 52.6
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 51.5
+      "stale_age_days": 51.6
     },
     "master_update": {
       "status": "stale",
@@ -802,7 +802,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 50.5
+      "stale_age_days": 50.6
     },
     "monthly_maintenance": {
       "status": "ok",
