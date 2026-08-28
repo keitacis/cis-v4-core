@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-28T21:40:30.724741+09:00",
-  "checked_count": 4,
+  "generated_at_jst": "2026-08-29T00:15:28.190665+09:00",
+  "checked_count": 0,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,9 +10,9 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
       "generated_at_jst_before": "2026-08-28T16:04:39.307175+09:00",
       "row_dates": [
@@ -121,9 +121,9 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "partial",
       "generated_at_jst_before": "2026-08-28T20:31:25.542720+09:00",
       "row_dates": [
@@ -232,9 +232,9 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "ok",
       "generated_at_jst_before": "2026-08-28T18:25:34.767781+09:00",
       "row_dates": [
@@ -343,9 +343,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "partial",
       "generated_at_jst_before": "2026-08-28T20:31:25.542720+09:00",
       "row_dates": [
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-08-28T21:40:30.639035+09:00",
+        "generated_at_jst": "2026-08-29T00:15:28.119892+09:00",
         "row_dates": []
       }
     }
