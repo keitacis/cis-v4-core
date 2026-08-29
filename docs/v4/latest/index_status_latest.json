@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-29T12:07:19.031901+09:00",
+  "generated_at_jst": "2026-08-29T12:44:11.832836+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,7 +81,7 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-08-29T07:25:39.149923+09:00",
+      "generated_at_jst": "2026-08-29T12:44:11.263272+09:00",
       "message": "",
       "expected_price_date": "2026-08-28",
       "price_success_count": 48,
@@ -170,8 +170,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-29T06:20:52.027703+09:00",
-      "checked_count": 0,
+      "generated_at_jst": "2026-08-29T12:07:19.127614+09:00",
+      "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -180,16 +180,16 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "reasons": [],
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-28T16:04:39.307175+09:00",
+          "generated_at_jst_before": "2026-08-29T07:25:39.149923+09:00",
           "row_dates": [
-            "2026-08-27"
+            "2026-08-28"
           ],
           "expected_price_dates": {
-            "US": "2026-08-27"
+            "US": "2026-08-28"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -300,7 +300,7 @@
             "2026-08-27"
           ],
           "expected_price_dates": {
-            "US": "2026-08-27"
+            "US": "2026-08-28"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -631,7 +631,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-29T06:20:51.945682+09:00",
+            "generated_at_jst": "2026-08-29T12:07:19.031901+09:00",
             "row_dates": []
           }
         }
@@ -752,7 +752,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 54.6
+      "stale_age_days": 54.7
     },
     "watchlist_template": {
       "status": "ok",
