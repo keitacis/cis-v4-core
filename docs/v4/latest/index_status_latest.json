@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-08-31T18:37:35.582220+09:00",
+  "generated_at_jst": "2026-09-01T01:21:05.339504+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -155,9 +155,9 @@
       "degraded_attempt_stem": "daily_us_degraded_attempt"
     },
     "daily_jp": {
-      "status": "ok",
-      "generated_at_jst": "2026-08-31T18:25:34.544468+09:00",
-      "message": "",
+      "status": "partial",
+      "generated_at_jst": "2026-09-01T01:21:04.797567+09:00",
+      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-08-31",
       "price_success_count": 25,
       "price_missing_count": 0,
@@ -165,11 +165,19 @@
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": []
+      "warnings": [
+        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
+        "価格未更新：日本株の価格日付が想定取引日 2026-08-31 より古いです。"
+      ],
+      "degradation_guard_triggered": true,
+      "degradation_guard_version": "R12.3",
+      "degradation_guard_source_status": "price_stale",
+      "retained_latest_generated_at_jst": "2026-08-31T18:25:34.544468+09:00",
+      "degraded_attempt_stem": "daily_jp_degraded_attempt"
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-08-31T15:56:38.733642+09:00",
+      "generated_at_jst": "2026-08-31T18:37:35.662501+09:00",
       "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
@@ -404,10 +412,10 @@
           "checked": false,
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
-          "status_before": "partial",
-          "generated_at_jst_before": "2026-08-29T05:58:42.533596+09:00",
+          "status_before": "ok",
+          "generated_at_jst_before": "2026-08-31T18:25:34.544468+09:00",
           "row_dates": [
-            "2026-08-28"
+            "2026-08-31"
           ],
           "expected_price_dates": {
             "JP": "2026-08-31"
@@ -630,7 +638,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-08-31T15:56:38.642845+09:00",
+            "generated_at_jst": "2026-08-31T18:37:35.582220+09:00",
             "row_dates": []
           }
         }
@@ -767,7 +775,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 56.9
+      "stale_age_days": 57.2
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -801,7 +809,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 56.9
+      "stale_age_days": 57.2
     },
     "watchlist_template": {
       "status": "ok",
@@ -851,7 +859,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 55.9
+      "stale_age_days": 56.2
     },
     "master_update": {
       "status": "stale",
@@ -859,7 +867,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 54.9
+      "stale_age_days": 55.1
     },
     "monthly_maintenance": {
       "status": "ok",
