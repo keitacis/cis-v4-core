@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-02T00:26:50.036803+09:00",
+  "generated_at_jst": "2026-09-02T07:25:39.343120+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,9 +81,9 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-09-01T11:03:38.149046+09:00",
+      "generated_at_jst": "2026-09-02T07:25:38.781902+09:00",
       "message": "",
-      "expected_price_date": "2026-08-31",
+      "expected_price_date": "2026-09-01",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -97,51 +97,51 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "MSTR",
-        "QCOM",
-        "ASPI",
-        "AXTI",
-        "VEEV",
-        "NOW",
-        "KVYO",
-        "RXRX",
-        "ZETA",
-        "AAOI",
-        "ISRG",
-        "SNOW",
-        "VRTX",
-        "APH",
-        "RGTI",
-        "BEAM",
-        "IONQ",
-        "AVAV",
-        "ANET",
-        "DDOG",
-        "ETN",
-        "COHR",
-        "DIS",
-        "OUST",
-        "POET",
-        "FICO",
-        "V",
-        "PL",
-        "TMO",
-        "META",
         "SDGR",
-        "CRSP",
-        "NBIS",
-        "AEM",
+        "HSAI",
+        "APH",
+        "ZETA",
         "MELI",
-        "TEM",
-        "RDW",
+        "META",
         "SPGI",
-        "TRMB",
+        "VRTX",
+        "KVYO",
+        "CRSP",
         "PYPL",
+        "DIS",
+        "TEM",
+        "BEAM",
+        "TRMB",
+        "V",
+        "ISRG",
+        "RXRX",
+        "COHR",
+        "VEEV",
+        "QCOM",
+        "TMO",
+        "ETN",
+        "AVAV",
+        "PL",
         "AUR",
-        "DKNG",
         "TMDX",
-        "AXON",
-        "HSAI"
+        "ANET",
+        "NBIS",
+        "OUST",
+        "NOW",
+        "DKNG",
+        "SNOW",
+        "FICO",
+        "IONQ",
+        "AAOI",
+        "RDW",
+        "RGTI",
+        "AEM",
+        "POET",
+        "DDOG",
+        "ASPI",
+        "MSTR",
+        "AXTI",
+        "AXON"
       ],
       "warnings": [
         "TradingViewスナップショットの鮮度注意：45銘柄"
@@ -162,8 +162,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-01T23:43:54.373592+09:00",
-      "checked_count": 4,
+      "generated_at_jst": "2026-09-02T00:26:50.121558+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -172,9 +172,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-01T11:03:38.149046+09:00",
           "row_dates": [
@@ -283,9 +283,9 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-01T14:19:35.547063+09:00",
           "row_dates": [
@@ -394,9 +394,9 @@
           "task": "daily_jp",
           "stem": "daily_jp",
           "label": "日本株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
           "generated_at_jst_before": "2026-09-01T23:16:36.404758+09:00",
           "row_dates": [
@@ -505,9 +505,9 @@
           "task": "buy_alert_jp",
           "stem": "buy_alert",
           "label": "買い場アラート（日本価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-01T14:19:35.547063+09:00",
           "row_dates": [
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-01T23:43:54.275057+09:00",
+            "generated_at_jst": "2026-09-02T00:26:50.036803+09:00",
             "row_dates": []
           }
         }
@@ -760,7 +760,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 58.1
+      "stale_age_days": 58.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -794,7 +794,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 58.1
+      "stale_age_days": 58.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -844,7 +844,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 57.1
+      "stale_age_days": 57.4
     },
     "master_update": {
       "status": "stale",
@@ -852,7 +852,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 56.1
+      "stale_age_days": 56.4
     },
     "monthly_maintenance": {
       "status": "partial",
