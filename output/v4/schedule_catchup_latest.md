@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/02 00:26 JST
+生成日時：2026/09/02 08:11 JST
 
 ## 判定サマリー
 
@@ -12,16 +12,16 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-02T00:26:50.036803+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-02T08:11:19.103779+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-09-01T11:03:38.149046+09:00
-- expected_price_dates：{'US': '2026-08-31'}
-- row_dates：['2026-08-31']
+- generated_at_before：2026-09-02T07:25:38.781902+09:00
+- expected_price_dates：{'US': '2026-09-01'}
+- row_dates：['2026-09-01']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T02:03:05Z / updated=2026-09-01T02:03:44Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T01:18:27Z / updated=2026-09-01T01:18:57Z
@@ -33,7 +33,7 @@
 
 - status_before：partial
 - generated_at_before：2026-09-01T14:19:35.547063+09:00
-- expected_price_dates：{'US': '2026-08-31'}
+- expected_price_dates：{'US': '2026-09-01'}
 - row_dates：['2026-08-31']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T05:18:52Z / updated=2026-09-01T05:19:41Z

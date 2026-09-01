@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-02T00:26:50.121558+09:00",
+    "generated_at_jst": "2026-09-02T08:11:19.203640+09:00",
     "checked_count": 0,
     "regen_count": 0,
     "recovered_count": 0,
@@ -15,12 +15,12 @@
         "needs_regen": false,
         "reason": "判定前：JST 9:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-01T11:03:38.149046+09:00",
+        "generated_at_jst_before": "2026-09-02T07:25:38.781902+09:00",
         "row_dates": [
-          "2026-08-31"
+          "2026-09-01"
         ],
         "expected_price_dates": {
-          "US": "2026-08-31"
+          "US": "2026-09-01"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -131,7 +131,7 @@
           "2026-08-31"
         ],
         "expected_price_dates": {
-          "US": "2026-08-31"
+          "US": "2026-09-01"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -462,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-02T00:26:50.036803+09:00",
+          "generated_at_jst": "2026-09-02T08:11:19.103779+09:00",
           "row_dates": []
         }
       }
@@ -477,12 +477,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-01T11:03:38.149046+09:00",
+      "generated_at_jst_before": "2026-09-02T07:25:38.781902+09:00",
       "row_dates": [
-        "2026-08-31"
+        "2026-09-01"
       ],
       "expected_price_dates": {
-        "US": "2026-08-31"
+        "US": "2026-09-01"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -593,7 +593,7 @@
         "2026-08-31"
       ],
       "expected_price_dates": {
-        "US": "2026-08-31"
+        "US": "2026-09-01"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -924,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-02T00:26:50.036803+09:00",
+        "generated_at_jst": "2026-09-02T08:11:19.103779+09:00",
         "row_dates": []
       }
     }
