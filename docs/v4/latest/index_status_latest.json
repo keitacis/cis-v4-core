@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-01T17:33:25.703683+09:00",
+  "generated_at_jst": "2026-09-01T18:25:30.598176+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -148,29 +148,21 @@
       ]
     },
     "daily_jp": {
-      "status": "partial",
-      "generated_at_jst": "2026-09-01T02:12:49.085893+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
-      "expected_price_date": "2026-08-31",
+      "status": "ok",
+      "generated_at_jst": "2026-09-01T18:25:30.018465+09:00",
+      "message": "",
+      "expected_price_date": "2026-09-01",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
-        "価格未更新：日本株の価格日付が想定取引日 2026-08-31 より古いです。"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-09-01T01:21:04.797567+09:00",
-      "degraded_attempt_stem": "daily_jp_degraded_attempt"
+      "warnings": []
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-01T15:12:27.394190+09:00",
+      "generated_at_jst": "2026-09-01T17:33:25.780781+09:00",
       "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
@@ -631,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-01T15:12:27.294118+09:00",
+            "generated_at_jst": "2026-09-01T17:33:25.703683+09:00",
             "row_dates": []
           }
         }
@@ -852,7 +844,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 56.8
+      "stale_age_days": 56.9
     },
     "master_update": {
       "status": "stale",
@@ -860,7 +852,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 55.8
+      "stale_age_days": 55.9
     },
     "monthly_maintenance": {
       "status": "partial",
