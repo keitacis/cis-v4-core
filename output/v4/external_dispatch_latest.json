@@ -1,25 +1,25 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-09-02T07:25:31.483538+09:00",
-  "finished_at_jst": "2026-09-02T07:25:38.876545+09:00",
-  "timestamp_jst": "2026-09-02T07:25:31.483538+09:00",
+  "generated_at_jst": "2026-09-02T08:25:29.442339+09:00",
+  "finished_at_jst": "2026-09-02T08:25:36.738528+09:00",
+  "timestamp_jst": "2026-09-02T08:25:29.442339+09:00",
   "mode": "auto",
   "source": "cron-job.org-morning",
   "planned_scripts": [
-    "scripts/cis_v4/cis_daily_us.py"
+    "scripts/cis_v4/cis_buy_alert.py"
   ],
   "planned_step_count": 1,
   "steps": [
     {
-      "script": "scripts/cis_v4/cis_daily_us.py",
-      "started_at_jst": "2026-09-02T07:25:31.484264+09:00",
+      "script": "scripts/cis_v4/cis_buy_alert.py",
+      "started_at_jst": "2026-09-02T08:25:29.444214+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python",
-        "scripts/cis_v4/cis_daily_us.py"
+        "scripts/cis_v4/cis_buy_alert.py"
       ],
-      "finished_at_jst": "2026-09-02T07:25:38.876510+09:00",
-      "duration_seconds": 7.392,
+      "finished_at_jst": "2026-09-02T08:25:36.738493+09:00",
+      "duration_seconds": 7.294,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -32,22 +32,34 @@
     {
       "label": "米国株日次",
       "active": true,
-      "fresh": false,
+      "fresh": true,
       "stem": "daily_us",
       "market": "US",
       "status": "partial",
-      "generated_at_jst": "2026-09-01T11:03:38.149046+09:00",
+      "generated_at_jst": "2026-09-02T07:25:38.781902+09:00",
+      "expected_price_date": "2026-09-01",
+      "row_dates": [
+        "2026-09-01"
+      ],
+      "min_hour_jst": 7,
+      "row_count": 48,
+      "dated_row_count": 48,
+      "fresh_reason": "row_dates_ge_expected"
+    },
+    {
+      "label": "買い場アラート（米国価格）",
+      "active": true,
+      "fresh": false,
+      "stem": "buy_alert",
+      "market": "US",
+      "status": "partial",
+      "generated_at_jst": "2026-09-01T14:19:35.547063+09:00",
       "expected_price_date": "2026-09-01",
       "row_dates": [
         "2026-08-31"
       ],
-      "min_hour_jst": 7,
+      "min_hour_jst": 8,
       "stale_reason": "not_generated_today"
-    },
-    {
-      "label": "買い場アラート（米国価格）",
-      "active": false,
-      "reason": "outside_window"
     },
     {
       "label": "日本株日次",
