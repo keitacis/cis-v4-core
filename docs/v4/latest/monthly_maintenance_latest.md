@@ -1,6 +1,6 @@
 # CIS 月次メンテナンス
 
-生成日時：2026/08/01 17:43 JST
+生成日時：2026/09/01 09:13 JST
 
 ## ステータス
 
@@ -11,14 +11,66 @@
 - TradingView カバレッジなし：2
 - TradingView 対象外：1
 - TradingView未設定：0
-- TradingView鮮度注意：0
+- TradingView鮮度注意：48
 - TradingView active外：0
 - 買い場基準：73
 - 買い場基準未設定：0
 - 買い場基準 active外：0
 
+## 要確認
+
+- ⚠️ TradingView鮮度注意：48銘柄
+
 ## TradingView 未設定/鮮度注意/対象外
 
+- 鮮度注意：US:AAOI
+- 鮮度注意：US:AEM
+- 鮮度注意：US:ANET
+- 鮮度注意：US:APH
+- 鮮度注意：US:ASPI
+- 鮮度注意：US:AUR
+- 鮮度注意：US:AVAV
+- 鮮度注意：US:AXON
+- 鮮度注意：US:AXTI
+- 鮮度注意：US:BEAM
+- 鮮度注意：US:COHR
+- 鮮度注意：US:CRSP
+- 鮮度注意：US:DDOG
+- 鮮度注意：US:DIS
+- 鮮度注意：US:DKNG
+- 鮮度注意：US:ETN
+- 鮮度注意：US:EWY
+- 鮮度注意：US:FICO
+- 鮮度注意：US:HSAI
+- 鮮度注意：US:IONQ
+- 鮮度注意：US:ISRG
+- 鮮度注意：US:KITT
+- 鮮度注意：US:KVYO
+- 鮮度注意：US:MELI
+- 鮮度注意：US:META
+- 鮮度注意：US:MSTR
+- 鮮度注意：US:NBIS
+- 鮮度注意：US:NOW
+- 鮮度注意：US:OPTX
+- 鮮度注意：US:OUST
+- 鮮度注意：US:PL
+- 鮮度注意：US:POET
+- 鮮度注意：US:PYPL
+- 鮮度注意：US:QCOM
+- 鮮度注意：US:RDW
+- 鮮度注意：US:RGTI
+- 鮮度注意：US:RXRX
+- 鮮度注意：US:SDGR
+- 鮮度注意：US:SNOW
+- 鮮度注意：US:SPGI
+- 鮮度注意：US:TEM
+- 鮮度注意：US:TMDX
+- 鮮度注意：US:TMO
+- 鮮度注意：US:TRMB
+- 鮮度注意：US:V
+- 鮮度注意：US:VEEV
+- 鮮度注意：US:VRTX
+- 鮮度注意：US:ZETA
 - カバレッジなし：US:KITT
 - カバレッジなし：US:OPTX
 - 対象外：US:EWY
