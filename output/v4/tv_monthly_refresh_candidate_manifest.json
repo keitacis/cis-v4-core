@@ -1,39 +1,39 @@
 {
   "version": 3,
   "status": "ok",
-  "generated_at_jst": "2026-08-01T17:42:59.945033+09:00",
-  "apply_command_count": 42,
-  "changed_command_count": 42,
+  "generated_at_jst": "2026-09-01T09:41:30.296459+09:00",
+  "apply_command_count": 43,
+  "changed_command_count": 43,
   "summary": {
     "us_watchlist_count": 48,
-    "candidate_change_count": 42,
-    "unchanged_count": 6,
+    "candidate_change_count": 43,
+    "unchanged_count": 5,
     "failed_count": 0,
-    "covered_candidate_count": 39,
-    "covered_partial_candidate_count": 3,
+    "covered_candidate_count": 43,
+    "covered_partial_candidate_count": 0,
     "not_applicable_candidate_count": 0,
     "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
   },
   "command_files": {
     "tv_monthly_refresh_apply_commands.txt": {
-      "sha256": "21b28618866b9d79fefc84e2aac9aef5650e6f7afa031f26810174db12aa317f",
-      "line_count": 42,
-      "bytes_utf8": 3068
+      "sha256": "538a13563d74d0ae03cb96d878ac68241b5cafcd44594633256770bb9b2c4ec0",
+      "line_count": 43,
+      "bytes_utf8": 2986
     },
     "tv_monthly_refresh_changed_only_commands.txt": {
-      "sha256": "21b28618866b9d79fefc84e2aac9aef5650e6f7afa031f26810174db12aa317f",
-      "line_count": 42,
-      "bytes_utf8": 3068
+      "sha256": "538a13563d74d0ae03cb96d878ac68241b5cafcd44594633256770bb9b2c4ec0",
+      "line_count": 43,
+      "bytes_utf8": 2986
     },
     "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
-      "sha256": "77df58d62d357b8f90228d31ed470bb3523886ebd314df6b9c6dcf6a4915ae52",
+      "sha256": "1c5bc16e9e11fcc9e8ffb773b5294d493e310ec634da507769f4051f41efc84d",
       "line_count": 1,
-      "bytes_utf8": 3109
+      "bytes_utf8": 3028
     },
     "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
-      "sha256": "77df58d62d357b8f90228d31ed470bb3523886ebd314df6b9c6dcf6a4915ae52",
+      "sha256": "1c5bc16e9e11fcc9e8ffb773b5294d493e310ec634da507769f4051f41efc84d",
       "line_count": 1,
-      "bytes_utf8": 3109
+      "bytes_utf8": 3028
     }
   },
   "primary_files": {

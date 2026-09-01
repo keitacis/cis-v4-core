@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-01T09:29:53.364840+09:00",
+  "generated_at_jst": "2026-09-01T09:41:30.606092+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -197,8 +197,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-01T02:58:31.647662+09:00",
-      "checked_count": 0,
+      "generated_at_jst": "2026-09-01T09:29:53.435532+09:00",
+      "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -207,16 +207,16 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "reasons": [],
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-29T13:19:46.277483+09:00",
+          "generated_at_jst_before": "2026-09-01T07:25:36.536834+09:00",
           "row_dates": [
-            "2026-08-28"
+            "2026-08-31"
           ],
           "expected_price_dates": {
-            "US": "2026-08-28"
+            "US": "2026-08-31"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -322,12 +322,12 @@
           "needs_regen": false,
           "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-31T14:46:18.448887+09:00",
+          "generated_at_jst_before": "2026-09-01T08:25:55.241412+09:00",
           "row_dates": [
-            "2026-08-28"
+            "2026-08-31"
           ],
           "expected_price_dates": {
-            "US": "2026-08-28"
+            "US": "2026-08-31"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -544,9 +544,9 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-08-31T14:46:18.448887+09:00",
+          "generated_at_jst_before": "2026-09-01T08:25:55.241412+09:00",
           "row_dates": [
-            "2026-08-31"
+            "2026-08-28"
           ],
           "expected_price_dates": {
             "JP": "2026-08-31"
@@ -658,7 +658,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-01T02:58:31.582733+09:00",
+            "generated_at_jst": "2026-09-01T09:29:53.364840+09:00",
             "row_dates": []
           }
         }
@@ -845,7 +845,7 @@
     },
     "master_init_template": {
       "status": "ok",
-      "generated_at_jst": "2026-09-01T09:13:08.709417+09:00",
+      "generated_at_jst": "2026-09-01T09:41:30.410428+09:00",
       "active_count": 73,
       "active_us_count": 48,
       "buyzone_missing_count": 0,
@@ -856,16 +856,16 @@
     },
     "tv_monthly_refresh": {
       "status": "ok",
-      "generated_at_jst": "2026-08-01T17:42:59.945033+09:00",
+      "generated_at_jst": "2026-09-01T09:41:30.296459+09:00",
       "us_watchlist_count": 48,
       "fetched_count": 48,
-      "candidate_change_count": 42,
-      "unchanged_count": 6,
+      "candidate_change_count": 43,
+      "unchanged_count": 5,
       "failed_count": 0,
-      "apply_command_count": 42,
-      "changed_command_count": 42,
-      "covered_candidate_count": 39,
-      "covered_partial_candidate_count": 3,
+      "apply_command_count": 43,
+      "changed_command_count": 43,
+      "covered_candidate_count": 43,
+      "covered_partial_candidate_count": 0,
       "not_applicable_candidate_count": 0,
       "candidate_manifest": "tv_monthly_refresh_candidate_manifest.json",
       "note": "候補生成のみ。本番tv_snapshot.jsonは変更していません。no_coverage/not_applicableは月次取得失敗に数えません。",
@@ -891,7 +891,7 @@
     },
     "monthly_maintenance": {
       "status": "partial",
-      "generated_at_jst": "2026-09-01T09:13:08.787683+09:00",
+      "generated_at_jst": "2026-09-01T09:41:30.509022+09:00",
       "watchlist_count": 73,
       "us_count": 48,
       "tv_count": 48,
