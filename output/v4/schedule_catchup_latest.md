@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/02 14:40 JST
+生成日時：2026/09/02 16:50 JST
 
 ## 判定サマリー
 
@@ -12,7 +12,7 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-02T14:40:56.352091+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-02T16:50:39.043404+09:00 / dates=[]
 
 ## 詳細
 
@@ -46,7 +46,7 @@
 
 - status_before：ok
 - generated_at_before：2026-09-01T23:16:36.404758+09:00
-- expected_price_dates：{'JP': '2026-09-01'}
+- expected_price_dates：{'JP': '2026-09-02'}
 - row_dates：['2026-09-01']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T14:16:13Z / updated=2026-09-01T14:16:41Z
@@ -59,7 +59,7 @@
 
 - status_before：partial
 - generated_at_before：2026-09-02T13:44:52.585381+09:00
-- expected_price_dates：{'JP': '2026-09-01'}
+- expected_price_dates：{'JP': '2026-09-02'}
 - row_dates：['2026-09-02']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T04:44:26Z / updated=2026-09-02T04:44:57Z
