@@ -1,15 +1,17 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-09-02T10:04:03.668713+09:00",
+  "generated_at_jst": "2026-09-02T13:44:52.585381+09:00",
   "message": "",
   "expected_us_price_date": "2026-09-01",
   "expected_jp_price_date": "2026-09-01",
   "watchlist_count": 73,
   "price_success_count": 73,
   "price_error_count": 0,
-  "price_stale_count": 0,
-  "price_stale_symbols": [],
-  "market_closed_count": 0,
+  "price_stale_count": 1,
+  "price_stale_symbols": [
+    "APH"
+  ],
+  "market_closed_count": 1,
   "invalid_buyzone_count": 0,
   "invalid_buyzone": [],
   "strong_buy_count": 0,
@@ -72,6 +74,7 @@
     "ZETA"
   ],
   "warnings": [
+    "価格日付が古い銘柄があります：1銘柄（想定：米国 2026-09-01 / 日本 2026-09-01）",
     "TradingView鮮度注意：45銘柄"
   ]
 }
