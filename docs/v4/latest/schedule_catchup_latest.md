@@ -1,46 +1,46 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/03 08:11 JST
+生成日時：2026/09/03 14:40 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
-- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
+- ✅ 米国株日次騰落：最新扱い
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-03T08:11:14.108077+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-03T14:40:15.867630+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-09-03T07:25:29.773847+09:00
+- generated_at_before：2026-09-03T10:27:12.137784+09:00
 - expected_price_dates：{'US': '2026-09-02'}
-- row_dates：['2026-09-02']
+- row_dates：['2026-09-01', '2026-09-02']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T01:26:46Z / updated=2026-09-03T01:27:18Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T00:18:33Z / updated=2026-09-03T00:19:00Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T01:24:08Z / updated=2026-09-02T01:24:36Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T00:17:16Z / updated=2026-09-02T00:17:46Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T02:03:05Z / updated=2026-09-01T02:03:44Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-01T01:18:27Z / updated=2026-09-01T01:18:57Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-29T04:19:21Z / updated=2026-08-29T04:19:52Z
 
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-09-02T13:44:52.585381+09:00
+- generated_at_before：2026-09-03T13:40:36.776168+09:00
 - expected_price_dates：{'US': '2026-09-02'}
-- row_dates：['2026-09-01']
+- row_dates：['2026-09-02']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T04:40:12Z / updated=2026-09-03T04:40:41Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T01:09:32Z / updated=2026-09-03T01:10:01Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T04:44:26Z / updated=2026-09-02T04:44:57Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T01:03:38Z / updated=2026-09-02T01:04:08Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T05:18:52Z / updated=2026-09-01T05:19:41Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-01T01:51:02Z / updated=2026-09-01T01:51:35Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-31T05:45:44Z / updated=2026-08-31T05:46:24Z
 
 ### 日本株日次騰落
 
@@ -58,12 +58,12 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-09-02T13:44:52.585381+09:00
+- generated_at_before：2026-09-03T13:40:36.776168+09:00
 - expected_price_dates：{'JP': '2026-09-02'}
-- row_dates：['2026-09-02']
+- row_dates：['2026-09-03']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T04:40:12Z / updated=2026-09-03T04:40:41Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-03T01:09:32Z / updated=2026-09-03T01:10:01Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T04:44:26Z / updated=2026-09-02T04:44:57Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-02T01:03:38Z / updated=2026-09-02T01:04:08Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-01T05:18:52Z / updated=2026-09-01T05:19:41Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-01T01:51:02Z / updated=2026-09-01T01:51:35Z
-  - event=schedule / status=completed / conclusion=success / started=2026-08-31T05:45:44Z / updated=2026-08-31T05:46:24Z
