@@ -1,25 +1,25 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-09-04T07:25:25.856878+09:00",
-  "finished_at_jst": "2026-09-04T07:25:32.188298+09:00",
-  "timestamp_jst": "2026-09-04T07:25:25.856878+09:00",
+  "generated_at_jst": "2026-09-04T08:25:29.934338+09:00",
+  "finished_at_jst": "2026-09-04T08:25:54.519297+09:00",
+  "timestamp_jst": "2026-09-04T08:25:29.934338+09:00",
   "mode": "auto",
   "source": "cron-job.org-morning",
   "planned_scripts": [
-    "scripts/cis_v4/cis_daily_us.py"
+    "scripts/cis_v4/cis_buy_alert.py"
   ],
   "planned_step_count": 1,
   "steps": [
     {
-      "script": "scripts/cis_v4/cis_daily_us.py",
-      "started_at_jst": "2026-09-04T07:25:25.857614+09:00",
+      "script": "scripts/cis_v4/cis_buy_alert.py",
+      "started_at_jst": "2026-09-04T08:25:29.935539+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python",
-        "scripts/cis_v4/cis_daily_us.py"
+        "scripts/cis_v4/cis_buy_alert.py"
       ],
-      "finished_at_jst": "2026-09-04T07:25:32.188258+09:00",
-      "duration_seconds": 6.331,
+      "finished_at_jst": "2026-09-04T08:25:54.519260+09:00",
+      "duration_seconds": 24.584,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -32,23 +32,34 @@
     {
       "label": "米国株日次",
       "active": true,
-      "fresh": false,
+      "fresh": true,
       "stem": "daily_us",
       "market": "US",
       "status": "partial",
-      "generated_at_jst": "2026-09-03T10:27:12.137784+09:00",
+      "generated_at_jst": "2026-09-04T07:25:32.110837+09:00",
       "expected_price_date": "2026-09-03",
       "row_dates": [
-        "2026-09-01",
-        "2026-09-02"
+        "2026-09-03"
       ],
       "min_hour_jst": 7,
-      "stale_reason": "not_generated_today"
+      "row_count": 48,
+      "dated_row_count": 48,
+      "fresh_reason": "row_dates_ge_expected"
     },
     {
       "label": "買い場アラート（米国価格）",
-      "active": false,
-      "reason": "outside_window"
+      "active": true,
+      "fresh": false,
+      "stem": "buy_alert",
+      "market": "US",
+      "status": "partial",
+      "generated_at_jst": "2026-09-03T13:40:36.776168+09:00",
+      "expected_price_date": "2026-09-03",
+      "row_dates": [
+        "2026-09-02"
+      ],
+      "min_hour_jst": 8,
+      "stale_reason": "not_generated_today"
     },
     {
       "label": "日本株日次",
