@@ -1,74 +1,26 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-03T10:27:12.608912+09:00",
+  "generated_at_jst": "2026-09-03T13:40:37.304958+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-03T10:25:36.530279+09:00",
+      "generated_at_jst": "2026-09-03T13:40:36.776168+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-02",
       "expected_jp_price_date": "2026-09-02",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
-      "price_stale_count": 47,
-      "price_stale_symbols": [
-        "AVAV",
-        "AXON",
-        "AUR",
-        "TMDX",
-        "NOW",
-        "RDW",
-        "TRMB",
-        "VEEV",
-        "PYPL",
-        "TEM",
-        "FICO",
-        "AAOI",
-        "OUST",
-        "ASPI",
-        "NBIS",
-        "EWY",
-        "ISRG",
-        "SPGI",
-        "MELI",
-        "TMO",
-        "META",
-        "IONQ",
-        "RGTI",
-        "SDGR",
-        "RXRX",
-        "QCOM",
-        "HSAI",
-        "PL",
-        "V",
-        "VRTX",
-        "DIS",
-        "KVYO",
-        "DKNG",
-        "CRSP",
-        "BEAM",
-        "ETN",
-        "MSTR",
-        "POET",
-        "KITT",
-        "AXTI",
-        "COHR",
-        "ANET",
-        "DDOG",
-        "SNOW",
-        "OPTX",
-        "AEM",
-        "ZETA"
-      ],
-      "market_closed_count": 47,
+      "price_stale_count": 0,
+      "price_stale_symbols": [],
+      "market_closed_count": 0,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
       "strong_buy_count": 1,
       "main_buy_count": 1,
-      "watch_buy_count": 1,
+      "watch_buy_count": 8,
       "near_buy_count": 1,
-      "display_count": 4,
+      "display_count": 11,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -124,7 +76,6 @@
         "ZETA"
       ],
       "warnings": [
-        "価格日付が古い銘柄があります：47銘柄（想定：米国 2026-09-02 / 日本 2026-09-02）",
         "TradingView鮮度注意：45銘柄"
       ]
     },
@@ -858,7 +809,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 59.6
+      "stale_age_days": 59.7
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -892,7 +843,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 59.6
+      "stale_age_days": 59.7
     },
     "watchlist_template": {
       "status": "ok",
@@ -942,7 +893,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 58.5
+      "stale_age_days": 58.7
     },
     "master_update": {
       "status": "stale",
@@ -950,7 +901,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 57.5
+      "stale_age_days": 57.7
     },
     "monthly_maintenance": {
       "status": "partial",
