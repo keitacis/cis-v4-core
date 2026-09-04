@@ -1,20 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/04 14:45 JST
+生成日時：2026/09/04 16:54 JST
 
 ## 判定サマリー
 
 - ✅ 米国株日次騰落：最新扱い
-- ⚠️ 買い場アラート（米国価格）：再生成対象 / US価格日付が想定2026-09-03より古い：['2026-09-02']
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
-- 買い場アラート（米国価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
-  - after：status=partial / generated=2026-09-04T14:45:24.271562+09:00 / dates=['2026-09-03']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-04T14:45:25.517599+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-04T16:54:39.961985+09:00 / dates=[]
 
 ## 詳細
 
@@ -34,9 +32,9 @@
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-09-04T13:42:59.771204+09:00
+- generated_at_before：2026-09-04T14:45:24.271562+09:00
 - expected_price_dates：{'US': '2026-09-03'}
-- row_dates：['2026-09-02']
+- row_dates：['2026-09-03']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-04T04:42:23Z / updated=2026-09-04T04:43:05Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-04T01:02:16Z / updated=2026-09-04T01:02:51Z
@@ -48,7 +46,7 @@
 
 - status_before：ok
 - generated_at_before：2026-09-03T22:50:38.031946+09:00
-- expected_price_dates：{'JP': '2026-09-03'}
+- expected_price_dates：{'JP': '2026-09-04'}
 - row_dates：['2026-09-03']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-03T13:50:07Z / updated=2026-09-03T13:50:43Z
@@ -61,7 +59,7 @@
 
 - status_before：partial
 - generated_at_before：2026-09-04T14:45:24.271562+09:00
-- expected_price_dates：{'JP': '2026-09-03'}
+- expected_price_dates：{'JP': '2026-09-04'}
 - row_dates：['2026-09-04']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-04T04:42:23Z / updated=2026-09-04T04:43:05Z
