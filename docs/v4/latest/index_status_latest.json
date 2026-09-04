@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-04T16:54:39.961985+09:00",
+  "generated_at_jst": "2026-09-04T18:25:44.289947+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -198,9 +198,9 @@
     },
     "daily_jp": {
       "status": "ok",
-      "generated_at_jst": "2026-09-03T22:50:38.031946+09:00",
+      "generated_at_jst": "2026-09-04T18:25:43.767274+09:00",
       "message": "",
-      "expected_price_date": "2026-09-03",
+      "expected_price_date": "2026-09-04",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
@@ -211,10 +211,10 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-04T14:45:25.650411+09:00",
+      "generated_at_jst": "2026-09-04T16:54:40.054286+09:00",
       "checked_count": 2,
-      "regen_count": 1,
-      "recovered_count": 1,
+      "regen_count": 0,
+      "recovered_count": 0,
       "failed_count": 0,
       "decisions": [
         {
@@ -334,14 +334,12 @@
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
           "checked": true,
-          "needs_regen": true,
-          "reasons": [
-            "US価格日付が想定2026-09-03より古い：['2026-09-02']"
-          ],
+          "needs_regen": false,
+          "reasons": [],
           "status_before": "partial",
-          "generated_at_jst_before": "2026-09-04T13:42:59.771204+09:00",
+          "generated_at_jst_before": "2026-09-04T14:45:24.271562+09:00",
           "row_dates": [
-            "2026-09-02"
+            "2026-09-03"
           ],
           "expected_price_dates": {
             "US": "2026-09-03"
@@ -455,7 +453,7 @@
             "2026-09-03"
           ],
           "expected_price_dates": {
-            "JP": "2026-09-03"
+            "JP": "2026-09-04"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -566,7 +564,7 @@
             "2026-09-04"
           ],
           "expected_price_dates": {
-            "JP": "2026-09-03"
+            "JP": "2026-09-04"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -667,21 +665,6 @@
       ],
       "executed": [
         {
-          "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_buy_alert.py",
-          "returncode": 0,
-          "stdout_tail": "",
-          "stderr_tail": "",
-          "task": "buy_alert_us",
-          "label": "買い場アラート（米国価格）",
-          "status_after": {
-            "status": "partial",
-            "generated_at_jst": "2026-09-04T14:45:24.271562+09:00",
-            "row_dates": [
-              "2026-09-03"
-            ]
-          }
-        },
-        {
           "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
           "returncode": 0,
           "stdout_tail": "",
@@ -690,7 +673,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-04T14:45:25.517599+09:00",
+            "generated_at_jst": "2026-09-04T16:54:39.961985+09:00",
             "row_dates": []
           }
         }
@@ -827,7 +810,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 60.8
+      "stale_age_days": 60.9
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -861,7 +844,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 60.8
+      "stale_age_days": 60.9
     },
     "watchlist_template": {
       "status": "ok",
@@ -911,7 +894,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 59.8
+      "stale_age_days": 59.9
     },
     "master_update": {
       "status": "stale",
@@ -919,7 +902,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 58.8
+      "stale_age_days": 58.9
     },
     "monthly_maintenance": {
       "status": "partial",
