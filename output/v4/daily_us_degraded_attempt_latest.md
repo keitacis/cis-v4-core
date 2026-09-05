@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/08/29 13:19 JST
-想定価格日付：2026-08-28
+生成日時：2026/09/05 09:08 JST
+想定価格日付：2026-09-04
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-08-28 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-04 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-08-28 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-04 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-VEEV, MSTR, KVYO, NOW, ZETA, DDOG, IONQ, SDGR, SNOW, AVAV, TEM, RGTI, TRMB, AXTI, OPTX, ASPI, HSAI, NBIS, FICO, OUST, EWY, POET, BEAM, AEM, QCOM, AXON, COHR, CRSP, VRTX, APH, RDW, PL, SPGI, AAOI, TMO, TMDX, PYPL, ANET, ETN, META, ISRG, MELI, V, AUR, KITT, RXRX, DKNG, DIS
+MSTR, SNOW, HSAI, AUR, ZETA, NOW, AXON, AEM, TEM, SPGI, PYPL, IONQ, NBIS, TMDX, OPTX, META, OUST, ANET, DDOG, KVYO, RGTI, RXRX, FICO, TRMB, TMO, ETN, VEEV, AVAV, EWY, BEAM, POET, RDW, VRTX, V, DKNG, ISRG, CRSP, DIS, ASPI, MELI, SDGR, QCOM, AXTI, COHR, APH, AAOI, KITT, PL
