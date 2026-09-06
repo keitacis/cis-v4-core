@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-06T07:44:00.719870+09:00",
+  "generated_at_jst": "2026-09-07T07:49:11.230534+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-09-04T14:45:24.271562+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-03",
@@ -77,7 +77,9 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "stale_age_days": 2.7
     },
     "daily_us": {
       "status": "partial",
@@ -169,8 +171,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-05T16:36:05.319498+09:00",
-      "checked_count": 1,
+      "generated_at_jst": "2026-09-06T07:44:00.815770+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -179,9 +181,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-05T10:24:54.833848+09:00",
           "row_dates": [
@@ -292,7 +294,7 @@
           "label": "買い場アラート（米国価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-04T14:45:24.271562+09:00",
           "row_dates": [
@@ -403,7 +405,7 @@
           "label": "日本株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "ok",
           "generated_at_jst_before": "2026-09-04T22:44:32.601751+09:00",
           "row_dates": [
@@ -514,7 +516,7 @@
           "label": "買い場アラート（日本価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=5",
+          "reason": "判定対象外曜日：weekday=6",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-04T14:45:24.271562+09:00",
           "row_dates": [
@@ -630,7 +632,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-05T16:36:05.237989+09:00",
+            "generated_at_jst": "2026-09-06T07:44:00.719870+09:00",
             "row_dates": []
           }
         }
@@ -717,7 +719,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 62.4
+      "stale_age_days": 63.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -751,7 +753,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 62.4
+      "stale_age_days": 63.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -801,7 +803,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 61.4
+      "stale_age_days": 62.4
     },
     "master_update": {
       "status": "stale",
@@ -809,7 +811,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 60.4
+      "stale_age_days": 61.4
     },
     "monthly_maintenance": {
       "status": "partial",
