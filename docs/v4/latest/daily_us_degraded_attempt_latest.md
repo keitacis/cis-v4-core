@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/09/05 10:24 JST
-想定価格日付：2026-09-04
+生成日時：2026/09/08 07:25 JST
+想定価格日付：2026-09-07
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-04 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-07 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-04 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-07 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-MSTR, SNOW, HSAI, AUR, ZETA, NOW, AXON, AEM, TEM, SPGI, PYPL, IONQ, NBIS, TMDX, OPTX, META, OUST, ANET, DDOG, KVYO, RGTI, RXRX, FICO, TRMB, TMO, ETN, VEEV, AVAV, EWY, BEAM, POET, RDW, VRTX, V, DKNG, ISRG, CRSP, DIS, ASPI, MELI, SDGR, QCOM, AXTI, COHR, APH, AAOI, KITT, PL
+AXTI, POET, ASPI, NBIS, COHR, RXRX, AAOI, EWY, ETN, TMDX, HSAI, OUST, RDW, IONQ, ANET, META, APH, BEAM, AUR, RGTI, QCOM, TEM, MELI, DKNG, TMO, ISRG, DDOG, V, TRMB, AEM, CRSP, PL, MSTR, SPGI, DIS, AVAV, VRTX, OPTX, NOW, SDGR, VEEV, PYPL, ZETA, AXON, SNOW, KVYO, KITT, FICO
