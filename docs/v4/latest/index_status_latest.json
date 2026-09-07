@@ -1,26 +1,75 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-08T08:22:11.609978+09:00",
+  "generated_at_jst": "2026-09-08T08:25:42.309103+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-07T13:53:48.484923+09:00",
+      "generated_at_jst": "2026-09-08T08:25:41.820106+09:00",
       "message": "",
-      "expected_us_price_date": "2026-09-04",
-      "expected_jp_price_date": "2026-09-04",
+      "expected_us_price_date": "2026-09-07",
+      "expected_jp_price_date": "2026-09-07",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
-      "price_stale_count": 0,
-      "price_stale_symbols": [],
-      "market_closed_count": 0,
+      "price_stale_count": 48,
+      "price_stale_symbols": [
+        "AVAV",
+        "AXON",
+        "AUR",
+        "TMDX",
+        "NOW",
+        "RDW",
+        "TRMB",
+        "VEEV",
+        "PYPL",
+        "TEM",
+        "FICO",
+        "AAOI",
+        "OUST",
+        "APH",
+        "ASPI",
+        "NBIS",
+        "EWY",
+        "ISRG",
+        "SPGI",
+        "MELI",
+        "TMO",
+        "META",
+        "IONQ",
+        "RGTI",
+        "SDGR",
+        "RXRX",
+        "QCOM",
+        "HSAI",
+        "PL",
+        "V",
+        "VRTX",
+        "DIS",
+        "KVYO",
+        "DKNG",
+        "CRSP",
+        "BEAM",
+        "ETN",
+        "MSTR",
+        "POET",
+        "KITT",
+        "AXTI",
+        "COHR",
+        "ANET",
+        "DDOG",
+        "SNOW",
+        "OPTX",
+        "AEM",
+        "ZETA"
+      ],
+      "market_closed_count": 48,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
-      "strong_buy_count": 1,
-      "main_buy_count": 2,
-      "watch_buy_count": 9,
+      "strong_buy_count": 0,
+      "main_buy_count": 1,
+      "watch_buy_count": 2,
       "near_buy_count": 1,
-      "display_count": 13,
+      "display_count": 4,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -76,12 +125,13 @@
         "ZETA"
       ],
       "warnings": [
+        "価格日付が古い銘柄があります：48銘柄（想定：米国 2026-09-07 / 日本 2026-09-07）",
         "TradingView鮮度注意：45銘柄"
       ]
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-09-08T07:25:40.191524+09:00",
+      "generated_at_jst": "2026-09-08T08:25:31.751300+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-09-04",
       "price_success_count": 48,
@@ -151,7 +201,7 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-09-05T10:24:54.833848+09:00",
+      "retained_latest_generated_at_jst": "2026-09-08T07:25:40.191524+09:00",
       "degraded_attempt_stem": "daily_us_degraded_attempt"
     },
     "daily_jp": {
@@ -177,7 +227,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-08T01:23:33.137729+09:00",
+      "generated_at_jst": "2026-09-08T08:22:11.723135+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -191,12 +241,12 @@
           "needs_regen": false,
           "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-09-05T10:24:54.833848+09:00",
+          "generated_at_jst_before": "2026-09-08T07:25:40.191524+09:00",
           "row_dates": [
             "2026-09-04"
           ],
           "expected_price_dates": {
-            "US": "2026-09-04"
+            "US": "2026-09-07"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -307,7 +357,7 @@
             "2026-09-04"
           ],
           "expected_price_dates": {
-            "US": "2026-09-04"
+            "US": "2026-09-07"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -638,7 +688,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-08T01:23:33.052169+09:00",
+            "generated_at_jst": "2026-09-08T08:22:11.609978+09:00",
             "row_dates": []
           }
         }
