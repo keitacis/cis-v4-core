@@ -1,25 +1,23 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-08T23:22:32.178138+09:00",
-    "checked_count": 4,
-    "regen_count": 2,
-    "recovered_count": 2,
+    "generated_at_jst": "2026-09-09T00:03:14.684718+09:00",
+    "checked_count": 0,
+    "regen_count": 0,
+    "recovered_count": 0,
     "failed_count": 0,
     "decisions": [
       {
         "task": "daily_us",
         "stem": "daily_us",
         "label": "米国株日次騰落",
-        "checked": true,
-        "needs_regen": true,
-        "reasons": [
-          "US価格日付が想定2026-09-07より古い：['2026-09-04']"
-        ],
+        "checked": false,
+        "needs_regen": false,
+        "reason": "判定前：JST 9:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-08T17:00:01.525770+09:00",
+        "generated_at_jst_before": "2026-09-08T23:22:22.754539+09:00",
         "row_dates": [
-          "2026-09-04"
+          "2026-09-08"
         ],
         "expected_price_dates": {
           "US": "2026-09-07"
@@ -124,15 +122,13 @@
         "task": "buy_alert_us",
         "stem": "buy_alert",
         "label": "買い場アラート（米国価格）",
-        "checked": true,
-        "needs_regen": true,
-        "reasons": [
-          "US価格日付が想定2026-09-07より古い：['2026-09-04']"
-        ],
+        "checked": false,
+        "needs_regen": false,
+        "reason": "判定前：JST 10:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-08T17:00:08.212255+09:00",
+        "generated_at_jst_before": "2026-09-08T23:22:30.974600+09:00",
         "row_dates": [
-          "2026-09-04"
+          "2026-09-08"
         ],
         "expected_price_dates": {
           "US": "2026-09-07"
@@ -237,9 +233,9 @@
         "task": "daily_jp",
         "stem": "daily_jp",
         "label": "日本株日次騰落",
-        "checked": true,
+        "checked": false,
         "needs_regen": false,
-        "reasons": [],
+        "reason": "判定前：JST 19:00 以降に確認",
         "status_before": "ok",
         "generated_at_jst_before": "2026-09-08T22:49:40.590709+09:00",
         "row_dates": [
@@ -348,9 +344,9 @@
         "task": "buy_alert_jp",
         "stem": "buy_alert",
         "label": "買い場アラート（日本価格）",
-        "checked": true,
+        "checked": false,
         "needs_regen": false,
-        "reasons": [],
+        "reason": "判定前：JST 19:00 以降に確認",
         "status_before": "partial",
         "generated_at_jst_before": "2026-09-08T23:22:30.974600+09:00",
         "row_dates": [
@@ -458,36 +454,6 @@
     ],
     "executed": [
       {
-        "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_daily_us.py",
-        "returncode": 0,
-        "stdout_tail": "",
-        "stderr_tail": "",
-        "task": "daily_us",
-        "label": "米国株日次騰落",
-        "status_after": {
-          "status": "partial",
-          "generated_at_jst": "2026-09-08T23:22:22.754539+09:00",
-          "row_dates": [
-            "2026-09-08"
-          ]
-        }
-      },
-      {
-        "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_buy_alert.py",
-        "returncode": 0,
-        "stdout_tail": "",
-        "stderr_tail": "",
-        "task": "buy_alert_us",
-        "label": "買い場アラート（米国価格）",
-        "status_after": {
-          "status": "partial",
-          "generated_at_jst": "2026-09-08T23:22:30.974600+09:00",
-          "row_dates": [
-            "2026-09-08"
-          ]
-        }
-      },
-      {
         "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
         "returncode": 0,
         "stdout_tail": "",
@@ -496,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-08T23:22:32.093561+09:00",
+          "generated_at_jst": "2026-09-09T00:03:14.559765+09:00",
           "row_dates": []
         }
       }
@@ -507,15 +473,13 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "US価格日付が想定2026-09-07より古い：['2026-09-04']"
-      ],
+      "checked": false,
+      "needs_regen": false,
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-08T17:00:01.525770+09:00",
+      "generated_at_jst_before": "2026-09-08T23:22:22.754539+09:00",
       "row_dates": [
-        "2026-09-04"
+        "2026-09-08"
       ],
       "expected_price_dates": {
         "US": "2026-09-07"
@@ -620,15 +584,13 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "US価格日付が想定2026-09-07より古い：['2026-09-04']"
-      ],
+      "checked": false,
+      "needs_regen": false,
+      "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-08T17:00:08.212255+09:00",
+      "generated_at_jst_before": "2026-09-08T23:22:30.974600+09:00",
       "row_dates": [
-        "2026-09-04"
+        "2026-09-08"
       ],
       "expected_price_dates": {
         "US": "2026-09-07"
@@ -733,9 +695,9 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "ok",
       "generated_at_jst_before": "2026-09-08T22:49:40.590709+09:00",
       "row_dates": [
@@ -844,9 +806,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
       "generated_at_jst_before": "2026-09-08T23:22:30.974600+09:00",
       "row_dates": [
@@ -954,36 +916,6 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_daily_us.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "",
-      "task": "daily_us",
-      "label": "米国株日次騰落",
-      "status_after": {
-        "status": "partial",
-        "generated_at_jst": "2026-09-08T23:22:22.754539+09:00",
-        "row_dates": [
-          "2026-09-08"
-        ]
-      }
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_buy_alert.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "",
-      "task": "buy_alert_us",
-      "label": "買い場アラート（米国価格）",
-      "status_after": {
-        "status": "partial",
-        "generated_at_jst": "2026-09-08T23:22:30.974600+09:00",
-        "row_dates": [
-          "2026-09-08"
-        ]
-      }
-    },
-    {
       "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -992,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-08T23:22:32.093561+09:00",
+        "generated_at_jst": "2026-09-09T00:03:14.559765+09:00",
         "row_dates": []
       }
     }
