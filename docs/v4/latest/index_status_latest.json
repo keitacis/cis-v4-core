@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-08T09:27:09.941002+09:00",
+  "generated_at_jst": "2026-09-08T10:14:40.211702+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
-      "generated_at_jst": "2026-09-08T09:25:37.002457+09:00",
+      "status": "stale",
+      "generated_at_jst": "2026-09-08T10:14:39.761092+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-07",
       "expected_jp_price_date": "2026-09-07",
@@ -127,7 +127,12 @@
       "warnings": [
         "価格日付が古い銘柄があります：48銘柄（想定：米国 2026-09-07 / 日本 2026-09-07）",
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "買い場アラートの米国価格が自動更新予定後も未更新 / US価格日付が想定2026-09-07より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_us": {
       "status": "stale",
