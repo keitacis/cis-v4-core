@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-08T14:51:49.995439+09:00",
+  "generated_at_jst": "2026-09-08T17:00:09.168650+09:00",
   "checked_count": 2,
   "regen_count": 2,
   "recovered_count": 2,
@@ -16,7 +16,7 @@
         "US価格日付が想定2026-09-07より古い：['2026-09-04']"
       ],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-08T10:25:32.712911+09:00",
+      "generated_at_jst_before": "2026-09-08T14:51:42.437413+09:00",
       "row_dates": [
         "2026-09-04"
       ],
@@ -129,7 +129,7 @@
         "US価格日付が想定2026-09-07より古い：['2026-09-04']"
       ],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-08T13:49:38.491689+09:00",
+      "generated_at_jst_before": "2026-09-08T14:51:48.974375+09:00",
       "row_dates": [
         "2026-09-04"
       ],
@@ -245,7 +245,7 @@
         "2026-09-07"
       ],
       "expected_price_dates": {
-        "JP": "2026-09-07"
+        "JP": "2026-09-08"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -351,12 +351,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-08T14:51:48.974375+09:00",
+      "generated_at_jst_before": "2026-09-08T17:00:08.212255+09:00",
       "row_dates": [
         "2026-09-08"
       ],
       "expected_price_dates": {
-        "JP": "2026-09-07"
+        "JP": "2026-09-08"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -465,7 +465,7 @@
       "label": "米国株日次騰落",
       "status_after": {
         "status": "partial",
-        "generated_at_jst": "2026-09-08T14:51:42.437413+09:00",
+        "generated_at_jst": "2026-09-08T17:00:01.525770+09:00",
         "row_dates": [
           "2026-09-04"
         ]
@@ -480,7 +480,7 @@
       "label": "買い場アラート（米国価格）",
       "status_after": {
         "status": "partial",
-        "generated_at_jst": "2026-09-08T14:51:48.974375+09:00",
+        "generated_at_jst": "2026-09-08T17:00:08.212255+09:00",
         "row_dates": [
           "2026-09-04"
         ]
@@ -495,7 +495,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-08T14:51:49.915521+09:00",
+        "generated_at_jst": "2026-09-08T17:00:09.075557+09:00",
         "row_dates": []
       }
     }
