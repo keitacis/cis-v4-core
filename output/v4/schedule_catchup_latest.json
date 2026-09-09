@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-09T14:53:57.222511+09:00",
+    "generated_at_jst": "2026-09-09T17:03:35.194090+09:00",
     "checked_count": 2,
     "regen_count": 0,
     "recovered_count": 0,
@@ -242,7 +242,7 @@
           "2026-09-08"
         ],
         "expected_price_dates": {
-          "JP": "2026-09-08"
+          "JP": "2026-09-09"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -353,7 +353,7 @@
           "2026-09-09"
         ],
         "expected_price_dates": {
-          "JP": "2026-09-08"
+          "JP": "2026-09-09"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -462,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-09T14:53:57.150426+09:00",
+          "generated_at_jst": "2026-09-09T17:03:35.094488+09:00",
           "row_dates": []
         }
       }
@@ -704,7 +704,7 @@
         "2026-09-08"
       ],
       "expected_price_dates": {
-        "JP": "2026-09-08"
+        "JP": "2026-09-09"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -815,7 +815,7 @@
         "2026-09-09"
       ],
       "expected_price_dates": {
-        "JP": "2026-09-08"
+        "JP": "2026-09-09"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -924,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-09T14:53:57.150426+09:00",
+        "generated_at_jst": "2026-09-09T17:03:35.094488+09:00",
         "row_dates": []
       }
     }
