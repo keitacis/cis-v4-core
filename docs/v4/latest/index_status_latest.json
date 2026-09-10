@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-10T23:56:53.627330+09:00",
+  "generated_at_jst": "2026-09-11T07:26:07.848981+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,9 +81,9 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-09-10T10:27:56.347035+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
-      "expected_price_date": "2026-09-09",
+      "generated_at_jst": "2026-09-11T07:26:07.333468+09:00",
+      "message": "",
+      "expected_price_date": "2026-09-10",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -97,62 +97,55 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "DDOG",
-        "META",
-        "FICO",
-        "QCOM",
-        "ISRG",
-        "COHR",
-        "TMO",
-        "AEM",
-        "AUR",
-        "V",
-        "APH",
-        "DIS",
-        "DKNG",
-        "AXTI",
-        "ANET",
-        "SNOW",
-        "ZETA",
-        "NBIS",
-        "VRTX",
-        "VEEV",
-        "HSAI",
-        "ETN",
-        "PYPL",
-        "TMDX",
-        "NOW",
-        "TRMB",
-        "CRSP",
-        "SPGI",
-        "MELI",
-        "MSTR",
-        "AXON",
-        "AAOI",
-        "PL",
-        "OUST",
-        "RGTI",
-        "POET",
-        "SDGR",
-        "TEM",
-        "RDW",
         "AVAV",
-        "IONQ",
-        "BEAM",
-        "RXRX",
+        "PYPL",
+        "ISRG",
+        "MELI",
+        "RDW",
+        "DIS",
+        "ZETA",
+        "QCOM",
+        "DKNG",
+        "VEEV",
+        "NOW",
+        "V",
+        "TMO",
+        "RGTI",
+        "SNOW",
         "KVYO",
-        "ASPI"
+        "TRMB",
+        "VRTX",
+        "APH",
+        "META",
+        "ETN",
+        "TMDX",
+        "DDOG",
+        "RXRX",
+        "SPGI",
+        "ANET",
+        "SDGR",
+        "CRSP",
+        "AXON",
+        "FICO",
+        "AUR",
+        "OUST",
+        "AEM",
+        "PL",
+        "MSTR",
+        "BEAM",
+        "COHR",
+        "IONQ",
+        "TEM",
+        "AAOI",
+        "HSAI",
+        "POET",
+        "NBIS",
+        "ASPI",
+        "AXTI"
       ],
       "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
-        "価格未更新：米国株の価格日付が想定取引日 2026-09-09 より古いです。",
         "TradingViewスナップショットの鮮度注意：45銘柄"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-09-10T09:17:16.186588+09:00",
-      "degraded_attempt_stem": "daily_us_degraded_attempt"
+      ]
     },
     "daily_jp": {
       "status": "ok",
@@ -169,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-10T23:16:02.646169+09:00",
+      "generated_at_jst": "2026-09-10T23:56:53.693936+09:00",
       "checked_count": 4,
       "regen_count": 0,
       "recovered_count": 0,
@@ -630,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-10T23:16:02.544265+09:00",
+            "generated_at_jst": "2026-09-10T23:56:53.627330+09:00",
             "row_dates": []
           }
         }
@@ -717,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 67.1
+      "stale_age_days": 67.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -751,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 67.1
+      "stale_age_days": 67.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -801,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 66.1
+      "stale_age_days": 66.4
     },
     "master_update": {
       "status": "stale",
@@ -809,7 +802,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 65.1
+      "stale_age_days": 65.4
     },
     "monthly_maintenance": {
       "status": "partial",
