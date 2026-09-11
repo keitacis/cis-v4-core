@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-11T23:57:25.891857+09:00",
-  "checked_count": 4,
+  "generated_at_jst": "2026-09-12T08:07:05.140079+09:00",
+  "checked_count": 0,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,16 +10,16 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-11T10:28:57.408896+09:00",
+      "generated_at_jst_before": "2026-09-12T07:25:38.111415+09:00",
       "row_dates": [
-        "2026-09-10"
+        "2026-09-11"
       ],
       "expected_price_dates": {
-        "US": "2026-09-10"
+        "US": "2026-09-11"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -121,16 +121,16 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "partial",
       "generated_at_jst_before": "2026-09-11T13:50:16.131936+09:00",
       "row_dates": [
         "2026-09-10"
       ],
       "expected_price_dates": {
-        "US": "2026-09-10"
+        "US": "2026-09-11"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -232,9 +232,9 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "ok",
       "generated_at_jst_before": "2026-09-11T22:47:56.621000+09:00",
       "row_dates": [
@@ -343,9 +343,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定対象外曜日：weekday=5",
       "status_before": "partial",
       "generated_at_jst_before": "2026-09-11T13:50:16.131936+09:00",
       "row_dates": [
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-11T23:57:25.800219+09:00",
+        "generated_at_jst": "2026-09-12T08:07:05.053773+09:00",
         "row_dates": []
       }
     }
