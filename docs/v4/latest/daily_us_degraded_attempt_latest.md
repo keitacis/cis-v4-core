@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/09/11 10:28 JST
-想定価格日付：2026-09-10
+生成日時：2026/09/12 09:20 JST
+想定価格日付：2026-09-11
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-10 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-11 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-10 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-11 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-DDOG, META, FICO, KITT, QCOM, ISRG, COHR, EWY, TMO, AEM, AUR, V, APH, DIS, DKNG, AXTI, ANET, SNOW, ZETA, NBIS, VRTX, VEEV, HSAI, ETN, PYPL, OPTX, TMDX, NOW, TRMB, CRSP, SPGI, MELI, MSTR, AXON, AAOI, PL, OUST, RGTI, POET, SDGR, TEM, RDW, AVAV, IONQ, BEAM, RXRX, KVYO, ASPI
+AVAV, PYPL, ISRG, MELI, RDW, DIS, ZETA, QCOM, DKNG, VEEV, NOW, V, TMO, RGTI, SNOW, KVYO, TRMB, VRTX, APH, META, ETN, TMDX, DDOG, RXRX, SPGI, ANET, SDGR, CRSP, AXON, FICO, AUR, OUST, AEM, PL, MSTR, BEAM, COHR, IONQ, TEM, EWY, OPTX, AAOI, HSAI, POET, NBIS, ASPI, AXTI, KITT
