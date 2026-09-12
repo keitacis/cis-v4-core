@@ -1,8 +1,8 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-12T08:07:05.140079+09:00",
-    "checked_count": 0,
+    "generated_at_jst": "2026-09-12T14:38:34.038181+09:00",
+    "checked_count": 1,
     "regen_count": 0,
     "recovered_count": 0,
     "failed_count": 0,
@@ -11,11 +11,11 @@
         "task": "daily_us",
         "stem": "daily_us",
         "label": "米国株日次騰落",
-        "checked": false,
+        "checked": true,
         "needs_regen": false,
-        "reason": "判定前：JST 9:00 以降に確認",
+        "reasons": [],
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-12T07:25:38.111415+09:00",
+        "generated_at_jst_before": "2026-09-12T10:33:26.990628+09:00",
         "row_dates": [
           "2026-09-11"
         ],
@@ -25,6 +25,24 @@
         "recent_workflow_runs": {
           "available": true,
           "runs": [
+            {
+              "event": "schedule",
+              "status": "completed",
+              "conclusion": "success",
+              "created_at": "2026-09-12T01:33:08Z",
+              "run_started_at": "2026-09-12T01:33:08Z",
+              "updated_at": "2026-09-12T01:33:30Z",
+              "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34665158828"
+            },
+            {
+              "event": "schedule",
+              "status": "completed",
+              "conclusion": "success",
+              "created_at": "2026-09-12T00:20:16Z",
+              "run_started_at": "2026-09-12T00:20:16Z",
+              "updated_at": "2026-09-12T00:20:41Z",
+              "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34661284968"
+            },
             {
               "event": "schedule",
               "status": "completed",
@@ -96,24 +114,6 @@
               "run_started_at": "2026-09-08T00:26:38Z",
               "updated_at": "2026-09-08T00:27:15Z",
               "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34173327421"
-            },
-            {
-              "event": "schedule",
-              "status": "completed",
-              "conclusion": "success",
-              "created_at": "2026-09-05T01:24:27Z",
-              "run_started_at": "2026-09-05T01:24:27Z",
-              "updated_at": "2026-09-05T01:24:59Z",
-              "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/33936064725"
-            },
-            {
-              "event": "schedule",
-              "status": "completed",
-              "conclusion": "success",
-              "created_at": "2026-09-05T00:08:05Z",
-              "run_started_at": "2026-09-05T00:08:05Z",
-              "updated_at": "2026-09-05T00:08:39Z",
-              "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/33931956610"
             }
           ]
         }
@@ -462,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-12T08:07:05.053773+09:00",
+          "generated_at_jst": "2026-09-12T14:38:33.952098+09:00",
           "row_dates": []
         }
       }
@@ -473,11 +473,11 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
+      "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-12T07:25:38.111415+09:00",
+      "generated_at_jst_before": "2026-09-12T10:33:26.990628+09:00",
       "row_dates": [
         "2026-09-11"
       ],
@@ -487,6 +487,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-09-12T01:33:08Z",
+            "run_started_at": "2026-09-12T01:33:08Z",
+            "updated_at": "2026-09-12T01:33:30Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34665158828"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-09-12T00:20:16Z",
+            "run_started_at": "2026-09-12T00:20:16Z",
+            "updated_at": "2026-09-12T00:20:41Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34661284968"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -558,24 +576,6 @@
             "run_started_at": "2026-09-08T00:26:38Z",
             "updated_at": "2026-09-08T00:27:15Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/34173327421"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-09-05T01:24:27Z",
-            "run_started_at": "2026-09-05T01:24:27Z",
-            "updated_at": "2026-09-05T01:24:59Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/33936064725"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-09-05T00:08:05Z",
-            "run_started_at": "2026-09-05T00:08:05Z",
-            "updated_at": "2026-09-05T00:08:39Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/33931956610"
           }
         ]
       }
@@ -924,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-12T08:07:05.053773+09:00",
+        "generated_at_jst": "2026-09-12T14:38:33.952098+09:00",
         "row_dates": []
       }
     }
