@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-15T01:17:44.015188+09:00",
+    "generated_at_jst": "2026-09-15T01:55:50.402567+09:00",
     "checked_count": 0,
     "regen_count": 0,
     "recovered_count": 0,
@@ -462,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-15T01:17:43.890783+09:00",
+          "generated_at_jst": "2026-09-15T01:55:50.317285+09:00",
           "row_dates": []
         }
       }
@@ -924,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-15T01:17:43.890783+09:00",
+        "generated_at_jst": "2026-09-15T01:55:50.317285+09:00",
         "row_dates": []
       }
     }
