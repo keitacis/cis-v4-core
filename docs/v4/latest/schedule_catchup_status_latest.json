@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-15T01:55:50.402567+09:00",
+  "generated_at_jst": "2026-09-15T08:46:51.578639+09:00",
   "checked_count": 0,
   "regen_count": 0,
   "recovered_count": 0,
@@ -14,12 +14,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-12T10:33:26.990628+09:00",
+      "generated_at_jst_before": "2026-09-15T07:26:10.580900+09:00",
       "row_dates": [
-        "2026-09-11"
+        "2026-09-14"
       ],
       "expected_price_dates": {
-        "US": "2026-09-11"
+        "US": "2026-09-14"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -125,12 +125,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-14T14:06:42.184777+09:00",
+      "generated_at_jst_before": "2026-09-15T08:25:35.781631+09:00",
       "row_dates": [
-        "2026-09-11"
+        "2026-09-14"
       ],
       "expected_price_dates": {
-        "US": "2026-09-11"
+        "US": "2026-09-14"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -347,7 +347,7 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-14T14:06:42.184777+09:00",
+      "generated_at_jst_before": "2026-09-15T08:25:35.781631+09:00",
       "row_dates": [
         "2026-09-14"
       ],
@@ -461,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-15T01:55:50.317285+09:00",
+        "generated_at_jst": "2026-09-15T08:46:51.498242+09:00",
         "row_dates": []
       }
     }
