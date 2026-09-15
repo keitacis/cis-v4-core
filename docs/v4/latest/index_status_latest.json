@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-16T07:25:45.608814+09:00",
+  "generated_at_jst": "2026-09-16T08:25:41.429015+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-15T14:02:14.235876+09:00",
+      "generated_at_jst": "2026-09-16T08:25:40.894117+09:00",
       "message": "",
-      "expected_us_price_date": "2026-09-14",
-      "expected_jp_price_date": "2026-09-14",
+      "expected_us_price_date": "2026-09-15",
+      "expected_jp_price_date": "2026-09-15",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
@@ -19,8 +19,8 @@
       "strong_buy_count": 1,
       "main_buy_count": 2,
       "watch_buy_count": 10,
-      "near_buy_count": 3,
-      "display_count": 16,
+      "near_buy_count": 4,
+      "display_count": 17,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 72.4
+      "stale_age_days": 72.5
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 72.4
+      "stale_age_days": 72.5
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 71.4
+      "stale_age_days": 71.5
     },
     "master_update": {
       "status": "stale",
