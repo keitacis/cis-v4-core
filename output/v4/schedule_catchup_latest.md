@@ -1,46 +1,46 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/16 08:28 JST
+生成日時：2026/09/16 14:54 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
-- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
+- ✅ 米国株日次騰落：最新扱い
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-16T08:28:29.439717+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-16T14:54:34.915711+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-09-16T07:25:45.031897+09:00
+- generated_at_before：2026-09-16T10:40:22.759258+09:00
 - expected_price_dates：{'US': '2026-09-15'}
 - row_dates：['2026-09-15']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T01:39:46Z / updated=2026-09-16T01:40:28Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T00:24:38Z / updated=2026-09-16T00:25:05Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T01:53:33Z / updated=2026-09-15T01:53:59Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T00:40:38Z / updated=2026-09-15T00:41:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-12T01:33:08Z / updated=2026-09-12T01:33:30Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-12T00:20:16Z / updated=2026-09-12T00:20:41Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-11T01:28:20Z / updated=2026-09-11T01:29:01Z
 
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-09-16T08:25:40.894117+09:00
+- generated_at_before：2026-09-16T13:57:21.334694+09:00
 - expected_price_dates：{'US': '2026-09-15'}
 - row_dates：['2026-09-15']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T04:56:51Z / updated=2026-09-16T04:57:26Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T01:28:04Z / updated=2026-09-16T01:28:36Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T05:01:43Z / updated=2026-09-15T05:02:19Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T01:32:35Z / updated=2026-09-15T01:33:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-14T05:06:14Z / updated=2026-09-14T05:06:46Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-14T01:11:31Z / updated=2026-09-14T01:12:06Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-11T04:49:39Z / updated=2026-09-11T04:50:21Z
 
 ### 日本株日次騰落
 
@@ -58,12 +58,12 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-09-16T08:25:40.894117+09:00
+- generated_at_before：2026-09-16T13:57:21.334694+09:00
 - expected_price_dates：{'JP': '2026-09-15'}
-- row_dates：['2026-09-15']
+- row_dates：['2026-09-16']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T04:56:51Z / updated=2026-09-16T04:57:26Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-16T01:28:04Z / updated=2026-09-16T01:28:36Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T05:01:43Z / updated=2026-09-15T05:02:19Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-15T01:32:35Z / updated=2026-09-15T01:33:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-14T05:06:14Z / updated=2026-09-14T05:06:46Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-14T01:11:31Z / updated=2026-09-14T01:12:06Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-11T04:49:39Z / updated=2026-09-11T04:50:21Z
