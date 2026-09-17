@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-17T17:34:32.423786+09:00",
+  "generated_at_jst": "2026-09-17T18:25:28.864552+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -179,9 +179,9 @@
     },
     "daily_jp": {
       "status": "ok",
-      "generated_at_jst": "2026-09-16T23:20:41.303349+09:00",
+      "generated_at_jst": "2026-09-17T18:25:28.337442+09:00",
       "message": "",
-      "expected_price_date": "2026-09-16",
+      "expected_price_date": "2026-09-17",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
@@ -192,7 +192,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-17T15:01:49.582578+09:00",
+      "generated_at_jst": "2026-09-17T17:34:32.506789+09:00",
       "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
@@ -654,7 +654,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-17T15:01:49.505912+09:00",
+            "generated_at_jst": "2026-09-17T17:34:32.423786+09:00",
             "row_dates": []
           }
         }
@@ -825,7 +825,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 72.8
+      "stale_age_days": 72.9
     },
     "master_update": {
       "status": "stale",
@@ -833,7 +833,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 71.8
+      "stale_age_days": 71.9
     },
     "monthly_maintenance": {
       "status": "partial",
