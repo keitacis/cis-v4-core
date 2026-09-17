@@ -1,26 +1,55 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-17T09:34:58.656716+09:00",
+  "generated_at_jst": "2026-09-17T10:30:17.322860+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-17T08:25:32.980716+09:00",
+      "generated_at_jst": "2026-09-17T10:30:16.833900+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-16",
       "expected_jp_price_date": "2026-09-16",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
-      "price_stale_count": 0,
-      "price_stale_symbols": [],
-      "market_closed_count": 0,
+      "price_stale_count": 28,
+      "price_stale_symbols": [
+        "AUR",
+        "TMDX",
+        "NOW",
+        "RDW",
+        "VEEV",
+        "PYPL",
+        "TEM",
+        "AAOI",
+        "OUST",
+        "ASPI",
+        "NBIS",
+        "META",
+        "IONQ",
+        "RGTI",
+        "SDGR",
+        "RXRX",
+        "HSAI",
+        "PL",
+        "KVYO",
+        "DKNG",
+        "CRSP",
+        "BEAM",
+        "KITT",
+        "ANET",
+        "DDOG",
+        "SNOW",
+        "OPTX",
+        "ZETA"
+      ],
+      "market_closed_count": 28,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
       "strong_buy_count": 1,
-      "main_buy_count": 2,
-      "watch_buy_count": 9,
+      "main_buy_count": 1,
+      "watch_buy_count": 4,
       "near_buy_count": 4,
-      "display_count": 16,
+      "display_count": 10,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -76,6 +105,7 @@
         "ZETA"
       ],
       "warnings": [
+        "価格日付が古い銘柄があります：28銘柄（想定：米国 2026-09-16 / 日本 2026-09-16）",
         "TradingView鮮度注意：45銘柄"
       ]
     },
@@ -717,7 +747,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 73.5
+      "stale_age_days": 73.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -751,7 +781,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 73.5
+      "stale_age_days": 73.6
     },
     "watchlist_template": {
       "status": "ok",
@@ -801,7 +831,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 72.5
+      "stale_age_days": 72.6
     },
     "master_update": {
       "status": "stale",
