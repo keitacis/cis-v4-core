@@ -1,18 +1,18 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/21 17:50 JST
+生成日時：2026/09/22 01:23 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=0）
-- ✅ 買い場アラート（米国価格）：最新扱い
+- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
+- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-21T17:50:03.492167+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-22T01:23:31.125160+09:00 / dates=[]
 
 ## 詳細
 
@@ -32,7 +32,7 @@
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-09-21T14:07:19.948711+09:00
+- generated_at_before：2026-09-21T20:25:36.091007+09:00
 - expected_price_dates：{'US': '2026-09-18'}
 - row_dates：['2026-09-18']
 - recent_workflow_runs_available：True
@@ -44,21 +44,21 @@
 
 ### 日本株日次騰落
 
-- status_before：ok
-- generated_at_before：2026-09-18T22:47:32.203665+09:00
+- status_before：partial
+- generated_at_before：2026-09-22T00:59:56.354976+09:00
 - expected_price_dates：{'JP': '2026-09-21'}
 - row_dates：['2026-09-18']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-09-21T15:59:35Z / updated=2026-09-21T16:00:02Z
+  - event=schedule / status=completed / conclusion=success / started=2026-09-21T15:17:53Z / updated=2026-09-21T15:18:29Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-18T13:47:06Z / updated=2026-09-18T13:47:38Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-18T13:07:21Z / updated=2026-09-18T13:08:05Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-17T14:25:11Z / updated=2026-09-17T14:25:39Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-17T13:44:32Z / updated=2026-09-17T13:44:59Z
-  - event=schedule / status=completed / conclusion=success / started=2026-09-16T14:20:14Z / updated=2026-09-16T14:20:48Z
 
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-09-21T14:07:19.948711+09:00
+- generated_at_before：2026-09-21T20:25:36.091007+09:00
 - expected_price_dates：{'JP': '2026-09-21'}
 - row_dates：['2026-09-18']
 - recent_workflow_runs_available：True
