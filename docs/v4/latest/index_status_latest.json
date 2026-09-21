@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-21T08:25:32.544900+09:00",
+  "generated_at_jst": "2026-09-21T10:11:42.188015+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-21T08:25:32.029912+09:00",
+      "generated_at_jst": "2026-09-21T10:11:41.786504+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-18",
       "expected_jp_price_date": "2026-09-18",
@@ -833,7 +833,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 75.4
+      "stale_age_days": 75.5
     },
     "monthly_maintenance": {
       "status": "partial",
