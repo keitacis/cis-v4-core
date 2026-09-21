@@ -1,26 +1,52 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-21T17:50:03.492167+09:00",
+  "generated_at_jst": "2026-09-21T18:25:34.464794+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-21T14:07:19.948711+09:00",
+      "generated_at_jst": "2026-09-21T18:25:33.949522+09:00",
       "message": "",
       "expected_us_price_date": "2026-09-18",
-      "expected_jp_price_date": "2026-09-18",
+      "expected_jp_price_date": "2026-09-21",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
-      "price_stale_count": 0,
-      "price_stale_symbols": [],
-      "market_closed_count": 0,
+      "price_stale_count": 25,
+      "price_stale_symbols": [
+        "7974",
+        "6383",
+        "5401",
+        "4901",
+        "3407",
+        "3402",
+        "3405",
+        "2871",
+        "8601",
+        "8410",
+        "6902",
+        "6758",
+        "5020",
+        "4063",
+        "4042",
+        "1911",
+        "1928",
+        "6326",
+        "7267",
+        "6501",
+        "9861",
+        "7821",
+        "1377",
+        "6287",
+        "4368"
+      ],
+      "market_closed_count": 25,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
       "strong_buy_count": 1,
-      "main_buy_count": 2,
-      "watch_buy_count": 8,
-      "near_buy_count": 4,
-      "display_count": 15,
+      "main_buy_count": 1,
+      "watch_buy_count": 7,
+      "near_buy_count": 1,
+      "display_count": 10,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -76,6 +102,7 @@
         "ZETA"
       ],
       "warnings": [
+        "価格日付が古い銘柄があります：25銘柄（想定：米国 2026-09-18 / 日本 2026-09-21）",
         "TradingView鮮度注意：45銘柄"
       ]
     },
@@ -178,9 +205,9 @@
       ]
     },
     "daily_jp": {
-      "status": "ok",
-      "generated_at_jst": "2026-09-18T22:47:32.203665+09:00",
-      "message": "",
+      "status": "partial",
+      "generated_at_jst": "2026-09-21T18:25:27.052505+09:00",
+      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-09-18",
       "price_success_count": 25,
       "price_missing_count": 0,
@@ -188,11 +215,19 @@
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": []
+      "warnings": [
+        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
+        "価格未更新：日本株の価格日付が想定取引日 2026-09-21 より古いです。"
+      ],
+      "degradation_guard_triggered": true,
+      "degradation_guard_version": "R12.3",
+      "degradation_guard_source_status": "price_stale",
+      "retained_latest_generated_at_jst": "2026-09-18T22:47:32.203665+09:00",
+      "degraded_attempt_stem": "daily_jp_degraded_attempt"
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-21T15:10:05.900805+09:00",
+      "generated_at_jst": "2026-09-21T17:50:03.606475+09:00",
       "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
@@ -654,7 +689,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-21T15:10:05.824356+09:00",
+            "generated_at_jst": "2026-09-21T17:50:03.492167+09:00",
             "row_dates": []
           }
         }
@@ -833,7 +868,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 75.8
+      "stale_age_days": 75.9
     },
     "monthly_maintenance": {
       "status": "partial",
