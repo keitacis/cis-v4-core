@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-21T14:07:20.493322+09:00",
+  "generated_at_jst": "2026-09-21T15:10:05.824356+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -741,7 +741,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 77.7
+      "stale_age_days": 77.8
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -775,7 +775,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 77.7
+      "stale_age_days": 77.8
     },
     "watchlist_template": {
       "status": "ok",
