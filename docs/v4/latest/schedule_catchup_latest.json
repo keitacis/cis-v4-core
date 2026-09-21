@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-09-22T01:58:16.857761+09:00",
+    "generated_at_jst": "2026-09-22T08:58:33.616255+09:00",
     "checked_count": 0,
     "regen_count": 0,
     "recovered_count": 0,
@@ -15,13 +15,12 @@
         "needs_regen": false,
         "reason": "判定前：JST 9:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-19T10:37:03.112742+09:00",
+        "generated_at_jst_before": "2026-09-22T07:25:32.310533+09:00",
         "row_dates": [
-          "2026-09-17",
-          "2026-09-18"
+          "2026-09-21"
         ],
         "expected_price_dates": {
-          "US": "2026-09-18"
+          "US": "2026-09-21"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -127,12 +126,12 @@
         "needs_regen": false,
         "reason": "判定前：JST 10:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-21T20:25:36.091007+09:00",
+        "generated_at_jst_before": "2026-09-22T08:25:41.393076+09:00",
         "row_dates": [
-          "2026-09-18"
+          "2026-09-21"
         ],
         "expected_price_dates": {
-          "US": "2026-09-18"
+          "US": "2026-09-21"
         },
         "recent_workflow_runs": {
           "available": true,
@@ -349,7 +348,7 @@
         "needs_regen": false,
         "reason": "判定前：JST 19:00 以降に確認",
         "status_before": "partial",
-        "generated_at_jst_before": "2026-09-21T20:25:36.091007+09:00",
+        "generated_at_jst_before": "2026-09-22T08:25:41.393076+09:00",
         "row_dates": [
           "2026-09-18"
         ],
@@ -463,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-09-22T01:58:16.749939+09:00",
+          "generated_at_jst": "2026-09-22T08:58:33.527107+09:00",
           "row_dates": []
         }
       }
@@ -478,13 +477,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-19T10:37:03.112742+09:00",
+      "generated_at_jst_before": "2026-09-22T07:25:32.310533+09:00",
       "row_dates": [
-        "2026-09-17",
-        "2026-09-18"
+        "2026-09-21"
       ],
       "expected_price_dates": {
-        "US": "2026-09-18"
+        "US": "2026-09-21"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -590,12 +588,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-21T20:25:36.091007+09:00",
+      "generated_at_jst_before": "2026-09-22T08:25:41.393076+09:00",
       "row_dates": [
-        "2026-09-18"
+        "2026-09-21"
       ],
       "expected_price_dates": {
-        "US": "2026-09-18"
+        "US": "2026-09-21"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -812,7 +810,7 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-21T20:25:36.091007+09:00",
+      "generated_at_jst_before": "2026-09-22T08:25:41.393076+09:00",
       "row_dates": [
         "2026-09-18"
       ],
@@ -926,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-22T01:58:16.749939+09:00",
+        "generated_at_jst": "2026-09-22T08:58:33.527107+09:00",
         "row_dates": []
       }
     }
