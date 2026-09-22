@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/09/19 09:23 JST
-想定価格日付：2026-09-18
+生成日時：2026/09/22 09:52 JST
+想定価格日付：2026-09-21
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-18 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-21 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-18 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-21 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-SDGR, TEM, RXRX, CRSP, IONQ, RGTI, RDW, BEAM, PL, OPTX, AXTI, MSTR, AVAV, NBIS, EWY, ASPI, AEM, ETN, OUST, DDOG, SNOW, QCOM, COHR, AUR, TMO, POET, HSAI, APH, AAOI, META, ANET, VRTX, PYPL, ISRG, TRMB, V, VEEV, SPGI, MELI, NOW, TMDX, KITT, DIS, ZETA, KVYO, FICO, AXON, DKNG
+MSTR, RXRX, AAOI, COHR, POET, ETN, AXTI, KITT, ISRG, NBIS, BEAM, OPTX, TRMB, SPGI, OUST, ANET, TMDX, V, ZETA, EWY, AEM, PYPL, TMO, APH, AXON, CRSP, VEEV, RGTI, VRTX, FICO, SNOW, MELI, AVAV, NOW, HSAI, META, DIS, DDOG, AUR, KVYO, IONQ, TEM, DKNG, PL, SDGR, QCOM, ASPI, RDW
