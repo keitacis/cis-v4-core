@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-23T09:37:45.280358+09:00",
+  "generated_at_jst": "2026-09-23T10:32:25.431806+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-23T08:25:31.613264+09:00",
-      "message": "",
+      "generated_at_jst": "2026-09-23T10:32:24.890644+09:00",
+      "message": "劣化上書き防止：価格未更新の実行結果だったため、buy_alert の正常なlatest本文を保持しました。",
       "expected_us_price_date": "2026-09-22",
       "expected_jp_price_date": "2026-09-22",
       "watchlist_count": 73,
@@ -102,9 +102,15 @@
         "ZETA"
       ],
       "warnings": [
-        "価格日付が古い銘柄があります：25銘柄（想定：米国 2026-09-22 / 日本 2026-09-22）",
+        "劣化上書き防止：価格未更新の実行結果だったため、buy_alert の正常なlatest本文を保持しました。",
+        "価格未更新：全銘柄の価格日付が古いため、通常の買い場判定として扱いません。",
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "degradation_guard_triggered": true,
+      "degradation_guard_version": "R12.3",
+      "degradation_guard_source_status": "price_stale",
+      "retained_latest_generated_at_jst": "2026-09-23T08:25:31.613264+09:00",
+      "degraded_attempt_stem": "buy_alert_degraded_attempt"
     },
     "daily_us": {
       "status": "partial",
@@ -752,7 +758,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 79.5
+      "stale_age_days": 79.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -786,7 +792,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 79.5
+      "stale_age_days": 79.6
     },
     "watchlist_template": {
       "status": "ok",
@@ -836,7 +842,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 78.5
+      "stale_age_days": 78.6
     },
     "master_update": {
       "status": "stale",
