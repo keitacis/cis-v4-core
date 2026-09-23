@@ -1,9 +1,9 @@
 {
   "schema_version": "r11.2",
   "status": "ok",
-  "generated_at_jst": "2026-09-23T18:25:29.720850+09:00",
-  "finished_at_jst": "2026-09-23T18:25:45.764540+09:00",
-  "timestamp_jst": "2026-09-23T18:25:29.720850+09:00",
+  "generated_at_jst": "2026-09-23T19:25:26.773104+09:00",
+  "finished_at_jst": "2026-09-23T19:25:37.648038+09:00",
+  "timestamp_jst": "2026-09-23T19:25:26.773104+09:00",
   "mode": "auto",
   "source": "cron-job.org-evening",
   "planned_scripts": [
@@ -14,13 +14,13 @@
   "steps": [
     {
       "script": "scripts/cis_v4/cis_daily_jp.py",
-      "started_at_jst": "2026-09-23T18:25:29.722189+09:00",
+      "started_at_jst": "2026-09-23T19:25:26.774554+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python",
         "scripts/cis_v4/cis_daily_jp.py"
       ],
-      "finished_at_jst": "2026-09-23T18:25:35.261136+09:00",
-      "duration_seconds": 5.539,
+      "finished_at_jst": "2026-09-23T19:25:30.754968+09:00",
+      "duration_seconds": 3.98,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -28,13 +28,13 @@
     },
     {
       "script": "scripts/cis_v4/cis_buy_alert.py",
-      "started_at_jst": "2026-09-23T18:25:35.261176+09:00",
+      "started_at_jst": "2026-09-23T19:25:30.755008+09:00",
       "cmd": [
         "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python",
         "scripts/cis_v4/cis_buy_alert.py"
       ],
-      "finished_at_jst": "2026-09-23T18:25:45.764502+09:00",
-      "duration_seconds": 10.503,
+      "finished_at_jst": "2026-09-23T19:25:37.648003+09:00",
+      "duration_seconds": 6.893,
       "exit_code": 0,
       "ok": true,
       "stdout_tail": "",
@@ -61,13 +61,15 @@
       "stem": "daily_jp",
       "market": "JP",
       "status": "partial",
-      "generated_at_jst": "2026-09-22T23:39:49.354999+09:00",
+      "generated_at_jst": "2026-09-23T18:25:35.157684+09:00",
       "expected_price_date": "2026-09-23",
       "row_dates": [
         "2026-09-18"
       ],
       "min_hour_jst": 18,
-      "stale_reason": "not_generated_today"
+      "row_count": 25,
+      "dated_row_count": 25,
+      "stale_reason": "row_dates_lt_expected"
     },
     {
       "label": "買い場アラート（日本価格）",
@@ -76,7 +78,7 @@
       "stem": "buy_alert",
       "market": "JP",
       "status": "partial",
-      "generated_at_jst": "2026-09-23T13:53:07.517027+09:00",
+      "generated_at_jst": "2026-09-23T18:25:45.662470+09:00",
       "expected_price_date": "2026-09-23",
       "row_dates": [
         "2026-09-18"

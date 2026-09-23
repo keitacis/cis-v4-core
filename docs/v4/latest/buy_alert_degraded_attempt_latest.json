@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "price_stale",
-    "generated_at_jst": "2026-09-23T18:25:45.656095+09:00",
+    "generated_at_jst": "2026-09-23T19:25:37.569091+09:00",
     "message": "価格未更新：全銘柄の価格日付が古いため、通常の買い場判定として扱いません。",
     "expected_us_price_date": "2026-09-22",
     "expected_jp_price_date": "2026-09-23",
