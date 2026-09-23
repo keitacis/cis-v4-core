@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/09/22 09:52 JST
-想定価格日付：2026-09-21
+生成日時：2026/09/23 09:37 JST
+想定価格日付：2026-09-22
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-21 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-22 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-21 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-22 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-MSTR, RXRX, AAOI, COHR, POET, ETN, AXTI, KITT, ISRG, NBIS, BEAM, OPTX, TRMB, SPGI, OUST, ANET, TMDX, V, ZETA, EWY, AEM, PYPL, TMO, APH, AXON, CRSP, VEEV, RGTI, VRTX, FICO, SNOW, MELI, AVAV, NOW, HSAI, META, DIS, DDOG, AUR, KVYO, IONQ, TEM, DKNG, PL, SDGR, QCOM, ASPI, RDW
+OPTX, AXTI, META, MSTR, QCOM, OUST, RDW, POET, DDOG, HSAI, RGTI, ASPI, EWY, SDGR, NBIS, APH, PL, RXRX, IONQ, AAOI, AUR, CRSP, ZETA, ANET, KVYO, ETN, ISRG, SNOW, MELI, NOW, DIS, COHR, BEAM, TMO, DKNG, TMDX, AXON, AVAV, VRTX, V, VEEV, PYPL, TRMB, TEM, SPGI, AEM, FICO, KITT
