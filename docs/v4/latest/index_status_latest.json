@@ -1,10 +1,10 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-23T10:48:02.914975+09:00",
+  "generated_at_jst": "2026-09-23T13:53:08.045985+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-09-23T10:32:24.890644+09:00",
+      "generated_at_jst": "2026-09-23T13:53:07.517027+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、buy_alert の正常なlatest本文を保持しました。",
       "expected_us_price_date": "2026-09-22",
       "expected_jp_price_date": "2026-09-22",
@@ -109,7 +109,7 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-09-23T08:25:31.613264+09:00",
+      "retained_latest_generated_at_jst": "2026-09-23T10:32:24.890644+09:00",
       "degraded_attempt_stem": "buy_alert_degraded_attempt"
     },
     "daily_us": {
@@ -758,7 +758,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 79.6
+      "stale_age_days": 79.7
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -792,7 +792,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 79.6
+      "stale_age_days": 79.7
     },
     "watchlist_template": {
       "status": "ok",
@@ -842,7 +842,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 78.6
+      "stale_age_days": 78.7
     },
     "master_update": {
       "status": "stale",
@@ -850,7 +850,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 77.5
+      "stale_age_days": 77.7
     },
     "monthly_maintenance": {
       "status": "partial",

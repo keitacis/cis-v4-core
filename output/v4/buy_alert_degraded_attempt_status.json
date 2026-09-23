@@ -1,6 +1,6 @@
 {
   "status": "price_stale",
-  "generated_at_jst": "2026-09-23T10:32:24.884997+09:00",
+  "generated_at_jst": "2026-09-23T13:53:07.511237+09:00",
   "message": "価格未更新：全銘柄の価格日付が古いため、通常の買い場判定として扱いません。",
   "expected_us_price_date": "2026-09-22",
   "expected_jp_price_date": "2026-09-22",
@@ -151,5 +151,5 @@
   ],
   "degradation_guard_attempt": true,
   "guarded_stem": "buy_alert",
-  "stored_at_jst": "2026-09-23T10:32:24.885265+09:00"
+  "stored_at_jst": "2026-09-23T13:53:07.511499+09:00"
 }
