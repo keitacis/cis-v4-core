@@ -1,6 +1,6 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-09-23T19:25:37.575067+09:00",
+  "generated_at_jst": "2026-09-23T20:25:38.526742+09:00",
   "message": "劣化上書き防止：価格未更新の実行結果だったため、buy_alert の正常なlatest本文を保持しました。",
   "expected_us_price_date": "2026-09-22",
   "expected_jp_price_date": "2026-09-22",
@@ -105,6 +105,6 @@
   "degradation_guard_triggered": true,
   "degradation_guard_version": "R12.3",
   "degradation_guard_source_status": "price_stale",
-  "retained_latest_generated_at_jst": "2026-09-23T18:25:45.662470+09:00",
+  "retained_latest_generated_at_jst": "2026-09-23T19:25:37.575067+09:00",
   "degraded_attempt_stem": "buy_alert_degraded_attempt"
 }
