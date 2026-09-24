@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-25T00:47:20.498813+09:00",
+  "generated_at_jst": "2026-09-25T07:25:42.420903+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,15 +81,17 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-09-24T10:39:16.937634+09:00",
+      "generated_at_jst": "2026-09-25T07:25:42.010772+09:00",
       "message": "",
-      "expected_price_date": "2026-09-23",
-      "price_success_count": 48,
-      "price_missing_count": 0,
+      "expected_price_date": "2026-09-24",
+      "price_success_count": 47,
+      "price_missing_count": 1,
       "us_count": 48,
-      "price_stale_count": 0,
-      "price_stale_symbols": [],
-      "market_closed_count": 0,
+      "price_stale_count": 1,
+      "price_stale_symbols": [
+        "KITT"
+      ],
+      "market_closed_count": 1,
       "tv_saved_or_explicit_count": 48,
       "tv_missing_count": 0,
       "tv_no_coverage_count": 2,
@@ -97,53 +99,55 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "KVYO",
-        "IONQ",
-        "VEEV",
-        "OUST",
-        "NOW",
-        "TRMB",
-        "DDOG",
-        "APH",
-        "VRTX",
-        "META",
-        "TMO",
-        "ETN",
-        "SPGI",
-        "AXON",
-        "TMDX",
-        "QCOM",
-        "PYPL",
-        "DIS",
-        "TEM",
-        "ISRG",
-        "ANET",
-        "AEM",
-        "ZETA",
-        "MELI",
-        "SNOW",
-        "AUR",
-        "V",
-        "DKNG",
-        "MSTR",
-        "AVAV",
-        "RGTI",
         "PL",
-        "COHR",
-        "SDGR",
-        "BEAM",
         "NBIS",
-        "RDW",
-        "CRSP",
-        "POET",
-        "FICO",
-        "ASPI",
-        "AAOI",
-        "HSAI",
+        "TEM",
+        "IONQ",
+        "RXRX",
+        "OUST",
+        "META",
         "AXTI",
-        "RXRX"
+        "RGTI",
+        "RDW",
+        "DDOG",
+        "DIS",
+        "TMO",
+        "V",
+        "AVAV",
+        "VEEV",
+        "BEAM",
+        "VRTX",
+        "ANET",
+        "APH",
+        "SDGR",
+        "HSAI",
+        "ISRG",
+        "ETN",
+        "PYPL",
+        "DKNG",
+        "AAOI",
+        "CRSP",
+        "SNOW",
+        "MSTR",
+        "POET",
+        "ZETA",
+        "SPGI",
+        "AEM",
+        "AXON",
+        "QCOM",
+        "ASPI",
+        "NOW",
+        "MELI",
+        "FICO",
+        "TRMB",
+        "COHR",
+        "TMDX",
+        "KVYO",
+        "AUR"
       ],
       "warnings": [
+        "価格日付が古い銘柄があります：1銘柄（想定：2026-09-24）",
+        "価格未取得の銘柄があります：1銘柄",
         "TradingViewスナップショットの鮮度注意：45銘柄"
       ]
     },
@@ -162,8 +166,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-24T23:53:03.734077+09:00",
-      "checked_count": 4,
+      "generated_at_jst": "2026-09-25T00:47:20.573705+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -172,9 +176,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-24T10:39:16.937634+09:00",
           "row_dates": [
@@ -283,9 +287,9 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-24T14:02:17.449068+09:00",
           "row_dates": [
@@ -394,9 +398,9 @@
           "task": "daily_jp",
           "stem": "daily_jp",
           "label": "日本株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
           "generated_at_jst_before": "2026-09-24T23:23:16.779658+09:00",
           "row_dates": [
@@ -505,9 +509,9 @@
           "task": "buy_alert_jp",
           "stem": "buy_alert",
           "label": "買い場アラート（日本価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-09-24T14:02:17.449068+09:00",
           "row_dates": [
@@ -623,7 +627,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-24T23:53:03.647397+09:00",
+            "generated_at_jst": "2026-09-25T00:47:20.498813+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +714,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 81.2
+      "stale_age_days": 81.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +748,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 81.2
+      "stale_age_days": 81.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +798,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 80.1
+      "stale_age_days": 80.4
     },
     "master_update": {
       "status": "stale",
@@ -802,7 +806,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 79.1
+      "stale_age_days": 79.4
     },
     "monthly_maintenance": {
       "status": "partial",
