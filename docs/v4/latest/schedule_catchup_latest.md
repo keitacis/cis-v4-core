@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/25 00:47 JST
+生成日時：2026/09/25 08:48 JST
 
 ## 判定サマリー
 
@@ -12,16 +12,16 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-25T00:47:20.498813+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-25T08:48:47.877954+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-09-24T10:39:16.937634+09:00
-- expected_price_dates：{'US': '2026-09-23'}
-- row_dates：['2026-09-23']
+- generated_at_before：2026-09-25T07:25:42.010772+09:00
+- expected_price_dates：{'US': '2026-09-24'}
+- row_dates：['2026-09-24']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-24T01:38:42Z / updated=2026-09-24T01:39:22Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-24T00:31:33Z / updated=2026-09-24T00:32:02Z
@@ -32,9 +32,9 @@
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-09-24T14:02:17.449068+09:00
-- expected_price_dates：{'US': '2026-09-23'}
-- row_dates：['2026-09-23']
+- generated_at_before：2026-09-25T08:25:34.290131+09:00
+- expected_price_dates：{'US': '2026-09-24'}
+- row_dates：['2026-09-24']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-24T05:01:44Z / updated=2026-09-24T05:02:23Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-24T01:28:16Z / updated=2026-09-24T01:28:46Z
@@ -58,7 +58,7 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-09-24T14:02:17.449068+09:00
+- generated_at_before：2026-09-25T08:25:34.290131+09:00
 - expected_price_dates：{'JP': '2026-09-24'}
 - row_dates：['2026-09-24']
 - recent_workflow_runs_available：True
