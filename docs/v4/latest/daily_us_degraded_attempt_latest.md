@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/09/23 10:48 JST
-想定価格日付：2026-09-22
+生成日時：2026/09/24 09:31 JST
+想定価格日付：2026-09-23
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-22 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-23 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-22 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-09-23 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-OPTX, AXTI, META, MSTR, QCOM, OUST, RDW, POET, DDOG, HSAI, RGTI, ASPI, EWY, SDGR, NBIS, APH, PL, RXRX, IONQ, AAOI, AUR, CRSP, ZETA, ANET, KVYO, ETN, ISRG, SNOW, MELI, NOW, DIS, COHR, BEAM, TMO, DKNG, TMDX, AXON, AVAV, VRTX, V, VEEV, PYPL, TRMB, TEM, SPGI, AEM, FICO, KITT
+OPTX, OUST, DDOG, HSAI, ASPI, SDGR, APH, CRSP, ANET, KVYO, ETN, ISRG, SNOW, QCOM, RXRX, MELI, EWY, DIS, NBIS, RDW, BEAM, TMO, TMDX, AXON, AVAV, IONQ, PYPL, VRTX, V, VEEV, TRMB, RGTI, SPGI, NOW, META, MSTR, AUR, DKNG, PL, AEM, TEM, AAOI, FICO, AXTI, POET, ZETA, COHR, KITT
