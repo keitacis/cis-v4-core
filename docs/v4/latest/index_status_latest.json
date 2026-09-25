@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-26T00:47:08.994204+09:00",
+  "generated_at_jst": "2026-09-26T07:25:35.556591+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,9 +81,9 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-09-25T10:54:47.753121+09:00",
+      "generated_at_jst": "2026-09-26T07:25:35.119219+09:00",
       "message": "",
-      "expected_price_date": "2026-09-24",
+      "expected_price_date": "2026-09-25",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -97,51 +97,51 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "PL",
-        "NBIS",
-        "TEM",
-        "IONQ",
-        "RXRX",
         "OUST",
-        "META",
-        "AXTI",
-        "RGTI",
-        "RDW",
-        "DDOG",
-        "DIS",
-        "TMO",
-        "V",
-        "AVAV",
-        "VEEV",
-        "BEAM",
-        "VRTX",
-        "ANET",
-        "APH",
-        "SDGR",
-        "HSAI",
-        "ISRG",
-        "ETN",
         "PYPL",
-        "DKNG",
-        "AAOI",
-        "CRSP",
-        "SNOW",
-        "MSTR",
-        "POET",
-        "ZETA",
-        "SPGI",
-        "AEM",
-        "AXON",
+        "DDOG",
+        "AXTI",
         "QCOM",
-        "ASPI",
-        "NOW",
-        "MELI",
-        "FICO",
-        "TRMB",
+        "DKNG",
+        "TEM",
+        "VEEV",
         "COHR",
         "TMDX",
+        "ISRG",
+        "APH",
+        "IONQ",
+        "RGTI",
+        "FICO",
+        "VRTX",
+        "SNOW",
+        "DIS",
+        "ANET",
+        "AAOI",
+        "AEM",
+        "TRMB",
+        "POET",
+        "RDW",
+        "SPGI",
+        "ETN",
+        "MELI",
+        "V",
+        "AUR",
+        "ZETA",
+        "TMO",
+        "HSAI",
+        "ASPI",
+        "PL",
+        "NOW",
+        "BEAM",
+        "MSTR",
         "KVYO",
-        "AUR"
+        "SDGR",
+        "NBIS",
+        "CRSP",
+        "META",
+        "AXON",
+        "RXRX",
+        "AVAV"
       ],
       "warnings": [
         "TradingViewスナップショットの鮮度注意：45銘柄"
@@ -162,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-26T00:07:55.594818+09:00",
+      "generated_at_jst": "2026-09-26T00:47:09.060823+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-26T00:07:55.521034+09:00",
+            "generated_at_jst": "2026-09-26T00:47:08.994204+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 82.2
+      "stale_age_days": 82.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 82.2
+      "stale_age_days": 82.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -794,7 +794,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 81.1
+      "stale_age_days": 81.4
     },
     "master_update": {
       "status": "stale",
@@ -802,7 +802,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 80.1
+      "stale_age_days": 80.4
     },
     "monthly_maintenance": {
       "status": "partial",
