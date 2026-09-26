@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-26T15:04:32.996590+09:00",
+  "generated_at_jst": "2026-09-26T17:30:45.721914+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -165,8 +165,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-09-26T08:56:16.658479+09:00",
-      "checked_count": 0,
+      "generated_at_jst": "2026-09-26T15:04:33.080142+09:00",
+      "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -175,12 +175,13 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
+          "checked": true,
           "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "reasons": [],
           "status_before": "partial",
-          "generated_at_jst_before": "2026-09-26T07:25:35.119219+09:00",
+          "generated_at_jst_before": "2026-09-26T10:59:42.796918+09:00",
           "row_dates": [
+            "2026-09-24",
             "2026-09-25"
           ],
           "expected_price_dates": {
@@ -189,6 +190,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-09-26T01:59:15Z",
+                "run_started_at": "2026-09-26T01:59:15Z",
+                "updated_at": "2026-09-26T01:59:48Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/36210227823"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-09-26T00:38:28Z",
+                "run_started_at": "2026-09-26T00:38:28Z",
+                "updated_at": "2026-09-26T00:38:54Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/36205587982"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -260,24 +279,6 @@
                 "run_started_at": "2026-09-22T00:52:18Z",
                 "updated_at": "2026-09-22T00:52:48Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/35673688999"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-09-19T01:36:40Z",
-                "run_started_at": "2026-09-19T01:36:40Z",
-                "updated_at": "2026-09-19T01:37:09Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/35413187179"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-09-19T00:22:50Z",
-                "run_started_at": "2026-09-19T00:22:50Z",
-                "updated_at": "2026-09-19T00:23:26Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/35409153987"
               }
             ]
           }
@@ -626,7 +627,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-09-26T08:56:16.578795+09:00",
+            "generated_at_jst": "2026-09-26T15:04:32.996590+09:00",
             "row_dates": []
           }
         }
@@ -713,7 +714,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 82.7
+      "stale_age_days": 82.8
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -747,7 +748,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 82.7
+      "stale_age_days": 82.9
     },
     "watchlist_template": {
       "status": "ok",
@@ -797,7 +798,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 81.7
+      "stale_age_days": 81.8
     },
     "master_update": {
       "status": "stale",
@@ -805,7 +806,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 80.7
+      "stale_age_days": 80.8
     },
     "monthly_maintenance": {
       "status": "partial",
