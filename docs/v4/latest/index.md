@@ -1,16 +1,16 @@
 # CIS ホーム
 
-最終更新：2026/09/26 22:48 JST
+最終更新：2026/09/27 08:26 JST
 
 ## 要確認
 
 - 買い場アラート: partial
 - 米国株騰落: partial
 - 週間騰落: partial
-- CIS v4 Preflight: 更新から83.1日経過
-- CIS v4 Apply Seed: 更新から83.1日経過
-- TradingView月次候補反映: 更新から82.1日経過
-- TV・買い場基準更新: 更新から81.0日経過
+- CIS v4 Preflight: 更新から83.5日経過
+- CIS v4 Apply Seed: 更新から83.5日経過
+- TradingView月次候補反映: 更新から82.5日経過
+- TV・買い場基準更新: 更新から81.4日経過
 - 月次メンテナンス: partial
 
 ## 毎日見る
