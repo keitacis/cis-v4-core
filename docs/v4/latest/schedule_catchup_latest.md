@@ -1,6 +1,6 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/09/29 15:47 JST
+生成日時：2026/09/29 18:43 JST
 
 ## 判定サマリー
 
@@ -12,7 +12,7 @@
 ## 実行結果
 
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-09-29T15:47:48.495356+09:00 / dates=[]
+  - after：status=ok / generated=2026-09-29T18:43:08.872456+09:00 / dates=[]
 
 ## 詳細
 
@@ -44,10 +44,10 @@
 
 ### 日本株日次騰落
 
-- status_before：partial
-- generated_at_before：2026-09-29T02:48:27.732150+09:00
+- status_before：ok
+- generated_at_before：2026-09-29T18:25:28.088100+09:00
 - expected_price_dates：{'JP': '2026-09-29'}
-- row_dates：['2026-09-28']
+- row_dates：['2026-09-29']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-09-28T17:47:28Z / updated=2026-09-28T17:48:32Z
   - event=schedule / status=completed / conclusion=success / started=2026-09-28T16:58:20Z / updated=2026-09-28T16:58:48Z
