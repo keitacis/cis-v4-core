@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-09-29T03:33:58.826824+09:00",
-  "checked_count": 0,
+  "generated_at_jst": "2026-09-29T09:53:47.755508+09:00",
+  "checked_count": 1,
   "regen_count": 0,
   "recovered_count": 0,
   "failed_count": 0,
@@ -10,17 +10,16 @@
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
+      "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-26T10:59:42.796918+09:00",
+      "generated_at_jst_before": "2026-09-29T07:25:29.996954+09:00",
       "row_dates": [
-        "2026-09-24",
-        "2026-09-25"
+        "2026-09-28"
       ],
       "expected_price_dates": {
-        "US": "2026-09-25"
+        "US": "2026-09-28"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -126,12 +125,12 @@
       "needs_regen": false,
       "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-28T14:34:07.396222+09:00",
+      "generated_at_jst_before": "2026-09-29T08:25:33.386815+09:00",
       "row_dates": [
-        "2026-09-25"
+        "2026-09-28"
       ],
       "expected_price_dates": {
-        "US": "2026-09-25"
+        "US": "2026-09-28"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -348,7 +347,7 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-09-28T14:34:07.396222+09:00",
+      "generated_at_jst_before": "2026-09-29T08:25:33.386815+09:00",
       "row_dates": [
         "2026-09-28"
       ],
@@ -462,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-09-29T03:33:58.742787+09:00",
+        "generated_at_jst": "2026-09-29T09:53:47.666012+09:00",
         "row_dates": []
       }
     }
