@@ -1,9 +1,9 @@
 {
   "status": "partial",
-  "generated_at_jst": "2026-09-30T14:42:23.456383+09:00",
+  "generated_at_jst": "2026-10-01T08:25:33.625003+09:00",
   "message": "",
-  "expected_us_price_date": "2026-09-29",
-  "expected_jp_price_date": "2026-09-29",
+  "expected_us_price_date": "2026-09-30",
+  "expected_jp_price_date": "2026-09-30",
   "watchlist_count": 73,
   "price_success_count": 73,
   "price_error_count": 0,
