@@ -1,39 +1,39 @@
 {
   "version": 3,
   "status": "ok",
-  "generated_at_jst": "2026-09-01T09:41:30.296459+09:00",
-  "apply_command_count": 43,
-  "changed_command_count": 43,
+  "generated_at_jst": "2026-10-01T15:07:30.121003+09:00",
+  "apply_command_count": 44,
+  "changed_command_count": 44,
   "summary": {
     "us_watchlist_count": 48,
-    "candidate_change_count": 43,
-    "unchanged_count": 5,
+    "candidate_change_count": 44,
+    "unchanged_count": 4,
     "failed_count": 0,
-    "covered_candidate_count": 43,
+    "covered_candidate_count": 44,
     "covered_partial_candidate_count": 0,
     "not_applicable_candidate_count": 0,
     "success_condition": "coveredはrating+analyst_count+avg_target_price、covered_partialはrating+avg_target_priceで候補化"
   },
   "command_files": {
     "tv_monthly_refresh_apply_commands.txt": {
-      "sha256": "538a13563d74d0ae03cb96d878ac68241b5cafcd44594633256770bb9b2c4ec0",
-      "line_count": 43,
-      "bytes_utf8": 2986
+      "sha256": "f4782da76855b9857dbf9f8f70647bc0f5e9cddbfb7a7b40264348613f039dda",
+      "line_count": 44,
+      "bytes_utf8": 3049
     },
     "tv_monthly_refresh_changed_only_commands.txt": {
-      "sha256": "538a13563d74d0ae03cb96d878ac68241b5cafcd44594633256770bb9b2c4ec0",
-      "line_count": 43,
-      "bytes_utf8": 2986
+      "sha256": "f4782da76855b9857dbf9f8f70647bc0f5e9cddbfb7a7b40264348613f039dda",
+      "line_count": 44,
+      "bytes_utf8": 3049
     },
     "tv_monthly_refresh_apply_commands_iphone_1line.txt": {
-      "sha256": "1c5bc16e9e11fcc9e8ffb773b5294d493e310ec634da507769f4051f41efc84d",
+      "sha256": "9c528c5e14f486ecbd817a26d073c1d8043351c968d87c7dbcde5c06af38c361",
       "line_count": 1,
-      "bytes_utf8": 3028
+      "bytes_utf8": 3092
     },
     "tv_monthly_refresh_changed_only_commands_iphone_1line.txt": {
-      "sha256": "1c5bc16e9e11fcc9e8ffb773b5294d493e310ec634da507769f4051f41efc84d",
+      "sha256": "9c528c5e14f486ecbd817a26d073c1d8043351c968d87c7dbcde5c06af38c361",
       "line_count": 1,
-      "bytes_utf8": 3028
+      "bytes_utf8": 3092
     }
   },
   "primary_files": {
