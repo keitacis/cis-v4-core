@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-02T02:20:20.957718+09:00",
+  "generated_at_jst": "2026-10-02T07:25:30.969675+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -81,9 +81,9 @@
     },
     "daily_us": {
       "status": "partial",
-      "generated_at_jst": "2026-10-01T11:26:01.090798+09:00",
+      "generated_at_jst": "2026-10-02T07:25:30.458366+09:00",
       "message": "",
-      "expected_price_date": "2026-09-30",
+      "expected_price_date": "2026-10-01",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -97,51 +97,51 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "ZETA",
-        "KVYO",
-        "NOW",
-        "SNOW",
-        "AUR",
-        "HSAI",
-        "RXRX",
-        "VEEV",
-        "SDGR",
-        "DDOG",
-        "OUST",
-        "AXON",
-        "ASPI",
-        "SPGI",
-        "ANET",
-        "MELI",
-        "PL",
-        "RGTI",
-        "QCOM",
-        "APH",
-        "IONQ",
-        "BEAM",
-        "TRMB",
-        "DIS",
-        "NBIS",
-        "TMO",
-        "AVAV",
-        "TMDX",
-        "VRTX",
-        "ETN",
-        "TEM",
+        "FICO",
+        "COHR",
+        "AAOI",
         "AXTI",
         "MSTR",
+        "KVYO",
+        "NOW",
+        "ZETA",
+        "POET",
+        "ASPI",
+        "DKNG",
+        "ETN",
+        "APH",
+        "OUST",
+        "RDW",
+        "PYPL",
+        "DDOG",
+        "TRMB",
+        "SNOW",
+        "ANET",
+        "IONQ",
         "CRSP",
-        "ISRG",
-        "AEM",
-        "AAOI",
-        "COHR",
         "V",
         "META",
-        "POET",
-        "PYPL",
-        "RDW",
-        "DKNG",
-        "FICO"
+        "AXON",
+        "HSAI",
+        "BEAM",
+        "AUR",
+        "RGTI",
+        "QCOM",
+        "VEEV",
+        "ISRG",
+        "AVAV",
+        "RXRX",
+        "AEM",
+        "PL",
+        "NBIS",
+        "SPGI",
+        "SDGR",
+        "MELI",
+        "VRTX",
+        "TMO",
+        "DIS",
+        "TMDX",
+        "TEM"
       ],
       "warnings": [
         "TradingViewスナップショットの鮮度注意：45銘柄"
@@ -170,7 +170,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-02T01:59:11.635173+09:00",
+      "generated_at_jst": "2026-10-02T02:20:21.036126+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -631,7 +631,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-02T01:59:11.467645+09:00",
+            "generated_at_jst": "2026-10-02T02:20:20.957718+09:00",
             "row_dates": []
           }
         }
@@ -718,7 +718,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 88.2
+      "stale_age_days": 88.4
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -752,7 +752,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 88.2
+      "stale_age_days": 88.4
     },
     "watchlist_template": {
       "status": "ok",
@@ -802,7 +802,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 87.2
+      "stale_age_days": 87.4
     },
     "master_update": {
       "status": "stale",
@@ -810,7 +810,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 86.2
+      "stale_age_days": 86.4
     },
     "monthly_maintenance": {
       "status": "partial",
