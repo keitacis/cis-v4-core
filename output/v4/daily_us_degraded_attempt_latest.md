@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/01 10:18 JST
-想定価格日付：2026-09-30
+生成日時：2026/10/03 10:13 JST
+想定価格日付：2026-10-02
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-09-30 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-02 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-09-30 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-02 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-RXRX, AXTI, OPTX, AAOI, CRSP, POET, COHR, META, SDGR, KITT, NBIS, EWY, AUR, TMDX, ASPI, BEAM, AEM, MELI, SNOW, ETN, TMO, DDOG, ZETA, DIS, VRTX, TRMB, APH, HSAI, VEEV, V, ISRG, PYPL, SPGI, KVYO, ANET, NOW, AXON, RGTI, IONQ, MSTR, QCOM, OUST, PL, AVAV, TEM, RDW, DKNG, FICO
+FICO, COHR, AAOI, AXTI, MSTR, KVYO, NOW, ZETA, POET, ASPI, DKNG, EWY, ETN, APH, OUST, RDW, PYPL, DDOG, TRMB, SNOW, ANET, IONQ, CRSP, V, META, AXON, HSAI, BEAM, AUR, RGTI, QCOM, VEEV, ISRG, AVAV, RXRX, AEM, PL, NBIS, SPGI, OPTX, SDGR, MELI, VRTX, TMO, DIS, TMDX, TEM, KITT
