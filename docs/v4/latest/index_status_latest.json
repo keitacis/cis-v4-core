@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-06T02:22:01.754259+09:00",
+  "generated_at_jst": "2026-10-06T03:48:29.273179+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -148,9 +148,9 @@
       ]
     },
     "daily_jp": {
-      "status": "partial",
-      "generated_at_jst": "2026-10-06T02:22:01.218302+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
+      "status": "ok",
+      "generated_at_jst": "2026-10-06T03:48:28.858294+09:00",
+      "message": "",
       "expected_price_date": "2026-10-05",
       "price_success_count": 25,
       "price_missing_count": 0,
@@ -158,15 +158,7 @@
       "price_stale_count": 0,
       "price_stale_symbols": [],
       "market_closed_count": 0,
-      "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_jp の正常なlatest本文を保持しました。",
-        "価格未更新：日本株の価格日付が想定取引日 2026-10-05 より古いです。"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-10-05T18:25:29.673715+09:00",
-      "degraded_attempt_stem": "daily_jp_degraded_attempt"
+      "warnings": []
     },
     "schedule_catchup": {
       "status": "ok",
@@ -718,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 92.2
+      "stale_age_days": 92.3
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -752,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 92.2
+      "stale_age_days": 92.3
     },
     "watchlist_template": {
       "status": "stale",
@@ -763,7 +755,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 92.2
+      "stale_age_days": 92.3
     },
     "watchlist_update": {
       "status": "missing"
@@ -804,7 +796,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 91.2
+      "stale_age_days": 91.3
     },
     "master_update": {
       "status": "stale",
@@ -812,7 +804,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 90.2
+      "stale_age_days": 90.3
     },
     "monthly_maintenance": {
       "status": "partial",
