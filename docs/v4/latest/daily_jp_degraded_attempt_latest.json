@@ -1,7 +1,7 @@
 {
   "status": {
     "status": "price_stale",
-    "generated_at_jst": "2026-10-07T00:25:14.375322+09:00",
+    "generated_at_jst": "2026-10-07T01:14:13.256061+09:00",
     "message": "価格未更新：日本株の価格日付が想定取引日 2026-10-06 より古いです。",
     "expected_price_date": "2026-10-06",
     "price_success_count": 25,
