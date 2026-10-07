@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/03 10:13 JST
-想定価格日付：2026-10-02
+生成日時：2026/10/07 09:31 JST
+想定価格日付：2026-10-06
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-02 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-06 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-02 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-06 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-FICO, COHR, AAOI, AXTI, MSTR, KVYO, NOW, ZETA, POET, ASPI, DKNG, EWY, ETN, APH, OUST, RDW, PYPL, DDOG, TRMB, SNOW, ANET, IONQ, CRSP, V, META, AXON, HSAI, BEAM, AUR, RGTI, QCOM, VEEV, ISRG, AVAV, RXRX, AEM, PL, NBIS, SPGI, OPTX, SDGR, MELI, VRTX, TMO, DIS, TMDX, TEM, KITT
+RXRX, MELI, TEM, SDGR, OPTX, KVYO, DKNG, AAOI, BEAM, FICO, TMDX, ISRG, VEEV, HSAI, CRSP, TMO, PYPL, MSTR, V, TRMB, META, AUR, DIS, NOW, SPGI, AXTI, ZETA, ASPI, APH, POET, AEM, ANET, EWY, VRTX, DDOG, AXON, SNOW, OUST, RGTI, PL, ETN, COHR, AVAV, IONQ, QCOM, KITT, RDW, NBIS

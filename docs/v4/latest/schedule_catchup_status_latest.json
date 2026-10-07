@@ -1,25 +1,28 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-07T02:09:00.266393+09:00",
-  "checked_count": 0,
-  "regen_count": 0,
-  "recovered_count": 0,
+  "generated_at_jst": "2026-10-07T09:31:19.247746+09:00",
+  "checked_count": 1,
+  "regen_count": 1,
+  "recovered_count": 1,
   "failed_count": 0,
   "decisions": [
     {
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
-      "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
+      "checked": true,
+      "needs_regen": true,
+      "reasons": [
+        "生成日が当日ではない：2026-10-06",
+        "US価格日付が想定2026-10-06より古い：['2026-10-05']"
+      ],
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-06T12:20:12.704833+09:00",
       "row_dates": [
         "2026-10-05"
       ],
       "expected_price_dates": {
-        "US": "2026-10-05"
+        "US": "2026-10-06"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -130,7 +133,7 @@
         "2026-10-05"
       ],
       "expected_price_dates": {
-        "US": "2026-10-05"
+        "US": "2026-10-06"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -453,7 +456,22 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
+      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": "",
+      "task": "daily_us",
+      "label": "米国株日次騰落",
+      "status_after": {
+        "status": "partial",
+        "generated_at_jst": "2026-10-07T09:31:17.228536+09:00",
+        "row_dates": [
+          "2026-10-05"
+        ]
+      }
+    },
+    {
+      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
       "stderr_tail": "",
@@ -461,7 +479,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-07T02:09:00.152768+09:00",
+        "generated_at_jst": "2026-10-07T09:31:19.169829+09:00",
         "row_dates": []
       }
     }
