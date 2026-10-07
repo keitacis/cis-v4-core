@@ -1,18 +1,18 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-07T19:08:38.306803+09:00",
-  "checked_count": 4,
-  "regen_count": 1,
-  "recovered_count": 1,
+  "generated_at_jst": "2026-10-08T02:23:07.957395+09:00",
+  "checked_count": 0,
+  "regen_count": 0,
+  "recovered_count": 0,
   "failed_count": 0,
   "decisions": [
     {
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 9:00 以降に確認",
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-07T11:41:51.301754+09:00",
       "row_dates": [
@@ -121,9 +121,9 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 10:00 以降に確認",
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-07T15:10:30.072234+09:00",
       "row_dates": [
@@ -232,15 +232,13 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "JP価格日付が想定2026-10-07より古い：['2026-10-06']"
-      ],
+      "checked": false,
+      "needs_regen": false,
+      "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-10-07T01:14:13.258321+09:00",
+      "generated_at_jst_before": "2026-10-08T00:44:17.249348+09:00",
       "row_dates": [
-        "2026-10-06"
+        "2026-10-07"
       ],
       "expected_price_dates": {
         "JP": "2026-10-07"
@@ -248,6 +246,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "failure",
+            "created_at": "2026-10-07T16:52:29Z",
+            "run_started_at": "2026-10-07T16:52:29Z",
+            "updated_at": "2026-10-07T16:53:12Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/37655447764"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-07T15:43:54Z",
+            "run_started_at": "2026-10-07T15:43:54Z",
+            "updated_at": "2026-10-07T15:44:22Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/37646315928"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -319,24 +335,6 @@
             "run_started_at": "2026-10-01T15:37:34Z",
             "updated_at": "2026-10-01T15:38:03Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/36885722310"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-09-30T16:03:19Z",
-            "run_started_at": "2026-09-30T16:03:19Z",
-            "updated_at": "2026-09-30T16:03:46Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/36741379440"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-09-30T15:13:50Z",
-            "run_started_at": "2026-09-30T15:13:50Z",
-            "updated_at": "2026-09-30T15:14:19Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/36735123022"
           }
         ]
       }
@@ -345,9 +343,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": true,
+      "checked": false,
       "needs_regen": false,
-      "reasons": [],
+      "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-07T15:10:30.072234+09:00",
       "row_dates": [
@@ -455,21 +453,6 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_daily_jp.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "",
-      "task": "daily_jp",
-      "label": "日本株日次騰落",
-      "status_after": {
-        "status": "ok",
-        "generated_at_jst": "2026-10-07T19:08:37.714045+09:00",
-        "row_dates": [
-          "2026-10-07"
-        ]
-      }
-    },
-    {
       "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -478,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-07T19:08:38.223750+09:00",
+        "generated_at_jst": "2026-10-08T02:23:07.872136+09:00",
         "row_dates": []
       }
     }
