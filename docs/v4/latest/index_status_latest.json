@@ -1,12 +1,12 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-07T10:36:01.461348+09:00",
+  "generated_at_jst": "2026-10-07T11:27:38.437161+09:00",
   "items": {
     "buy_alert": {
-      "status": "stale",
-      "generated_at_jst": "2026-10-06T15:31:38.670418+09:00",
+      "status": "partial",
+      "generated_at_jst": "2026-10-07T11:27:37.898934+09:00",
       "message": "",
-      "expected_us_price_date": "2026-10-05",
+      "expected_us_price_date": "2026-10-06",
       "expected_jp_price_date": "2026-10-06",
       "watchlist_count": 73,
       "price_success_count": 73,
@@ -19,8 +19,8 @@
       "strong_buy_count": 2,
       "main_buy_count": 1,
       "watch_buy_count": 7,
-      "near_buy_count": 4,
-      "display_count": 14,
+      "near_buy_count": 3,
+      "display_count": 13,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -77,12 +77,7 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ],
-      "original_status": "partial",
-      "dependency_stale": true,
-      "dependency_source": "schedule_catchup",
-      "dependency_reason": "買い場アラートの米国価格が自動更新予定後も未更新 / 生成日が当日ではありません / US価格日付が想定2026-10-06より古い可能性",
-      "daily_freshness_stale": true
+      ]
     },
     "daily_us": {
       "status": "partial",
@@ -835,7 +830,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 91.5
+      "stale_age_days": 91.6
     },
     "monthly_maintenance": {
       "status": "partial",
