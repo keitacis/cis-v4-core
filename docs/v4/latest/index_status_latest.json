@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-08T09:52:27.679520+09:00",
+  "generated_at_jst": "2026-10-08T10:59:09.612488+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-10-07T15:10:30.072234+09:00",
       "message": "",
       "expected_us_price_date": "2026-10-06",
@@ -77,13 +77,18 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "買い場アラートの米国価格が自動更新予定後も未更新 / 生成日が当日ではありません / US価格日付が想定2026-10-07より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_us": {
-      "status": "stale",
-      "generated_at_jst": "2026-10-08T09:52:25.843452+09:00",
-      "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
-      "expected_price_date": "2026-10-06",
+      "status": "partial",
+      "generated_at_jst": "2026-10-08T10:59:09.177583+09:00",
+      "message": "",
+      "expected_price_date": "2026-10-07",
       "price_success_count": 48,
       "price_missing_count": 0,
       "us_count": 48,
@@ -97,67 +102,55 @@
       "tv_stale_or_unknown_count": 45,
       "tv_missing_symbols": [],
       "tv_stale_or_unknown_symbols": [
-        "NBIS",
-        "AAOI",
-        "PL",
-        "ANET",
-        "TRMB",
-        "AVAV",
-        "ETN",
-        "HSAI",
-        "RDW",
-        "OUST",
-        "AXON",
-        "APH",
-        "AEM",
-        "COHR",
-        "NOW",
-        "SPGI",
-        "FICO",
-        "DKNG",
-        "IONQ",
-        "DDOG",
+        "KVYO",
+        "ISRG",
+        "ZETA",
+        "TMDX",
+        "TMO",
+        "MELI",
         "DIS",
+        "VRTX",
         "PYPL",
         "V",
-        "ZETA",
-        "QCOM",
-        "RGTI",
-        "MSTR",
+        "ASPI",
+        "ANET",
+        "NOW",
+        "SPGI",
         "VEEV",
         "AUR",
-        "MELI",
-        "VRTX",
-        "META",
-        "ISRG",
-        "KVYO",
         "SNOW",
-        "POET",
+        "COHR",
+        "APH",
+        "TRMB",
+        "HSAI",
         "BEAM",
-        "ASPI",
-        "TMO",
-        "AXTI",
-        "RXRX",
-        "TMDX",
+        "FICO",
+        "QCOM",
+        "TEM",
+        "META",
+        "DDOG",
+        "AXON",
+        "AEM",
+        "DKNG",
         "CRSP",
+        "ETN",
+        "AVAV",
+        "RDW",
+        "POET",
+        "RGTI",
+        "PL",
+        "IONQ",
+        "AXTI",
+        "NBIS",
         "SDGR",
-        "TEM"
+        "AAOI",
+        "MSTR",
+        "OUST",
+        "RXRX"
       ],
       "warnings": [
-        "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
-        "価格未更新：米国株の価格日付が想定取引日 2026-10-07 より古いです。",
         "TradingViewスナップショットの鮮度注意：45銘柄"
-      ],
-      "degradation_guard_triggered": true,
-      "degradation_guard_version": "R12.3",
-      "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-10-07T11:41:51.301754+09:00",
-      "degraded_attempt_stem": "daily_us_degraded_attempt",
-      "original_status": "partial",
-      "dependency_stale": true,
-      "dependency_source": "schedule_catchup",
-      "dependency_reason": "米国株日次が自動更新予定後も未更新 / US価格日付が想定2026-10-07より古い可能性",
-      "daily_freshness_stale": true
+      ]
     },
     "daily_jp": {
       "status": "partial",
@@ -182,26 +175,29 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-08T02:45:49.811621+09:00",
-      "checked_count": 0,
-      "regen_count": 0,
-      "recovered_count": 0,
+      "generated_at_jst": "2026-10-08T09:52:27.764397+09:00",
+      "checked_count": 1,
+      "regen_count": 1,
+      "recovered_count": 1,
       "failed_count": 0,
       "decisions": [
         {
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
-          "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "checked": true,
+          "needs_regen": true,
+          "reasons": [
+            "生成日が当日ではない：2026-10-07",
+            "US価格日付が想定2026-10-07より古い：['2026-10-06']"
+          ],
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-07T11:41:51.301754+09:00",
           "row_dates": [
             "2026-10-06"
           ],
           "expected_price_dates": {
-            "US": "2026-10-06"
+            "US": "2026-10-07"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -312,7 +308,7 @@
             "2026-10-06"
           ],
           "expected_price_dates": {
-            "US": "2026-10-06"
+            "US": "2026-10-07"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -635,6 +631,21 @@
       ],
       "executed": [
         {
+          "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_daily_us.py",
+          "returncode": 0,
+          "stdout_tail": "",
+          "stderr_tail": "",
+          "task": "daily_us",
+          "label": "米国株日次騰落",
+          "status_after": {
+            "status": "partial",
+            "generated_at_jst": "2026-10-08T09:52:25.843452+09:00",
+            "row_dates": [
+              "2026-10-06"
+            ]
+          }
+        },
+        {
           "command": "/opt/hostedtoolcache/Python/3.11.16/x64/bin/python scripts/cis_v4/cis_home.py",
           "returncode": 0,
           "stdout_tail": "",
@@ -643,7 +654,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-08T02:45:49.730417+09:00",
+            "generated_at_jst": "2026-10-08T09:52:27.679520+09:00",
             "row_dates": []
           }
         }
@@ -730,7 +741,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 94.5
+      "stale_age_days": 94.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -764,7 +775,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 94.5
+      "stale_age_days": 94.6
     },
     "watchlist_template": {
       "status": "stale",
@@ -775,7 +786,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 94.5
+      "stale_age_days": 94.6
     },
     "watchlist_update": {
       "status": "missing"
@@ -816,7 +827,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 93.5
+      "stale_age_days": 93.6
     },
     "master_update": {
       "status": "stale",
