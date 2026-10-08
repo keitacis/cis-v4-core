@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/07 09:31 JST
-想定価格日付：2026-10-06
+生成日時：2026/10/08 09:52 JST
+想定価格日付：2026-10-07
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-06 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-07 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-06 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-07 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-RXRX, MELI, TEM, SDGR, OPTX, KVYO, DKNG, AAOI, BEAM, FICO, TMDX, ISRG, VEEV, HSAI, CRSP, TMO, PYPL, MSTR, V, TRMB, META, AUR, DIS, NOW, SPGI, AXTI, ZETA, ASPI, APH, POET, AEM, ANET, EWY, VRTX, DDOG, AXON, SNOW, OUST, RGTI, PL, ETN, COHR, AVAV, IONQ, QCOM, KITT, RDW, NBIS
+NBIS, AAOI, PL, ANET, KITT, TRMB, AVAV, ETN, HSAI, RDW, OUST, AXON, APH, AEM, COHR, NOW, SPGI, FICO, DKNG, IONQ, DDOG, DIS, PYPL, V, ZETA, OPTX, QCOM, RGTI, MSTR, VEEV, AUR, MELI, VRTX, META, ISRG, KVYO, SNOW, POET, BEAM, EWY, ASPI, TMO, AXTI, RXRX, TMDX, CRSP, SDGR, TEM
