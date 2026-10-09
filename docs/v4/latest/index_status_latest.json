@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-09T02:49:47.823450+09:00",
+  "generated_at_jst": "2026-10-09T10:05:03.929040+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-10-08T15:17:49.041829+09:00",
       "message": "",
       "expected_us_price_date": "2026-10-07",
@@ -77,10 +77,15 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "買い場アラートの米国価格が自動更新予定後も未更新 / 生成日が当日ではありません / US価格日付が想定2026-10-08より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_us": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-10-08T11:56:35.683939+09:00",
       "message": "",
       "expected_price_date": "2026-10-07",
@@ -145,7 +150,12 @@
       ],
       "warnings": [
         "TradingViewスナップショットの鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "米国株日次が自動更新予定後も未更新 / 生成日が当日ではありません / US価格日付が想定2026-10-08より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_jp": {
       "status": "partial",
@@ -170,7 +180,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-09T02:20:27.961748+09:00",
+      "generated_at_jst": "2026-10-09T02:49:47.981521+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -631,7 +641,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-09T02:20:27.871647+09:00",
+            "generated_at_jst": "2026-10-09T02:49:47.823450+09:00",
             "row_dates": []
           }
         }
@@ -718,7 +728,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 95.2
+      "stale_age_days": 95.5
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -752,7 +762,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 95.2
+      "stale_age_days": 95.5
     },
     "watchlist_template": {
       "status": "stale",
@@ -763,7 +773,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 95.2
+      "stale_age_days": 95.5
     },
     "watchlist_update": {
       "status": "missing"
@@ -804,7 +814,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 94.2
+      "stale_age_days": 94.5
     },
     "master_update": {
       "status": "stale",
@@ -812,7 +822,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 93.2
+      "stale_age_days": 93.5
     },
     "monthly_maintenance": {
       "status": "partial",
