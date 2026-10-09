@@ -1,56 +1,52 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/10/09 10:05 JST
+生成日時：2026/10/09 16:19 JST
 
 ## 判定サマリー
 
-- ⚠️ 米国株日次騰落：再生成対象 / 生成日が当日ではない：2026-10-08 / US価格日付が想定2026-10-08より古い：['2026-10-07']
-- ⚠️ 買い場アラート（米国価格）：再生成対象 / 生成日が当日ではない：2026-10-08 / US価格日付が想定2026-10-08より古い：['2026-10-07']
+- ✅ 米国株日次騰落：最新扱い
+- ✅ 買い場アラート（米国価格）：最新扱い
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
-- 米国株日次騰落：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py`
-  - after：status=partial / generated=2026-10-09T10:05:38.404378+09:00 / dates=['2026-10-07']
-- 買い場アラート（米国価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
-  - after：status=partial / generated=2026-10-09T10:05:48.737121+09:00 / dates=['2026-10-07']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-10-09T10:05:49.784633+09:00 / dates=[]
+  - after：status=ok / generated=2026-10-09T16:19:08.724840+09:00 / dates=[]
 
 ## 詳細
 
 ### 米国株日次騰落
 
 - status_before：partial
-- generated_at_before：2026-10-08T11:56:35.683939+09:00
+- generated_at_before：2026-10-09T12:04:38.816321+09:00
 - expected_price_dates：{'US': '2026-10-08'}
-- row_dates：['2026-10-07']
+- row_dates：['2026-10-08']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T03:04:10Z / updated=2026-10-09T03:04:45Z
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T02:12:51Z / updated=2026-10-09T02:13:21Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T02:56:04Z / updated=2026-10-08T02:56:40Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T01:58:45Z / updated=2026-10-08T01:59:14Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-07T02:41:20Z / updated=2026-10-07T02:41:57Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-07T01:35:08Z / updated=2026-10-07T01:36:08Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-06T03:19:45Z / updated=2026-10-06T03:20:17Z
 
 ### 買い場アラート（米国価格）
 
 - status_before：partial
-- generated_at_before：2026-10-08T15:17:49.041829+09:00
+- generated_at_before：2026-10-09T15:19:45.539174+09:00
 - expected_price_dates：{'US': '2026-10-08'}
-- row_dates：['2026-10-07']
+- row_dates：['2026-10-08']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T06:19:16Z / updated=2026-10-09T06:19:50Z
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T02:58:03Z / updated=2026-10-09T02:58:36Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T06:17:17Z / updated=2026-10-08T06:17:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T02:43:28Z / updated=2026-10-08T02:44:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-07T06:09:52Z / updated=2026-10-07T06:10:35Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-07T02:27:04Z / updated=2026-10-07T02:27:44Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-06T06:31:01Z / updated=2026-10-06T06:31:44Z
 
 ### 日本株日次騰落
 
 - status_before：partial
 - generated_at_before：2026-10-09T01:54:12.673391+09:00
-- expected_price_dates：{'JP': '2026-10-08'}
+- expected_price_dates：{'JP': '2026-10-09'}
 - row_dates：['2026-10-08']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T16:53:45Z / updated=2026-10-08T16:54:19Z
@@ -62,12 +58,12 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-10-09T10:05:48.737121+09:00
-- expected_price_dates：{'JP': '2026-10-08'}
+- generated_at_before：2026-10-09T15:19:45.539174+09:00
+- expected_price_dates：{'JP': '2026-10-09'}
 - row_dates：['2026-10-09']
 - recent_workflow_runs_available：True
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T06:19:16Z / updated=2026-10-09T06:19:50Z
+  - event=schedule / status=completed / conclusion=success / started=2026-10-09T02:58:03Z / updated=2026-10-09T02:58:36Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T06:17:17Z / updated=2026-10-08T06:17:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T02:43:28Z / updated=2026-10-08T02:44:10Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-07T06:09:52Z / updated=2026-10-07T06:10:35Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-07T02:27:04Z / updated=2026-10-07T02:27:44Z
-  - event=schedule / status=completed / conclusion=success / started=2026-10-06T06:31:01Z / updated=2026-10-06T06:31:44Z
