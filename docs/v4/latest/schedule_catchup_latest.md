@@ -1,18 +1,22 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/10/09 02:49 JST
+生成日時：2026/10/09 10:05 JST
 
 ## 判定サマリー
 
-- 米国株日次騰落：判定対象外/判定前（判定前：JST 9:00 以降に確認）
-- 買い場アラート（米国価格）：判定対象外/判定前（判定前：JST 10:00 以降に確認）
+- ⚠️ 米国株日次騰落：再生成対象 / 生成日が当日ではない：2026-10-08 / US価格日付が想定2026-10-08より古い：['2026-10-07']
+- ⚠️ 買い場アラート（米国価格）：再生成対象 / 生成日が当日ではない：2026-10-08 / US価格日付が想定2026-10-08より古い：['2026-10-07']
 - 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 - 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
 
 ## 実行結果
 
+- 米国株日次騰落：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py`
+  - after：status=partial / generated=2026-10-09T10:05:38.404378+09:00 / dates=['2026-10-07']
+- 買い場アラート（米国価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
+  - after：status=partial / generated=2026-10-09T10:05:48.737121+09:00 / dates=['2026-10-07']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-10-09T02:49:47.823450+09:00 / dates=[]
+  - after：status=ok / generated=2026-10-09T10:05:49.784633+09:00 / dates=[]
 
 ## 詳細
 
@@ -20,7 +24,7 @@
 
 - status_before：partial
 - generated_at_before：2026-10-08T11:56:35.683939+09:00
-- expected_price_dates：{'US': '2026-10-07'}
+- expected_price_dates：{'US': '2026-10-08'}
 - row_dates：['2026-10-07']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T02:56:04Z / updated=2026-10-08T02:56:40Z
@@ -33,7 +37,7 @@
 
 - status_before：partial
 - generated_at_before：2026-10-08T15:17:49.041829+09:00
-- expected_price_dates：{'US': '2026-10-07'}
+- expected_price_dates：{'US': '2026-10-08'}
 - row_dates：['2026-10-07']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T06:17:17Z / updated=2026-10-08T06:17:55Z
@@ -58,9 +62,9 @@
 ### 買い場アラート（日本価格）
 
 - status_before：partial
-- generated_at_before：2026-10-08T15:17:49.041829+09:00
+- generated_at_before：2026-10-09T10:05:48.737121+09:00
 - expected_price_dates：{'JP': '2026-10-08'}
-- row_dates：['2026-10-08']
+- row_dates：['2026-10-09']
 - recent_workflow_runs_available：True
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T06:17:17Z / updated=2026-10-08T06:17:55Z
   - event=schedule / status=completed / conclusion=success / started=2026-10-08T02:43:28Z / updated=2026-10-08T02:44:10Z
