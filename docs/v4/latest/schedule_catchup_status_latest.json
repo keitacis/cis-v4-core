@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-09T16:19:08.808362+09:00",
-  "checked_count": 2,
-  "regen_count": 0,
-  "recovered_count": 0,
+  "generated_at_jst": "2026-10-09T19:23:00.844650+09:00",
+  "checked_count": 4,
+  "regen_count": 1,
+  "recovered_count": 1,
   "failed_count": 0,
   "decisions": [
     {
@@ -232,9 +232,11 @@
       "task": "daily_jp",
       "stem": "daily_jp",
       "label": "日本株日次騰落",
-      "checked": false,
-      "needs_regen": false,
-      "reason": "判定前：JST 19:00 以降に確認",
+      "checked": true,
+      "needs_regen": true,
+      "reasons": [
+        "JP価格日付が想定2026-10-09より古い：['2026-10-08']"
+      ],
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-09T01:54:12.673391+09:00",
       "row_dates": [
@@ -343,9 +345,9 @@
       "task": "buy_alert_jp",
       "stem": "buy_alert",
       "label": "買い場アラート（日本価格）",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 19:00 以降に確認",
+      "reasons": [],
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-09T15:19:45.539174+09:00",
       "row_dates": [
@@ -453,6 +455,21 @@
   ],
   "executed": [
     {
+      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_jp.py",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": "",
+      "task": "daily_jp",
+      "label": "日本株日次騰落",
+      "status_after": {
+        "status": "ok",
+        "generated_at_jst": "2026-10-09T19:23:00.352330+09:00",
+        "row_dates": [
+          "2026-10-09"
+        ]
+      }
+    },
+    {
       "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -461,7 +478,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-09T16:19:08.724840+09:00",
+        "generated_at_jst": "2026-10-09T19:23:00.749462+09:00",
         "row_dates": []
       }
     }
