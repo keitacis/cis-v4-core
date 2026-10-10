@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/09 10:05 JST
-想定価格日付：2026-10-08
+生成日時：2026/10/10 09:38 JST
+想定価格日付：2026-10-09
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-08 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-09 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-08 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-09 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-KVYO, ISRG, ZETA, TMDX, TMO, MELI, DIS, VRTX, PYPL, V, ASPI, ANET, KITT, NOW, SPGI, VEEV, AUR, SNOW, COHR, APH, EWY, TRMB, HSAI, BEAM, FICO, QCOM, TEM, META, DDOG, AXON, AEM, DKNG, CRSP, ETN, AVAV, RDW, POET, RGTI, PL, IONQ, AXTI, NBIS, SDGR, AAOI, MSTR, OUST, RXRX, OPTX
+FICO, DKNG, SNOW, AXON, DIS, AEM, SPGI, NOW, KVYO, DDOG, VEEV, V, ISRG, AUR, PYPL, META, TRMB, VRTX, QCOM, BEAM, MELI, AVAV, ASPI, MSTR, TEM, TMO, ETN, ZETA, ANET, HSAI, APH, TMDX, RGTI, PL, KITT, SDGR, CRSP, EWY, IONQ, RDW, POET, OUST, OPTX, NBIS, RXRX, COHR, AXTI, AAOI
