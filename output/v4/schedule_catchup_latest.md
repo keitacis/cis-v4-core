@@ -1,18 +1,22 @@
 # CIS 自動更新取りこぼし確認 R10.4
 
-生成日時：2026/10/12 16:15 JST
+生成日時：2026/10/12 19:38 JST
 
 ## 判定サマリー
 
 - 米国株日次騰落：判定対象外/判定前（判定対象外曜日：weekday=0）
 - ✅ 買い場アラート（米国価格）：最新扱い
-- 日本株日次騰落：判定対象外/判定前（判定前：JST 19:00 以降に確認）
-- 買い場アラート（日本価格）：判定対象外/判定前（判定前：JST 19:00 以降に確認）
+- ⚠️ 日本株日次騰落：再生成対象 / 生成日が当日ではない：2026-10-10 / JP価格日付が想定2026-10-12より古い：['2026-10-09']
+- ⚠️ 買い場アラート（日本価格）：再生成対象 / JP価格日付が想定2026-10-12より古い：['2026-10-09']
 
 ## 実行結果
 
+- 日本株日次騰落：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_jp.py`
+  - after：status=partial / generated=2026-10-12T19:37:46.247949+09:00 / dates=['2026-10-09']
+- 買い場アラート（日本価格）：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_buy_alert.py`
+  - after：status=partial / generated=2026-10-12T19:38:01.972567+09:00 / dates=['2026-10-09']
 - CISホーム再生成：exit=0 / `/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py`
-  - after：status=ok / generated=2026-10-12T16:15:39.600759+09:00 / dates=[]
+  - after：status=ok / generated=2026-10-12T19:38:02.517228+09:00 / dates=[]
 
 ## 詳細
 
