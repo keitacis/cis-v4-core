@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-12T15:09:52.558089+09:00",
+  "generated_at_jst": "2026-10-12T16:15:39.600759+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -831,7 +831,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 97.7
+      "stale_age_days": 97.8
     },
     "master_update": {
       "status": "stale",
@@ -839,7 +839,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 96.7
+      "stale_age_days": 96.8
     },
     "monthly_maintenance": {
       "status": "partial",
