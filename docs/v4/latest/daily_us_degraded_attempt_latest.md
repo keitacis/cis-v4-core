@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/10 09:38 JST
-想定価格日付：2026-10-09
+生成日時：2026/10/14 09:12 JST
+想定価格日付：2026-10-13
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-09 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-13 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-09 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-13 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-FICO, DKNG, SNOW, AXON, DIS, AEM, SPGI, NOW, KVYO, DDOG, VEEV, V, ISRG, AUR, PYPL, META, TRMB, VRTX, QCOM, BEAM, MELI, AVAV, ASPI, MSTR, TEM, TMO, ETN, ZETA, ANET, HSAI, APH, TMDX, RGTI, PL, KITT, SDGR, CRSP, EWY, IONQ, RDW, POET, OUST, OPTX, NBIS, RXRX, COHR, AXTI, AAOI
+FICO, META, ZETA, SPGI, V, PYPL, ISRG, TMO, DKNG, DIS, TMDX, MELI, VEEV, NOW, AEM, VRTX, QCOM, ETN, TRMB, MSTR, APH, KVYO, AXON, DDOG, BEAM, SNOW, ANET, AUR, OPTX, CRSP, RDW, EWY, AVAV, TEM, NBIS, SDGR, HSAI, RGTI, OUST, PL, COHR, ASPI, RXRX, POET, KITT, AAOI, IONQ, AXTI
