@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-15T17:11:23.287329+09:00",
+  "generated_at_jst": "2026-10-15T22:39:27.007078+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -149,9 +149,9 @@
     },
     "daily_jp": {
       "status": "ok",
-      "generated_at_jst": "2026-10-14T23:38:45.753267+09:00",
+      "generated_at_jst": "2026-10-15T22:39:26.523468+09:00",
       "message": "",
-      "expected_price_date": "2026-10-14",
+      "expected_price_date": "2026-10-15",
       "price_success_count": 25,
       "price_missing_count": 0,
       "jp_count": 25,
@@ -162,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-15T14:48:43.811470+09:00",
+      "generated_at_jst": "2026-10-15T17:11:23.371454+09:00",
       "checked_count": 2,
       "regen_count": 0,
       "recovered_count": 0,
@@ -403,7 +403,7 @@
             "2026-10-14"
           ],
           "expected_price_dates": {
-            "JP": "2026-10-14"
+            "JP": "2026-10-15"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -514,7 +514,7 @@
             "2026-10-15"
           ],
           "expected_price_dates": {
-            "JP": "2026-10-14"
+            "JP": "2026-10-15"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-15T14:48:43.699837+09:00",
+            "generated_at_jst": "2026-10-15T17:11:23.287329+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 101.8
+      "stale_age_days": 102.1
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 101.8
+      "stale_age_days": 102.1
     },
     "watchlist_template": {
       "status": "stale",
@@ -755,7 +755,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 101.8
+      "stale_age_days": 102.1
     },
     "watchlist_update": {
       "status": "missing"
@@ -796,7 +796,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 100.8
+      "stale_age_days": 101.1
     },
     "master_update": {
       "status": "stale",
@@ -804,7 +804,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 99.8
+      "stale_age_days": 100.0
     },
     "monthly_maintenance": {
       "status": "partial",
