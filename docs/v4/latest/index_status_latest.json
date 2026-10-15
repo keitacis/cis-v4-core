@@ -1,26 +1,34 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-15T09:33:32.810194+09:00",
+  "generated_at_jst": "2026-10-15T10:32:38.495169+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-10-14T14:03:00.259629+09:00",
+      "generated_at_jst": "2026-10-15T10:32:37.936549+09:00",
       "message": "",
-      "expected_us_price_date": "2026-10-13",
-      "expected_jp_price_date": "2026-10-13",
+      "expected_us_price_date": "2026-10-14",
+      "expected_jp_price_date": "2026-10-14",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
-      "price_stale_count": 0,
-      "price_stale_symbols": [],
-      "market_closed_count": 0,
+      "price_stale_count": 7,
+      "price_stale_symbols": [
+        "AUR",
+        "TMDX",
+        "NOW",
+        "RDW",
+        "VEEV",
+        "PYPL",
+        "TEM"
+      ],
+      "market_closed_count": 7,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
       "strong_buy_count": 2,
       "main_buy_count": 3,
-      "watch_buy_count": 6,
-      "near_buy_count": 3,
-      "display_count": 14,
+      "watch_buy_count": 13,
+      "near_buy_count": 2,
+      "display_count": 20,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -76,6 +84,7 @@
         "ZETA"
       ],
       "warnings": [
+        "価格日付が古い銘柄があります：7銘柄（想定：米国 2026-10-14 / 日本 2026-10-14）",
         "TradingView鮮度注意：45銘柄"
       ]
     },
@@ -740,7 +749,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 101.5
+      "stale_age_days": 101.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -774,7 +783,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 101.5
+      "stale_age_days": 101.6
     },
     "watchlist_template": {
       "status": "stale",
@@ -785,7 +794,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 101.5
+      "stale_age_days": 101.6
     },
     "watchlist_update": {
       "status": "missing"
@@ -826,7 +835,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 100.5
+      "stale_age_days": 100.6
     },
     "master_update": {
       "status": "stale",
