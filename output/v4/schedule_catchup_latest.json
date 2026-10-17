@@ -1,10 +1,10 @@
 {
   "status": {
     "status": "ok",
-    "generated_at_jst": "2026-10-17T14:30:39.874593+09:00",
+    "generated_at_jst": "2026-10-17T16:41:45.174943+09:00",
     "checked_count": 1,
-    "regen_count": 1,
-    "recovered_count": 1,
+    "regen_count": 0,
+    "recovered_count": 0,
     "failed_count": 0,
     "decisions": [
       {
@@ -12,14 +12,12 @@
         "stem": "daily_us",
         "label": "米国株日次騰落",
         "checked": true,
-        "needs_regen": true,
-        "reasons": [
-          "US価格日付が想定2026-10-16より古い：['2026-10-15']"
-        ],
+        "needs_regen": false,
+        "reasons": [],
         "status_before": "partial",
-        "generated_at_jst_before": "2026-10-17T10:33:11.181877+09:00",
+        "generated_at_jst_before": "2026-10-17T14:30:38.180986+09:00",
         "row_dates": [
-          "2026-10-15"
+          "2026-10-16"
         ],
         "expected_price_dates": {
           "US": "2026-10-16"
@@ -456,21 +454,6 @@
     ],
     "executed": [
       {
-        "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
-        "returncode": 0,
-        "stdout_tail": "",
-        "stderr_tail": "",
-        "task": "daily_us",
-        "label": "米国株日次騰落",
-        "status_after": {
-          "status": "partial",
-          "generated_at_jst": "2026-10-17T14:30:38.180986+09:00",
-          "row_dates": [
-            "2026-10-16"
-          ]
-        }
-      },
-      {
         "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
         "returncode": 0,
         "stdout_tail": "",
@@ -479,7 +462,7 @@
         "label": "CISホーム再生成",
         "status_after": {
           "status": "ok",
-          "generated_at_jst": "2026-10-17T14:30:39.793096+09:00",
+          "generated_at_jst": "2026-10-17T16:41:45.066968+09:00",
           "row_dates": []
         }
       }
@@ -491,14 +474,12 @@
       "stem": "daily_us",
       "label": "米国株日次騰落",
       "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "US価格日付が想定2026-10-16より古い：['2026-10-15']"
-      ],
+      "needs_regen": false,
+      "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-10-17T10:33:11.181877+09:00",
+      "generated_at_jst_before": "2026-10-17T14:30:38.180986+09:00",
       "row_dates": [
-        "2026-10-15"
+        "2026-10-16"
       ],
       "expected_price_dates": {
         "US": "2026-10-16"
@@ -935,21 +916,6 @@
   ],
   "executed": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "",
-      "task": "daily_us",
-      "label": "米国株日次騰落",
-      "status_after": {
-        "status": "partial",
-        "generated_at_jst": "2026-10-17T14:30:38.180986+09:00",
-        "row_dates": [
-          "2026-10-16"
-        ]
-      }
-    },
-    {
       "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -958,7 +924,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-17T14:30:39.793096+09:00",
+        "generated_at_jst": "2026-10-17T16:41:45.066968+09:00",
         "row_dates": []
       }
     }
