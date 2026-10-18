@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-19T07:54:28.009469+09:00",
+  "generated_at_jst": "2026-10-19T07:54:54.258243+09:00",
   "items": {
     "buy_alert": {
       "status": "stale",
@@ -746,7 +746,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 105.4
+      "stale_age_days": 105.5
     },
     "watchlist_template": {
       "status": "stale",
@@ -757,7 +757,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 105.4
+      "stale_age_days": 105.5
     },
     "watchlist_update": {
       "status": "missing"
