@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-19T07:54:54.258243+09:00",
+  "generated_at_jst": "2026-10-19T10:21:06.187911+09:00",
   "items": {
     "buy_alert": {
-      "status": "stale",
-      "generated_at_jst": "2026-10-16T13:42:25.489503+09:00",
+      "status": "partial",
+      "generated_at_jst": "2026-10-19T10:21:05.631033+09:00",
       "message": "",
-      "expected_us_price_date": "2026-10-15",
-      "expected_jp_price_date": "2026-10-15",
+      "expected_us_price_date": "2026-10-16",
+      "expected_jp_price_date": "2026-10-16",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
@@ -16,11 +16,11 @@
       "market_closed_count": 0,
       "invalid_buyzone_count": 0,
       "invalid_buyzone": [],
-      "strong_buy_count": 1,
-      "main_buy_count": 4,
-      "watch_buy_count": 11,
+      "strong_buy_count": 2,
+      "main_buy_count": 5,
+      "watch_buy_count": 14,
       "near_buy_count": 3,
-      "display_count": 19,
+      "display_count": 24,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -77,9 +77,7 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ],
-      "original_status": "partial",
-      "stale_age_days": 2.8
+      ]
     },
     "daily_us": {
       "status": "partial",
@@ -164,7 +162,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-18T07:58:52.827328+09:00",
+      "generated_at_jst": "2026-10-19T07:54:54.348789+09:00",
       "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
@@ -176,7 +174,7 @@
           "label": "米国株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定対象外曜日：weekday=0",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-17T14:30:38.180986+09:00",
           "row_dates": [
@@ -287,7 +285,7 @@
           "label": "買い場アラート（米国価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-16T13:42:25.489503+09:00",
           "row_dates": [
@@ -398,7 +396,7 @@
           "label": "日本株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
           "generated_at_jst_before": "2026-10-16T23:12:10.350079+09:00",
           "row_dates": [
@@ -509,7 +507,7 @@
           "label": "買い場アラート（日本価格）",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=6",
+          "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-16T13:42:25.489503+09:00",
           "row_dates": [
@@ -625,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-18T07:58:52.671502+09:00",
+            "generated_at_jst": "2026-10-19T07:54:54.258243+09:00",
             "row_dates": []
           }
         }
@@ -712,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 105.4
+      "stale_age_days": 105.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -746,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 105.5
+      "stale_age_days": 105.6
     },
     "watchlist_template": {
       "status": "stale",
@@ -757,7 +755,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 105.5
+      "stale_age_days": 105.6
     },
     "watchlist_update": {
       "status": "missing"
@@ -798,7 +796,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 104.4
+      "stale_age_days": 104.5
     },
     "master_update": {
       "status": "stale",
@@ -806,7 +804,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 103.4
+      "stale_age_days": 103.5
     },
     "monthly_maintenance": {
       "status": "partial",
