@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-22T00:01:52.133351+09:00",
+  "generated_at_jst": "2026-10-22T00:54:54.120919+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -162,8 +162,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-21T17:28:13.619412+09:00",
-      "checked_count": 2,
+      "generated_at_jst": "2026-10-22T00:01:52.225347+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -172,9 +172,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-21T11:02:45.969280+09:00",
           "row_dates": [
@@ -283,9 +283,9 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-21T14:00:05.950896+09:00",
           "row_dates": [
@@ -398,9 +398,9 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "ok",
-          "generated_at_jst_before": "2026-10-20T23:27:48.608106+09:00",
+          "generated_at_jst_before": "2026-10-21T23:38:10.020876+09:00",
           "row_dates": [
-            "2026-10-20"
+            "2026-10-21"
           ],
           "expected_price_dates": {
             "JP": "2026-10-21"
@@ -408,6 +408,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-21T14:37:44Z",
+                "run_started_at": "2026-10-21T14:37:44Z",
+                "updated_at": "2026-10-21T14:38:15Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39618502351"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-21T14:04:40Z",
+                "run_started_at": "2026-10-21T14:04:40Z",
+                "updated_at": "2026-10-21T14:05:11Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39613624062"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -479,24 +497,6 @@
                 "run_started_at": "2026-10-15T13:38:59Z",
                 "updated_at": "2026-10-15T13:39:32Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/38744494038"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-14T14:38:22Z",
-                "run_started_at": "2026-10-14T14:38:22Z",
-                "updated_at": "2026-10-14T14:38:50Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/38582304631"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-14T13:58:52Z",
-                "run_started_at": "2026-10-14T13:58:52Z",
-                "updated_at": "2026-10-14T13:59:22Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/38576431185"
               }
             ]
           }
@@ -623,7 +623,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-21T17:28:13.523346+09:00",
+            "generated_at_jst": "2026-10-22T00:01:52.133351+09:00",
             "row_dates": []
           }
         }
@@ -710,7 +710,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 108.1
+      "stale_age_days": 108.2
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -744,7 +744,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 108.1
+      "stale_age_days": 108.2
     },
     "watchlist_template": {
       "status": "stale",
@@ -755,7 +755,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 108.1
+      "stale_age_days": 108.2
     },
     "watchlist_update": {
       "status": "missing"
@@ -796,7 +796,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 107.1
+      "stale_age_days": 107.2
     },
     "master_update": {
       "status": "stale",
