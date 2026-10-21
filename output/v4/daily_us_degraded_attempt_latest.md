@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/20 10:06 JST
-想定価格日付：2026-10-19
+生成日時：2026/10/21 09:39 JST
+想定価格日付：2026-10-20
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-19 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-20 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-19 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-20 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-SPGI, AEM, V, FICO, DIS, ISRG, PYPL, VEEV, TMO, AVAV, MELI, KITT, VRTX, DKNG, TRMB, APH, ETN, ASPI, QCOM, EWY, META, CRSP, NOW, ANET, BEAM, ZETA, KVYO, RDW, OPTX, AXON, RGTI, PL, HSAI, COHR, DDOG, TMDX, SNOW, IONQ, TEM, OUST, MSTR, POET, AAOI, AUR, AXTI, SDGR, NBIS, RXRX
+AXTI, DDOG, DKNG, RXRX, EWY, HSAI, AAOI, ANET, BEAM, NBIS, SNOW, KVYO, NOW, SDGR, ZETA, VEEV, OPTX, POET, CRSP, KITT, ISRG, OUST, FICO, APH, TMDX, AUR, RDW, QCOM, TRMB, VRTX, MELI, PL, V, ETN, PYPL, COHR, SPGI, META, TEM, MSTR, DIS, AEM, RGTI, TMO, IONQ, AXON, AVAV, ASPI
