@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-27T01:42:38.512013+09:00",
+  "generated_at_jst": "2026-10-27T02:16:22.047772+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -170,8 +170,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-26T17:46:41.088395+09:00",
-      "checked_count": 1,
+      "generated_at_jst": "2026-10-27T01:42:38.592343+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -182,7 +182,7 @@
           "label": "米国株日次騰落",
           "checked": false,
           "needs_regen": false,
-          "reason": "判定対象外曜日：weekday=0",
+          "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-24T10:58:43.263282+09:00",
           "row_dates": [
@@ -291,9 +291,9 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-26T13:58:36.867198+09:00",
           "row_dates": [
@@ -405,8 +405,8 @@
           "checked": false,
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
-          "status_before": "ok",
-          "generated_at_jst_before": "2026-10-23T23:23:52.469619+09:00",
+          "status_before": "partial",
+          "generated_at_jst_before": "2026-10-27T01:17:27.641202+09:00",
           "row_dates": [
             "2026-10-23"
           ],
@@ -416,6 +416,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-26T16:17:00Z",
+                "run_started_at": "2026-10-26T16:17:00Z",
+                "updated_at": "2026-10-26T16:17:32Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40357604572"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-26T15:25:31Z",
+                "run_started_at": "2026-10-26T15:25:31Z",
+                "updated_at": "2026-10-26T15:26:05Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40349172788"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -487,24 +505,6 @@
                 "run_started_at": "2026-10-20T13:48:51Z",
                 "updated_at": "2026-10-20T13:49:19Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39433655384"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-19T16:36:42Z",
-                "run_started_at": "2026-10-19T16:36:42Z",
-                "updated_at": "2026-10-19T16:42:24Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39286846072"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-19T15:50:03Z",
-                "run_started_at": "2026-10-19T15:50:03Z",
-                "updated_at": "2026-10-19T16:15:21Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39280919418"
               }
             ]
           }
@@ -631,7 +631,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-26T17:46:41.002759+09:00",
+            "generated_at_jst": "2026-10-27T01:42:38.512013+09:00",
             "row_dates": []
           }
         }
