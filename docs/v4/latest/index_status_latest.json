@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-27T09:18:15.485071+09:00",
+  "generated_at_jst": "2026-10-27T10:30:04.285633+09:00",
   "items": {
     "buy_alert": {
-      "status": "partial",
+      "status": "stale",
       "generated_at_jst": "2026-10-26T13:58:36.867198+09:00",
       "message": "",
       "expected_us_price_date": "2026-10-23",
@@ -77,11 +77,16 @@
       ],
       "warnings": [
         "TradingView鮮度注意：45銘柄"
-      ]
+      ],
+      "original_status": "partial",
+      "dependency_stale": true,
+      "dependency_source": "schedule_catchup",
+      "dependency_reason": "買い場アラートの米国価格が自動更新予定後も未更新 / 生成日が当日ではありません / US価格日付が想定2026-10-26より古い可能性",
+      "daily_freshness_stale": true
     },
     "daily_us": {
       "status": "stale",
-      "generated_at_jst": "2026-10-27T09:18:13.100636+09:00",
+      "generated_at_jst": "2026-10-27T10:30:03.793161+09:00",
       "message": "劣化上書き防止：価格未更新の実行結果だったため、daily_us の正常なlatest本文を保持しました。",
       "expected_price_date": "2026-10-23",
       "price_success_count": 48,
@@ -151,7 +156,7 @@
       "degradation_guard_triggered": true,
       "degradation_guard_version": "R12.3",
       "degradation_guard_source_status": "price_stale",
-      "retained_latest_generated_at_jst": "2026-10-24T10:58:43.263282+09:00",
+      "retained_latest_generated_at_jst": "2026-10-27T09:18:13.100636+09:00",
       "degraded_attempt_stem": "daily_us_degraded_attempt",
       "original_status": "partial",
       "dependency_stale": true,
@@ -182,26 +187,29 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-27T02:16:22.123734+09:00",
-      "checked_count": 0,
-      "regen_count": 0,
-      "recovered_count": 0,
+      "generated_at_jst": "2026-10-27T09:18:15.571619+09:00",
+      "checked_count": 1,
+      "regen_count": 1,
+      "recovered_count": 1,
       "failed_count": 0,
       "decisions": [
         {
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": false,
-          "needs_regen": false,
-          "reason": "判定前：JST 9:00 以降に確認",
+          "checked": true,
+          "needs_regen": true,
+          "reasons": [
+            "生成日が当日ではない：2026-10-24",
+            "US価格日付が想定2026-10-26より古い：['2026-10-23']"
+          ],
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-24T10:58:43.263282+09:00",
           "row_dates": [
             "2026-10-23"
           ],
           "expected_price_dates": {
-            "US": "2026-10-23"
+            "US": "2026-10-26"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -312,7 +320,7 @@
             "2026-10-23"
           ],
           "expected_price_dates": {
-            "US": "2026-10-23"
+            "US": "2026-10-26"
           },
           "recent_workflow_runs": {
             "available": true,
@@ -635,6 +643,21 @@
       ],
       "executed": [
         {
+          "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
+          "returncode": 0,
+          "stdout_tail": "",
+          "stderr_tail": "68: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n",
+          "task": "daily_us",
+          "label": "米国株日次騰落",
+          "status_after": {
+            "status": "partial",
+            "generated_at_jst": "2026-10-27T09:18:13.100636+09:00",
+            "row_dates": [
+              "2026-10-23"
+            ]
+          }
+        },
+        {
           "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
           "returncode": 0,
           "stdout_tail": "",
@@ -643,7 +666,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-27T02:16:22.047772+09:00",
+            "generated_at_jst": "2026-10-27T09:18:15.485071+09:00",
             "row_dates": []
           }
         }
@@ -730,7 +753,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 113.5
+      "stale_age_days": 113.6
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -764,7 +787,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 113.5
+      "stale_age_days": 113.6
     },
     "watchlist_template": {
       "status": "stale",
@@ -775,7 +798,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 113.5
+      "stale_age_days": 113.6
     },
     "watchlist_update": {
       "status": "missing"
@@ -816,7 +839,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 112.5
+      "stale_age_days": 112.6
     },
     "master_update": {
       "status": "stale",
