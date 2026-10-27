@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-27T09:18:15.571619+09:00",
-  "checked_count": 1,
-  "regen_count": 1,
-  "recovered_count": 1,
+  "generated_at_jst": "2026-10-27T15:10:52.565929+09:00",
+  "checked_count": 2,
+  "regen_count": 0,
+  "recovered_count": 0,
   "failed_count": 0,
   "decisions": [
     {
@@ -11,15 +11,12 @@
       "stem": "daily_us",
       "label": "米国株日次騰落",
       "checked": true,
-      "needs_regen": true,
-      "reasons": [
-        "生成日が当日ではない：2026-10-24",
-        "US価格日付が想定2026-10-26より古い：['2026-10-23']"
-      ],
+      "needs_regen": false,
+      "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-10-24T10:58:43.263282+09:00",
+      "generated_at_jst_before": "2026-10-27T11:25:37.043850+09:00",
       "row_dates": [
-        "2026-10-23"
+        "2026-10-26"
       ],
       "expected_price_dates": {
         "US": "2026-10-26"
@@ -27,6 +24,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T02:25:06Z",
+            "run_started_at": "2026-10-27T02:25:06Z",
+            "updated_at": "2026-10-27T02:25:41Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40438296879"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T01:29:37Z",
+            "run_started_at": "2026-10-27T01:29:37Z",
+            "updated_at": "2026-10-27T01:30:10Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40432879643"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -98,24 +113,6 @@
             "run_started_at": "2026-10-21T00:38:59Z",
             "updated_at": "2026-10-21T00:39:37Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39522582997"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T02:04:58Z",
-            "run_started_at": "2026-10-20T02:04:58Z",
-            "updated_at": "2026-10-20T02:05:23Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39356969693"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T01:05:45Z",
-            "run_started_at": "2026-10-20T01:05:45Z",
-            "updated_at": "2026-10-20T01:06:25Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39351499923"
           }
         ]
       }
@@ -124,13 +121,13 @@
       "task": "buy_alert_us",
       "stem": "buy_alert",
       "label": "買い場アラート（米国価格）",
-      "checked": false,
+      "checked": true,
       "needs_regen": false,
-      "reason": "判定前：JST 10:00 以降に確認",
+      "reasons": [],
       "status_before": "partial",
-      "generated_at_jst_before": "2026-10-26T13:58:36.867198+09:00",
+      "generated_at_jst_before": "2026-10-27T14:16:21.145737+09:00",
       "row_dates": [
-        "2026-10-23"
+        "2026-10-26"
       ],
       "expected_price_dates": {
         "US": "2026-10-26"
@@ -138,6 +135,24 @@
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T05:15:42Z",
+            "run_started_at": "2026-10-27T05:15:42Z",
+            "updated_at": "2026-10-27T05:16:27Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40454303544"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T02:08:14Z",
+            "run_started_at": "2026-10-27T02:08:14Z",
+            "updated_at": "2026-10-27T02:08:52Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40436670243"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -209,24 +224,6 @@
             "run_started_at": "2026-10-21T01:40:09Z",
             "updated_at": "2026-10-21T01:40:46Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39528652324"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T05:00:00Z",
-            "run_started_at": "2026-10-20T05:00:00Z",
-            "updated_at": "2026-10-20T05:00:37Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39372518325"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T01:53:14Z",
-            "run_started_at": "2026-10-20T01:53:14Z",
-            "updated_at": "2026-10-20T01:53:44Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39355895850"
           }
         ]
       }
@@ -244,7 +241,7 @@
         "2026-10-23"
       ],
       "expected_price_dates": {
-        "JP": "2026-10-26"
+        "JP": "2026-10-27"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -350,16 +347,34 @@
       "needs_regen": false,
       "reason": "判定前：JST 19:00 以降に確認",
       "status_before": "partial",
-      "generated_at_jst_before": "2026-10-26T13:58:36.867198+09:00",
+      "generated_at_jst_before": "2026-10-27T14:16:21.145737+09:00",
       "row_dates": [
-        "2026-10-26"
+        "2026-10-27"
       ],
       "expected_price_dates": {
-        "JP": "2026-10-26"
+        "JP": "2026-10-27"
       },
       "recent_workflow_runs": {
         "available": true,
         "runs": [
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T05:15:42Z",
+            "run_started_at": "2026-10-27T05:15:42Z",
+            "updated_at": "2026-10-27T05:16:27Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40454303544"
+          },
+          {
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "success",
+            "created_at": "2026-10-27T02:08:14Z",
+            "run_started_at": "2026-10-27T02:08:14Z",
+            "updated_at": "2026-10-27T02:08:52Z",
+            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40436670243"
+          },
           {
             "event": "schedule",
             "status": "completed",
@@ -431,45 +446,12 @@
             "run_started_at": "2026-10-21T01:40:09Z",
             "updated_at": "2026-10-21T01:40:46Z",
             "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39528652324"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T05:00:00Z",
-            "run_started_at": "2026-10-20T05:00:00Z",
-            "updated_at": "2026-10-20T05:00:37Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39372518325"
-          },
-          {
-            "event": "schedule",
-            "status": "completed",
-            "conclusion": "success",
-            "created_at": "2026-10-20T01:53:14Z",
-            "run_started_at": "2026-10-20T01:53:14Z",
-            "updated_at": "2026-10-20T01:53:44Z",
-            "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39355895850"
           }
         ]
       }
     }
   ],
   "executed": [
-    {
-      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
-      "returncode": 0,
-      "stdout_tail": "",
-      "stderr_tail": "68: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n",
-      "task": "daily_us",
-      "label": "米国株日次騰落",
-      "status_after": {
-        "status": "partial",
-        "generated_at_jst": "2026-10-27T09:18:13.100636+09:00",
-        "row_dates": [
-          "2026-10-23"
-        ]
-      }
-    },
     {
       "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
@@ -479,7 +461,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-27T09:18:15.485071+09:00",
+        "generated_at_jst": "2026-10-27T15:10:52.474308+09:00",
         "row_dates": []
       }
     }
