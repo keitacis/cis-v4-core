@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-28T00:49:45.819642+09:00",
+  "generated_at_jst": "2026-10-28T01:25:04.439241+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -170,8 +170,8 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-27T17:52:06.231247+09:00",
-      "checked_count": 2,
+      "generated_at_jst": "2026-10-28T00:49:45.892334+09:00",
+      "checked_count": 0,
       "regen_count": 0,
       "recovered_count": 0,
       "failed_count": 0,
@@ -180,9 +180,9 @@
           "task": "daily_us",
           "stem": "daily_us",
           "label": "米国株日次騰落",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 9:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-27T11:25:37.043850+09:00",
           "row_dates": [
@@ -291,9 +291,9 @@
           "task": "buy_alert_us",
           "stem": "buy_alert",
           "label": "買い場アラート（米国価格）",
-          "checked": true,
+          "checked": false,
           "needs_regen": false,
-          "reasons": [],
+          "reason": "判定前：JST 10:00 以降に確認",
           "status_before": "partial",
           "generated_at_jst_before": "2026-10-27T14:16:21.145737+09:00",
           "row_dates": [
@@ -406,9 +406,9 @@
           "needs_regen": false,
           "reason": "判定前：JST 19:00 以降に確認",
           "status_before": "partial",
-          "generated_at_jst_before": "2026-10-27T01:17:27.641202+09:00",
+          "generated_at_jst_before": "2026-10-28T00:31:10.767195+09:00",
           "row_dates": [
-            "2026-10-23"
+            "2026-10-27"
           ],
           "expected_price_dates": {
             "JP": "2026-10-27"
@@ -416,6 +416,24 @@
           "recent_workflow_runs": {
             "available": true,
             "runs": [
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-27T15:30:46Z",
+                "run_started_at": "2026-10-27T15:30:46Z",
+                "updated_at": "2026-10-27T15:31:17Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40531709792"
+              },
+              {
+                "event": "schedule",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-10-27T14:52:09Z",
+                "run_started_at": "2026-10-27T14:52:09Z",
+                "updated_at": "2026-10-27T14:52:41Z",
+                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/40525295005"
+              },
               {
                 "event": "schedule",
                 "status": "completed",
@@ -487,24 +505,6 @@
                 "run_started_at": "2026-10-21T14:04:40Z",
                 "updated_at": "2026-10-21T14:05:11Z",
                 "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39613624062"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-20T14:27:24Z",
-                "run_started_at": "2026-10-20T14:27:24Z",
-                "updated_at": "2026-10-20T14:27:54Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39439364800"
-              },
-              {
-                "event": "schedule",
-                "status": "completed",
-                "conclusion": "success",
-                "created_at": "2026-10-20T13:48:51Z",
-                "run_started_at": "2026-10-20T13:48:51Z",
-                "updated_at": "2026-10-20T13:49:19Z",
-                "html_url": "https://github.com/keitacis/cis-v4-core/actions/runs/39433655384"
               }
             ]
           }
@@ -631,7 +631,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-27T17:52:06.002327+09:00",
+            "generated_at_jst": "2026-10-28T00:49:45.819642+09:00",
             "row_dates": []
           }
         }
@@ -804,7 +804,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 113.1
+      "stale_age_days": 113.2
     },
     "master_update": {
       "status": "stale",
@@ -812,7 +812,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 112.1
+      "stale_age_days": 112.2
     },
     "monthly_maintenance": {
       "status": "partial",
