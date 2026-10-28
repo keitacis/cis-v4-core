@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/27 10:30 JST
-想定価格日付：2026-10-26
+生成日時：2026/10/28 09:21 JST
+想定価格日付：2026-10-27
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-26 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-27 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-26 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-27 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-HSAI, OUST, TEM, SDGR, AVAV, DDOG, SNOW, RXRX, RDW, KVYO, PL, POET, ISRG, QCOM, EWY, APH, AXON, ZETA, NOW, AXTI, ANET, COHR, OPTX, IONQ, RGTI, VEEV, MSTR, DKNG, NBIS, TMO, DIS, SPGI, ETN, MELI, TRMB, AAOI, PYPL, META, FICO, AUR, CRSP, AEM, V, TMDX, BEAM, VRTX, KITT, ASPI
+AXTI, AAOI, COHR, KITT, HSAI, DDOG, ASPI, SDGR, SNOW, ANET, RXRX, PL, QCOM, AVAV, TMO, APH, ETN, DKNG, AUR, AXON, AEM, EWY, SPGI, OUST, ISRG, TMDX, TRMB, RDW, NOW, TEM, RGTI, CRSP, ZETA, V, BEAM, VRTX, VEEV, IONQ, POET, META, DIS, KVYO, OPTX, NBIS, PYPL, MSTR, MELI, FICO
