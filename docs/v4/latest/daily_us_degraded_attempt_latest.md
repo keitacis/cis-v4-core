@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/29 09:41 JST
-想定価格日付：2026-10-28
+生成日時：2026/10/30 09:42 JST
+想定価格日付：2026-10-29
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-28 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-29 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-28 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-29 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-NBIS, OUST, SDGR, RGTI, TEM, OPTX, IONQ, AAOI, RDW, RXRX, COHR, KITT, POET, ANET, PL, AUR, CRSP, BEAM, APH, AXTI, ETN, EWY, AEM, QCOM, PYPL, ASPI, TMO, MSTR, AVAV, SNOW, MELI, VRTX, AXON, DDOG, DIS, TRMB, SPGI, V, ZETA, ISRG, TMDX, VEEV, META, DKNG, NOW, FICO, HSAI, KVYO
+BEAM, SDGR, AXTI, KITT, RXRX, NBIS, AAOI, TEM, EWY, CRSP, HSAI, APH, OPTX, MSTR, POET, OUST, ETN, TRMB, KVYO, VRTX, COHR, TMO, VEEV, RDW, AEM, FICO, PYPL, SNOW, ZETA, SPGI, ANET, V, RGTI, ISRG, MELI, AUR, AVAV, AXON, QCOM, DDOG, DIS, PL, META, ASPI, IONQ, DKNG, NOW, TMDX
