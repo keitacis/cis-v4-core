@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-31T01:11:31.127481+09:00",
+  "generated_at_jst": "2026-10-31T01:39:24.708450+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -812,7 +812,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 115.1
+      "stale_age_days": 115.2
     },
     "monthly_maintenance": {
       "status": "partial",
