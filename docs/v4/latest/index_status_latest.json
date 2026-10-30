@@ -1,13 +1,13 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-30T11:57:46.676549+09:00",
+  "generated_at_jst": "2026-10-30T15:00:25.997623+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
-      "generated_at_jst": "2026-10-30T11:39:58.621882+09:00",
+      "generated_at_jst": "2026-10-30T15:00:25.520949+09:00",
       "message": "",
       "expected_us_price_date": "2026-10-29",
-      "expected_jp_price_date": "2026-10-29",
+      "expected_jp_price_date": "2026-10-30",
       "watchlist_count": 73,
       "price_success_count": 73,
       "price_error_count": 0,
@@ -19,8 +19,8 @@
       "strong_buy_count": 2,
       "main_buy_count": 4,
       "watch_buy_count": 11,
-      "near_buy_count": 4,
-      "display_count": 21,
+      "near_buy_count": 3,
+      "display_count": 20,
       "fallback_display": false,
       "tv_covered_count": 45,
       "tv_no_coverage_count": 2,
@@ -736,7 +736,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 116.6
+      "stale_age_days": 116.7
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -770,7 +770,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 116.6
+      "stale_age_days": 116.7
     },
     "watchlist_template": {
       "status": "stale",
@@ -781,7 +781,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 116.6
+      "stale_age_days": 116.7
     },
     "watchlist_update": {
       "status": "missing"
@@ -822,7 +822,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 115.6
+      "stale_age_days": 115.7
     },
     "master_update": {
       "status": "stale",
@@ -830,7 +830,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 114.6
+      "stale_age_days": 114.7
     },
     "monthly_maintenance": {
       "status": "partial",
