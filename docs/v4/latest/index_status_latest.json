@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-31T18:30:09.161893+09:00",
+  "generated_at_jst": "2026-11-01T00:25:59.457390+09:00",
   "items": {
     "buy_alert": {
       "status": "partial",
@@ -170,7 +170,7 @@
     },
     "schedule_catchup": {
       "status": "ok",
-      "generated_at_jst": "2026-10-31T15:54:03.552960+09:00",
+      "generated_at_jst": "2026-10-31T18:30:09.265065+09:00",
       "checked_count": 1,
       "regen_count": 0,
       "recovered_count": 0,
@@ -631,7 +631,7 @@
           "label": "CISホーム再生成",
           "status_after": {
             "status": "ok",
-            "generated_at_jst": "2026-10-31T15:54:03.469665+09:00",
+            "generated_at_jst": "2026-10-31T18:30:09.161893+09:00",
             "row_dates": []
           }
         }
@@ -639,10 +639,10 @@
     },
     "weekly_performance": {
       "status": "partial",
-      "generated_at_jst": "2026-10-24T22:26:22.346890+09:00",
+      "generated_at_jst": "2026-11-01T00:25:58.973230+09:00",
       "message": "",
-      "expected_us_price_date": "2026-10-23",
-      "expected_jp_price_date": "2026-10-23",
+      "expected_us_price_date": "2026-10-30",
+      "expected_jp_price_date": "2026-10-30",
       "price_success_count": 73,
       "price_missing_count": 0,
       "price_stale_count": 0,
@@ -657,51 +657,51 @@
       "us_tv_stale_or_unknown_count": 45,
       "us_tv_missing_symbols": [],
       "us_tv_stale_or_unknown_symbols": [
-        "KVYO",
-        "NOW",
-        "DKNG",
-        "DDOG",
-        "AXON",
-        "ZETA",
-        "RXRX",
-        "TRMB",
-        "MSTR",
-        "SNOW",
-        "ISRG",
-        "FICO",
-        "HSAI",
         "SDGR",
-        "VRTX",
-        "SPGI",
-        "TEM",
-        "OUST",
-        "VEEV",
         "BEAM",
-        "QCOM",
-        "DIS",
-        "V",
-        "AVAV",
-        "AXTI",
-        "PYPL",
-        "POET",
-        "CRSP",
-        "IONQ",
-        "TMDX",
-        "RDW",
-        "AUR",
-        "PL",
-        "MELI",
-        "TMO",
-        "RGTI",
-        "ANET",
-        "NBIS",
-        "ETN",
+        "RXRX",
         "APH",
-        "AEM",
+        "TEM",
+        "VRTX",
+        "AXTI",
+        "CRSP",
         "ASPI",
-        "META",
+        "SPGI",
+        "TMO",
+        "AVAV",
+        "TRMB",
+        "AAOI",
+        "AXON",
+        "V",
+        "ETN",
         "COHR",
-        "AAOI"
+        "PL",
+        "RDW",
+        "OUST",
+        "DKNG",
+        "PYPL",
+        "DIS",
+        "ANET",
+        "RGTI",
+        "NBIS",
+        "VEEV",
+        "IONQ",
+        "META",
+        "ISRG",
+        "KVYO",
+        "POET",
+        "AEM",
+        "SNOW",
+        "QCOM",
+        "TMDX",
+        "HSAI",
+        "ZETA",
+        "AUR",
+        "MELI",
+        "MSTR",
+        "DDOG",
+        "FICO",
+        "NOW"
       ],
       "warnings": [
         "TradingViewスナップショットの鮮度注意：45銘柄"
@@ -718,7 +718,7 @@
         "all_ok": true
       },
       "original_status": "ok",
-      "stale_age_days": 117.9
+      "stale_age_days": 118.1
     },
     "cis_v4_apply_seed": {
       "status": "stale",
@@ -752,7 +752,7 @@
         "watchlist/company整合性: OK"
       ],
       "original_status": "ok",
-      "stale_age_days": 117.9
+      "stale_age_days": 118.1
     },
     "watchlist_template": {
       "status": "stale",
@@ -763,7 +763,7 @@
       "active_us_count": 48,
       "active_jp_count": 25,
       "original_status": "ok",
-      "stale_age_days": 117.9
+      "stale_age_days": 118.1
     },
     "watchlist_update": {
       "status": "missing"
@@ -804,7 +804,7 @@
       "applied_command_count": 44,
       "candidate_generated_at_jst": "2026-07-06T21:02:57.508725+09:00",
       "original_status": "ok",
-      "stale_age_days": 116.9
+      "stale_age_days": 117.1
     },
     "master_update": {
       "status": "stale",
@@ -812,7 +812,7 @@
       "changed_count": 1,
       "error_count": 0,
       "original_status": "ok",
-      "stale_age_days": 115.9
+      "stale_age_days": 116.1
     },
     "monthly_maintenance": {
       "status": "partial",
