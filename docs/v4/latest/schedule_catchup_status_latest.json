@@ -1,25 +1,28 @@
 {
   "status": "ok",
-  "generated_at_jst": "2026-10-31T01:58:56.233545+09:00",
-  "checked_count": 0,
-  "regen_count": 0,
-  "recovered_count": 0,
+  "generated_at_jst": "2026-10-31T09:35:32.638322+09:00",
+  "checked_count": 1,
+  "regen_count": 1,
+  "recovered_count": 1,
   "failed_count": 0,
   "decisions": [
     {
       "task": "daily_us",
       "stem": "daily_us",
       "label": "米国株日次騰落",
-      "checked": false,
-      "needs_regen": false,
-      "reason": "判定前：JST 9:00 以降に確認",
+      "checked": true,
+      "needs_regen": true,
+      "reasons": [
+        "生成日が当日ではない：2026-10-30",
+        "US価格日付が想定2026-10-30より古い：['2026-10-29']"
+      ],
       "status_before": "partial",
       "generated_at_jst_before": "2026-10-30T11:57:46.186268+09:00",
       "row_dates": [
         "2026-10-29"
       ],
       "expected_price_dates": {
-        "US": "2026-10-29"
+        "US": "2026-10-30"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -130,7 +133,7 @@
         "2026-10-29"
       ],
       "expected_price_dates": {
-        "US": "2026-10-29"
+        "US": "2026-10-30"
       },
       "recent_workflow_runs": {
         "available": true,
@@ -453,6 +456,21 @@
   ],
   "executed": [
     {
+      "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_daily_us.py",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": "68: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).\nSee https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.\n  quotes.sort_index(inplace=True)\n",
+      "task": "daily_us",
+      "label": "米国株日次騰落",
+      "status_after": {
+        "status": "partial",
+        "generated_at_jst": "2026-10-31T09:35:30.473287+09:00",
+        "row_dates": [
+          "2026-10-29"
+        ]
+      }
+    },
+    {
       "command": "/opt/hostedtoolcache/Python/3.11.17/x64/bin/python scripts/cis_v4/cis_home.py",
       "returncode": 0,
       "stdout_tail": "",
@@ -461,7 +479,7 @@
       "label": "CISホーム再生成",
       "status_after": {
         "status": "ok",
-        "generated_at_jst": "2026-10-31T01:58:56.110546+09:00",
+        "generated_at_jst": "2026-10-31T09:35:32.551698+09:00",
         "row_dates": []
       }
     }

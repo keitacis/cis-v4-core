@@ -1,7 +1,7 @@
 # CIS 米国株日次騰落
 
-生成日時：2026/10/30 09:42 JST
-想定価格日付：2026-10-29
+生成日時：2026/10/31 09:35 JST
+想定価格日付：2026-10-30
 
 ## ステータス
 
@@ -16,13 +16,13 @@
 
 ## 注意
 
-- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-29 より古いです。
+- ⚠️ 価格未更新：米国株の価格日付が想定取引日 2026-10-30 より古いです。
 - ⚠️ TradingViewスナップショットの鮮度注意：45銘柄
 
 ## 価格未更新のためランキング非表示
 
-全銘柄の価格日付が想定価格日付 2026-10-29 より古いため、前日比ランキングは表示しません。
+全銘柄の価格日付が想定価格日付 2026-10-30 より古いため、前日比ランキングは表示しません。
 
 ### 価格日付が古い銘柄
 
-BEAM, SDGR, AXTI, KITT, RXRX, NBIS, AAOI, TEM, EWY, CRSP, HSAI, APH, OPTX, MSTR, POET, OUST, ETN, TRMB, KVYO, VRTX, COHR, TMO, VEEV, RDW, AEM, FICO, PYPL, SNOW, ZETA, SPGI, ANET, V, RGTI, ISRG, MELI, AUR, AVAV, AXON, QCOM, DDOG, DIS, PL, META, ASPI, IONQ, DKNG, NOW, TMDX
+AVAV, ASPI, AXON, SPGI, V, DKNG, META, VRTX, DIS, RDW, TEM, FICO, TRMB, APH, QCOM, ISRG, OPTX, TMO, PYPL, TMDX, CRSP, ETN, BEAM, PL, KVYO, KITT, MELI, COHR, ANET, ZETA, IONQ, VEEV, MSTR, EWY, RXRX, RGTI, SNOW, SDGR, POET, AAOI, AEM, OUST, DDOG, AXTI, NBIS, HSAI, AUR, NOW
